@@ -745,5 +745,16 @@
 		"platform": "Steam",
 		"timestamp": 1786144439000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/d1e79618b612be87bff4f5c70b1e825e37b05540.jpg",
+		"title": "The Hermit",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786291531000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
