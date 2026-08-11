@@ -42,5 +42,27 @@
 		"platform": "Steam",
 		"timestamp": 1786442972000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/3945a4e6479605ab55c7dae52857e040d118d5c7.jpg",
+		"title": "All the President's Men",
+		"description": "Save President Myers.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786481654000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/cf77d0555d0222cdcbe7fb19a7e38871c820f230.jpg",
+		"title": "Arachnophobia",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786483852000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
