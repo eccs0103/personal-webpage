@@ -9,5 +9,16 @@
 		"platform": "Steam",
 		"timestamp": 1786398812000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1328350/4b15bed7a64bc15d531ca0c0026b18fa34b0f4a5.jpg",
+		"title": "Paradise Pile-up",
+		"description": "Kill up to 8 enemies with 1 Waster explosive shot",
+		"url": "https://steamcommunity.com/stats/1328350/achievements",
+		"game": "Turbo Overkill",
+		"webpage": "https://store.steampowered.com/app/1328350",
+		"platform": "Steam",
+		"timestamp": 1786436418000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
