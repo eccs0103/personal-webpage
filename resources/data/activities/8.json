@@ -64,5 +64,16 @@
 		"platform": "Steam",
 		"timestamp": 1786483852000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/a9109d1262f0121dd2c4369a5cbbdde0b7c347bb.jpg",
+		"title": "Ten out of Ten",
+		"description": "Reach the max level in any skill.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786494271000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
