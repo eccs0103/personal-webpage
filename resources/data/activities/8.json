@@ -86,5 +86,17 @@
 		"platform": "Steam",
 		"timestamp": 1786557162000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "MUTILATOR (SLOWED) - RXDXVIL REMIX",
+		"artists": [
+			"ZMAJOR",
+			"RXDXVIL"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ef6828f5524743ac004610fa",
+		"url": "https://open.spotify.com/track/2hVRkbcl0O6OMVq3phE2cG",
+		"platform": "Spotify",
+		"timestamp": 1786613015000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
