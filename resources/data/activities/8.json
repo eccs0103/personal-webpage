@@ -98,5 +98,16 @@
 		"platform": "Spotify",
 		"timestamp": 1786613015000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/5fe10094d667c5f6da21589aad5c8ebd07f0e78b.jpg",
+		"title": "The Wandering Fool",
+		"description": "Find all the tarot graffiti for the job Fool on the Hill.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786655321000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
