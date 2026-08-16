@@ -109,5 +109,14 @@
 		"platform": "Steam",
 		"timestamp": 1786655321000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "adb571ace9a45d9a489e28ec5d696c399640d398",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1786841571000,
+		"$type": "GitHubPushActivity"
 	}
 ]
