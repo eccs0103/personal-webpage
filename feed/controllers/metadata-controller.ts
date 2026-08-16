@@ -13,7 +13,7 @@ export class MetadataController extends Controller<[readonly Platform[]]> {
 			type: "Person",
 			name: "eccs0103",
 			webpage: new URL("https://eccs.dev"),
-			preview: new URL("../icons/circuit-transparent.gif", baseURI),
+			preview: new URL("../icons/png_alpha_1024.png", baseURI),
 			associations: platforms
 				.map(platform => platform.webpage)
 				.filter(webpage => webpage !== null)
