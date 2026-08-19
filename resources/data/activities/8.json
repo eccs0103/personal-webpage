@@ -127,5 +127,16 @@
 		"platform": "GitHub",
 		"timestamp": 1787135929000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/594432b0da5af1d3cc01394cc853c04abb5baf4b.jpg",
+		"title": "Easy Come, Easy Go",
+		"description": "Steal the Arasaka medical truck or deliver 10 vehicles to El Capitan.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787170031000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
