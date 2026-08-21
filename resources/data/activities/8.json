@@ -149,5 +149,16 @@
 		"platform": "Steam",
 		"timestamp": 1787179173000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/d02f68667532c5497561799ccb2dae4692cad14d.jpg",
+		"title": "Dirty Deeds",
+		"description": "Complete every Gig in Dogtown.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787350927000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
