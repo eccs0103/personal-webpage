@@ -171,5 +171,27 @@
 		"platform": "Steam",
 		"timestamp": 1787356848000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/465200/dc6b1124fbe116c14e63b882b230237900f218ab.jpg",
+		"title": "Incredible Fury Unleashed",
+		"description": "Complete the game in Incredible game mode",
+		"url": "https://steamcommunity.com/stats/465200/achievements",
+		"game": "Fury Unleashed",
+		"webpage": "https://store.steampowered.com/app/465200",
+		"platform": "Steam",
+		"timestamp": 1787430857000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/465200/7e43f9ec1f373db80f2451f5ed98ead000923798.jpg",
+		"title": "A good start",
+		"description": "Finish a chapter with full health points without using fast travel",
+		"url": "https://steamcommunity.com/stats/465200/achievements",
+		"game": "Fury Unleashed",
+		"webpage": "https://store.steampowered.com/app/465200",
+		"platform": "Steam",
+		"timestamp": 1787431670000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
