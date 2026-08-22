@@ -160,5 +160,16 @@
 		"platform": "Steam",
 		"timestamp": 1787350927000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/ad8075ab98162f93a200fc6a8c55cccf4c8d1b1d.jpg",
+		"title": "King of Wands",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787356848000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
