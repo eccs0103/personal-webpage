@@ -193,5 +193,28 @@
 		"platform": "Steam",
 		"timestamp": 1787431670000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Добро пожаловать в мой ад",
+		"artists": [
+			"Leanje"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273d278bff151244f858c62020c",
+		"url": "https://open.spotify.com/track/4AcQF0Tvuwf1XQhfdxLM5n",
+		"platform": "Spotify",
+		"timestamp": 1787605729000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "НАЙМАН",
+		"artists": [
+			"Leanje",
+			"Drummatix"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273368eb061dc951836bb4748f7",
+		"url": "https://open.spotify.com/track/60YxD3lUsspNoWKXQbxGI5",
+		"platform": "Spotify",
+		"timestamp": 1787605739000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
