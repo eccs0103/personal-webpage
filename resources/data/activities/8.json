@@ -216,5 +216,16 @@
 		"platform": "Spotify",
 		"timestamp": 1787605739000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Трамвай",
+		"artists": [
+			"ANDREEW"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273f7876332856c82ee89a1e066",
+		"url": "https://open.spotify.com/track/3LjyY8znDkEOhlH4cwdaKy",
+		"platform": "Spotify",
+		"timestamp": 1787683008000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
