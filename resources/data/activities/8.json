@@ -227,5 +227,16 @@
 		"platform": "Spotify",
 		"timestamp": 1787683008000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Sakura",
+		"artists": [
+			"Xcho"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ae62a7289470ebd4d3c3d345",
+		"url": "https://open.spotify.com/track/2r5ttfZky6fdIo7LY3UNvl",
+		"platform": "Spotify",
+		"timestamp": 1787733722000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
