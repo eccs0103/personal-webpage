@@ -238,5 +238,16 @@
 		"platform": "Spotify",
 		"timestamp": 1787733722000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/7ae50754d5cf0c37a73c2e0d4e88410cd51dd5b9.jpg",
+		"title": "Autojock",
+		"description": "Buy all vehicles available for purchase.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1788010010000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
