@@ -249,5 +249,16 @@
 		"platform": "Steam",
 		"timestamp": 1788010010000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Take Me There",
+		"artists": [
+			"DA TI"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2731de2a89a3db47c711597f2d2",
+		"url": "https://open.spotify.com/track/5Xlm6r0hBIxe0OvtfUG9UX",
+		"platform": "Spotify",
+		"timestamp": 1788105087000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
