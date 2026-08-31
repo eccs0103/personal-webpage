@@ -260,5 +260,16 @@
 		"platform": "Spotify",
 		"timestamp": 1788105087000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1649240/cde8a1784b16dd8e9d4caf4b4ccaff48c31b8f05.jpg",
+		"title": "Eyes Closed",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1788206026000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
