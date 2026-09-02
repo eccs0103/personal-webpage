@@ -273,11 +273,11 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"file_name": "34.jpg",
+		"file_name": "36.jpg",
 		"media_type": "photo",
 		"content": null,
 		"channel_id": -1003471238866,
-		"message_id": 34,
+		"message_id": 36,
 		"platform": "Telegram",
 		"timestamp": 1788295885000,
 		"$type": "TelegramMediaPostActivity"
@@ -293,11 +293,11 @@
 		"$type": "TelegramMediaPostActivity"
 	},
 	{
-		"file_name": "36.jpg",
+		"file_name": "34.jpg",
 		"media_type": "photo",
 		"content": null,
 		"channel_id": -1003471238866,
-		"message_id": 36,
+		"message_id": 34,
 		"platform": "Telegram",
 		"timestamp": 1788295885000,
 		"$type": "TelegramMediaPostActivity"
