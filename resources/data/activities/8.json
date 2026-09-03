@@ -323,5 +323,17 @@
 		"platform": "Steam",
 		"timestamp": 1788457465000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Lamia",
+		"artists": [
+			"Carpö",
+			"idreamu"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2732ce8875813535e7ff74980d2",
+		"url": "https://open.spotify.com/track/1A1cXD7bOBUOiwWEZPPxWI",
+		"platform": "Spotify",
+		"timestamp": 1788472436000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
