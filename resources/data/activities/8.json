@@ -312,5 +312,16 @@
 		"platform": "Spotify",
 		"timestamp": 1788447927000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1649240/942a0a82a8aa47a92769bf2ebb83410f841fd9f3.jpg",
+		"title": "Past the Ruins",
+		"description": "Finish Overgrown Ruins Survey",
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1788457465000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
