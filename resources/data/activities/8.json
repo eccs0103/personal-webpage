@@ -301,5 +301,16 @@
 		"platform": "Telegram",
 		"timestamp": 1788295885000,
 		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"title": "Pulse Runner",
+		"artists": [
+			"Helmut Schenker"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273e8a121f526d840797f25a0b6",
+		"url": "https://open.spotify.com/track/7qqY3MgFUHc8mL3Qajha2a",
+		"platform": "Spotify",
+		"timestamp": 1788447927000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
