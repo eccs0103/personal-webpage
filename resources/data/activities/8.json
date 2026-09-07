@@ -344,5 +344,82 @@
 		"platform": "GitHub",
 		"timestamp": 1788788908000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/6dd241ec65b3f2b01f98b522d4654dee4d049b73.jpg",
+		"title": "Getting started",
+		"description": "Kill your first creature",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788802572000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/b2d534bef56baa1529465cdf37f06a0c8e5b2ad8.jpg",
+		"title": "Drip",
+		"description": "Kill a drip creature",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788802629000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/fe3f2fff4b264155ff6433c2cbdeef6462454979.jpg",
+		"title": "Who stole my beer",
+		"description": "Find and kill the culprit, and bring it to the lighthouse keeper",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788803750000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/f4237c00b430233fd4cdbca4350dc37a07fc82ba.jpg",
+		"title": "Getting an upgrade",
+		"description": "Upgrade the engine on the boat",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788805592000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/5e68e833d65a5892b8a75e42a4d4e3dfc4fe991a.jpg",
+		"title": "Impressive",
+		"description": "Get a 5x killscore multiplier",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788810362000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/b6595a889f04c3b8c639cf9ebe54d2841ecc822e.jpg",
+		"title": "Let me go",
+		"description": "Get picked up by a seagull",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788810362000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/a55985a010ece627f4dff09393720b4c4e79d369.jpg",
+		"title": "360 no scope",
+		"description": "Kill a creature with a 360 no scope",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788811014000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
