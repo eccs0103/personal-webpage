@@ -390,9 +390,9 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/5e68e833d65a5892b8a75e42a4d4e3dfc4fe991a.jpg",
-		"title": "Impressive",
-		"description": "Get a 5x killscore multiplier",
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/b6595a889f04c3b8c639cf9ebe54d2841ecc822e.jpg",
+		"title": "Let me go",
+		"description": "Get picked up by a seagull",
 		"url": "https://steamcommunity.com/stats/4001890/achievements",
 		"game": "How to Fish",
 		"webpage": "https://store.steampowered.com/app/4001890",
@@ -401,9 +401,9 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/b6595a889f04c3b8c639cf9ebe54d2841ecc822e.jpg",
-		"title": "Let me go",
-		"description": "Get picked up by a seagull",
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4001890/5e68e833d65a5892b8a75e42a4d4e3dfc4fe991a.jpg",
+		"title": "Impressive",
+		"description": "Get a 5x killscore multiplier",
 		"url": "https://steamcommunity.com/stats/4001890/achievements",
 		"game": "How to Fish",
 		"webpage": "https://store.steampowered.com/app/4001890",
