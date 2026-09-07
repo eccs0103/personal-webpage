@@ -6,6 +6,8 @@ import { ActivityWalker } from "./activity-walker.js";
 import { GitHubCreateEventPayload, GitHubDeleteEventPayload, GitHubEvent, GitHubForkEventPayload, GitHubIssuesEventPayload, GitHubPullRequestEventPayload, GitHubPushEventPayload, GitHubReleaseEventPayload, GitHubWatchEventPayload } from "../models/github-event.js";
 import { Activity, GitHubCreateBranchActivity, GitHubCreateRepositoryActivity, GitHubCreateTagActivity, GitHubDeleteBranchActivity, GitHubDeleteTagActivity, GitHubForkActivity, GitHubIssueCloseActivity, GitHubIssueOpenActivity, GitHubPullRequestCloseActivity, GitHubPullRequestMergeActivity, GitHubPullRequestOpenActivity, GitHubPushActivity, GitHubReleaseActivity, GitHubWatchActivity } from "../models/activity.js";
 
+const { min } = Math;
+
 //#region GitHub event source
 class GitHubEventSource extends ActivitySource<GitHubEvent, unknown> {
 	#username: string;
@@ -33,8 +35,9 @@ class GitHubEventSource extends ActivitySource<GitHubEvent, unknown> {
 
 	async *fetch(): AsyncIterable<unknown> {
 		const chunk = 100;
+		const pages = 3; // the timeline caps at 300 events; page 4 fails with 422
 		let page = 1;
-		while (true) {
+		while (page <= pages) {
 			let count = 0;
 			for await (const item of this.#fetchPaginated(page, chunk)) {
 				count++;
@@ -137,11 +140,9 @@ export class GitHubWalker extends ActivityWalker {
 	}
 
 	floor(since: Date, buffer: readonly Activity[]): Date {
-		if (buffer.length > 0) {
-			const oldest = buffer.reduce((min, current) => current.timestamp < min ? current.timestamp : min, new Date(8640_000_000_000_000));
-			if (oldest > since) return oldest;
-		}
-		return since;
+		const start = (Date.now() - 2_592_000_000).clamp(since.valueOf(), Infinity);
+		const oldest = buffer.reduce((result, activity) => min(result, activity.timestamp.valueOf()), start);
+		return new Date(oldest.clamp(since.valueOf(), Infinity));
 	}
 }
 //#endregion
