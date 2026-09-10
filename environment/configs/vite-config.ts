@@ -106,10 +106,12 @@ export class ViteConfig {
 	}
 
 	#buildServer(): ServerOptions {
-		const open: boolean = true;
+		const [entry] = Object.keys(this.#normalizeInputs());
+		const open: string | boolean = entry === undefined ? true : (entry === "main" ? "/" : `/${entry}/`);
 		const strictPort: boolean = true;
 		const headers: Readonly<OutgoingHttpHeaders> = this.#headers;
-		return { open, strictPort, headers };
+		const preTransformRequests: boolean = false;
+		return { open, strictPort, headers, preTransformRequests };
 	}
 
 	#buildESBuild(): ESBuildOptions {
