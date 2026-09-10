@@ -18,7 +18,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1605250/05ff7e765a0c55d4ace7f21f1d0155aff866b59f.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/05ff7e765a0c55d4ace7f21f1d0155aff866b59f.jpg",
 		"title": "Fully Charged",
 		"description": "Unlock all bioboost upgrades.",
 		"url": "https://steamcommunity.com/stats/1605250/achievements",
@@ -29,7 +29,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/f255023acd2636c5c32c0ca57546587662e76bc7.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/f255023acd2636c5c32c0ca57546587662e76bc7.jpg",
 		"title": "And He Wandered the Earth",
 		"description": "Complete the prologue on any difficulty.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -40,7 +40,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/e93de03c02bdfcb2c370302b5e389b619a8b244c.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/e93de03c02bdfcb2c370302b5e389b619a8b244c.jpg",
 		"title": "Carnival Trickster",
 		"description": "Win at all carnival games.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -51,7 +51,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/f29b7d62df7e1da6edbb124e97f3fbbe11b567f5.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/f29b7d62df7e1da6edbb124e97f3fbbe11b567f5.jpg",
 		"title": "Forbidden Love",
 		"description": "Complete chapter I on any difficulty.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -98,7 +98,7 @@
 		"$type": "GitHubDeleteBranchActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/e133c94ae84ed2e36791969998a6022b0c716759.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/e133c94ae84ed2e36791969998a6022b0c716759.jpg",
 		"title": "Ironclad",
 		"description": "Fully upgrade a weapon.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -109,7 +109,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/f37b2f93d9976caf00a6380920c5669c6a1cef66.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/f37b2f93d9976caf00a6380920c5669c6a1cef66.jpg",
 		"title": "Idol of the Century",
 		"description": "Defeat 100 enemies.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -156,7 +156,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/6e716f2bd341820292a728278dca43a3443fe823.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/6e716f2bd341820292a728278dca43a3443fe823.jpg",
 		"title": "The Promised Prince",
 		"description": "Complete chapter II on any difficulty.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -167,7 +167,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/33f0d72d54dd64817ce603f7aa66a2ce8989e425.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/33f0d72d54dd64817ce603f7aa66a2ce8989e425.jpg",
 		"title": "Phlebotomist",
 		"description": "Fully upgrade the syringe satchel.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -178,7 +178,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/6a9014a7962096578041f80d1c3a2b5bea1a1533.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/6a9014a7962096578041f80d1c3a2b5bea1a1533.jpg",
 		"title": "Monstro's Tooth",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -189,7 +189,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/b3cb8d0f97ba33ddf1502768485fc7651b7ecfa0.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/b3cb8d0f97ba33ddf1502768485fc7651b7ecfa0.jpg",
 		"title": "Lucky Rock",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -200,7 +200,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/33db595bc7f4ea2ce26977c3aa0b29e36f70b486.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/33db595bc7f4ea2ce26977c3aa0b29e36f70b486.jpg",
 		"title": "Lil' Chubby",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -211,7 +211,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/bc4f54b85bcfc4579926eee659fe2ee195fe9180.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/bc4f54b85bcfc4579926eee659fe2ee195fe9180.jpg",
 		"title": "Butter Bean",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -512,7 +512,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/057bb55a43a48881c6b7e13f0f05236d6e64ff4b.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/057bb55a43a48881c6b7e13f0f05236d6e64ff4b.jpg",
 		"title": "The Cellar",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -541,7 +541,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/303b7d93465c0565d430a6b68a9147f4fd7919b4.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/303b7d93465c0565d430a6b68a9147f4fd7919b4.jpg",
 		"title": "Blue Map",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -552,7 +552,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/fe25808e41be017139e4d59e852d52051438080f.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fe25808e41be017139e4d59e852d52051438080f.jpg",
 		"title": "The Book of Revelations",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -563,7 +563,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/0c0450a2df1b58545aa2692f022e90117efc7605.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/0c0450a2df1b58545aa2692f022e90117efc7605.jpg",
 		"title": "Store Upgrade lv.1",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -574,7 +574,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/1c92620430a9c60e23a5af7ceb6abb65496b73de.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/1c92620430a9c60e23a5af7ceb6abb65496b73de.jpg",
 		"title": "There's Options",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -585,7 +585,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/47d74091518d6d2e973192014482d69b99b3dabc.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/47d74091518d6d2e973192014482d69b99b3dabc.jpg",
 		"title": "Schoolbag",
 		"description": "Unlocked a new item.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -605,7 +605,7 @@
 		"$type": "GitHubCreateBranchActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/5044c678bf8cc1cb0ef79f1fb9ea505d5b71b7c9.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/5044c678bf8cc1cb0ef79f1fb9ea505d5b71b7c9.jpg",
 		"title": "Thanks for Your Donation",
 		"description": "Collect 30000 coins.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -616,7 +616,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/a4d5d8d41c6a829d79c66d230f920bca05033cbf.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/a4d5d8d41c6a829d79c66d230f920bca05033cbf.jpg",
 		"title": "Dyna-mighty",
 		"description": "Detonate a stick of dynamite from an Astillado.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -783,7 +783,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/d022fe953c111c3d76fa52fed23c3c2cef81a21a.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/d022fe953c111c3d76fa52fed23c3c2cef81a21a.jpg",
 		"title": "Chipped Away",
 		"description": "Defeat an enemy with the knife.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -794,7 +794,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/7a4f20750cb661847cf5ae2872957ca4aabeba55.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/7a4f20750cb661847cf5ae2872957ca4aabeba55.jpg",
 		"title": "Feeling Clucky, Punk?",
 		"description": "Absorb 30 chickens.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -805,7 +805,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/670a16815838378142f8df786b1d6256a4734c7b.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/670a16815838378142f8df786b1d6256a4734c7b.jpg",
 		"title": "Two for One",
 		"description": "Defeat two enemies with one shot.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -816,7 +816,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/75ed51b33ff7c7ae4d1a3bea7ffbe8f00cdbe7d6.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/75ed51b33ff7c7ae4d1a3bea7ffbe8f00cdbe7d6.jpg",
 		"title": "So Vein",
 		"description": "Fully upgrade your health.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -827,7 +827,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/dbd9f632df76ab9b83c9ebc231785777aeb5d72b.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/dbd9f632df76ab9b83c9ebc231785777aeb5d72b.jpg",
 		"title": "Hopeless Melomaniac",
 		"description": "Find all vinyl records.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -838,7 +838,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/61d321a59c9d28acb44b90c471f2fe9fbcbac098.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/61d321a59c9d28acb44b90c471f2fe9fbcbac098.jpg",
 		"title": "Bookworm",
 		"description": "Find all pages of The Maremanto.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -849,7 +849,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/e3b9c9977b60e790b771525d42d35e3e764149b0.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/e3b9c9977b60e790b771525d42d35e3e764149b0.jpg",
 		"title": "Into the Abyss",
 		"description": "Complete chapter III on any difficulty.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -860,7 +860,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/73f571e5879e747f90d61a21e97a3309e86853bb.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/73f571e5879e747f90d61a21e97a3309e86853bb.jpg",
 		"title": "Army of One",
 		"description": "Find all weapons.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -871,7 +871,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/7c1a9ab3a9b7a24681ba24bb9bdddcd98281a711.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/7c1a9ab3a9b7a24681ba24bb9bdddcd98281a711.jpg",
 		"title": "Warlord",
 		"description": "Fully upgrade all weapons.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -882,7 +882,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/c2616c156fa2d2d09cc52978d30dcc547db792a7.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/c2616c156fa2d2d09cc52978d30dcc547db792a7.jpg",
 		"title": "Sanguinomancer",
 		"description": "Unlock all skills.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",
@@ -893,7 +893,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1790930/6c3824c0065357f7a3ba57211b1d1341d5452e44.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/6c3824c0065357f7a3ba57211b1d1341d5452e44.jpg",
 		"title": "A New Dawn",
 		"description": "Complete the final chapter on any difficulty.",
 		"url": "https://steamcommunity.com/stats/1790930/achievements",

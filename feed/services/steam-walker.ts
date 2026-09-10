@@ -27,6 +27,8 @@ class SteamUnlock {
 
 //#region Steam unlock source
 class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
+	static #legacyImagesHost = "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/";
+	static #currentImagesHost = "https://shared.akamai.steamstatic.com/community_assets/images/";
 	#id: string;
 	#apiKey: string;
 	#games: Map<number, string>;
@@ -107,8 +109,8 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 				if (achievement.achieved !== 1) continue;
 				const schema = mapping.get(achievement.apiName);
 				const icon =
-					schema?.icon ??
-					Optional.map(imgIconUrl, url => `http://media.steampowered.com/steamcommunity/public/images/apps/${appId}/${url}.jpg`) ??
+					Optional.map(schema?.icon, url => url.replace(SteamUnlockSource.#legacyImagesHost, SteamUnlockSource.#currentImagesHost)) ??
+					Optional.map(imgIconUrl, url => `https://media.steampowered.com/steamcommunity/public/images/apps/${appId}/${url}.jpg`) ??
 					null;
 				yield new SteamUnlock(appId, name, achievement, schema, icon);
 			}

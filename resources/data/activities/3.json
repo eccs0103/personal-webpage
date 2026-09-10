@@ -9,7 +9,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/739630/7d3bac94dbdaa8e05388b43bb3f58bc0a1e12d90.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/7d3bac94dbdaa8e05388b43bb3f58bc0a1e12d90.jpg",
 		"title": "Devoted",
 		"description": "Complete 10 weekly tasks",
 		"url": "https://steamcommunity.com/stats/739630/achievements",
@@ -20,7 +20,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/739630/9282b51b3ffac2fbdcdf9c43e53d22097d380280.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/9282b51b3ffac2fbdcdf9c43e53d22097d380280.jpg",
 		"title": "Fully Loaded",
 		"description": "Unlock all tier three equipment",
 		"url": "https://steamcommunity.com/stats/739630/achievements",
@@ -88,7 +88,7 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/739630/b8ee65cd65aaa641b46c4088a21eed493af5ca38.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/b8ee65cd65aaa641b46c4088a21eed493af5ca38.jpg",
 		"title": "Flawless Execution",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/739630/achievements",
@@ -99,7 +99,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/68e9258c0f0cb997bd884af741f411766d551e78.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/68e9258c0f0cb997bd884af741f411766d551e78.jpg",
 		"title": "Don't Be A Stranger",
 		"description": "Return for a chat with the Clapstructor.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -110,7 +110,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/82fa77fef53472e2caf2202d0001640b22e914b9.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/82fa77fef53472e2caf2202d0001640b22e914b9.jpg",
 		"title": "Killer Look",
 		"description": "Complete the Mayor's outfit.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -121,7 +121,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/900eca253336b33e887b0bc32b41eb0f9f19a3b5.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/900eca253336b33e887b0bc32b41eb0f9f19a3b5.jpg",
 		"title": "Firebug",
 		"description": "Sabotage all statues for Ember.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -132,7 +132,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/23391d4380dfccd36844d5752c5f68cba032303f.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/23391d4380dfccd36844d5752c5f68cba032303f.jpg",
 		"title": "Scovillain",
 		"description": "Destroy all of Mr. Torgue's hot sauces.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -143,7 +143,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/1f9d1aec84f40a513fa95e509595eeaf7102e9e5.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/1f9d1aec84f40a513fa95e509595eeaf7102e9e5.jpg",
 		"title": "A Proper Hand-Off",
 		"description": "Complete mission “All Bets Off”.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -154,7 +154,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/96b9d0c95bc80867a61a2870c6ddec9ab424f728.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/96b9d0c95bc80867a61a2870c6ddec9ab424f728.jpg",
 		"title": "Gun Fu",
 		"description": "Kill or incapacitate 3 enemies in quick succession with a revolver or pistol in close combat.",
 		"url": "https://steamcommunity.com/stats/1091500/achievements",
@@ -314,7 +314,7 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/90bae5373363a400fcffe70c90fe6287fa5d36fd.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/90bae5373363a400fcffe70c90fe6287fa5d36fd.jpg",
 		"title": "Complex Made Simple",
 		"description": "Explore the entire Stormblind Complex.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -363,7 +363,7 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/e8514a5937752659d35232adc13f7ed011b7f2c2.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/e8514a5937752659d35232adc13f7ed011b7f2c2.jpg",
 		"title": "Stone Cold Killer",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -887,7 +887,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/91c491962e4c1f3844150b524627e12e169e8ad8.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/91c491962e4c1f3844150b524627e12e169e8ad8.jpg",
 		"title": "A Hundred Names For Sand",
 		"description": "Discover all named locations on Pandora.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -898,7 +898,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/f3fffe1e954909547a3b072ac1a60c4aac4815f7.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/f3fffe1e954909547a3b072ac1a60c4aac4815f7.jpg",
 		"title": "City Slicker",
 		"description": "Discover all named locations on Promethea.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -909,7 +909,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/5babbe20a009073ea29d7c001a9589aa96d43358.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/5babbe20a009073ea29d7c001a9589aa96d43358.jpg",
 		"title": "Master Of All You Survey",
 		"description": "Discover all named locations.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -920,7 +920,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/0243d0bec6a4ed99670b2cf5fc29de4b39d3b625.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/0243d0bec6a4ed99670b2cf5fc29de4b39d3b625.jpg",
 		"title": "Ye Who Enter",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -931,7 +931,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/f12dfd30c418b9f22ecbeaea88b7fb41947c5471.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/f12dfd30c418b9f22ecbeaea88b7fb41947c5471.jpg",
 		"title": "Who Collects The Collector?",
 		"description": "Defeat the wandering Debt Collector.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -942,7 +942,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/d95dcdab2f99033b769175db94392a19d124aa39.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/d95dcdab2f99033b769175db94392a19d124aa39.jpg",
 		"title": "Slaughterhouse 3",
 		"description": "Complete all the Circles of Slaughter.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",
@@ -953,7 +953,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/397540/6093cc3f69497239090da29be67d5c4a344ebf69.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/6093cc3f69497239090da29be67d5c4a344ebf69.jpg",
 		"title": "Getting A Little On The Side",
 		"description": "Complete all Side Missions.",
 		"url": "https://steamcommunity.com/stats/397540/achievements",

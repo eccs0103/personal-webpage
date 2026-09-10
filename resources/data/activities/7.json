@@ -108,7 +108,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/26d6c25c2ca7e5877b26347fc05f5eb2dd504bbf.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/26d6c25c2ca7e5877b26347fc05f5eb2dd504bbf.jpg",
 		"title": "Two Heads, One Bullet",
 		"description": "Kill or incapacitate 2 enemies with the same sniper rifle shot.",
 		"url": "https://steamcommunity.com/stats/1091500/achievements",
@@ -265,7 +265,7 @@
 		"$type": "GitHubDeleteBranchActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/42d64a86bb4d50c2574612892ccdde465a020a54.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/42d64a86bb4d50c2574612892ccdde465a020a54.jpg",
 		"title": "Equipped",
 		"description": "Acquire your first Tool",
 		"url": "https://steamcommunity.com/stats/1030300/achievements",
@@ -276,7 +276,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/a34b4da6c1652ec31603b82de0e983173917b2ad.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/a34b4da6c1652ec31603b82de0e983173917b2ad.jpg",
 		"title": "Bound",
 		"description": "Bind your first Silk Skill",
 		"url": "https://steamcommunity.com/stats/1030300/achievements",
@@ -287,7 +287,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/a3806725642c2918243b8db87d3e99a49e1f16e4.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/a3806725642c2918243b8db87d3e99a49e1f16e4.jpg",
 		"title": "Liberated",
 		"description": "Defeat the Bell Beast",
 		"url": "https://steamcommunity.com/stats/1030300/achievements",
@@ -298,7 +298,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/4cae086731038d810d9df5af8977a24b4dc87a44.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/4cae086731038d810d9df5af8977a24b4dc87a44.jpg",
 		"title": "Granted",
 		"description": "Grant your first wish",
 		"url": "https://steamcommunity.com/stats/1030300/achievements",
@@ -309,7 +309,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/739630/905525e54d5e41dfcb58458aaa7161fd7efd3ec0.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/905525e54d5e41dfcb58458aaa7161fd7efd3ec0.jpg",
 		"title": "Escape Artist",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/739630/achievements",
@@ -468,7 +468,7 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1328350/4ec3c928728e74479e25f398a1464c1f9ec7e98c.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/4ec3c928728e74479e25f398a1464c1f9ec7e98c.jpg",
 		"title": "First Blood",
 		"description": "Complete Syn",
 		"url": "https://steamcommunity.com/stats/1328350/achievements",
@@ -479,7 +479,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1328350/4d02daad363822268cfbff85315e03ccbafbc11d.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/4d02daad363822268cfbff85315e03ccbafbc11d.jpg",
 		"title": "Point Break",
 		"description": "Complete Emergence",
 		"url": "https://steamcommunity.com/stats/1328350/achievements",
@@ -490,7 +490,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1328350/1c05b09f0df6c475191f47f97e748b38d648f5a1.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/1c05b09f0df6c475191f47f97e748b38d648f5a1.jpg",
 		"title": "Overqualified",
 		"description": "Get denied entry to the No Chainsaws club in Battle Alley",
 		"url": "https://steamcommunity.com/stats/1328350/achievements",
@@ -591,7 +591,7 @@
 		"$type": "SteamScreenshotActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/3851723da35a65dae364366513aaa32297ccb537.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/3851723da35a65dae364366513aaa32297ccb537.jpg",
 		"title": "Pharloom's Welcome",
 		"description": "Defeat Lace in Deep Docks",
 		"url": "https://steamcommunity.com/stats/1030300/achievements",
@@ -602,7 +602,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/62d9be89e0362b89d4e63632cb00c4584970c098.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/62d9be89e0362b89d4e63632cb00c4584970c098.jpg",
 		"title": "Servant",
 		"description": "Defeat Fourth Chorus",
 		"url": "https://steamcommunity.com/stats/1030300/achievements",
@@ -613,7 +613,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/1f05279f8a7d3d1049eacbfb7268bb9b4d3b7c3e.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/1f05279f8a7d3d1049eacbfb7268bb9b4d3b7c3e.jpg",
 		"title": "Mystery Gift",
 		"description": "Unlocked a new item.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -624,7 +624,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/1f2ff88107aa3741580f91b488c2fc67833d047b.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/1f2ff88107aa3741580f91b488c2fc67833d047b.jpg",
 		"title": "Store Upgrade lv.2",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -690,7 +690,7 @@
 		"$type": "SpotifyLikeActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/33658122e504ae8670bbb70686468e1276902cc4.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/33658122e504ae8670bbb70686468e1276902cc4.jpg",
 		"title": "Cain",
 		"description": "Unlocked a new character.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -701,7 +701,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/e749ab8fc708ab598b11571920c2e52a2e61ba1a.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/e749ab8fc708ab598b11571920c2e52a2e61ba1a.jpg",
 		"title": "Mr. Me",
 		"description": "Unlocked a new item.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -712,7 +712,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/788e3081f9edf9831738909b9d32f835e0b75658.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/788e3081f9edf9831738909b9d32f835e0b75658.jpg",
 		"title": "Lazarus",
 		"description": "Unlocked a new character.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -723,7 +723,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/b96deadca693e784c022a144f0b70cda7ae0d6eb.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/b96deadca693e784c022a144f0b70cda7ae0d6eb.jpg",
 		"title": "Black Candle",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -734,7 +734,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/7cf9ed17886990cab4677d9fbcca2701b74e2d80.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/7cf9ed17886990cab4677d9fbcca2701b74e2d80.jpg",
 		"title": "Wooden Cross",
 		"description": "Unlocked a new item.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -745,7 +745,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1328350/2a348a823b62a50bc715edcdcc31e48fbfc9a8b1.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/2a348a823b62a50bc715edcdcc31e48fbfc9a8b1.jpg",
 		"title": "Hard Boiled",
 		"description": "Complete Battle Alley",
 		"url": "https://steamcommunity.com/stats/1328350/achievements",
@@ -756,7 +756,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1091500/d1e79618b612be87bff4f5c70b1e825e37b05540.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/d1e79618b612be87bff4f5c70b1e825e37b05540.jpg",
 		"title": "The Hermit",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/1091500/achievements",
@@ -848,7 +848,7 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/1723ef9d3b9fbd255722021d11d61c6094c8a34f.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/1723ef9d3b9fbd255722021d11d61c6094c8a34f.jpg",
 		"title": "Store Upgrade lv.3",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -859,7 +859,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/2bfa98175a0ea9a1258a67f19b06f4e5476625c3.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/2bfa98175a0ea9a1258a67f19b06f4e5476625c3.jpg",
 		"title": "The Catacombs",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -870,7 +870,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/be9b9b5460cecea8cd08966011993a94f6009f28.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/be9b9b5460cecea8cd08966011993a94f6009f28.jpg",
 		"title": "The Womb",
 		"description": "Chapter 4 - The Womb unlocked.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -881,7 +881,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/22fb2aaff6a35cfec03f7d2dd694bb5fb8770dbd.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/22fb2aaff6a35cfec03f7d2dd694bb5fb8770dbd.jpg",
 		"title": "The Harbingers",
 		"description": "The horsemen are loose.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -892,7 +892,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/284bc31a579615dcf933215379f81ea011f9cd68.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/284bc31a579615dcf933215379f81ea011f9cd68.jpg",
 		"title": "A Cube of Meat",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -903,7 +903,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/a600f71a773cfa7997b7a25fd69ae7173f8b78e0.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/a600f71a773cfa7997b7a25fd69ae7173f8b78e0.jpg",
 		"title": "Purist",
 		"description": null,
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -914,7 +914,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/2699055e6489ae9610e497b22c995a107b4bfdca.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/2699055e6489ae9610e497b22c995a107b4bfdca.jpg",
 		"title": "XXXXXXXXL",
 		"description": "Unlocked Challenge #21.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -925,7 +925,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/a939a08d886ae7a70023872b8c61ef4acc442ee9.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/a939a08d886ae7a70023872b8c61ef4acc442ee9.jpg",
 		"title": "SPEED!",
 		"description": "Unlocked Challenge #22.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -936,7 +936,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/497cd1a50f5854e43acd6cea4ea904546e46ecbd.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/497cd1a50f5854e43acd6cea4ea904546e46ecbd.jpg",
 		"title": "Have a heart",
 		"description": "Unlocked Challenge #25.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -947,7 +947,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/b9f18bafa9040efa9af8bdd5e0a6661f78abdafc.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/b9f18bafa9040efa9af8bdd5e0a6661f78abdafc.jpg",
 		"title": "PRIDE DAY!",
 		"description": "Unlocked Challenge #28.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -958,7 +958,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/9fab42d65109bee39315741f1d4bfad79300d005.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/9fab42d65109bee39315741f1d4bfad79300d005.jpg",
 		"title": "The Guardian",
 		"description": "Unlocked Challenge #30.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
@@ -969,7 +969,7 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/3aed041e7c8584ae31b35b0a41ddaf9550dda1ce.jpg",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/3aed041e7c8584ae31b35b0a41ddaf9550dda1ce.jpg",
 		"title": "Aprils fool",
 		"description": "Unlocked a new challenge.",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
