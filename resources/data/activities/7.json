@@ -1,5 +1,14 @@
 [
 	{
+		"sha": "5437f619af7775f6d9fce68aef1be2f2ae82f070",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1785327887000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "5a80bdd67475325256a33931880b5fe5fe538b1f",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/shortcuts",
@@ -963,17 +972,6 @@
 		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/3aed041e7c8584ae31b35b0a41ddaf9550dda1ce.jpg",
 		"title": "Aprils fool",
 		"description": "Unlocked a new challenge.",
-		"url": "https://steamcommunity.com/stats/250900/achievements",
-		"game": "The Binding of Isaac: Rebirth",
-		"webpage": "https://store.steampowered.com/app/250900",
-		"platform": "Steam",
-		"timestamp": 1786309950000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/285579eddf1dd9c100eb0469cfab62fc9b65c40a.jpg",
-		"title": "Item Descriptions",
-		"description": "Read Up!",
 		"url": "https://steamcommunity.com/stats/250900/achievements",
 		"game": "The Binding of Isaac: Rebirth",
 		"webpage": "https://store.steampowered.com/app/250900",

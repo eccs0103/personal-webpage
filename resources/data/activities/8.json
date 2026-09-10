@@ -1,5 +1,16 @@
 [
 	{
+		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/250900/285579eddf1dd9c100eb0469cfab62fc9b65c40a.jpg",
+		"title": "Item Descriptions",
+		"description": "Read Up!",
+		"url": "https://steamcommunity.com/stats/250900/achievements",
+		"game": "The Binding of Isaac: Rebirth",
+		"webpage": "https://store.steampowered.com/app/250900",
+		"platform": "Steam",
+		"timestamp": 1786309950000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
 		"icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1030300/27d60711d57bc5e263ba787f731be7fc5d8b17c7.jpg",
 		"title": "Fanatic",
 		"description": "Defeat Widow",
@@ -470,6 +481,15 @@
 		"$type": "GitHubCreateBranchActivity"
 	},
 	{
+		"name": "application-fixes",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789030873000,
+		"$type": "GitHubDeleteBranchActivity"
+	},
+	{
 		"name": "telegram-theme-converter",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -477,5 +497,41 @@
 		"platform": "GitHub",
 		"timestamp": 1789032214000,
 		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"name": "birthday-notifications",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789032320000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "0dbd3075f945c1c0a087e9850f83cec5246a569c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1789040145000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "60fa1cc462a32d5bc90d91e77df6aad4bc62e43c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789042461000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5651eb9704fd1991b43f501065a24073f568d163",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789042473000,
+		"$type": "GitHubPushActivity"
 	}
 ]
