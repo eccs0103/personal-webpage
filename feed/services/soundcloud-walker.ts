@@ -5,26 +5,24 @@ import { Nullable } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker, AuthorizationExpiredError } from "./activity-walker.js";
 import { SoundCloudTokenStore } from "./soundcloud-token-store.js";
-import { SoundCloudToken, SoundCloudTokenError, SoundCloudTrack, SoundCloudTrackCollection, SoundCloudUser } from "../models/soundcloud-event.js";
+import { SoundCloudPage, SoundCloudToken, SoundCloudTokenError, SoundCloudTrack, SoundCloudUser } from "../models/soundcloud-event.js";
 import { Activity, SoundCloudLikeActivity, SoundCloudUploadActivity } from "../models/activity.js";
 
 const meta = import.meta;
 
-//#region SoundCloud track source
-class SoundCloudTrackSource extends ActivitySource<SoundCloudTrack, SoundCloudTrack> {
+//#region SoundCloud page source
+class SoundCloudPageSource<TEvent> extends ActivitySource<TEvent, unknown> {
 	#token: SoundCloudToken;
-	#id: number;
-	#path: string;
+	#url: Readonly<URL>;
 
-	constructor(platform: string, token: SoundCloudToken, id: number, path: string) {
+	constructor(platform: string, token: SoundCloudToken, url: Readonly<URL>) {
 		super(platform);
-		if (new.target === SoundCloudTrackSource) throw new TypeError("Unable to create an instance of an abstract class");
+		if (new.target === SoundCloudPageSource) throw new TypeError("Unable to create an instance of an abstract class");
 		this.#token = token;
-		this.#id = id;
-		this.#path = path;
+		this.#url = url;
 	}
 
-	async *#fetchPaginated(url: URL, count: number): AsyncIterable<SoundCloudTrack> {
+	async *#fetchPaginated(url: Readonly<URL>, count: number): AsyncIterable<unknown> {
 		let next: URL | null = new URL(url);
 		next.searchParams.set("linked_partitioning", "true");
 		next.searchParams.set("limit", String(count));
@@ -34,20 +32,27 @@ class SoundCloudTrackSource extends ActivitySource<SoundCloudTrack, SoundCloudTr
 		while (next !== null) {
 			const response = await fetch(next, { headers });
 			if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
-			const page = SoundCloudTrackCollection.import(await response.json(), "soundcloud_track_collection");
+			const page = SoundCloudPage.import(await response.json(), "soundcloud_page");
 			yield* page.collection;
 			next = Nullable.map(page.nextHref, href => new URL(href));
 		}
 	}
 
-	async *fetch(): AsyncIterable<SoundCloudTrack> {
-		const url = new URL(`https://api.soundcloud.com/users/${this.#id}/${this.#path}`);
-		yield* this.#fetchPaginated(url, 50);
+	async *fetch(): AsyncIterable<unknown> {
+		yield* this.#fetchPaginated(this.#url, 50);
+	}
+}
+//#endregion
+
+//#region SoundCloud track source
+class SoundCloudTrackSource extends SoundCloudPageSource<SoundCloudTrack> {
+	constructor(platform: string, token: SoundCloudToken, url: Readonly<URL>) {
+		super(platform, token, url);
+		if (new.target === SoundCloudTrackSource) throw new TypeError("Unable to create an instance of an abstract class");
 	}
 
-	parse(source: SoundCloudTrack, name: string): SoundCloudTrack {
-		void name;
-		return source;
+	parse(source: unknown, name: string): SoundCloudTrack {
+		return SoundCloudTrack.import(source, name);
 	}
 
 	stamp(event: SoundCloudTrack): Date {
@@ -58,6 +63,10 @@ class SoundCloudTrackSource extends ActivitySource<SoundCloudTrack, SoundCloudTr
 
 //#region SoundCloud upload source
 class SoundCloudUploadSource extends SoundCloudTrackSource {
+	constructor(platform: string, token: SoundCloudToken, id: number) {
+		super(platform, token, new URL(`https://api.soundcloud.com/users/${id}/tracks`));
+	}
+
 	*map(event: SoundCloudTrack): Iterable<Activity> {
 		const { title, permalinkUrl: url, artworkUrl: artwork, createdAt: timestamp, user: { username: publisher, avatarUrl: avatar } } = event;
 		yield new SoundCloudUploadActivity(this.platform, timestamp, title, publisher, artwork, avatar, url);
@@ -67,6 +76,15 @@ class SoundCloudUploadSource extends SoundCloudTrackSource {
 
 //#region SoundCloud like source
 class SoundCloudLikeSource extends SoundCloudTrackSource {
+	constructor(platform: string, token: SoundCloudToken, id: number) {
+		super(platform, token, new URL(`https://api.soundcloud.com/users/${id}/likes/tracks`));
+	}
+
+	// ponytail: stamped by the track's upload date, not the like date — api-v2's track_likes endpoint carries
+	// the real like timestamp but rejects this app's OAuth token (403 under Bearer, OAuth, and client_id auth).
+	// Revisit if SoundCloud grants api-v2 access; until then this can only skip stale items, not sort by like time.
+	get sorted(): boolean { return false; }
+
 	*map(event: SoundCloudTrack): Iterable<Activity> {
 		const { title, permalinkUrl: url, artworkUrl: artwork, createdAt: timestamp, user: { username: publisher, avatarUrl: avatar } } = event;
 		yield new SoundCloudLikeActivity(this.platform, timestamp, title, publisher, artwork, avatar, url);
@@ -140,8 +158,8 @@ export class SoundCloudWalker extends ActivityWalker {
 		if (token.refreshToken !== undefined && token.refreshToken !== refreshToken) await store.write(token.refreshToken);
 		const id = await this.#resolveUserId(token);
 		const platform = this.name;
-		yield new SoundCloudUploadSource(platform, token, id, "tracks");
-		yield new SoundCloudLikeSource(platform, token, id, "likes/tracks");
+		yield new SoundCloudUploadSource(platform, token, id);
+		yield new SoundCloudLikeSource(platform, token, id);
 	}
 }
 //#endregion

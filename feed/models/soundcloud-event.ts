@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Field, Model, Nullable, Optional } from "adaptive-extender/core";
+import { Any, Field, Model, Nullable, Optional } from "adaptive-extender/core";
 
 //#region SoundCloud token
 export interface SoundCloudTokenScheme {
@@ -122,15 +122,15 @@ export class SoundCloudTrack extends Model {
 }
 //#endregion
 
-//#region SoundCloud track collection
-export interface SoundCloudTrackCollectionScheme {
-	collection: SoundCloudTrackScheme[];
+//#region SoundCloud page
+export interface SoundCloudPageScheme {
+	collection: unknown[];
 	next_href: string | null;
 }
 
-export class SoundCloudTrackCollection extends Model {
-	@Field(Array.Of(SoundCloudTrack), { name: "collection" })
-	collection: SoundCloudTrack[];
+export class SoundCloudPage extends Model {
+	@Field(Array.Of(Any), { name: "collection" })
+	collection: unknown[];
 
 	@Field(Nullable.Of(String), { name: "next_href" })
 	nextHref: string | null;

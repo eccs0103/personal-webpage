@@ -1,5 +1,16 @@
 [
 	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/6093cc3f69497239090da29be67d5c4a344ebf69.jpg",
+		"title": "Getting A Little On The Side",
+		"description": "Complete all Side Missions.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1780264017000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/983b1e50eab9344a77098e395f27eaf49276dc8b.jpg",
 		"title": "Ultimate Vault Hunter",
 		"description": "Unlock all Borderlands® 3 Achievements!",
@@ -943,17 +954,6 @@
 		"webpage": "https://store.steampowered.com/app/1605250",
 		"platform": "Steam",
 		"timestamp": 1782063005000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/14315aa379317587ce957f9969bfd83c9fa451ff.jpg",
-		"title": "Bug free",
-		"description": null,
-		"url": "https://steamcommunity.com/stats/1605250/achievements",
-		"game": "Moros Protocol",
-		"webpage": "https://store.steampowered.com/app/1605250",
-		"platform": "Steam",
-		"timestamp": 1782065069000,
 		"$type": "SteamAchievementActivity"
 	}
 ]
