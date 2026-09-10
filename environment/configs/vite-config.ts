@@ -4,6 +4,7 @@ import "adaptive-extender/node";
 import { type InputOption, type OutputOptions, type PreRenderedChunk, type RollupOptions } from "rollup";
 import { type AppType, type BuildEnvironmentOptions, type ESBuildOptions, type PreviewOptions, type ServerOptions, type UserConfig } from "vite";
 import { VitePlugin } from "../plugins/vite-plugin.js";
+import { RootEntryDevPlugin } from "../plugins/root-entry-dev-plugin.js";
 import { type OutgoingHttpHeaders } from "node:http";
 import { fileURLToPath } from "node:url";
 
@@ -47,6 +48,19 @@ export class ViteConfig {
 			const filename = path.replace(/\\/g, "/").split("/").pop()!;
 			const name = filename.replace(/\.[^/.]+$/, String.empty);
 			entries[name] = path;
+		}
+		return entries;
+	}
+
+	#normalizeServiceWorkerDevEntries(): Map<string, string> {
+		const root = `${process.cwd().replace(/\\/g, "/")}/`;
+		const entries = new Map<string, string>();
+		for (const url of this.#rootEntries) {
+			const path = fileURLToPath(url).replace(/\\/g, "/");
+			const filename = path.split("/").pop()!;
+			const name = filename.replace(/\.[^/.]+$/, String.empty);
+			const relative = path.replace(root, String.empty);
+			entries.set(`/${name}.js`, `/${relative}`);
 		}
 		return entries;
 	}
@@ -123,7 +137,8 @@ export class ViteConfig {
 		const preview: PreviewOptions = this.#buildPreview();
 		const esbuild: ESBuildOptions = this.#buildESBuild();
 		const worker = this.#buildWorker();
-		const plugins = this.#plugins.map(plugin => plugin.build());
+		const devPlugin = new RootEntryDevPlugin(this.#normalizeServiceWorkerDevEntries());
+		const plugins = [...this.#plugins, devPlugin].map(plugin => plugin.build());
 		return { base, appType, publicDir, build, server, preview, esbuild, worker, plugins };
 	}
 }
