@@ -2,7 +2,7 @@
 	"private": true,
 	"name": "personal-webpage",
 	"author": "eccs0103",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"type": "module",
 	"packageManager": "npm@11.6.2",
 	"engines": {
