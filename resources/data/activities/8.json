@@ -735,6 +735,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "0a1edf72779288625afa4080b7a265762ecfe855",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1789068657000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "1400e7c54f7d46d07309b34f23f7d46804e682f3",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -791,6 +800,15 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
+		"sha": "21e40427feb9cbcd05f458fec8feb71403865798",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1789238406000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "a6088101e19a8436e1a200a046f15534168e9f28",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -798,5 +816,80 @@
 		"platform": "GitHub",
 		"timestamp": 1789238411000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "78dfea3234c623e6313d237c32c9d2b6e601aa9b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1789241457000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/dac3b88201a5d24704692af43b62f29a4a639843.jpg",
+		"title": "Dinnertime",
+		"description": "Catch dinner for the lady in the forest",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789246649000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/bc58e071e58ac9e5ca2797f2969fadcdec9fb038.jpg",
+		"title": "I'm the bird now",
+		"description": "Make the boat fly",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789247393000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/1522c6c670294903e081b891472540313e050587.jpg",
+		"title": "Grillmaster",
+		"description": "Start the grill",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789249265000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/588da3b50c3fa6eb15a43e0a74d7531fc88373e0.jpg",
+		"title": "Fully equipped",
+		"description": "Apply all attachments to a single weapon",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789250001000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/5ad1884e2ecbeaf019e4eade2cf34ef62106a922.jpg",
+		"title": "Yummy in my tummy",
+		"description": "Eat a burnt creature",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789250897000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/97f20b60e492d66ed5658a8b38a27aef46a6bb91.jpg",
+		"title": "Vacation",
+		"description": "Help the tourist swim on his vacation",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789253489000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
