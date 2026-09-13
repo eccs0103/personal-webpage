@@ -924,5 +924,27 @@
 		"platform": "Steam",
 		"timestamp": 1789333233000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/8b8ec5975c1db36b9ee8faffb8497e07e59fa22b.jpg",
+		"title": "Deadliest catch",
+		"description": "Help the military defeat the big creature they located",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789337178000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/717fa9271a6f07b6f3827c6c21fe36e49ab6f0ae.jpg",
+		"title": "We are so back",
+		"description": "Finish the game",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789337282000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
