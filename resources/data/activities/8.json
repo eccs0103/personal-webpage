@@ -891,5 +891,38 @@
 		"platform": "Steam",
 		"timestamp": 1789253489000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/669f3fd0b5a8952445dc00cfe0d423ab8cd9ab60.jpg",
+		"title": "I am speed",
+		"description": "Buy the best engine for the boat",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789327947000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/02285b1970ee67fc8e26dc0b5f048f1ce4578e7d.jpg",
+		"title": "Noob",
+		"description": "Get a kill with no kill score multiplier",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789330871000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/e870f7f510d6256f48c73e6be911d2c50fe2de38.jpg",
+		"title": "Terrorizing bird",
+		"description": "Defend the scared islanders from the terrorizing bird",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1789333233000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
