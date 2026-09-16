@@ -955,5 +955,16 @@
 		"platform": "GitHub",
 		"timestamp": 1789408493000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "SUPERHERO",
+		"artists": [
+			"Ryan Oakes"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ef8955b0c6458d6c9aed1927",
+		"url": "https://open.spotify.com/track/6XHcLjifd0lXqvTztIy6JB",
+		"platform": "Spotify",
+		"timestamp": 1789559185000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
