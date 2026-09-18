@@ -997,14 +997,12 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
-		"title": "Дикари",
-		"artists": [
-			"Xassa"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273b0ba21e1e41467db196cc54a",
-		"url": "https://open.spotify.com/track/3mTtr3OAHVUS9Sv72OeNCZ",
-		"platform": "Spotify",
-		"timestamp": 1789723395000,
-		"$type": "SpotifyLikeActivity"
+		"sha": "bb2fdee20233d1ec8ba813d444b51f0e4e19eb78",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789668643000,
+		"$type": "GitHubPushActivity"
 	}
 ]

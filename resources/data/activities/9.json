@@ -1,180 +1,40 @@
 [
 	{
-		"platform": "GitHub",
-		"timestamp": 1777054838000,
+		"title": "Дикари",
+		"artists": [
+			"Xassa"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273b0ba21e1e41467db196cc54a",
+		"url": "https://open.spotify.com/track/3mTtr3OAHVUS9Sv72OeNCZ",
+		"platform": "Spotify",
+		"timestamp": 1789723395000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "0a2f26d3e447c005603dbb531a15434e4dc5fe03",
 		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "fc2cb49fe3d97491c4d3513e4e370ec1ecd9440c",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789753931000,
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"platform": "GitHub",
-		"timestamp": 1777054843000,
+		"sha": "06ac7e9457ea1ff5d15198e40736ba9d179f15b0",
 		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "65c5dc4a58aa6d41b2ebba800ae382cc4987b89a",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789753936000,
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"platform": "GitHub",
-		"timestamp": 1777054848000,
+		"sha": "2fffe82360a329044fbd544a9de69f08246b694e",
 		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "d94397b91ef6c69ad1145a1e0887e4c4e8a01c67",
-		"$type": "GitHubPushActivity"
-	},
-	{
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
 		"platform": "GitHub",
-		"timestamp": 1777054852000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "ecbd966eedc81f6945b4d5a9c8bfdef9c5343389",
+		"timestamp": 1789753942000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "GitHub",
-		"timestamp": 1777054857000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "91bb7c54bcb46b856472721dcd18c1080d8feede",
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "GitHub",
-		"timestamp": 1777060163000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "88389b008c349b846978b56ce810af4fd83aa985",
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777063635000,
-		"game": "Operation Tango",
-		"webpage": "https://store.steampowered.com/app/1335790",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1335790/bb74adfddd48d2ef6c4ec31b3e0deac83faeb648.jpg",
-		"title": "Quantum of Solace",
-		"description": "Complete Institutional Cleanup as an agent",
-		"url": "https://steamcommunity.com/stats/1335790/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777067435000,
-		"game": "Operation Tango",
-		"webpage": "https://store.steampowered.com/app/1335790",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1335790/80cbffe34525f1fcd122422699af7ca2bd07082a.jpg",
-		"title": "Zero Minus Ten",
-		"description": "Locate the bomb as a hacker",
-		"url": "https://steamcommunity.com/stats/1335790/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777068573000,
-		"game": "Operation Tango",
-		"webpage": "https://store.steampowered.com/app/1335790",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1335790/cba2bd6b3da18d40cdbc503bf4067ef890ac88aa.jpg",
-		"title": "...to Save the World!",
-		"description": "Complete Big-Bang Theory as a hacker",
-		"url": "https://steamcommunity.com/stats/1335790/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "GitHub",
-		"timestamp": 1777075422000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "887f806c92616c50d45c1fd8f68b8d8e0dbef175",
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "GitHub",
-		"timestamp": 1777075426000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "bcb237dada5af5e57c1fca608bf37062a3c30c6f",
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "GitHub",
-		"timestamp": 1777075430000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "3372fd7fd606ac4ab1dc305b8d339580c588ce72",
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777145296000,
-		"game": "Cyberpunk 2077",
-		"webpage": "https://store.steampowered.com/app/1091500",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/943a38cb96238b7b020672cf360d9e763dcf6feb.jpg",
-		"title": "Stanislavski's Method",
-		"description": "Use a dialogue option related to V's life path 10 times.",
-		"url": "https://steamcommunity.com/stats/1091500/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777219926000,
-		"game": "Borderlands 3",
-		"webpage": "https://store.steampowered.com/app/397540",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/41dc56c51263bf0d9f09cf016e3b3443b20990e1.jpg",
-		"title": "Shoe Money Tonight",
-		"description": "Get a 21 in the blackjack minigame.",
-		"url": "https://steamcommunity.com/stats/397540/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777233679000,
-		"game": "Phasmophobia",
-		"webpage": "https://store.steampowered.com/app/739630",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/236713a46691022704a749c5587084ed2e476b9f.jpg",
-		"title": "The Twins Discovered",
-		"description": "Successfully identify The Twins for the first time",
-		"url": "https://steamcommunity.com/stats/739630/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "GitHub",
-		"timestamp": 1777294472000,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"sha": "86accd580a9d8dd0283ee284bbae2a81b9b1881d",
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777491040000,
-		"game": "Phasmophobia",
-		"webpage": "https://store.steampowered.com/app/739630",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/7d3bac94dbdaa8e05388b43bb3f58bc0a1e12d90.jpg",
-		"title": "Devoted",
-		"description": "Complete 10 weekly tasks",
-		"url": "https://steamcommunity.com/stats/739630/achievements",
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"platform": "Steam",
-		"timestamp": 1777499272000,
-		"game": "Phasmophobia",
-		"webpage": "https://store.steampowered.com/app/739630",
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/9282b51b3ffac2fbdcdf9c43e53d22097d380280.jpg",
-		"title": "Fully Loaded",
-		"description": "Unlock all tier three equipment",
-		"url": "https://steamcommunity.com/stats/739630/achievements",
-		"$type": "SteamAchievementActivity"
 	}
 ]
