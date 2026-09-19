@@ -64,5 +64,16 @@
 		"platform": "Telegram",
 		"timestamp": 1789765686000,
 		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/3e5fc76b70c9f5f05f986d602a18031e9c4fa23e.jpg",
+		"title": "Frozen in Time",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1789824346000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
