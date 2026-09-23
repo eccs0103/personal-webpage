@@ -108,5 +108,14 @@
 		"platform": "Spotify",
 		"timestamp": 1790001943000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "e921781568190307804678a6332ac73970d1a762",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790110313000,
+		"$type": "GitHubPushActivity"
 	}
 ]
