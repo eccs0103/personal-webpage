@@ -50,14 +50,14 @@ class ActivityController extends Controller {
 		const key = `${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 		const content = specialDictionary.get(`1~${key}`);
 		if (content === undefined) {
-			configuration.intro = "Promise me that if I don't win this battle, you'll remember me for who I was, not what I became.";
+			configuration.intro = "Content is generated automatically. In case of complaints, please contact the developer.";
 			return;
 		}
 		configuration.intro = content;
 	}
 
 	#updateOutro(configuration: Configuration): void {
-		configuration.outro = "History is silent about what happened next.";
+		configuration.outro = "Promise me that if I don't win this battle, you'll remember me for who I was, not what I became.";
 	}
 
 	#updateConfiguration(configuration: Configuration): void {
