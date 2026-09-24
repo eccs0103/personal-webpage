@@ -9,10 +9,12 @@ import { ActivityBuilder } from "./view-builders.js";
 import { type ActivityRegistry } from "../services/activity-registry.js";
 import { type ActivityCollector } from "../services/activity-collector.js";
 import { type DataTable } from "../services/data-table.js";
-import { analytics } from "../../environment/services/analytics-service.js";
+import { AnalyticsService } from "../../environment/services/analytics-service.js";
 import { FeedBatchLoaded } from "../models/feed-batch-loaded.js";
 import { FeedCompleted } from "../models/feed-completed.js";
 import { MediaPlay } from "../models/media-play.js";
+
+const analytics = AnalyticsService.instance;
 
 //#region Activities renderer
 interface RenderContext {

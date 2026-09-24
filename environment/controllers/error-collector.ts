@@ -2,8 +2,10 @@
 
 import "adaptive-extender/web";
 import { JavaScriptError } from "../models/javascript-error.js";
-import { analytics } from "../services/analytics-service.js";
+import { AnalyticsService } from "../services/analytics-service.js";
 import { Controller } from "adaptive-extender/web";
+
+const analytics = AnalyticsService.instance;
 
 //#region Error collector
 export class ErrorCollector extends Controller {
@@ -13,15 +15,15 @@ export class ErrorCollector extends Controller {
 	}
 
 	#onError(event: ErrorEvent): void {
-		const errorMessage = event.message;
-		const errorSource = event.filename.insteadEmpty(undefined);
-		const errorLine = event.lineno.insteadZero(undefined);
-		analytics.dispatch("js_error", new JavaScriptError(errorMessage, errorSource, errorLine));
+		const { message } = event;
+		const source = event.filename.insteadEmpty(undefined);
+		const line = event.lineno.insteadZero(undefined);
+		analytics.dispatch("js_error", new JavaScriptError(message, source, line));
 	}
 
 	#onReject(event: PromiseRejectionEvent): void {
-		const errorMessage = Error.from(event.reason).message;
-		analytics.dispatch("js_error", new JavaScriptError(errorMessage, undefined, undefined));
+		const { message } = Error.from(event.reason);
+		analytics.dispatch("js_error", new JavaScriptError(message, undefined, undefined));
 	}
 
 	async catch(error: Error): Promise<void> {

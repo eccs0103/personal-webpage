@@ -2,10 +2,11 @@
 
 import "adaptive-extender/web";
 import { BatteryContext } from "../models/battery-context.js";
-import { analytics } from "../services/analytics-service.js";
+import { AnalyticsService } from "../services/analytics-service.js";
 import { Controller } from "adaptive-extender/web";
 
 const { round } = Math;
+const analytics = AnalyticsService.instance;
 
 //#region Battery collector
 declare global {
@@ -31,8 +32,8 @@ export class BatteryCollector extends Controller {
 	}
 
 	#update(battery: BatteryManager): void {
-		const batteryLevel = round(battery.level * 100);
-		analytics.setProperties(new BatteryContext(batteryLevel, battery.charging));
+		const level = round(battery.level * 100);
+		analytics.setProperties(new BatteryContext(level, battery.charging));
 	}
 
 	async catch(error: Error): Promise<void> {

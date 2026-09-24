@@ -5,10 +5,11 @@ import { Controller } from "adaptive-extender/web";
 import { type Platform } from "../models/configuration";
 import { ActivityBuilder, DOMBuilder } from "./view-builders.js";
 import { SettingsService } from "../services/settings-service.js";
-import { analytics } from "../../environment/services/analytics-service.js";
+import { AnalyticsService } from "../../environment/services/analytics-service.js";
 import { PlatformToggle } from "../models/platform-toggle.js";
 
 const { baseURI } = document;
+const analytics = AnalyticsService.instance;
 
 //#region Header renderer
 export class HeaderRenderer extends Controller<[HTMLElement, SettingsService, readonly Platform[]]> {
