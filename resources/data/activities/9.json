@@ -189,5 +189,16 @@
 		"platform": "GitHub",
 		"timestamp": 1790277023000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "3.5.0",
+		"tag_name": "3.5.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1790283828000,
+		"$type": "GitHubReleaseActivity"
 	}
 ]
