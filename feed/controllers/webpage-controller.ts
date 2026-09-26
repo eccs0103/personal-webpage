@@ -14,6 +14,9 @@ import { type Bridge } from "../services/bridge.js";
 import { SettingsService } from "../services/settings-service.js";
 import { ChangelogService } from "../services/changelog-service.js";
 import { ChangelogRenderer } from "../view/changelog-renderer.js";
+import { WelcomeRenderer } from "../view/welcome-renderer.js";
+import { PlatformMenuRenderer } from "../view/platform-menu-renderer.js";
+import { VisitService } from "../services/visit-service.js";
 import { AnalyticsController } from "../../environment/controllers/analytics-controller.js";
 import { MetadataController } from "./metadata-controller.js";
 import { ActivityRegistry } from "../services/activity-registry.js";
@@ -60,6 +63,15 @@ class WebpageController extends Controller {
 		return registry;
 	}
 
+	async #launchDialogs(changelog: ChangelogService, visits: VisitService): Promise<void> {
+		const { isWelcomeDue } = visits;
+		await visits.markVisited();
+		if (isWelcomeDue && changelog.isFirstVisit) await changelog.markAsSeen();
+		await ChangelogRenderer.launch(body, changelog, isWelcomeDue);
+		if (!isWelcomeDue) return;
+		await WelcomeRenderer.launch(body);
+	}
+
 	async run(): Promise<void> {
 		const configuration = await this.#readConfiguration(new URL("../data/feed-configuration.json", baseURI));
 		const { platforms } = configuration;
@@ -74,11 +86,12 @@ class WebpageController extends Controller {
 		const promiseHeader = HeaderRenderer.launch(body, settings, platforms);
 		const promiseActivities = ActivitiesRenderer.launch(main, activities, configuration, registry);
 		const promiseFooter = FooterRenderer.launch(footer);
-		const promiseChangelog = ChangelogRenderer.launch(body, changelog);
+		const promisePlatformMenu = PlatformMenuRenderer.launch(body, platforms);
+		const promiseDialogs = this.#launchDialogs(changelog, new VisitService());
 		const promiseMetadata = MetadataController.launch(platforms);
 		const promiseAnalytics = AnalyticsController.launch();
 
-		await Promise.all([promiseHeader, promiseActivities, promiseFooter, promiseChangelog, promiseMetadata, promiseAnalytics]);
+		await Promise.all([promiseHeader, promiseActivities, promiseFooter, promisePlatformMenu, promiseDialogs, promiseMetadata, promiseAnalytics]);
 	}
 
 	async catch(error: Error): Promise<void> {

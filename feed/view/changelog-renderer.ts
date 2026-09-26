@@ -7,7 +7,7 @@ import { type ChangelogService } from "../services/changelog-service.js";
 import { TextExpert } from "../services/text-expert.js";
 
 //#region Changelog renderer
-export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService]> {
+export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService, boolean]> {
 	#buildEntry(dialog: HTMLDialogElement, unseen: readonly ChangelogEntry[], index: number): void {
 		dialog.innerHTML = "";
 
@@ -54,7 +54,7 @@ export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService
 		});
 	}
 
-	async run(itemContainer: HTMLElement, changelog: ChangelogService): Promise<void> {
+	async run(itemContainer: HTMLElement, changelog: ChangelogService, silent: boolean): Promise<void> {
 		const { entries, unseen } = changelog;
 
 		const dialog = await itemContainer.getElementAsync(HTMLDialogElement, "dialog#changelog");
@@ -73,11 +73,11 @@ export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService
 			buttonChangelogTrigger.hidden = true;
 		}
 
-		if (unseen.length > 0) {
-			this.#buildEntry(dialog, unseen, 0);
-			await changelog.markAsSeen();
-			dialog.showModal();
-		}
+		if (silent) return;
+		if (unseen.length < 1) return;
+		this.#buildEntry(dialog, unseen, 0);
+		await changelog.markAsSeen();
+		dialog.showModal();
 	}
 }
 //#endregion

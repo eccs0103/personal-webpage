@@ -240,7 +240,13 @@ export class ActivityBuilder {
 
 			const h4Title = itemContainer.appendChild(document.createElement("h4"));
 			h4Title.classList.add("platform");
-			h4Title.innerText = platform.name;
+
+			const buttonPlatformMenu = h4Title.appendChild(document.createElement("button"));
+			buttonPlatformMenu.type = "button";
+			buttonPlatformMenu.classList.add("platform-menu-trigger");
+			buttonPlatformMenu.title = `${platform.name} options`;
+			buttonPlatformMenu.dataset["platform"] = platform.name;
+			buttonPlatformMenu.innerText = platform.name;
 		}
 
 		const timeElement = itemContainer.appendChild(document.createElement("time"));
