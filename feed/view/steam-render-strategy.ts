@@ -13,20 +13,23 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 
 		const divWrapper = itemContainer.appendChild(document.createElement("div"));
 		divWrapper.classList.add("flex", "with-gap", "alt-center");
+		divWrapper.translate = true;
 
 		if (icon !== null) {
-			const imgIcon = divWrapper.appendChild(DOMBuilder.newImage(new URL(icon), `'${title}' icon`));
+			const imgIcon = divWrapper.appendChild(DOMBuilder.newImage(new URL(icon), `'${title}' icon`, { translate: false }));
 			imgIcon.classList.add("rounded", "steam-icon");
 		}
 
 		const divInformation = divWrapper.appendChild(document.createElement("div"));
 		divInformation.classList.add("flex", "column");
+		divInformation.translate = true;
 
 		const spanHeader = divInformation.appendChild(document.createElement("span"));
+		spanHeader.translate = true;
 		spanHeader.appendChild(DOMBuilder.newText("Earned \""));
-		spanHeader.appendChild(DOMBuilder.newLink(new URL(url), { text: title }));
+		spanHeader.appendChild(DOMBuilder.newLink(new URL(url), { text: title, translate: false }));
 		spanHeader.appendChild(DOMBuilder.newText("\" in "));
-		spanHeader.appendChild(DOMBuilder.newLink(new URL(webpage), { text: game }));
+		spanHeader.appendChild(DOMBuilder.newLink(new URL(webpage), { text: game, translate: false }));
 
 		if (description !== null && !String.isWhitespace(description)) {
 			divInformation.appendChild(DOMBuilder.newDescription(description));
@@ -45,6 +48,7 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 		if (title !== null) {
 			const divOverlay = aLink.appendChild(document.createElement("div"));
 			divOverlay.classList.add("caption-overlay", "font-smaller-3");
+			divOverlay.translate = true;
 			divOverlay.appendChild(DOMBuilder.newTextbox(title));
 		}
 
@@ -57,14 +61,16 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 
 		const divGroup = itemContainer.appendChild(document.createElement("div"));
 		divGroup.classList.add("steam-group", "flex", "column", "with-gap");
+		divGroup.translate = true;
 
 		const divHeader = divGroup.appendChild(document.createElement("div"));
 		divHeader.classList.add("group-header");
+		divHeader.translate = true;
 
 		divHeader.appendChild(DOMBuilder.newText("Uploaded "));
 		divHeader.appendChild(DOMBuilder.newTextbox(`${TextExpert.getIndefiniteCardinal(count)} screenshot${TextExpert.getPluralSuffix(count)}`));
 		divHeader.appendChild(DOMBuilder.newText(" from "));
-		divHeader.appendChild(DOMBuilder.newLink(new URL(webpage), { text: game }));
+		divHeader.appendChild(DOMBuilder.newLink(new URL(webpage), { text: game, translate: false }));
 
 		const slides = screenshots.map(screenshot => this.#buildScreenshotSlide(screenshot));
 		divGroup.appendChild(DOMBuilder.newCarousel(slides));

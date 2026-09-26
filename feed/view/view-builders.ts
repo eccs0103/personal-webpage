@@ -12,6 +12,7 @@ const { baseURI } = document;
 export interface LinkCreationOptions {
 	text: string;
 	disabled: boolean;
+	translate: boolean;
 }
 
 export interface MediaCreationOptions {
@@ -27,6 +28,7 @@ export interface AudioCreationOptions extends MediaCreationOptions {
 export interface ImageCreationOptions {
 	fetchPriority: "high" | "low" | "auto";
 	loading: "eager" | "lazy";
+	translate: boolean;
 }
 
 export interface VideoCreationOptions extends MediaCreationOptions {
@@ -40,6 +42,7 @@ export class DOMBuilder {
 
 	static newTextbox(text: string): HTMLElement {
 		const spanDescription = document.createElement("span");
+		spanDescription.translate = true;
 		spanDescription.innerText = text;
 
 		return spanDescription;
@@ -48,6 +51,7 @@ export class DOMBuilder {
 	static newDescription(text: string): HTMLElement {
 		const spanDescription = document.createElement("span");
 		spanDescription.classList.add("description");
+		spanDescription.translate = true;
 		spanDescription.innerText = text;
 
 		return spanDescription;
@@ -63,12 +67,14 @@ export class DOMBuilder {
 		aLink.target = "_blank";
 		aLink.rel = "noopener noreferrer";
 		aLink.inert = options.disabled ?? false;
+		aLink.translate = options.translate ?? true;
 		return aLink;
 	}
 
 	static newIcon(url: Readonly<URL>): HTMLElement {
 		const icon = document.createElement("span");
 		icon.classList.add("icon");
+		icon.translate = false;
 		icon.style.setProperty("--url", `url("${url}")`);
 
 		return icon;
@@ -81,6 +87,7 @@ export class DOMBuilder {
 		img.src = String(url);
 		img.alt = text;
 		img.loading = options.loading ?? "lazy";
+		img.translate = options.translate ?? true;
 		if (options.fetchPriority !== undefined) img.fetchPriority = options.fetchPriority;
 
 		return img;
@@ -93,6 +100,7 @@ export class DOMBuilder {
 		const video = document.createElement("video");
 		video.src = String(url);
 		video.preload = "auto";
+		video.translate = false;
 		if (loop !== undefined) video.loop = loop;
 		if (muted !== undefined) video.muted = muted;
 		if (controls !== undefined) video.controls = controls;
@@ -108,6 +116,7 @@ export class DOMBuilder {
 		const audio = document.createElement("audio");
 		audio.src = String(url);
 		audio.preload = "auto";
+		audio.translate = false;
 		if (loop !== undefined) audio.loop = loop;
 		if (muted !== undefined) audio.muted = muted;
 		if (controls !== undefined) audio.controls = controls;
@@ -118,13 +127,16 @@ export class DOMBuilder {
 	static newCarousel(slides: readonly HTMLElement[]): HTMLElement {
 		const divCarousel = document.createElement("div");
 		divCarousel.classList.add("media-carousel");
+		divCarousel.translate = true;
 
 		const divTrack = divCarousel.appendChild(document.createElement("div"));
 		divTrack.classList.add("media-carousel-track");
+		divTrack.translate = true;
 
 		for (const slide of slides) {
 			const divSlide = divTrack.appendChild(document.createElement("div"));
 			divSlide.classList.add("media-carousel-slide", "depth");
+			divSlide.translate = true;
 			divSlide.appendChild(slide);
 		}
 
@@ -133,6 +145,7 @@ export class DOMBuilder {
 			buttonPrevious.type = "button";
 			buttonPrevious.hidden = true;
 			buttonPrevious.classList.add("carousel-nav", "carousel-previous", "flex", "center");
+			buttonPrevious.translate = false;
 			buttonPrevious.appendChild(DOMBuilder.newIcon(new URL("../icons/left.svg", baseURI)));
 			buttonPrevious.addEventListener("click", (event) => {
 				divTrack.scrollBy({ left: -divTrack.clientWidth, behavior: "smooth" });
@@ -141,6 +154,7 @@ export class DOMBuilder {
 			const buttonNext = divCarousel.appendChild(document.createElement("button"));
 			buttonNext.type = "button";
 			buttonNext.classList.add("carousel-nav", "carousel-next", "flex", "center");
+			buttonNext.translate = false;
 			buttonNext.appendChild(DOMBuilder.newIcon(new URL("../icons/right.svg", baseURI)));
 			buttonNext.addEventListener("click", (event) => {
 				divTrack.scrollBy({ left: divTrack.clientWidth, behavior: "smooth" });
@@ -148,11 +162,13 @@ export class DOMBuilder {
 
 			const divDots = divCarousel.appendChild(document.createElement("div"));
 			divDots.classList.add("carousel-dots", "flex", "with-gap", "small-gap");
+			divDots.translate = false;
 
 			const dotElements: HTMLElement[] = [];
 			for (let index = 0; index < slides.length; index++) {
 				const spanDot = divDots.appendChild(document.createElement("span"));
 				spanDot.classList.add("carousel-dot");
+				spanDot.translate = false;
 				if (index === 0) spanDot.classList.add("active");
 				spanDot.addEventListener("click", (event) => {
 					divTrack.scrollTo({ left: index * divTrack.clientWidth, behavior: "smooth" });
@@ -199,6 +215,7 @@ export class ActivityBuilder {
 	static newWarning(itemContainer: HTMLElement): void {
 		const span = itemContainer.appendChild(document.createElement("span"));
 		span.classList.add("experimetnal-core", "warn", "font-smaller-2");
+		span.translate = true;
 
 		span.appendChild(DOMBuilder.newText("This page operates on an "));
 		span.appendChild(DOMBuilder.newLink(new URL("https://github.com/eccs0103/adaptive-extender/commits/main/"), { text: "experimental core" }));
@@ -208,6 +225,7 @@ export class ActivityBuilder {
 	static newSentinel(itemContainer: HTMLElement): HTMLElement {
 		const itemSentinel = itemContainer.appendChild(document.createElement("div"));
 		itemSentinel.classList.add("sentinel");
+		itemSentinel.translate = false;
 
 		return itemSentinel;
 	}
@@ -232,6 +250,7 @@ export class ActivityBuilder {
 		const itemContainer = itemParent.insertBefore(document.createElement("div"), itemParent.lastElementChild);
 		itemContainer.classList.add("activity", "layer", "rounded", "with-padding", "with-gap", "awaiting-reveal");
 		itemContainer.dataset["platform"] = activity.platform;
+		itemContainer.translate = true;
 		observer.observe(itemContainer);
 
 		const platform = platforms.get(activity.platform);
@@ -240,10 +259,12 @@ export class ActivityBuilder {
 
 			const h4Title = itemContainer.appendChild(document.createElement("h4"));
 			h4Title.classList.add("platform");
+			h4Title.translate = false;
 
 			const buttonPlatformMenuTrigger = h4Title.appendChild(document.createElement("button"));
 			buttonPlatformMenuTrigger.type = "button";
 			buttonPlatformMenuTrigger.classList.add("platform-menu-trigger");
+			buttonPlatformMenuTrigger.translate = false;
 			buttonPlatformMenuTrigger.title = `${platform.name} options`;
 			buttonPlatformMenuTrigger.dataset["platform"] = platform.name;
 			buttonPlatformMenuTrigger.innerText = platform.name;
@@ -254,9 +275,11 @@ export class ActivityBuilder {
 		timeElement.title = activity.timestamp.toLocaleString();
 		timeElement.innerText = TextExpert.formatTime(activity.timestamp);
 		timeElement.classList.add("activity-time", "font-smaller-2");
+		timeElement.translate = true;
 
 		const divContent = itemContainer.appendChild(document.createElement("div"));
 		divContent.classList.add("content");
+		divContent.translate = true;
 
 		return divContent;
 	}

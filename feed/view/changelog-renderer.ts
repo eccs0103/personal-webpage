@@ -16,29 +16,36 @@ export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService
 
 		const divHeader = dialog.appendChild(document.createElement("div"));
 		divHeader.classList.add("changelog-header", "with-padding", "large-padding");
+		divHeader.translate = true;
 
 		const strongTitle = divHeader.appendChild(document.createElement("strong"));
 		strongTitle.classList.add("changelog-title");
+		strongTitle.translate = true;
 		strongTitle.textContent = `Update · ${entry.date.toLocaleDateString()}`;
 
 		const ulChanges = dialog.appendChild(document.createElement("ul"));
 		ulChanges.classList.add("changelog-changes");
+		ulChanges.translate = true;
 		for (const change of entry.changes) {
 			const li = ulChanges.appendChild(document.createElement("li"));
+			li.translate = true;
 			li.textContent = change;
 		}
 
 		const divFooter = dialog.appendChild(document.createElement("div"));
 		divFooter.classList.add("changelog-footer", "flex", "alt-center", "with-gap", "with-padding", "large-padding");
+		divFooter.translate = true;
 
 		if (remaining > 0) {
 			const spanMore = divFooter.appendChild(document.createElement("span"));
 			spanMore.classList.add("font-smaller-2", "changelog-more-info");
+			spanMore.translate = true;
 			spanMore.textContent = `and ${remaining} more update${TextExpert.getPluralSuffix(remaining)} before this`;
 
 			const buttonLoadOlder = divFooter.appendChild(document.createElement("button"));
 			buttonLoadOlder.type = "button";
 			buttonLoadOlder.classList.add("with-inline-padding", "with-padding", "rounded", "depth");
+			buttonLoadOlder.translate = true;
 			buttonLoadOlder.textContent = "Load older";
 			buttonLoadOlder.addEventListener("click", (event) => {
 				this.#buildEntry(dialog, unseen, index + 1);
@@ -48,6 +55,7 @@ export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService
 		const buttonClose = divFooter.appendChild(document.createElement("button"));
 		buttonClose.type = "button";
 		buttonClose.classList.add("with-inline-padding", "with-padding", "rounded", "highlight-background");
+		buttonClose.translate = true;
 		buttonClose.textContent = "Got it";
 		buttonClose.addEventListener("click", (event) => {
 			dialog.close();

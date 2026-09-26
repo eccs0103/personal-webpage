@@ -34,6 +34,7 @@ export class HeaderRenderer extends Controller<[HTMLElement, SettingsService, re
 			const divConnectionRow = dialogConnectionsHub.appendChild(document.createElement("div"));
 			divConnectionRow.dataset["status"] = status ?? "none";
 			divConnectionRow.classList.add("connection-row", "with-padding", "with-inline-gap");
+			divConnectionRow.translate = true;
 
 			if (status === "connected") {
 				const inputPlatformToggle = divConnectionRow.appendChild(document.createElement("input"));
@@ -42,6 +43,7 @@ export class HeaderRenderer extends Controller<[HTMLElement, SettingsService, re
 				inputPlatformToggle.id = `platform-toggle-${name.replace(/\s+/g, "-").toLowerCase()}`;
 				inputPlatformToggle.dataset["platform"] = name;
 				inputPlatformToggle.hidden = true;
+				inputPlatformToggle.translate = false;
 				cssParts.push(`body:has(dialog#connections-hub input#${inputPlatformToggle.id}:not(:checked)) main div.activity[data-platform="${name}"] { display: none; }`);
 				inputPlatformToggle.addEventListener("change", (event) => {
 					preferences.set(name, inputPlatformToggle.checked);
@@ -54,9 +56,11 @@ export class HeaderRenderer extends Controller<[HTMLElement, SettingsService, re
 				labelPlatformToggle.classList.add("platform-toggle", "in-line", "toggle", "layer");
 				labelPlatformToggle.role = "checkbox";
 				labelPlatformToggle.title = `Toggle ${name}`;
+				labelPlatformToggle.translate = true;
 
 				const spanKnob = labelPlatformToggle.appendChild(document.createElement("span"));
 				spanKnob.classList.add("knob", "depth");
+				spanKnob.translate = false;
 			}
 
 			const spanConnectionIcon = divConnectionRow.appendChild(DOMBuilder.newIcon(new URL(icon, new URL("../", baseURI))));
@@ -64,10 +68,11 @@ export class HeaderRenderer extends Controller<[HTMLElement, SettingsService, re
 
 			const strongConnectionName = divConnectionRow.appendChild(document.createElement("strong"));
 			strongConnectionName.classList.add("connection-name");
+			strongConnectionName.translate = false;
 			strongConnectionName.textContent = name;
 
 			if (webpage !== null) {
-				const aConnectionLink = divConnectionRow.appendChild(DOMBuilder.newLink(new URL(webpage)));
+				const aConnectionLink = divConnectionRow.appendChild(DOMBuilder.newLink(new URL(webpage), { translate: false }));
 				aConnectionLink.classList.add("connection-link", "with-inline-padding", "font-smaller-2");
 
 				ActivityBuilder.newExternalIcon(aConnectionLink);

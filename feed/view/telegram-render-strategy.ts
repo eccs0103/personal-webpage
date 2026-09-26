@@ -41,6 +41,7 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 		if (description !== null) {
 			const divOverlay = aLink.appendChild(document.createElement("div"));
 			divOverlay.classList.add("caption-overlay", "font-smaller-3");
+			divOverlay.translate = true;
 			divOverlay.appendChild(DOMBuilder.newTextbox(description));
 		}
 
@@ -61,6 +62,7 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 
 		const figure = itemContainer.appendChild(document.createElement("figure"));
 		figure.classList.add("telegram-media");
+		figure.translate = true;
 
 		const urlMedia = this.#buildUrlMedia(idMessage);
 		const loop = true;
@@ -82,6 +84,7 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 
 		const figure = itemContainer.appendChild(document.createElement("figure"));
 		figure.classList.add("telegram-media");
+		figure.translate = true;
 
 		const urlMedia = this.#buildUrlMedia(idMessage);
 		const controls = true;
@@ -115,7 +118,7 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 
 		aLink.appendChild(DOMBuilder.newIcon(new URL("./icons/file.svg", new URL("../", document.baseURI))));
 
-		aLink.appendChild(DOMBuilder.newTextbox(fileName));
+		aLink.appendChild(DOMBuilder.newTextbox(fileName)).translate = false;
 
 		if (description !== null) itemContainer.appendChild(DOMBuilder.newDescription(description));
 	}

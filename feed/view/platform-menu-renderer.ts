@@ -24,6 +24,7 @@ export class PlatformMenuRenderer extends Controller<[HTMLElement, readonly Plat
 		const buttonPlatformMenuHide = itemParent.appendChild(document.createElement("button"));
 		buttonPlatformMenuHide.type = "button";
 		buttonPlatformMenuHide.classList.add("platform-menu-hide", "with-inline-padding", "with-padding", "rounded", "depth");
+		buttonPlatformMenuHide.translate = true;
 		buttonPlatformMenuHide.textContent = `Hide ${name} posts`;
 		buttonPlatformMenuHide.addEventListener("click", (event) => {
 			const inputPlatformToggle = itemContainer.getElement(HTMLInputElement, `dialog#connections-hub input[data-platform="${CSS.escape(name)}"]`);
@@ -38,18 +39,22 @@ export class PlatformMenuRenderer extends Controller<[HTMLElement, readonly Plat
 
 		const divPlatformMenuHeader = dialogPlatformMenu.appendChild(document.createElement("div"));
 		divPlatformMenuHeader.classList.add("platform-menu-header", "with-padding", "large-padding");
+		divPlatformMenuHeader.translate = true;
 
 		const strongPlatformMenuTitle = divPlatformMenuHeader.appendChild(document.createElement("strong"));
 		strongPlatformMenuTitle.classList.add("platform-menu-title");
+		strongPlatformMenuTitle.translate = false;
 		strongPlatformMenuTitle.textContent = platform.name;
 
 		const divPlatformMenuActions = dialogPlatformMenu.appendChild(document.createElement("div"));
 		divPlatformMenuActions.classList.add("platform-menu-actions", "flex", "column", "with-gap", "with-padding", "large-padding");
+		divPlatformMenuActions.translate = true;
 		this.#buildProfile(divPlatformMenuActions, platform);
 		this.#buildHide(itemContainer, divPlatformMenuActions, dialogPlatformMenu, platform);
 
 		const divPlatformMenuFooter = dialogPlatformMenu.appendChild(document.createElement("div"));
 		divPlatformMenuFooter.classList.add("platform-menu-footer", "flex", "alt-center", "with-gap", "with-padding", "large-padding");
+		divPlatformMenuFooter.translate = true;
 
 		const spanPlatformMenuHint = divPlatformMenuFooter.appendChild(DOMBuilder.newDescription("Bring hidden ones back anytime in Platforms"));
 		spanPlatformMenuHint.classList.add("platform-menu-hint", "font-smaller-2");
@@ -57,6 +62,7 @@ export class PlatformMenuRenderer extends Controller<[HTMLElement, readonly Plat
 		const buttonPlatformMenuOpen = divPlatformMenuFooter.appendChild(document.createElement("button"));
 		buttonPlatformMenuOpen.type = "button";
 		buttonPlatformMenuOpen.classList.add("platform-menu-open", "with-inline-padding", "with-padding", "rounded", "highlight-background");
+		buttonPlatformMenuOpen.translate = true;
 		buttonPlatformMenuOpen.textContent = "Open";
 		buttonPlatformMenuOpen.addEventListener("click", (event) => {
 			dialogPlatformMenu.close();

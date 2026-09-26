@@ -27,6 +27,7 @@ import { StackOverflowRenderStrategy } from "../view/stack-overflow-render-strat
 import { TelegramRenderStrategy } from "../view/telegram-render-strategy.js";
 import { NpmRenderStrategy } from "../view/npm-render-strategy.js";
 import { SoundCloudRenderStrategy } from "../view/soundcloud-render-strategy.js";
+import { TranslationGuard } from "../view/translation-guard.js";
 
 const { baseURI, body } = document;
 
@@ -74,6 +75,8 @@ class WebpageController extends Controller {
 	}
 
 	async run(): Promise<void> {
+		new TranslationGuard().observe(body);
+
 		const configuration = await this.#readConfiguration(new URL("../data/feed-configuration.json", baseURI));
 		const { platforms } = configuration;
 		const settings = new SettingsService(new Map(platforms.filter(platform => platform.status === "connected").map(platform => [platform.name, true])));

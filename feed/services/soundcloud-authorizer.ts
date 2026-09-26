@@ -27,7 +27,7 @@ export class SoundCloudAuthorizer {
 	}
 
 	static #toBase64Url(buffer: Buffer): string {
-		return buffer.toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+		return buffer.toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, String.empty);
 	}
 
 	#buildAuthorizeUrl(challenge: string, state: string): URL {

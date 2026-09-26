@@ -18,9 +18,11 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 	#buildRow(itemParent: HTMLElement, action: string, title: string, description: string, text: string): HTMLButtonElement {
 		const divWelcomeRow = itemParent.appendChild(document.createElement("div"));
 		divWelcomeRow.classList.add("welcome-row", "with-padding", "large-padding", "with-inline-gap");
+		divWelcomeRow.translate = true;
 
 		const strongWelcomeRowTitle = divWelcomeRow.appendChild(document.createElement("strong"));
 		strongWelcomeRowTitle.classList.add("welcome-row-title");
+		strongWelcomeRowTitle.translate = true;
 		strongWelcomeRowTitle.textContent = title;
 
 		const spanWelcomeRowDescription = divWelcomeRow.appendChild(DOMBuilder.newDescription(description));
@@ -29,6 +31,7 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 		const buttonWelcomeRowAction = divWelcomeRow.appendChild(document.createElement("button"));
 		buttonWelcomeRowAction.type = "button";
 		buttonWelcomeRowAction.classList.add("welcome-row-action", `welcome-${action}`, "with-inline-padding", "with-padding", "rounded", "depth");
+		buttonWelcomeRowAction.translate = true;
 		buttonWelcomeRowAction.textContent = text;
 		return buttonWelcomeRowAction;
 	}
@@ -69,9 +72,11 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 
 		const divWelcomeHeader = dialogWelcome.appendChild(document.createElement("div"));
 		divWelcomeHeader.classList.add("welcome-header", "flex", "column", "with-gap", "with-padding", "large-padding");
+		divWelcomeHeader.translate = true;
 
 		const strongWelcomeTitle = divWelcomeHeader.appendChild(document.createElement("strong"));
 		strongWelcomeTitle.classList.add("welcome-title", "font-larger-2");
+		strongWelcomeTitle.translate = true;
 		strongWelcomeTitle.textContent = "Hi! This is a live feed of what I'm up to";
 
 		const spanWelcomeSubtitle = divWelcomeHeader.appendChild(DOMBuilder.newDescription("A few things here are easy to miss:"));
@@ -79,6 +84,7 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 
 		const divWelcomeRows = dialogWelcome.appendChild(document.createElement("div"));
 		divWelcomeRows.classList.add("welcome-rows");
+		divWelcomeRows.translate = true;
 
 		const buttonWelcomeProfiles = this.#buildRow(divWelcomeRows, "profiles", "Find me elsewhere", "Every profile I have, in one place.", "Show platforms");
 		buttonWelcomeProfiles.addEventListener("click", (event) => {
@@ -96,10 +102,12 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 
 		const divWelcomeFooter = dialogWelcome.appendChild(document.createElement("div"));
 		divWelcomeFooter.classList.add("welcome-footer", "flex", "alt-center", "with-gap", "with-padding", "large-padding");
+		divWelcomeFooter.translate = true;
 
 		const buttonWelcomeClose = divWelcomeFooter.appendChild(document.createElement("button"));
 		buttonWelcomeClose.type = "button";
 		buttonWelcomeClose.classList.add("welcome-close", "with-inline-padding", "with-padding", "rounded", "highlight-background");
+		buttonWelcomeClose.translate = true;
 		buttonWelcomeClose.textContent = "Got it";
 		buttonWelcomeClose.addEventListener("click", (event) => {
 			this.#choose(dialogWelcome, "dismiss");

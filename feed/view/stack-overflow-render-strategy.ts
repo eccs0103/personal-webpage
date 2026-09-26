@@ -10,12 +10,14 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 	#renderScorePanel(itemContainer: HTMLElement, isSuccessful: boolean, score: number, views: number): void {
 		const divPanel = itemContainer.appendChild(document.createElement("div"));
 		divPanel.classList.add("score-panel", "flex", "column", "alt-center", "main-center");
+		divPanel.translate = true;
 		if (isSuccessful) {
 			divPanel.classList.add("status-success");
 		}
 
 		const spanValue = divPanel.appendChild(DOMBuilder.newTextbox(score.toString()));
 		spanValue.classList.add("value", "font-larger-4");
+		spanValue.translate = false;
 
 		if (!Number.isNaN(views)) {
 			const viewsFormatted = new Intl.NumberFormat("en-US", { notation: "compact", compactDisplay: "short" }).format(views).toLowerCase();
@@ -29,10 +31,11 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 
 		const divTags = itemContainer.appendChild(document.createElement("div"));
 		divTags.classList.add("tags-list", "flex", "with-gap");
+		divTags.translate = false;
 
 		for (const tag of tags) {
 			const url = new URL(`https://ru.stackoverflow.com/tags/${tag}`);
-			const aTag = divTags.appendChild(DOMBuilder.newLink(url, { text: tag }));
+			const aTag = divTags.appendChild(DOMBuilder.newLink(url, { text: tag, translate: false }));
 			aTag.classList.add("tag", "depth", "rounded", "with-padding", "font-smaller-2");
 		}
 	}
@@ -40,11 +43,13 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 	#renderSummary(itemContainer: HTMLElement, isSuccessful: boolean, score: number, views: number, context: string, title: string, url: string, tags: readonly string[]): void {
 		const summary = itemContainer.appendChild(document.createElement("summary"));
 		summary.classList.add("flex", "with-gap");
+		summary.translate = true;
 
 		this.#renderScorePanel(summary, isSuccessful, score, views);
 
 		const divHeader = summary.appendChild(document.createElement("div"));
 		divHeader.classList.add("summary-content");
+		divHeader.translate = true;
 
 		divHeader.appendChild(DOMBuilder.newText(context));
 
@@ -60,9 +65,13 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 	#renderBody(itemContainer: HTMLElement, htmlContent: string): void {
 		const divBody = itemContainer.appendChild(document.createElement("div"));
 		divBody.classList.add("entry-body", "markup", "font-smaller-1");
+		divBody.translate = true;
 		divBody.innerHTML = htmlContent;
 		divBody.getElements(HTMLElement, "pre code").forEach((code) => {
 			code.classList.add("font-smaller-2");
+		});
+		divBody.getElements(HTMLElement, "code").forEach((code) => {
+			code.translate = false;
 		});
 	}
 
@@ -71,6 +80,7 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 
 		const details = itemContainer.appendChild(document.createElement("details"));
 		details.classList.add("stack-overflow-entry");
+		details.translate = true;
 
 		this.#renderSummary(details, isAnswered, score, views, "Asked question: ", title, url, tags);
 
@@ -82,6 +92,7 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 
 		const details = itemContainer.appendChild(document.createElement("details"));
 		details.classList.add("stack-overflow-entry");
+		details.translate = true;
 
 		this.#renderSummary(details, isAccepted, score, NaN, "Answer to: ", title, url, []);
 

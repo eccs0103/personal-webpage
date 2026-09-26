@@ -245,8 +245,8 @@ export class GitHubSummaryExpert {
 
 	build(linker: LinkerFunction): SummaryContext {
 		const { primary, secondary, magnitude, label, modifier, urls } = this.#report;
-		const nodePrimary = Optional.map(primary, primary => linker(ReferenceError.suppress(urls.get(primary)), { text: primary }));
-		const nodeSecondary = Optional.map(secondary, secondary => linker(ReferenceError.suppress(urls.get(secondary)), { text: secondary }));
+		const nodePrimary = Optional.map(primary, primary => linker(ReferenceError.suppress(urls.get(primary)), { text: primary, translate: false }));
+		const nodeSecondary = Optional.map(secondary, secondary => linker(ReferenceError.suppress(urls.get(secondary)), { text: secondary, translate: false }));
 		return new SummaryContext(nodePrimary, nodeSecondary, magnitude, label, modifier);
 	}
 

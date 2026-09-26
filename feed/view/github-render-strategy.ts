@@ -14,7 +14,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText("Published "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/commit/${sha}`), { text: `${count} update${TextExpert.getPluralSuffix(count)}` }));
 		itemContainer.appendChild(DOMBuilder.newText(" to the source code of "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
@@ -23,66 +23,66 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText(isPrerelease ? "Rolled out a test version " : "Shipped update "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/releases/tag/${tagName}`), { text: title }));
 		itemContainer.appendChild(DOMBuilder.newText(" for "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderWatch(itemContainer: HTMLElement, activity: GitHubWatchActivity): void {
 		const { repository, url } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Discovered and bookmarked the "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" open-source project."));
 	}
 
 	#renderCreateTag(itemContainer: HTMLElement, activity: GitHubCreateTagActivity): void {
 		const { name, url, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Marked a new milestone "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/releases/tag/${name}`), { text: name }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/releases/tag/${name}`), { text: name, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" in "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" history."));
 	}
 
 	#renderCreateBranch(itemContainer: HTMLElement, activity: GitHubCreateBranchActivity): void {
 		const { name, url, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Started working on a new feature \""));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/tree/${name}`), { text: name }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/tree/${name}`), { text: name, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("\" in "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderCreateRepository(itemContainer: HTMLElement, activity: GitHubCreateRepositoryActivity): void {
 		const { name, url } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Initiated a new repository named "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: name }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: name, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderDeleteTag(itemContainer: HTMLElement, activity: GitHubDeleteTagActivity): void {
 		const { name, repository, url } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Unpublished version "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/releases/tag/${name}`), { text: name, disabled: true }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/releases/tag/${name}`), { text: name, disabled: true, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" from "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderDeleteBranch(itemContainer: HTMLElement, activity: GitHubDeleteBranchActivity): void {
 		const { name, url, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Finished working on the \""));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/tree/${name}`), { text: name, disabled: true }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(`${url}/tree/${name}`), { text: name, disabled: true, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("\" feature in "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderFork(itemContainer: HTMLElement, activity: GitHubForkActivity): void {
 		const { url, repository, urlFork, forkName } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Forked "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" into "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlFork), { text: forkName }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlFork), { text: forkName, translate: false }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
@@ -91,7 +91,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText("Flagged a new issue "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlIssue), { text: title }));
 		itemContainer.appendChild(DOMBuilder.newText(" in "));
-		itemContainer.appendChild(DOMBuilder.newText(repository));
+		itemContainer.appendChild(DOMBuilder.newTextbox(repository)).translate = false;
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
@@ -100,7 +100,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText("Resolved issue "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlIssue), { text: title, disabled: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" in "));
-		itemContainer.appendChild(DOMBuilder.newText(repository));
+		itemContainer.appendChild(DOMBuilder.newTextbox(repository)).translate = false;
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
@@ -109,7 +109,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText("Opened pull request "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlRequest), { text: title }));
 		itemContainer.appendChild(DOMBuilder.newText(" for "));
-		itemContainer.appendChild(DOMBuilder.newText(repository));
+		itemContainer.appendChild(DOMBuilder.newTextbox(repository)).translate = false;
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
@@ -118,7 +118,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText("Merged pull request "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlRequest), { text: title, disabled: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" into "));
-		itemContainer.appendChild(DOMBuilder.newText(repository));
+		itemContainer.appendChild(DOMBuilder.newTextbox(repository)).translate = false;
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
@@ -127,7 +127,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		itemContainer.appendChild(DOMBuilder.newText("Closed pull request "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlRequest), { text: title, disabled: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" for "));
-		itemContainer.appendChild(DOMBuilder.newText(repository));
+		itemContainer.appendChild(DOMBuilder.newTextbox(repository)).translate = false;
 		itemContainer.appendChild(DOMBuilder.newText(" without merging."));
 	}
 
@@ -152,8 +152,10 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		const details = itemContainer.appendChild(document.createElement("details"));
 		details.classList.add("github-collection");
 		details.open = true;
+		details.translate = true;
 
 		const summary = details.appendChild(document.createElement("summary"));
+		summary.translate = true;
 		const expert = new GitHubSummaryExpert(activities);
 		const linker: LinkerFunction = DOMBuilder.newLink;
 		const context = expert.build(linker);
@@ -163,10 +165,12 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 
 		const ulContent = details.appendChild(document.createElement("ul"));
 		ulContent.classList.add("collection-content");
+		ulContent.translate = true;
 
 		for (let index = 0; index < activities.length; index++) {
 			const activity = activities[index];
 			const liItem = ulContent.appendChild(document.createElement("li"));
+			liItem.translate = true;
 
 			if (!(activity instanceof GitHubPushActivity)) {
 				this.#renderSingle(liItem, activity);

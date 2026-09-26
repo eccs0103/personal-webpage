@@ -20,24 +20,28 @@ export class SoundCloudRenderStrategy implements ActivityRenderStrategy<SoundClo
 
 		const divWrapper = itemContainer.appendChild(document.createElement("div"));
 		divWrapper.classList.add("flex", "with-gap");
+		divWrapper.translate = true;
 
 		const image = artwork ?? avatar;
 		if (image !== null) {
-			const imgArtwork = divWrapper.appendChild(DOMBuilder.newImage(new URL(SoundCloudRenderStrategy.#upsize(image)), `'${title}' artwork`));
+			const imgArtwork = divWrapper.appendChild(DOMBuilder.newImage(new URL(SoundCloudRenderStrategy.#upsize(image)), `'${title}' artwork`, { translate: false }));
 			imgArtwork.classList.add("rounded", "soundcloud-cover");
 		} else {
 			const divPlaceholder = divWrapper.appendChild(document.createElement("div"));
 			divPlaceholder.classList.add("depth", "rounded", "soundcloud-cover", "placeholder", "flex", "center");
+			divPlaceholder.translate = false;
 			divPlaceholder.textContent = "♪";
 		}
 
 		const divInformation = divWrapper.appendChild(document.createElement("div"));
 		divInformation.classList.add("flex", "column");
+		divInformation.translate = true;
 
 		const strongHeader = divInformation.appendChild(document.createElement("strong"));
+		strongHeader.translate = false;
 		strongHeader.textContent = title;
 
-		divInformation.appendChild(DOMBuilder.newDescription(publisher));
+		divInformation.appendChild(DOMBuilder.newDescription(publisher)).translate = false;
 
 		const aLink = divInformation.appendChild(DOMBuilder.newLink(new URL(url), { text: "Listen on SoundCloud " }));
 		aLink.classList.add("with-block-padding", "font-smaller-3");
