@@ -272,5 +272,16 @@
 		"platform": "GitHub",
 		"timestamp": 1790283828000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/556c0c0692cab204e7bee791989d209b8720c1f6.jpg",
+		"title": "Through the Forgotten City",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1790375769000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
