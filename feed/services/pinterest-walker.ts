@@ -3,19 +3,19 @@
 import "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
-import { PinterestBoard, PinterestPin, PinterestResponse, PinterestToken } from "../models/pinterest-event.js";
+import { PinterestBoard, PinterestPin, PinterestResponse, PinterestToken, type PinterestImage, type PinterestImagesCollection } from "../models/pinterest-event.js";
 import { Activity, PinterestImagePinActivity, PinterestVideoPinActivity } from "../models/activity.js";
 
 //#region Pinterest pin source
 class PinterestPinSource extends ActivitySource<PinterestPin, unknown> {
 	#token: PinterestToken;
-	#boardId: string;
+	#idBoard: string;
 	#boardName: string;
 
-	constructor(platform: string, token: PinterestToken, boardId: string, boardName: string) {
+	constructor(platform: string, token: PinterestToken, idBoard: string, boardName: string) {
 		super(platform);
 		this.#token = token;
-		this.#boardId = boardId;
+		this.#idBoard = idBoard;
 		this.#boardName = boardName;
 	}
 
@@ -39,7 +39,7 @@ class PinterestPinSource extends ActivitySource<PinterestPin, unknown> {
 	}
 
 	async *fetch(): AsyncIterable<unknown> {
-		yield* this.#fetchPaginated(`/boards/${this.#boardId}/pins`, 50);
+		yield* this.#fetchPaginated(`/boards/${this.#idBoard}/pins`, 50);
 	}
 
 	parse(source: unknown, name: string): PinterestPin {
@@ -72,13 +72,13 @@ class PinterestPinSource extends ActivitySource<PinterestPin, unknown> {
 
 //#region Pinterest walker
 export class PinterestWalker extends ActivityWalker {
-	#clientId: string;
+	#idClient: string;
 	#clientSecret: string;
 	#refreshToken: string;
 
-	constructor(clientId: string, clientSecret: string, refreshToken: string) {
+	constructor(idClient: string, clientSecret: string, refreshToken: string) {
 		super("Pinterest");
-		this.#clientId = clientId;
+		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#refreshToken = refreshToken;
 	}
@@ -86,7 +86,7 @@ export class PinterestWalker extends ActivityWalker {
 	async #authenticate(): Promise<PinterestToken> {
 		const url = new URL("https://api.pinterest.com/v5/oauth/token");
 		const method = "POST";
-		const auth = Buffer.from(`${this.#clientId}:${this.#clientSecret}`).toString("base64");
+		const auth = Buffer.from(`${this.#idClient}:${this.#clientSecret}`).toString("base64");
 		const headers: Record<string, string> = {
 			["Authorization"]: `Basic ${auth}`,
 			["Content-Type"]: "application/x-www-form-urlencoded"

@@ -46,8 +46,9 @@ export class ResponseFactory {
 		const { begin: start, end, total } = range;
 		const headers = this.#mediaHeaders(media);
 		if (end !== Number.POSITIVE_INFINITY) {
-			const totalString = total !== Number.POSITIVE_INFINITY ? String(total) : "*";
-			headers.set("Content-Range", `bytes ${start}-${end}/${totalString}`);
+			let size = "*";
+			if (total !== Number.POSITIVE_INFINITY) size = String(total);
+			headers.set("Content-Range", `bytes ${start}-${end}/${size}`);
 			headers.set("Content-Length", String(end - start + 1));
 			return new Response(body, { status: 206, headers });
 		}

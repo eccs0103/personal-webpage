@@ -17,10 +17,11 @@ export class DeathDetectionSystem {
 	}
 
 	async runDiagnostics(): Promise<boolean> {
+		const target = this.#target;
 		try {
-			const query = `"${this.#target}" obituary death funeral news`;
+			const query = `"${target}" obituary death funeral news`;
 			const context = await this.#search.search(query);
-			const isDead = await this.#agent.askBoolean(`Is there explicit confirmation in the text that "${this.#target}" has died?`, context);
+			const isDead = await this.#agent.askBoolean(`Is there explicit confirmation in the text that "${target}" has died?`, context);
 			return isDead;
 		} catch (reason) {
 			const error = Error.from(reason);

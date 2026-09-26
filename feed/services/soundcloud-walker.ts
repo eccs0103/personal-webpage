@@ -68,7 +68,7 @@ class SoundCloudUploadSource extends SoundCloudTrackSource {
 	}
 
 	*map(event: SoundCloudTrack): Iterable<Activity> {
-		const { title, permalinkUrl: url, artworkUrl: artwork, createdAt: timestamp, user: { username: publisher, avatarUrl: avatar } } = event;
+		const { title, urlPermalink: url, urlArtwork: artwork, createdAt: timestamp, user: { username: publisher, urlAvatar: avatar } } = event;
 		yield new SoundCloudUploadActivity(this.platform, timestamp, title, publisher, artwork, avatar, url);
 	}
 }
@@ -86,7 +86,7 @@ class SoundCloudLikeSource extends SoundCloudTrackSource {
 	get sorted(): boolean { return false; }
 
 	*map(event: SoundCloudTrack): Iterable<Activity> {
-		const { title, permalinkUrl: url, artworkUrl: artwork, createdAt: timestamp, user: { username: publisher, avatarUrl: avatar } } = event;
+		const { title, urlPermalink: url, urlArtwork: artwork, createdAt: timestamp, user: { username: publisher, urlAvatar: avatar } } = event;
 		yield new SoundCloudLikeActivity(this.platform, timestamp, title, publisher, artwork, avatar, url);
 	}
 }
@@ -94,14 +94,14 @@ class SoundCloudLikeSource extends SoundCloudTrackSource {
 
 //#region SoundCloud walker
 export class SoundCloudWalker extends ActivityWalker {
-	#clientId: string;
+	#idClient: string;
 	#clientSecret: string;
 	#username: string;
 	#store: SoundCloudTokenStore;
 
-	constructor(clientId: string, clientSecret: string, key: string, token: string, username: string) {
+	constructor(idClient: string, clientSecret: string, key: string, token: string, username: string) {
 		super("SoundCloud");
-		this.#clientId = clientId;
+		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#store = new SoundCloudTokenStore(new URL("../../resources/data/soundcloud-token.json", meta.url), key, token);
 		this.#username = username;
@@ -125,7 +125,7 @@ export class SoundCloudWalker extends ActivityWalker {
 		};
 		const query: Record<string, string> = {
 			["grant_type"]: "refresh_token",
-			["client_id"]: this.#clientId,
+			["client_id"]: this.#idClient,
 			["client_secret"]: this.#clientSecret,
 			["refresh_token"]: refreshToken
 		};

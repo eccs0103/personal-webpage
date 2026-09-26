@@ -7,12 +7,12 @@ import { SoundCloudAuthorization, SoundCloudTokenError } from "../models/soundcl
 
 //#region SoundCloud authorizer
 export class SoundCloudAuthorizer {
-	#clientId: string;
+	#idClient: string;
 	#clientSecret: string;
 	#uriRedirect: URL;
 
-	constructor(clientId: string, clientSecret: string, uriRedirect: URL) {
-		this.#clientId = clientId;
+	constructor(idClient: string, clientSecret: string, uriRedirect: URL) {
+		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#uriRedirect = uriRedirect;
 	}
@@ -33,7 +33,7 @@ export class SoundCloudAuthorizer {
 	#buildAuthorizeUrl(challenge: string, state: string): URL {
 		const url = new URL("https://secure.soundcloud.com/authorize");
 		url.searchParams.set("response_type", "code");
-		url.searchParams.set("client_id", this.#clientId);
+		url.searchParams.set("client_id", this.#idClient);
 		url.searchParams.set("redirect_uri", String(this.#uriRedirect));
 		url.searchParams.set("code_challenge", challenge);
 		url.searchParams.set("code_challenge_method", "S256");
@@ -83,7 +83,7 @@ export class SoundCloudAuthorizer {
 		};
 		const query: Record<string, string> = {
 			["grant_type"]: "authorization_code",
-			["client_id"]: this.#clientId,
+			["client_id"]: this.#idClient,
 			["client_secret"]: this.#clientSecret,
 			["redirect_uri"]: String(this.#uriRedirect),
 			["code_verifier"]: verifier,

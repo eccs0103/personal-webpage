@@ -78,54 +78,54 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 	}
 
 	#renderFork(itemContainer: HTMLElement, activity: GitHubForkActivity): void {
-		const { url, repository, forkUrl, forkName } = activity;
+		const { url, repository, urlFork, forkName } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Forked "));
 		itemContainer.appendChild(DOMBuilder.newLink(new URL(url), { text: repository }));
 		itemContainer.appendChild(DOMBuilder.newText(" into "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(forkUrl), { text: forkName }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlFork), { text: forkName }));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderIssueOpen(itemContainer: HTMLElement, activity: GitHubIssueOpenActivity): void {
-		const { title, issueUrl, repository } = activity;
+		const { title, urlIssue, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Flagged a new issue "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(issueUrl), { text: title }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlIssue), { text: title }));
 		itemContainer.appendChild(DOMBuilder.newText(" in "));
 		itemContainer.appendChild(DOMBuilder.newText(repository));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderIssueClose(itemContainer: HTMLElement, activity: GitHubIssueCloseActivity): void {
-		const { title, issueUrl, repository } = activity;
+		const { title, urlIssue, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Resolved issue "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(issueUrl), { text: title, disabled: false }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlIssue), { text: title, disabled: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" in "));
 		itemContainer.appendChild(DOMBuilder.newText(repository));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderPullRequestOpen(itemContainer: HTMLElement, activity: GitHubPullRequestOpenActivity): void {
-		const { title, requestUrl, repository } = activity;
+		const { title, urlRequest, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Opened pull request "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(requestUrl), { text: title }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlRequest), { text: title }));
 		itemContainer.appendChild(DOMBuilder.newText(" for "));
 		itemContainer.appendChild(DOMBuilder.newText(repository));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderPullRequestMerge(itemContainer: HTMLElement, activity: GitHubPullRequestMergeActivity): void {
-		const { title, requestUrl, repository } = activity;
+		const { title, urlRequest, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Merged pull request "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(requestUrl), { text: title, disabled: false }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlRequest), { text: title, disabled: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" into "));
 		itemContainer.appendChild(DOMBuilder.newText(repository));
 		itemContainer.appendChild(DOMBuilder.newText("."));
 	}
 
 	#renderPullRequestClose(itemContainer: HTMLElement, activity: GitHubPullRequestCloseActivity): void {
-		const { title, requestUrl, repository } = activity;
+		const { title, urlRequest, repository } = activity;
 		itemContainer.appendChild(DOMBuilder.newText("Closed pull request "));
-		itemContainer.appendChild(DOMBuilder.newLink(new URL(requestUrl), { text: title, disabled: false }));
+		itemContainer.appendChild(DOMBuilder.newLink(new URL(urlRequest), { text: title, disabled: false }));
 		itemContainer.appendChild(DOMBuilder.newText(" for "));
 		itemContainer.appendChild(DOMBuilder.newText(repository));
 		itemContainer.appendChild(DOMBuilder.newText(" without merging."));

@@ -95,28 +95,28 @@ class GitHubEventSource extends ActivitySource<GitHubEvent, unknown> {
 			}
 		}
 		if (payload instanceof GitHubForkEventPayload) {
-			const { htmlUrl: forkUrl, fullName: forkName } = payload.forkee;
-			yield new GitHubForkActivity(platform, timestamp, username, url, repository, forkUrl, forkName);
+			const { htmlUrl: urlFork, fullName: forkName } = payload.forkee;
+			yield new GitHubForkActivity(platform, timestamp, username, url, repository, urlFork, forkName);
 		}
 		if (payload instanceof GitHubIssuesEventPayload) {
 			const { action, issue } = payload;
-			const { number, title, htmlUrl: issueUrl } = issue;
+			const { number, title, htmlUrl: urlIssue } = issue;
 			switch (action) {
 			case "opened":
-			case "reopened": yield new GitHubIssueOpenActivity(platform, timestamp, username, url, repository, number, title, issueUrl); break;
-			case "closed": yield new GitHubIssueCloseActivity(platform, timestamp, username, url, repository, number, title, issueUrl); break;
+			case "reopened": yield new GitHubIssueOpenActivity(platform, timestamp, username, url, repository, number, title, urlIssue); break;
+			case "closed": yield new GitHubIssueCloseActivity(platform, timestamp, username, url, repository, number, title, urlIssue); break;
 			}
 		}
 		if (payload instanceof GitHubPullRequestEventPayload) {
 			const { action, pullRequest } = payload;
-			const { number, title, htmlUrl: requestUrl, merged } = pullRequest;
+			const { number, title, htmlUrl: urlRequest, merged } = pullRequest;
 			switch (action) {
 			case "opened":
-			case "reopened": yield new GitHubPullRequestOpenActivity(platform, timestamp, username, url, repository, number, title, requestUrl); break;
+			case "reopened": yield new GitHubPullRequestOpenActivity(platform, timestamp, username, url, repository, number, title, urlRequest); break;
 			case "closed":
 				yield merged
-					? new GitHubPullRequestMergeActivity(platform, timestamp, username, url, repository, number, title, requestUrl)
-					: new GitHubPullRequestCloseActivity(platform, timestamp, username, url, repository, number, title, requestUrl);
+					? new GitHubPullRequestMergeActivity(platform, timestamp, username, url, repository, number, title, urlRequest)
+					: new GitHubPullRequestCloseActivity(platform, timestamp, username, url, repository, number, title, urlRequest);
 				break;
 			}
 		}

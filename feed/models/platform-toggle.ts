@@ -7,22 +7,22 @@ import { Field, Model } from "adaptive-extender/core";
 export class PlatformToggle extends Model {
 	/** Display name of the platform whose visibility was toggled (e.g. "GitHub", "Spotify"). */
 	@Field(String, { name: "platform_name" })
-	platformName: string;
+	namePlatform: string;
 
 	/** true when the platform was enabled; false when hidden. */
 	@Field(Boolean, { name: "enabled" })
 	enabled: boolean;
 
 	constructor();
-	constructor(platformName: string, enabled: boolean);
-	constructor(platformName?: string, enabled?: boolean) {
-		if (platformName === undefined || enabled === undefined) {
+	constructor(namePlatform: string, enabled: boolean);
+	constructor(namePlatform?: string, enabled?: boolean) {
+		if (namePlatform === undefined || enabled === undefined) {
 			super();
 			return;
 		}
 
 		super();
-		this.platformName = platformName;
+		this.namePlatform = namePlatform;
 		this.enabled = enabled;
 	}
 }

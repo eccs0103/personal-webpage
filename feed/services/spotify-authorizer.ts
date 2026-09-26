@@ -6,12 +6,12 @@ import { SpotifyAuthorization, SpotifyTokenError } from "../models/spotify-event
 
 //#region Spotify authorizer
 export class SpotifyAuthorizer {
-	#clientId: string;
+	#idClient: string;
 	#clientSecret: string;
 	#uriRedirect: URL;
 
-	constructor(clientId: string, clientSecret: string, uriRedirect: URL) {
-		this.#clientId = clientId;
+	constructor(idClient: string, clientSecret: string, uriRedirect: URL) {
+		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#uriRedirect = uriRedirect;
 	}
@@ -28,7 +28,7 @@ export class SpotifyAuthorizer {
 	#buildAuthorizeUrl(): URL {
 		const url = new URL("https://accounts.spotify.com/authorize");
 		url.searchParams.set("response_type", "code");
-		url.searchParams.set("client_id", this.#clientId);
+		url.searchParams.set("client_id", this.#idClient);
 		url.searchParams.set("redirect_uri", String(this.#uriRedirect));
 		url.searchParams.set("scope", "user-library-read");
 		url.searchParams.set("show_dialog", "true");
@@ -67,7 +67,7 @@ export class SpotifyAuthorizer {
 	async #exchangeCode(code: string): Promise<SpotifyAuthorization> {
 		const url = new URL("https://accounts.spotify.com/api/token");
 		const method = "POST";
-		const auth = Buffer.from(`${this.#clientId}:${this.#clientSecret}`).toString("base64");
+		const auth = Buffer.from(`${this.#idClient}:${this.#clientSecret}`).toString("base64");
 		const headers: Record<string, string> = {
 			["Authorization"]: `Basic ${auth}`,
 			["Content-Type"]: "application/x-www-form-urlencoded"

@@ -56,7 +56,8 @@ class NpmPublishSource extends ActivitySource<NpmRelease, NpmRelease> {
 			if (version === "created" || version === "modified") continue;
 			const timestamp = new Date(published);
 			const details = versions.get(version);
-			const description = details !== undefined ? details.description : packageDescription;
+			let description = packageDescription;
+			if (details !== undefined) description = details.description;
 			yield new NpmRelease(name, version, timestamp, description);
 		}
 	}

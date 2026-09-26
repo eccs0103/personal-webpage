@@ -9,14 +9,14 @@ import { Activity, TelegramMediaPostActivity, TelegramTextPostActivity } from ".
 
 //#region Telegram post source
 class TelegramPostSource extends ActivitySource<Message, Message> {
-	#channelId: number;
+	#idChannel: number;
 	#apiId: number;
 	#apiHash: string;
 	#session: string;
 
-	constructor(platform: string, channelId: number, apiId: number, apiHash: string, session: string) {
+	constructor(platform: string, idChannel: number, apiId: number, apiHash: string, session: string) {
 		super(platform);
-		this.#channelId = channelId;
+		this.#idChannel = idChannel;
 		this.#apiId = apiId;
 		this.#apiHash = apiHash;
 		this.#session = session;
@@ -31,7 +31,7 @@ class TelegramPostSource extends ActivitySource<Message, Message> {
 		await telegram.connect();
 		await telegram.sendOnline(false);
 		try {
-			yield* telegram.iterHistory(this.#channelId);
+			yield* telegram.iterHistory(this.#idChannel);
 		} finally {
 			await telegram.disconnect();
 		}
@@ -48,46 +48,46 @@ class TelegramPostSource extends ActivitySource<Message, Message> {
 
 	*map(event: Message): Iterable<Activity> {
 		const platform = this.platform;
-		const channelId = this.#channelId;
-		const { id: messageId, text, media } = event;
+		const idChannel = this.#idChannel;
+		const { id: idMessage, text, media } = event;
 		if (!event.isChannelPost) return;
 		if (media === null) {
-			yield new TelegramTextPostActivity(platform, event.date, channelId, messageId, text);
+			yield new TelegramTextPostActivity(platform, event.date, idChannel, idMessage, text);
 			return;
 		}
 		if (media instanceof Photo) {
-			const fileName = `${messageId}.jpg`;
+			const fileName = `${idMessage}.jpg`;
 			const description = text.insteadWhitespace(null);
-			yield new TelegramMediaPostActivity(platform, event.date, channelId, messageId, fileName, "photo", description);
+			yield new TelegramMediaPostActivity(platform, event.date, idChannel, idMessage, fileName, "photo", description);
 			return;
 		}
 		if (media instanceof Audio) {
 			const extension = MimeRegistry.extensionFor(media.mimeType);
-			const fileName = media.fileName ?? `${messageId}.${extension}`;
+			const fileName = media.fileName ?? `${idMessage}.${extension}`;
 			const description = text.insteadWhitespace(null);
-			yield new TelegramMediaPostActivity(platform, event.date, channelId, messageId, fileName, "audio", description);
+			yield new TelegramMediaPostActivity(platform, event.date, idChannel, idMessage, fileName, "audio", description);
 			return;
 		}
 		if (media instanceof Voice) {
 			const extension = MimeRegistry.extensionFor(media.mimeType);
-			const fileName = media.fileName ?? `${messageId}.${extension}`;
+			const fileName = media.fileName ?? `${idMessage}.${extension}`;
 			const description = text.insteadWhitespace(null);
-			yield new TelegramMediaPostActivity(platform, event.date, channelId, messageId, fileName, "audio", description);
+			yield new TelegramMediaPostActivity(platform, event.date, idChannel, idMessage, fileName, "audio", description);
 			return;
 		}
 		if (media instanceof Video) {
 			const extension = MimeRegistry.extensionFor(media.mimeType);
-			const fileName = media.fileName ?? `${messageId}.${extension}`;
+			const fileName = media.fileName ?? `${idMessage}.${extension}`;
 			const mediaType = media.isAnimation || media.isLegacyGif ? "animation" : "video";
 			const description = text.insteadWhitespace(null);
-			yield new TelegramMediaPostActivity(platform, event.date, channelId, messageId, fileName, mediaType, description);
+			yield new TelegramMediaPostActivity(platform, event.date, idChannel, idMessage, fileName, mediaType, description);
 			return;
 		}
 		if (media instanceof RawDocument) {
 			const extension = MimeRegistry.extensionFor(media.mimeType);
-			const fileName = media.fileName ?? `${messageId}.${extension}`;
+			const fileName = media.fileName ?? `${idMessage}.${extension}`;
 			const description = text.insteadWhitespace(null);
-			yield new TelegramMediaPostActivity(platform, event.date, channelId, messageId, fileName, "document", description);
+			yield new TelegramMediaPostActivity(platform, event.date, idChannel, idMessage, fileName, "document", description);
 			return;
 		}
 	}
@@ -96,21 +96,21 @@ class TelegramPostSource extends ActivitySource<Message, Message> {
 
 //#region Telegram walker
 export class TelegramWalker extends ActivityWalker {
-	#channelId: number;
+	#idChannel: number;
 	#apiId: number;
 	#apiHash: string;
 	#session: string;
 
-	constructor(channelId: number, apiId: number, apiHash: string, session: string) {
+	constructor(idChannel: number, apiId: number, apiHash: string, session: string) {
 		super("Telegram");
-		this.#channelId = channelId;
+		this.#idChannel = idChannel;
 		this.#apiId = apiId;
 		this.#apiHash = apiHash;
 		this.#session = session;
 	}
 
 	async *sources(): AsyncIterable<ActivitySource<unknown, unknown>> {
-		yield new TelegramPostSource(this.name, this.#channelId, this.#apiId, this.#apiHash, this.#session);
+		yield new TelegramPostSource(this.name, this.#idChannel, this.#apiId, this.#apiHash, this.#session);
 	}
 }
 //#endregion

@@ -10,15 +10,15 @@ import { TelegramMedia } from "./telegram-media.js";
 export class TelegramChannel {
 	static #lock: boolean = true;
 	#client: TelegramClient;
-	#channelId: number;
+	#idChannel: number;
 
-	constructor(client: TelegramClient, channelId: number) {
+	constructor(client: TelegramClient, idChannel: number) {
 		if (TelegramChannel.#lock) throw new TypeError("Illegal constructor");
 		this.#client = client;
-		this.#channelId = channelId;
+		this.#idChannel = idChannel;
 	}
 
-	static async connect(channelId: number, apiId: number, apiHash: string, session: string): Promise<TelegramChannel> {
+	static async connect(idChannel: number, apiId: number, apiHash: string, session: string): Promise<TelegramChannel> {
 		const storage = new MemoryStorage();
 		const disableUpdates = true;
 		const crypto = new WebCryptoProvider({ wasmInput });
@@ -26,29 +26,29 @@ export class TelegramChannel {
 		await client.importSession(session);
 		await client.connect();
 		TelegramChannel.#lock = false;
-		const channel = new TelegramChannel(client, channelId);
+		const channel = new TelegramChannel(client, idChannel);
 		TelegramChannel.#lock = true;
 		return channel;
 	}
 
-	#documentFileName(media: RawDocument, messageId: number): string {
+	#documentFileName(media: RawDocument, idMessage: number): string {
 		if (media.fileName !== null) return media.fileName;
 		const extension = MimeRegistry.extensionFor(media.mimeType);
-		return `${messageId}.${extension}`;
+		return `${idMessage}.${extension}`;
 	}
 
-	async fetchMedia(messageId: number): Promise<TelegramMedia> {
+	async fetchMedia(idMessage: number): Promise<TelegramMedia> {
 		const client = this.#client;
-		const messages = await client.getMessages(this.#channelId, [messageId]);
+		const messages = await client.getMessages(this.#idChannel, [idMessage]);
 		const message = messages[0];
 		if (message === null) throw new ReferenceError("Message not found");
 		const { media } = message;
 		if (media === null) throw new ReferenceError("Message has no media");
 		if (!(media instanceof FileLocation)) throw new TypeError("Message media is not downloadable");
-		const mediaSize = media.fileSize ?? Number.POSITIVE_INFINITY;
-		if (!(media instanceof RawDocument)) return new TelegramMedia("image/jpeg", mediaSize, `${messageId}.jpg`, client, media);
-		const fileName = this.#documentFileName(media, messageId);
-		return new TelegramMedia(media.mimeType, mediaSize, fileName, client, media);
+		const size = media.fileSize ?? Number.POSITIVE_INFINITY;
+		if (!(media instanceof RawDocument)) return new TelegramMedia("image/jpeg", size, `${idMessage}.jpg`, client, media);
+		const fileName = this.#documentFileName(media, idMessage);
+		return new TelegramMedia(media.mimeType, size, fileName, client, media);
 	}
 
 	async disconnect(): Promise<void> {

@@ -84,10 +84,10 @@ export class SoundCloudUser extends Model {
 	username: string;
 
 	@Field(String, { name: "permalink_url" })
-	permalinkUrl: string;
+	urlPermalink: string;
 
 	@Field(Nullable.Of(String), { name: "avatar_url" })
-	avatarUrl: string | null;
+	urlAvatar: string | null;
 }
 //#endregion
 
@@ -109,10 +109,10 @@ export class SoundCloudTrack extends Model {
 	title: string;
 
 	@Field(String, { name: "permalink_url" })
-	permalinkUrl: string;
+	urlPermalink: string;
 
 	@Field(Nullable.Of(String), { name: "artwork_url" })
-	artworkUrl: string | null;
+	urlArtwork: string | null;
 
 	@Field(Date, { name: "created_at" })
 	createdAt: Date;

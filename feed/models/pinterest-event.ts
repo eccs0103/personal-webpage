@@ -137,7 +137,7 @@ export class PinterestPin extends Model {
 	altText: string | null;
 
 	@Field(String, { name: "board_id" })
-	boardId: string;
+	idBoard: string;
 
 	@Field(Nullable.Of(PinterestMediaContainer), { name: "media" })
 	media: PinterestMediaContainer | null;

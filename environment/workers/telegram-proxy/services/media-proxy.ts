@@ -38,9 +38,9 @@ export class MediaProxy {
 		context.waitUntil(this.#awaitAndDisconnect(completion));
 	}
 
-	async #fetchMedia(messageId: number, context: ExecutionContext): Promise<TelegramMedia> {
+	async #fetchMedia(idMessage: number, context: ExecutionContext): Promise<TelegramMedia> {
 		try {
-			return await this.#channel.fetchMedia(messageId);
+			return await this.#channel.fetchMedia(idMessage);
 		} catch (reason) {
 			this.#scheduleDisconnect(context);
 			throw reason;
@@ -48,48 +48,51 @@ export class MediaProxy {
 	}
 
 	#handleFull(media: TelegramMedia, method: string, context: ExecutionContext): Response {
+		const factory = this.#factory;
 		if (method === "HEAD") {
 			this.#scheduleDisconnect(context);
-			return this.#factory.ok(media, null);
+			return factory.ok(media, null);
 		}
 		const result = media.download();
 		this.#scheduleDisconnect(context, result.completion);
-		return this.#factory.ok(media, result.stream);
+		return factory.ok(media, result.stream);
 	}
 
-	#handleRange(rangeHeader: string, media: TelegramMedia, method: string, context: ExecutionContext): Response {
+	#handleRange(headerRange: string, media: TelegramMedia, method: string, context: ExecutionContext): Response {
+		const factory = this.#factory;
 		try {
-			const range = MediaProxy.#parseRange(rangeHeader, media.fileSize);
+			const range = MediaProxy.#parseRange(headerRange, media.fileSize);
 			const { begin, end } = range;
 			const limit = end - begin + 1;
 			if (method === "HEAD") {
 				this.#scheduleDisconnect(context);
-				return this.#factory.partial(media, range, null);
+				return factory.partial(media, range, null);
 			}
 			const result = media.download(begin, limit);
 			this.#scheduleDisconnect(context, result.completion);
-			return this.#factory.partial(media, range, result.stream);
+			return factory.partial(media, range, result.stream);
 		} catch (error) {
 			this.#scheduleDisconnect(context);
-			if (error instanceof RangeError) return this.#factory.rangeNotSatisfiable(media);
-			if (error instanceof SyntaxError) return this.#factory.error(400, "Malformed Range header");
+			if (error instanceof RangeError) return factory.rangeNotSatisfiable(media);
+			if (error instanceof SyntaxError) return factory.error(400, "Malformed Range header");
 			throw error;
 		}
 	}
 
 	async handle(request: Request, context: ExecutionContext): Promise<Response> {
+		const factory = this.#factory;
 		const { method, url, headers } = request;
 		const { pathname } = new URL(url);
 
-		if (method === "OPTIONS") return this.#factory.preflight();
-		if (method !== "GET" && method !== "HEAD") return this.#factory.error(405, "Method Not Allowed");
+		if (method === "OPTIONS") return factory.preflight();
+		if (method !== "GET" && method !== "HEAD") return factory.error(405, "Method Not Allowed");
 		const match = MediaProxy.#PATH_PATTERN.exec(pathname);
-		if (match === null) return this.#factory.error(404, "Not Found");
+		if (match === null) return factory.error(404, "Not Found");
 
-		const messageId = Number.parseInt(match[1], 10);
-		const media = await this.#fetchMedia(messageId, context);
-		const rangeHeader = headers.get("range");
-		if (rangeHeader !== null) return this.#handleRange(rangeHeader, media, method, context);
+		const idMessage = Number.parseInt(match[1], 10);
+		const media = await this.#fetchMedia(idMessage, context);
+		const headerRange = headers.get("range");
+		if (headerRange !== null) return this.#handleRange(headerRange, media, method, context);
 		return this.#handleFull(media, method, context);
 	}
 }

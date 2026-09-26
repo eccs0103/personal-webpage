@@ -2,7 +2,7 @@
 
 import "adaptive-extender/web";
 import { Controller } from "adaptive-extender/web";
-import { type Platform } from "../models/configuration";
+import { type Platform } from "../models/configuration.js";
 import { ActivityBuilder, DOMBuilder } from "./view-builders.js";
 import { SettingsService } from "../services/settings-service.js";
 import { AnalyticsService } from "../../environment/services/analytics-service.js";

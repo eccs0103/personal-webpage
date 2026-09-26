@@ -30,7 +30,7 @@ export class GitHubEventActor extends Model {
 	url: string;
 
 	@Field(String, { name: "avatar_url" })
-	avatarUrl: string;
+	urlAvatar: string;
 }
 //#endregion
 

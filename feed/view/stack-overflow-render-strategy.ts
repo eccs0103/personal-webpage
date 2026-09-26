@@ -18,8 +18,8 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 		spanValue.classList.add("value", "font-larger-4");
 
 		if (!Number.isNaN(views)) {
-			const formattedViews = new Intl.NumberFormat("en-US", { notation: "compact", compactDisplay: "short" }).format(views).toLowerCase();
-			const spanViews = divPanel.appendChild(DOMBuilder.newDescription(`${formattedViews} views`));
+			const viewsFormatted = new Intl.NumberFormat("en-US", { notation: "compact", compactDisplay: "short" }).format(views).toLowerCase();
+			const spanViews = divPanel.appendChild(DOMBuilder.newDescription(`${viewsFormatted} views`));
 			spanViews.classList.add("view-count", "font-smaller-3");
 		}
 	}

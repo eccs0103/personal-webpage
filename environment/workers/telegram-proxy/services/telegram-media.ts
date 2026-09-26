@@ -30,6 +30,8 @@ class DownloadSession implements UnderlyingSource<Uint8Array<ArrayBufferLike>> {
 
 	async pull(controller: ReadableStreamDefaultController<Uint8Array>): Promise<void> {
 		if (this.#cancelled) return;
+		const skip = this.#skip;
+		const limit = this.#limit;
 		try {
 			while (true) {
 				const { done, value } = await this.#reader.read();
@@ -38,22 +40,23 @@ class DownloadSession implements UnderlyingSource<Uint8Array<ArrayBufferLike>> {
 
 				let chunk = value;
 
-				if (this.#skipped < this.#skip) {
-					const toSkip = min(this.#skip - this.#skipped, chunk.length);
-					this.#skipped += toSkip;
+				const skipped = this.#skipped;
+				if (skipped < skip) {
+					const toSkip = min(skip - skipped, chunk.length);
+					this.#skipped = skipped + toSkip;
 					chunk = chunk.subarray(toSkip);
 					if (chunk.length === 0) continue;
 				}
 
-				if (this.#limit !== Number.POSITIVE_INFINITY) {
-					const remaining = this.#limit - this.#forwarded;
+				if (limit !== Number.POSITIVE_INFINITY) {
+					const remaining = limit - this.#forwarded;
 					if (remaining <= 0) return this.#finish(controller);
 					if (chunk.length > remaining) chunk = chunk.subarray(0, remaining);
 				}
 
 				controller.enqueue(chunk);
 				this.#forwarded += chunk.length;
-				if (this.#limit !== Number.POSITIVE_INFINITY && this.#forwarded >= this.#limit) this.#finish(controller);
+				if (limit !== Number.POSITIVE_INFINITY && this.#forwarded >= limit) this.#finish(controller);
 				return;
 			}
 		} catch (reason) {
@@ -111,7 +114,9 @@ export class TelegramMedia {
 	}
 
 	#alignment(): number {
-		return (this.#fileSize !== Number.POSITIVE_INFINITY && this.#fileSize >= 1_048_576) ? 131_072 : 4_096;
+		const fileSize = this.#fileSize;
+		if (fileSize !== Number.POSITIVE_INFINITY && fileSize >= 1_048_576) return 131_072;
+		return 4_096;
 	}
 
 	download(offset: number = 0, limit: number = Number.POSITIVE_INFINITY): TelegramMediaDownloadResult {

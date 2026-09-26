@@ -2,7 +2,7 @@
 
 import "adaptive-extender/node";
 import { GoogleGenerativeAI, GenerativeModel, type GenerationConfig } from "@google/generative-ai";
-import { BooleanResponse } from "../models/ai-responses";
+import { BooleanResponse } from "../models/ai-responses.js";
 
 //#region AI agent
 export class AIAgent {

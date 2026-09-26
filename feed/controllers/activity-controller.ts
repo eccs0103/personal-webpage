@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { environment } from "../../environment/services/local-environment.js";
+import { LocalEnviroment } from "../../environment/services/local-environment.js";
 import { Controller } from "adaptive-extender/node";
 import { ActivityDispatcher } from "./activity-dispatcher.js";
 import { ServerBridge } from "../services/server-bridge.js";
@@ -21,6 +21,7 @@ import { type Bridge } from "../services/bridge.js";
 import { type ActivityWalker } from "../services/activity-walker.js";
 
 const meta = import.meta;
+const environment = LocalEnviroment.instance;
 const { specialDictionary } = environment;
 const { origin } = environment;
 const { githubUsername, githubRepository, githubToken, githubIssuesToken } = environment;

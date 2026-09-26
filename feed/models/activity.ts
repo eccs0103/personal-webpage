@@ -391,21 +391,21 @@ export interface GitHubForkActivityScheme extends GitHubActivityScheme {
 
 export class GitHubForkActivity extends GitHubActivity {
 	@Field(String, { name: "fork_url" })
-	forkUrl: string;
+	urlFork: string;
 
 	@Field(String, { name: "fork_name" })
 	forkName: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, forkUrl: string, forkName: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, forkUrl?: string, forkName?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || forkUrl === undefined || forkName === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, urlFork: string, forkName: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, urlFork?: string, forkName?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || urlFork === undefined || forkName === undefined) {
 			super();
 			return;
 		}
 
 		super(platform, timestamp, username, url, repository);
-		this.forkUrl = forkUrl;
+		this.urlFork = urlFork;
 		this.forkName = forkName;
 	}
 }
@@ -431,12 +431,12 @@ export abstract class GitHubIssueActivity extends GitHubActivity {
 	title: string;
 
 	@Field(String, { name: "issue_url" })
-	issueUrl: string;
+	urlIssue: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, issueUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, issueUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || issueUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlIssue: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlIssue?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlIssue === undefined) {
 			super();
 			return;
 		}
@@ -445,7 +445,7 @@ export abstract class GitHubIssueActivity extends GitHubActivity {
 		if (new.target === GitHubIssueActivity) throw new TypeError("Unable to create an instance of an abstract class");
 		this.number = number;
 		this.title = title;
-		this.issueUrl = issueUrl;
+		this.urlIssue = urlIssue;
 	}
 }
 //#endregion
@@ -460,14 +460,14 @@ export interface GitHubIssueOpenActivityScheme extends GitHubIssueActivityScheme
 
 export class GitHubIssueOpenActivity extends GitHubIssueActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, issueUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, issueUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || issueUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlIssue: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlIssue?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlIssue === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, username, url, repository, number, title, issueUrl);
+		super(platform, timestamp, username, url, repository, number, title, urlIssue);
 	}
 }
 //#endregion
@@ -482,14 +482,14 @@ export interface GitHubIssueCloseActivityScheme extends GitHubIssueActivitySchem
 
 export class GitHubIssueCloseActivity extends GitHubIssueActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, issueUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, issueUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || issueUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlIssue: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlIssue?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlIssue === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, username, url, repository, number, title, issueUrl);
+		super(platform, timestamp, username, url, repository, number, title, urlIssue);
 	}
 }
 //#endregion
@@ -515,12 +515,12 @@ export abstract class GitHubPullRequestActivity extends GitHubActivity {
 	title: string;
 
 	@Field(String, { name: "request_url" })
-	requestUrl: string;
+	urlRequest: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, requestUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, requestUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || requestUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
 		}
@@ -529,7 +529,7 @@ export abstract class GitHubPullRequestActivity extends GitHubActivity {
 		if (new.target === GitHubPullRequestActivity) throw new TypeError("Unable to create an instance of an abstract class");
 		this.number = number;
 		this.title = title;
-		this.requestUrl = requestUrl;
+		this.urlRequest = urlRequest;
 	}
 }
 //#endregion
@@ -544,14 +544,14 @@ export interface GitHubPullRequestOpenActivityScheme extends GitHubPullRequestAc
 
 export class GitHubPullRequestOpenActivity extends GitHubPullRequestActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, requestUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, requestUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || requestUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, username, url, repository, number, title, requestUrl);
+		super(platform, timestamp, username, url, repository, number, title, urlRequest);
 	}
 }
 //#endregion
@@ -566,14 +566,14 @@ export interface GitHubPullRequestMergeActivityScheme extends GitHubPullRequestA
 
 export class GitHubPullRequestMergeActivity extends GitHubPullRequestActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, requestUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, requestUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || requestUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, username, url, repository, number, title, requestUrl);
+		super(platform, timestamp, username, url, repository, number, title, urlRequest);
 	}
 }
 //#endregion
@@ -588,14 +588,14 @@ export interface GitHubPullRequestCloseActivityScheme extends GitHubPullRequestA
 
 export class GitHubPullRequestCloseActivity extends GitHubPullRequestActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, requestUrl: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, requestUrl?: string) {
-		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || requestUrl === undefined) {
+	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, username, url, repository, number, title, requestUrl);
+		super(platform, timestamp, username, url, repository, number, title, urlRequest);
 	}
 }
 //#endregion
@@ -1026,23 +1026,23 @@ export interface TelegramActivityScheme extends ActivityScheme {
 @Descendant(Deferred(_ => TelegramMediaPostActivity))
 export abstract class TelegramActivity extends Activity {
 	@Field(Number, { name: "channel_id" })
-	channelId: number;
+	idChannel: number;
 
 	@Field(Number, { name: "message_id" })
-	messageId: number;
+	idMessage: number;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, channelId: number, messageId: number);
-	constructor(platform?: string, timestamp?: Date, channelId?: number, messageId?: number) {
-		if (platform === undefined || timestamp === undefined || channelId === undefined || messageId === undefined) {
+	constructor(platform: string, timestamp: Date, idChannel: number, idMessage: number);
+	constructor(platform?: string, timestamp?: Date, idChannel?: number, idMessage?: number) {
+		if (platform === undefined || timestamp === undefined || idChannel === undefined || idMessage === undefined) {
 			super();
 			return;
 		}
 
 		super(platform, timestamp);
 		if (new.target === TelegramActivity) throw new TypeError("Unable to create an instance of an abstract class");
-		this.channelId = channelId;
-		this.messageId = messageId;
+		this.idChannel = idChannel;
+		this.idMessage = idMessage;
 	}
 }
 //#endregion
@@ -1061,14 +1061,14 @@ export class TelegramTextPostActivity extends TelegramActivity {
 	text: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, channelId: number, messageId: number, text: string);
-	constructor(platform?: string, timestamp?: Date, channelId?: number, messageId?: number, text?: string) {
-		if (platform === undefined || timestamp === undefined || channelId === undefined || messageId === undefined || text === undefined) {
+	constructor(platform: string, timestamp: Date, idChannel: number, idMessage: number, text: string);
+	constructor(platform?: string, timestamp?: Date, idChannel?: number, idMessage?: number, text?: string) {
+		if (platform === undefined || timestamp === undefined || idChannel === undefined || idMessage === undefined || text === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, channelId, messageId);
+		super(platform, timestamp, idChannel, idMessage);
 		this.text = text;
 	}
 }
@@ -1096,14 +1096,14 @@ export class TelegramMediaPostActivity extends TelegramActivity {
 	description: string | null;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, channelId: number, messageId: number, fileName: string, mediaType: string, description: string | null);
-	constructor(platform?: string, timestamp?: Date, channelId?: number, messageId?: number, fileName?: string, mediaType?: string, description?: string | null) {
-		if (platform === undefined || timestamp === undefined || channelId === undefined || messageId === undefined || fileName === undefined || mediaType === undefined || description === undefined) {
+	constructor(platform: string, timestamp: Date, idChannel: number, idMessage: number, fileName: string, mediaType: string, description: string | null);
+	constructor(platform?: string, timestamp?: Date, idChannel?: number, idMessage?: number, fileName?: string, mediaType?: string, description?: string | null) {
+		if (platform === undefined || timestamp === undefined || idChannel === undefined || idMessage === undefined || fileName === undefined || mediaType === undefined || description === undefined) {
 			super();
 			return;
 		}
 
-		super(platform, timestamp, channelId, messageId);
+		super(platform, timestamp, idChannel, idMessage);
 		this.fileName = fileName;
 		this.mediaType = mediaType;
 		this.description = description;

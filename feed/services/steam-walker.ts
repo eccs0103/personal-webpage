@@ -1,7 +1,6 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { Optional } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
 import { SteamGame, SteamAchievement, SteamOwnedGamesContainer, SteamPlayerStatsContainer, SteamGameSchemaContainer, SteamUserFilesResponseContainer, SteamPublishedFile, SteamGameSchemaStatsAchievement } from "../models/steam-event.js";
@@ -21,6 +20,29 @@ class SteamUnlock {
 		this.achievement = achievement;
 		this.schema = schema;
 		this.icon = icon;
+	}
+
+	static #visible(text: string | undefined): string | null {
+		if (text === undefined) return null;
+		return text.insteadWhitespace(null);
+	}
+
+	get title(): string {
+		const { achievement, schema } = this;
+		const name = SteamUnlock.#visible(achievement.name);
+		if (name !== null) return name;
+		if (schema === undefined) return achievement.apiName;
+		const display = SteamUnlock.#visible(schema.displayName);
+		if (display !== null) return display;
+		return achievement.apiName;
+	}
+
+	get description(): string | null {
+		const { achievement, schema } = this;
+		const description = SteamUnlock.#visible(achievement.description);
+		if (description !== null) return description;
+		if (schema === undefined) return null;
+		return SteamUnlock.#visible(schema.description);
 	}
 }
 //#endregion
@@ -95,6 +117,12 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 		yield* achievements;
 	}
 
+	static #resolveIcon(appId: number, schema: SteamGameSchemaStatsAchievement | undefined, imgIconUrl: string | undefined): string | null {
+		if (schema !== undefined) return schema.icon.replace(SteamUnlockSource.#legacyImagesHost, SteamUnlockSource.#currentImagesHost);
+		if (imgIconUrl !== undefined) return `https://media.steampowered.com/steamcommunity/public/images/apps/${appId}/${imgIconUrl}.jpg`;
+		return null;
+	}
+
 	async *fetch(): AsyncIterable<SteamUnlock> {
 		const since = this.since;
 		for await (const game of this.#fetchOwnedGames()) {
@@ -108,10 +136,7 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 			for await (const achievement of this.#fetchPlayerAchievements(appId)) {
 				if (achievement.achieved !== 1) continue;
 				const schema = mapping.get(achievement.apiName);
-				const icon =
-					Optional.map(schema?.icon, url => url.replace(SteamUnlockSource.#legacyImagesHost, SteamUnlockSource.#currentImagesHost)) ??
-					Optional.map(imgIconUrl, url => `https://media.steampowered.com/steamcommunity/public/images/apps/${appId}/${url}.jpg`) ??
-					null;
+				const icon = SteamUnlockSource.#resolveIcon(appId, schema, imgIconUrl);
 				yield new SteamUnlock(appId, name, achievement, schema, icon);
 			}
 		}
@@ -132,10 +157,8 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 
 	*map(event: SteamUnlock): Iterable<Activity> {
 		const platform = this.platform;
-		const { appId, game, achievement, schema, icon } = event;
+		const { appId, game, achievement, icon, title, description } = event;
 		const webpage = `https://store.steampowered.com/app/${appId}`;
-		const title = achievement.name?.insteadWhitespace(null) ?? schema?.displayName?.insteadWhitespace(null) ?? achievement.apiName;
-		const description = achievement.description?.insteadWhitespace(null) ?? schema?.description?.insteadWhitespace(null) ?? null;
 		const url = `https://steamcommunity.com/stats/${appId}/achievements`;
 		yield new SteamAchievementActivity(platform, achievement.unlockTime, game, webpage, icon, title, description, url);
 	}
@@ -206,9 +229,15 @@ class SteamScreenshotSource extends ActivitySource<SteamPublishedFile, SteamPubl
 
 	get sorted(): boolean { return false; }
 
+	static #resolveUrl(event: SteamPublishedFile): string | undefined {
+		const { fileUrl } = event;
+		if (fileUrl !== undefined) return fileUrl;
+		return event.previewUrl;
+	}
+
 	*map(event: SteamPublishedFile): Iterable<Activity> {
 		if (event.banned || event.visibility !== 0) return;
-		const url = event.fileUrl ?? event.previewUrl;
+		const url = SteamScreenshotSource.#resolveUrl(event);
 		if (url === undefined) return;
 		const timestamp = event.timeCreated;
 		const { consumerAppId } = event;

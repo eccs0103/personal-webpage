@@ -3,7 +3,7 @@
 import "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker, AuthorizationExpiredError } from "./activity-walker.js";
-import { SpotifySaveEvent, SpotifySavesCollection, SpotifyToken, SpotifyTokenError } from "../models/spotify-event.js";
+import { SpotifySaveEvent, SpotifySavesCollection, SpotifyToken, SpotifyTokenError, type SpotifyTrack } from "../models/spotify-event.js";
 import { Activity, SpotifyLikeActivity } from "../models/activity.js";
 
 //#region Spotify save source
@@ -52,13 +52,19 @@ class SpotifySaveSource extends ActivitySource<SpotifySaveEvent, unknown> {
 		return event.addedAt;
 	}
 
+	static #resolveCover(track: SpotifyTrack): string | null {
+		const image = track.album.images.at(0);
+		if (image === undefined) return null;
+		return image.url;
+	}
+
 	*map(event: SpotifySaveEvent): Iterable<Activity> {
 		const { track } = event;
 		const platform = this.platform;
 		const timestamp = event.addedAt;
 		const title = track.name;
 		const artists = track.artists.map(artist => artist.name);
-		const cover = track.album.images.at(0)?.url ?? null;
+		const cover = SpotifySaveSource.#resolveCover(track);
 		const url = track.externalUrls.spotify;
 		yield new SpotifyLikeActivity(platform, timestamp, title, artists, cover, url);
 	}
@@ -67,13 +73,13 @@ class SpotifySaveSource extends ActivitySource<SpotifySaveEvent, unknown> {
 
 //#region Spotify walker
 export class SpotifyWalker extends ActivityWalker {
-	#clientId: string;
+	#idClient: string;
 	#clientSecret: string;
 	#refreshToken: string;
 
-	constructor(clientId: string, clientSecret: string, refreshToken: string) {
+	constructor(idClient: string, clientSecret: string, refreshToken: string) {
 		super("Spotify");
-		this.#clientId = clientId;
+		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#refreshToken = refreshToken;
 	}
@@ -90,7 +96,7 @@ export class SpotifyWalker extends ActivityWalker {
 	async #authenticate(): Promise<SpotifyToken> {
 		const url = new URL("https://accounts.spotify.com/api/token");
 		const method = "POST";
-		const auth = Buffer.from(`${this.#clientId}:${this.#clientSecret}`).toString("base64");
+		const auth = Buffer.from(`${this.#idClient}:${this.#clientSecret}`).toString("base64");
 		const headers: Record<string, string> = {
 			["Authorization"]: `Basic ${auth}`,
 			["Content-Type"]: "application/x-www-form-urlencoded"

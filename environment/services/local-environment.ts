@@ -5,7 +5,14 @@ import "adaptive-extender/node";
 import { EnvironmentProvider, Field, Model, Optional } from "adaptive-extender/node";
 
 //#region Local environment
-class LocalEnviroment extends Model {
+export class LocalEnviroment extends Model {
+	static #instance: LocalEnviroment | null = null;
+
+	static get instance(): LocalEnviroment {
+		if (LocalEnviroment.#instance === null) LocalEnviroment.#instance = EnvironmentProvider.resolve(process.env, LocalEnviroment);
+		return LocalEnviroment.#instance;
+	}
+
 	@Field(Optional.Of(String), { name: "HOST" })
 	host: string | undefined;
 
@@ -93,6 +100,4 @@ class LocalEnviroment extends Model {
 	@Field(String, { name: "TELEGRAM_SESSION" })
 	telegramSession: string;
 }
-
-export const environment = EnvironmentProvider.resolve(process.env, LocalEnviroment);
 //#endregion

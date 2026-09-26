@@ -14,8 +14,8 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 		this.#urlProxy = urlProxy;
 	}
 
-	#buildMediaUrl(messageId: number): URL {
-		return new URL(String(messageId), this.#urlProxy);
+	#buildUrlMedia(idMessage: number): URL {
+		return new URL(String(idMessage), this.#urlProxy);
 	}
 
 	#renderText(itemContainer: HTMLElement, activity: TelegramTextPostActivity): void {
@@ -26,8 +26,8 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 	}
 
 	#renderPhotoSlide(photo: TelegramMediaPostActivity, isFirst: boolean): HTMLElement {
-		const { messageId, description } = photo;
-		const url = this.#buildMediaUrl(messageId);
+		const { idMessage, description } = photo;
+		const url = this.#buildUrlMedia(idMessage);
 
 		const aLink = DOMBuilder.newLink(new URL(url));
 		aLink.classList.add("telegram-photo-card");
@@ -57,18 +57,18 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 	}
 
 	#renderAnimation(itemContainer: HTMLElement, activity: TelegramMediaPostActivity): void {
-		const { messageId, description } = activity;
+		const { idMessage, description } = activity;
 
 		const figure = itemContainer.appendChild(document.createElement("figure"));
 		figure.classList.add("telegram-media");
 
-		const mediaUrl = this.#buildMediaUrl(messageId);
+		const urlMedia = this.#buildUrlMedia(idMessage);
 		const loop = true;
 		const muted = true;
 		const controls = false;
 		const autoplay = true;
 		const playsInline = true;
-		const video = figure.appendChild(DOMBuilder.newVideo(mediaUrl, { loop, muted, controls, autoplay, playsInline }));
+		const video = figure.appendChild(DOMBuilder.newVideo(urlMedia, { loop, muted, controls, autoplay, playsInline }));
 		video.classList.add("telegram-gif");
 
 		if (description !== null) {
@@ -78,14 +78,14 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 	}
 
 	#renderVideo(itemContainer: HTMLElement, activity: TelegramMediaPostActivity): void {
-		const { messageId, description } = activity;
+		const { idMessage, description } = activity;
 
 		const figure = itemContainer.appendChild(document.createElement("figure"));
 		figure.classList.add("telegram-media");
 
-		const mediaUrl = this.#buildMediaUrl(messageId);
+		const urlMedia = this.#buildUrlMedia(idMessage);
 		const controls = true;
-		const video = figure.appendChild(DOMBuilder.newVideo(mediaUrl, { controls }));
+		const video = figure.appendChild(DOMBuilder.newVideo(urlMedia, { controls }));
 		video.classList.add("telegram-video");
 
 		if (description !== null) {
@@ -95,21 +95,21 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 	}
 
 	#renderAudio(itemContainer: HTMLElement, activity: TelegramMediaPostActivity): void {
-		const { messageId, description } = activity;
+		const { idMessage, description } = activity;
 
-		const mediaUrl = this.#buildMediaUrl(messageId);
+		const urlMedia = this.#buildUrlMedia(idMessage);
 		const controls = true;
-		const audio = itemContainer.appendChild(DOMBuilder.newAudio(mediaUrl, { controls }));
+		const audio = itemContainer.appendChild(DOMBuilder.newAudio(urlMedia, { controls }));
 		audio.classList.add("telegram-audio");
 
 		if (description !== null) itemContainer.appendChild(DOMBuilder.newDescription(description));
 	}
 
 	#renderDocument(itemContainer: HTMLElement, activity: TelegramMediaPostActivity): void {
-		const { messageId, fileName, description } = activity;
+		const { idMessage, fileName, description } = activity;
 
-		const mediaUrl = this.#buildMediaUrl(messageId);
-		const aLink = itemContainer.appendChild(DOMBuilder.newLink(mediaUrl));
+		const urlMedia = this.#buildUrlMedia(idMessage);
+		const aLink = itemContainer.appendChild(DOMBuilder.newLink(urlMedia));
 		aLink.download = fileName;
 		aLink.classList.add("telegram-document", "rounded", "with-padding", "flex", "with-gap", "alt-center", "depth");
 
@@ -162,7 +162,7 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 					group.unshift(next);
 					index++;
 				}
-				group.sort((photo1, photo2) => photo1.messageId - photo2.messageId);
+				group.sort((photo1, photo2) => photo1.idMessage - photo2.idMessage);
 				this.#renderPhotoGroup(itemContainer, group);
 			}
 		}
