@@ -1,5 +1,12 @@
 [
 	{
+		"date": "2026-09-26",
+		"changes": [
+			"Welcome tour added — first-time and long-absent visitors now get a short introduction to the feed, its profiles and filters, and the change log.",
+			"Tap a platform name on any post to open that profile or hide its posts. The header buttons are now labelled Change log and Platforms."
+		]
+	},
+	{
 		"date": "2026-07-23",
 		"changes": [
 			"npm activity connected — newly published packages and versions now show up in the feed automatically, grouped by package with a color-coded version badge.",
