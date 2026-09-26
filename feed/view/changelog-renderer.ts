@@ -9,7 +9,7 @@ import { TextExpert } from "../services/text-expert.js";
 //#region Changelog renderer
 export class ChangelogRenderer extends Controller<[HTMLElement, ChangelogService, boolean]> {
 	#buildEntry(dialog: HTMLDialogElement, unseen: readonly ChangelogEntry[], index: number): void {
-		dialog.innerHTML = "";
+		dialog.replaceChildren();
 
 		const entry = unseen[index]!;
 		const remaining = unseen.length - index - 1;

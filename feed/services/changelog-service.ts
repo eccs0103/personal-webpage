@@ -27,6 +27,11 @@ export class ChangelogService {
 		return this.#entries.filter(entry => entry.isNotSeen(lastSeen));
 	}
 
+	async skipHistory(): Promise<void> {
+		if (!this.isFirstVisit) return;
+		await this.markAsSeen();
+	}
+
 	async markAsSeen(): Promise<void> {
 		const repository = this.#repository;
 		const latest = this.#entries.at(0);

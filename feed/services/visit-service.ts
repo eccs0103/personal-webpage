@@ -6,7 +6,6 @@ import { VisitState } from "../models/visit.js";
 
 //#region Visit service
 export class VisitService {
-	// ponytail: fixed 30-day absence threshold, tune it if analytics show a different return cadence
 	static #absence: Timespan = Timespan.fromComponents(30, 0, 0, 0);
 	#repository: BufferedCell<typeof VisitState>;
 	#isWelcomeDue: boolean;

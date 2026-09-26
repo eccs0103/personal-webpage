@@ -10,72 +10,102 @@ const analytics = AnalyticsService.instance;
 
 //#region Welcome renderer
 export class WelcomeRenderer extends Controller<[HTMLElement]> {
-	#choose(dialog: HTMLDialogElement, action: string): void {
+	#choose(dialogWelcome: HTMLDialogElement, action: string): void {
 		analytics.dispatch("welcome_action", new WelcomeAction(action));
-		dialog.close();
+		dialogWelcome.close();
 	}
 
-	#buildRow(itemContainer: HTMLElement, dialog: HTMLDialogElement, title: string, description: string, text: string, action: string, trigger: HTMLButtonElement): void {
-		const divRow = itemContainer.appendChild(document.createElement("div"));
-		divRow.classList.add("welcome-row", "with-padding", "large-padding", "with-inline-gap");
+	#buildRow(itemParent: HTMLElement, action: string, title: string, description: string, text: string): HTMLButtonElement {
+		const divWelcomeRow = itemParent.appendChild(document.createElement("div"));
+		divWelcomeRow.classList.add("welcome-row", "with-padding", "large-padding", "with-inline-gap");
 
-		const strongTitle = divRow.appendChild(document.createElement("strong"));
-		strongTitle.classList.add("welcome-row-title");
-		strongTitle.textContent = title;
+		const strongWelcomeRowTitle = divWelcomeRow.appendChild(document.createElement("strong"));
+		strongWelcomeRowTitle.classList.add("welcome-row-title");
+		strongWelcomeRowTitle.textContent = title;
 
-		const spanDescription = divRow.appendChild(DOMBuilder.newDescription(description));
-		spanDescription.classList.add("welcome-row-description", "font-smaller-2");
+		const spanWelcomeRowDescription = divWelcomeRow.appendChild(DOMBuilder.newDescription(description));
+		spanWelcomeRowDescription.classList.add("welcome-row-description", "font-smaller-2");
 
-		const buttonAction = divRow.appendChild(document.createElement("button"));
-		buttonAction.type = "button";
-		buttonAction.classList.add("welcome-row-action", "with-inline-padding", "with-padding", "rounded", "depth");
-		buttonAction.textContent = text;
-		buttonAction.addEventListener("click", (event) => {
-			this.#choose(dialog, action);
-			trigger.click();
+		const buttonWelcomeRowAction = divWelcomeRow.appendChild(document.createElement("button"));
+		buttonWelcomeRowAction.type = "button";
+		buttonWelcomeRowAction.classList.add("welcome-row-action", `welcome-${action}`, "with-inline-padding", "with-padding", "rounded", "depth");
+		buttonWelcomeRowAction.textContent = text;
+		return buttonWelcomeRowAction;
+	}
+
+	#buildChangelogRow(itemParent: HTMLElement, dialogWelcome: HTMLDialogElement, buttonChangelogTrigger: HTMLButtonElement): void {
+		if (buttonChangelogTrigger.hidden) return;
+		const buttonWelcomeChangelog = this.#buildRow(itemParent, "changelog", "See what's new", "Recent changes to this page.", "Change log");
+		buttonWelcomeChangelog.addEventListener("click", (event) => {
+			this.#choose(dialogWelcome, "changelog");
+			buttonChangelogTrigger.click();
 		});
 	}
 
+	#spotlight(itemContainer: HTMLElement, buttonConnectionsHubTrigger: HTMLButtonElement): void {
+		const buttonPlatformMenuTrigger = [...itemContainer.getElements(HTMLButtonElement, "main button.platform-menu-trigger")].find(button => button.checkVisibility());
+		if (buttonPlatformMenuTrigger === undefined) return buttonConnectionsHubTrigger.click();
+		const release = () => buttonPlatformMenuTrigger.classList.remove("spotlight");
+		const observer = new IntersectionObserver(([entry]) => {
+			if (!entry.isIntersecting) return;
+			observer.disconnect();
+			buttonPlatformMenuTrigger.addEventListener("blur", release, { once: true });
+			buttonPlatformMenuTrigger.focus({ preventScroll: true });
+			buttonPlatformMenuTrigger.classList.add("spotlight");
+		}, { threshold: 1 });
+		observer.observe(buttonPlatformMenuTrigger);
+		buttonPlatformMenuTrigger.scrollIntoView({ behavior: "smooth", block: "center" });
+	}
+
 	async run(itemContainer: HTMLElement): Promise<void> {
-		const dialog = await itemContainer.getElementAsync(HTMLDialogElement, "dialog#welcome");
-		dialog.addEventListener("click", (event) => {
-			if (event.target !== dialog) return;
-			this.#choose(dialog, "dismiss");
+		const dialogWelcome = await itemContainer.getElementAsync(HTMLDialogElement, "dialog#welcome");
+		dialogWelcome.addEventListener("click", (event) => {
+			if (event.target !== dialogWelcome) return;
+			this.#choose(dialogWelcome, "dismiss");
 		});
 
 		const buttonConnectionsHubTrigger = await itemContainer.getElementAsync(HTMLButtonElement, "button#connections-hub-trigger");
 		const buttonChangelogTrigger = await itemContainer.getElementAsync(HTMLButtonElement, "button#changelog-trigger");
 
-		const divHeader = dialog.appendChild(document.createElement("div"));
-		divHeader.classList.add("welcome-header", "flex", "column", "with-gap", "with-padding", "large-padding");
+		const divWelcomeHeader = dialogWelcome.appendChild(document.createElement("div"));
+		divWelcomeHeader.classList.add("welcome-header", "flex", "column", "with-gap", "with-padding", "large-padding");
 
-		const strongTitle = divHeader.appendChild(document.createElement("strong"));
-		strongTitle.classList.add("welcome-title");
-		strongTitle.textContent = "Hi! This is a live feed of what I'm up to";
+		const strongWelcomeTitle = divWelcomeHeader.appendChild(document.createElement("strong"));
+		strongWelcomeTitle.classList.add("welcome-title", "font-larger-2");
+		strongWelcomeTitle.textContent = "Hi! This is a live feed of what I'm up to";
 
-		const spanSubtitle = divHeader.appendChild(DOMBuilder.newDescription("A few things here are easy to miss:"));
-		spanSubtitle.classList.add("font-smaller-2");
+		const spanWelcomeSubtitle = divWelcomeHeader.appendChild(DOMBuilder.newDescription("A few things here are easy to miss:"));
+		spanWelcomeSubtitle.classList.add("welcome-subtitle", "font-smaller-2");
 
-		const divRows = dialog.appendChild(document.createElement("div"));
-		divRows.classList.add("welcome-rows");
-		this.#buildRow(divRows, dialog, "Find me elsewhere", "All my profiles, in one place.", "Show profiles", "profiles", buttonConnectionsHubTrigger);
-		this.#buildRow(divRows, dialog, "Hide what you don't care about", "Switch platforms off in Profiles & filters, or tap a platform name on any post.", "Filter", "filters", buttonConnectionsHubTrigger);
-		if (!buttonChangelogTrigger.hidden) {
-			this.#buildRow(divRows, dialog, "See what's new", "Recent changes to this page.", "What's new", "changelog", buttonChangelogTrigger);
-		}
+		const divWelcomeRows = dialogWelcome.appendChild(document.createElement("div"));
+		divWelcomeRows.classList.add("welcome-rows");
 
-		const divFooter = dialog.appendChild(document.createElement("div"));
-		divFooter.classList.add("welcome-footer", "flex", "alt-center", "with-gap", "with-padding", "large-padding");
-
-		const buttonClose = divFooter.appendChild(document.createElement("button"));
-		buttonClose.type = "button";
-		buttonClose.classList.add("with-inline-padding", "with-padding", "rounded", "highlight-background");
-		buttonClose.textContent = "Got it";
-		buttonClose.addEventListener("click", (event) => {
-			this.#choose(dialog, "dismiss");
+		const buttonWelcomeProfiles = this.#buildRow(divWelcomeRows, "profiles", "Find me elsewhere", "Every profile I have, in one place.", "Show platforms");
+		buttonWelcomeProfiles.addEventListener("click", (event) => {
+			this.#choose(dialogWelcome, "profiles");
+			buttonConnectionsHubTrigger.click();
 		});
 
-		dialog.showModal();
+		const buttonWelcomeFilters = this.#buildRow(divWelcomeRows, "filters", "Hide what you don't care about", "Tap a platform name on any post.", "Show me");
+		buttonWelcomeFilters.addEventListener("click", (event) => {
+			this.#choose(dialogWelcome, "filters");
+			this.#spotlight(itemContainer, buttonConnectionsHubTrigger);
+		});
+
+		this.#buildChangelogRow(divWelcomeRows, dialogWelcome, buttonChangelogTrigger);
+
+		const divWelcomeFooter = dialogWelcome.appendChild(document.createElement("div"));
+		divWelcomeFooter.classList.add("welcome-footer", "flex", "alt-center", "with-gap", "with-padding", "large-padding");
+
+		const buttonWelcomeClose = divWelcomeFooter.appendChild(document.createElement("button"));
+		buttonWelcomeClose.type = "button";
+		buttonWelcomeClose.classList.add("welcome-close", "with-inline-padding", "with-padding", "rounded", "highlight-background");
+		buttonWelcomeClose.textContent = "Got it";
+		buttonWelcomeClose.addEventListener("click", (event) => {
+			this.#choose(dialogWelcome, "dismiss");
+		});
+
+		dialogWelcome.showModal();
 	}
 }
 //#endregion

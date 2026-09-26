@@ -64,9 +64,10 @@ class WebpageController extends Controller {
 	}
 
 	async #launchDialogs(changelog: ChangelogService, visits: VisitService): Promise<void> {
-		const { isWelcomeDue } = visits;
+		const { searchParams } = new URL(location.href);
+		const isWelcomeDue = visits.isWelcomeDue || searchParams.has("welcome");
 		await visits.markVisited();
-		if (isWelcomeDue && changelog.isFirstVisit) await changelog.markAsSeen();
+		if (isWelcomeDue) await changelog.skipHistory();
 		await ChangelogRenderer.launch(body, changelog, isWelcomeDue);
 		if (!isWelcomeDue) return;
 		await WelcomeRenderer.launch(body);

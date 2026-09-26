@@ -241,12 +241,12 @@ export class ActivityBuilder {
 			const h4Title = itemContainer.appendChild(document.createElement("h4"));
 			h4Title.classList.add("platform");
 
-			const buttonPlatformMenu = h4Title.appendChild(document.createElement("button"));
-			buttonPlatformMenu.type = "button";
-			buttonPlatformMenu.classList.add("platform-menu-trigger");
-			buttonPlatformMenu.title = `${platform.name} options`;
-			buttonPlatformMenu.dataset["platform"] = platform.name;
-			buttonPlatformMenu.innerText = platform.name;
+			const buttonPlatformMenuTrigger = h4Title.appendChild(document.createElement("button"));
+			buttonPlatformMenuTrigger.type = "button";
+			buttonPlatformMenuTrigger.classList.add("platform-menu-trigger");
+			buttonPlatformMenuTrigger.title = `${platform.name} options`;
+			buttonPlatformMenuTrigger.dataset["platform"] = platform.name;
+			buttonPlatformMenuTrigger.innerText = platform.name;
 		}
 
 		const timeElement = itemContainer.appendChild(document.createElement("time"));

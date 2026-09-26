@@ -14,26 +14,22 @@ body {
 			aspect-ratio: 1;
 		}
 
+		& button {
+			max-width: calc(50% - 3 * var(--size-standart) - 2 * var(--size-large-gap));
+		}
+
 		& button#connections-hub-trigger {
 			position: absolute;
 			inset: var(--size-large-gap) auto auto var(--size-large-gap);
 
 			& > span.icon {
-				--url: url(../../assets/icons/information.svg);
+				--url: url(../../assets/icons/layer-group.svg);
 			}
 		}
 
 		& button#changelog-trigger {
 			position: absolute;
 			inset: var(--size-large-gap) var(--size-large-gap) auto auto;
-			/* font-weight: normal; */
-			/* font-size: 0.85em; */
-			/* color: var(--color-light-negative); */
-			/* transition: color var(--time-duration); */
-
-			/* &:hover {
-				color: var(--color-negative);
-			} */
 
 			& > span.icon {
 				--url: url(../../assets/icons/newspaper.svg);
@@ -67,6 +63,25 @@ body {
 			& > .platform {
 				grid-area: activity-platform;
 				align-self: center;
+
+				& > button.platform-menu-trigger {
+					font-weight: inherit;
+					text-decoration: underline dotted;
+					text-underline-offset: var(--size-separator);
+
+					&.spotlight {
+						position: relative;
+						z-index: 1;
+						border-radius: var(--size-small-gap);
+						outline: 100vmax solid var(--color-shadow);
+						outline-offset: var(--size-gap);
+						animation: spotlight var(--time-reveal-duration) ease-out;
+					}
+				}
+			}
+
+			&:has(.spotlight) {
+				z-index: 1;
 			}
 
 			& > time.activity-time {
@@ -531,5 +546,83 @@ body {
 				color: var(--color-light-negative);
 			}
 		}
+	}
+
+	& dialog#platform-menu {
+		width: calc(12 * var(--size-standart));
+
+		& div.platform-menu-header {
+			border-bottom: var(--size-separator) solid var(--color-heavy-main);
+		}
+
+		& div.platform-menu-actions > * {
+			text-align: center;
+		}
+
+		& div.platform-menu-footer {
+			border-top: var(--size-separator) solid var(--color-heavy-main);
+
+			& span.platform-menu-hint {
+				flex: 1;
+				color: var(--color-light-negative);
+			}
+		}
+	}
+
+	& dialog#welcome {
+		width: calc(12 * var(--size-standart));
+
+		& div.welcome-header {
+			border-bottom: var(--size-separator) solid var(--color-heavy-main);
+		}
+
+		& div.welcome-rows {
+			overflow-y: auto;
+		}
+
+		& div.welcome-row {
+			display: grid;
+			grid-template:
+				'welcome-row-title			welcome-row-action' auto
+				'welcome-row-description	welcome-row-action' auto
+				/ 1fr auto
+			;
+			border-bottom: var(--size-separator) solid var(--color-heavy-main);
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			& .welcome-row-title {
+				grid-area: welcome-row-title;
+			}
+
+			& .welcome-row-description {
+				grid-area: welcome-row-description;
+				color: var(--color-light-negative);
+			}
+
+			& button.welcome-row-action {
+				grid-area: welcome-row-action;
+				align-self: center;
+			}
+		}
+
+		& div.welcome-footer {
+			justify-content: flex-end;
+			border-top: var(--size-separator) solid var(--color-heavy-main);
+		}
+	}
+}
+
+@keyframes spotlight {
+	from {
+		outline-color: transparent;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body main div.activity > .platform > button.platform-menu-trigger.spotlight {
+		animation: none;
 	}
 }
