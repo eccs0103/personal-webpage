@@ -5,7 +5,7 @@ import { Field, Model } from "adaptive-extender/core";
 
 //#region Welcome action
 export class WelcomeAction extends Model {
-	/** What the visitor chose in the welcome dialog: "profiles", "filters", "changelog" or "dismiss". */
+	/** What the visitor chose in the welcome dialog: "profiles", "filters", "theme", "changelog" or "dismiss". */
 	@Field(String, { name: "action" })
 	action: string;
 

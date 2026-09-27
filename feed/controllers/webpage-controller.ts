@@ -28,6 +28,7 @@ import { TelegramRenderStrategy } from "../view/telegram-render-strategy.js";
 import { NpmRenderStrategy } from "../view/npm-render-strategy.js";
 import { SoundCloudRenderStrategy } from "../view/soundcloud-render-strategy.js";
 import { TranslationGuard } from "../view/translation-guard.js";
+import { ThemeRenderer } from "../view/theme-renderer.js";
 
 const { baseURI, body } = document;
 
@@ -88,6 +89,7 @@ class WebpageController extends Controller {
 		const registry = this.#newRegistry(new URL(configuration.urlProxy));
 
 		const promiseHeader = HeaderRenderer.launch(body, settings, platforms);
+		const promiseTheme = ThemeRenderer.launch(body);
 		const promiseActivities = ActivitiesRenderer.launch(main, activities, configuration, registry);
 		const promiseFooter = FooterRenderer.launch(footer);
 		const promisePlatformMenu = PlatformMenuRenderer.launch(body, platforms);
@@ -95,7 +97,7 @@ class WebpageController extends Controller {
 		const promiseMetadata = MetadataController.launch(platforms);
 		const promiseAnalytics = AnalyticsController.launch();
 
-		await Promise.all([promiseHeader, promiseActivities, promiseFooter, promisePlatformMenu, promiseDialogs, promiseMetadata, promiseAnalytics]);
+		await Promise.all([promiseHeader, promiseTheme, promiseActivities, promiseFooter, promisePlatformMenu, promiseDialogs, promiseMetadata, promiseAnalytics]);
 	}
 
 	async catch(error: Error): Promise<void> {

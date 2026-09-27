@@ -8,6 +8,15 @@ body {
 		overflow: hidden;
 	}
 
+	& button.spotlight {
+		position: relative;
+		z-index: 1;
+		border-radius: var(--size-small-gap);
+		outline: 100vmax solid var(--color-shadow);
+		outline-offset: var(--size-gap);
+		animation: spotlight var(--time-reveal-duration) ease-out;
+	}
+
 	& header {
 		& img.logo {
 			width: calc(6 * var(--size-standart));
@@ -24,6 +33,16 @@ body {
 
 			& > span.icon {
 				--url: url(../../assets/icons/layer-group.svg);
+			}
+		}
+
+		& button#theme-trigger {
+			& > span.icon {
+				--url: url(../../assets/icons/circle-half-stroke.svg);
+			}
+
+			& #theme-name {
+				text-transform: capitalize;
 			}
 		}
 
@@ -64,15 +83,6 @@ body {
 					font-weight: inherit;
 					text-decoration: underline dotted;
 					text-underline-offset: var(--size-separator);
-
-					&.spotlight {
-						position: relative;
-						z-index: 1;
-						border-radius: var(--size-small-gap);
-						outline: 100vmax solid var(--color-shadow);
-						outline-offset: var(--size-gap);
-						animation: spotlight var(--time-reveal-duration) ease-out;
-					}
 				}
 			}
 
@@ -618,7 +628,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	body main div.activity > .platform > button.platform-menu-trigger.spotlight {
+	body button.spotlight {
 		animation: none;
 	}
 }

@@ -45,19 +45,22 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 		});
 	}
 
-	#spotlight(itemContainer: HTMLElement, buttonConnectionsHubTrigger: HTMLButtonElement): void {
-		const buttonPlatformMenuTrigger = [...itemContainer.getElements(HTMLButtonElement, "main button.platform-menu-trigger")].find(button => button.checkVisibility());
-		if (buttonPlatformMenuTrigger === undefined) return buttonConnectionsHubTrigger.click();
-		const release = () => buttonPlatformMenuTrigger.classList.remove("spotlight");
+	#spotlight(button: HTMLButtonElement): void {
 		const observer = new IntersectionObserver(([entry]) => {
 			if (!entry.isIntersecting) return;
 			observer.disconnect();
-			buttonPlatformMenuTrigger.addEventListener("blur", release, { once: true });
-			buttonPlatformMenuTrigger.focus({ preventScroll: true });
-			buttonPlatformMenuTrigger.classList.add("spotlight");
+			button.addEventListener("blur", event => button.classList.remove("spotlight"), { once: true });
+			button.focus({ preventScroll: true });
+			button.classList.add("spotlight");
 		}, { threshold: 1 });
-		observer.observe(buttonPlatformMenuTrigger);
-		buttonPlatformMenuTrigger.scrollIntoView({ behavior: "smooth", block: "center" });
+		observer.observe(button);
+		button.scrollIntoView({ behavior: "smooth", block: "center" });
+	}
+
+	#showFilters(itemContainer: HTMLElement, buttonConnectionsHubTrigger: HTMLButtonElement): void {
+		const buttonPlatformMenuTrigger = [...itemContainer.getElements(HTMLButtonElement, "main button.platform-menu-trigger")].find(button => button.checkVisibility());
+		if (buttonPlatformMenuTrigger === undefined) return buttonConnectionsHubTrigger.click();
+		this.#spotlight(buttonPlatformMenuTrigger);
 	}
 
 	async run(itemContainer: HTMLElement): Promise<void> {
@@ -69,6 +72,7 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 
 		const buttonConnectionsHubTrigger = await itemContainer.getElementAsync(HTMLButtonElement, "button#connections-hub-trigger");
 		const buttonChangelogTrigger = await itemContainer.getElementAsync(HTMLButtonElement, "button#changelog-trigger");
+		const buttonThemeTrigger = await itemContainer.getElementAsync(HTMLButtonElement, "button#theme-trigger");
 
 		const divWelcomeHeader = dialogWelcome.appendChild(document.createElement("div"));
 		divWelcomeHeader.classList.add("welcome-header", "flex", "column", "with-gap", "with-padding", "large-padding");
@@ -95,7 +99,13 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 		const buttonWelcomeFilters = this.#buildRow(divWelcomeRows, "filters", "Hide what you don't care about", "Tap a platform name on any post.", "Show me");
 		buttonWelcomeFilters.addEventListener("click", (event) => {
 			this.#choose(dialogWelcome, "filters");
-			this.#spotlight(itemContainer, buttonConnectionsHubTrigger);
+			this.#showFilters(itemContainer, buttonConnectionsHubTrigger);
+		});
+
+		const buttonWelcomeTheme = this.#buildRow(divWelcomeRows, "theme", "Not your style?", "Switch to a calmer theme any time.", "Show me");
+		buttonWelcomeTheme.addEventListener("click", (event) => {
+			this.#choose(dialogWelcome, "theme");
+			this.#spotlight(buttonThemeTrigger);
 		});
 
 		this.#buildChangelogRow(divWelcomeRows, dialogWelcome, buttonChangelogTrigger);
