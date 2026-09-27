@@ -51,10 +51,6 @@ body {
 				/ max-content max-content 1fr
 			;
 
-			&.rounded {
-				border-radius: calc(var(--size-gap) * 2);
-			}
-
 			& > img.icon {
 				grid-area: activity-icon;
 				width: var(--size-standart);
