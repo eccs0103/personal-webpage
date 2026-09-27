@@ -1,5 +1,13 @@
 [
 	{
+		"date": "2026-09-27",
+		"changes": [
+			"New Blackwall look — the whole page now matches the logo: red neon on black, scanlines, glitch effects and a slowly drifting circuit background.",
+			"Theme switcher added under the logo — switch between Blackwall and the classic Material look any time, and your choice is remembered. The welcome tour shows where it is.",
+			"Page translation works better — platform, project and profile names now stay untranslated and no longer disappear when the page is translated in Microsoft Edge."
+		]
+	},
+	{
 		"date": "2026-09-26",
 		"changes": [
 			"Welcome tour added — first-time and long-absent visitors now get a short introduction to the feed, its profiles and filters, and the change log.",
