@@ -330,6 +330,24 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "e985b4e41f31f6e285f307f0ab69601c48f80c5a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790522571000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a1d0d7ae2662c80cbd2d13ce85ee690d1acf2d28",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790522576000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "d6ae6712af4ae3443c37b893de2be483cc35e19e",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
@@ -346,5 +364,70 @@
 		"platform": "GitHub",
 		"timestamp": 1790523408000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/1c7eb9a4f5e33c592fe3e205c33edcfca8fd25c1.jpg",
+		"title": "Beachcomber Badge",
+		"description": "Climb past the SHORE.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790534499000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/de12d278a0764bf904a5f70bd0d5a0ce248c078d.jpg",
+		"title": "Esoterica Badge",
+		"description": "Obtain a mystical item.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790534540000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/8ae93a068c402d8c43241e19b302171050c0050f.jpg",
+		"title": "Foraging Badge",
+		"description": "Eat 5 different berries in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790535176000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e1e3550680fdce7c09093f29f2c9b205f737f4b4.jpg",
+		"title": "Trailblazer Badge",
+		"description": "Climb past the TROPICS.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790536277000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/7687e0907862bf82f0d64161bfbd9fa548482e32.jpg",
+		"title": "Happy Camper Badge",
+		"description": "Receive 5 Morale Boosts from campfires.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790542369000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"is_accepted": false,
+		"title": "Определить, что строка только одна",
+		"body": "<p>Без трюков не получиться. Нашел 2 пути:</p>\n<h2>С помощью flex</h2>\n<p>Сохраняем размеры контейнера, но трогаем как оно обрабатывается</p>\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\" data-babel-preset-react=\"false\" data-babel-preset-ts=\"false\">\n<div class=\"snippet-code\">\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>p {\n  width: 6em;\n  outline: 1px dotted red;\n\n  display: flex;\n  justify-content: center;\n  text-align: justify;\n}</code></pre>\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;p&gt;1 2 3 4 5 6 7 8 9 0&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5 6 7 8 9 0 1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1&lt;/p&gt;</code></pre>\n</div>\n</div>\n</p>\n<h2>За счет контейнера</h2>\n<p>Решаем проблему за счет размеров контейнера. Я бы сам не выбрал этот вариант. Хотя... смотря на задачу.</p>\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\" data-babel-preset-react=\"false\" data-babel-preset-ts=\"false\">\n<div class=\"snippet-code\">\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>p {\n  max-width: 6em;\n  outline: 1px dotted red;\n\n  width: fit-content;\n  margin-inline: auto;\n  text-align: justify;\n}</code></pre>\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;p&gt;1 2 3 4 5 6 7 8 9 0&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5 6 7 8 9 0 1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1&lt;/p&gt;</code></pre>\n</div>\n</div>\n</p>\n",
+		"score": 0,
+		"url": "https://ru.stackoverflow.com/questions/1626393/%d0%9e%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b8%d1%82%d1%8c-%d1%87%d1%82%d0%be-%d1%81%d1%82%d1%80%d0%be%d0%ba%d0%b0-%d1%82%d0%be%d0%bb%d1%8c%d0%ba%d0%be-%d0%be%d0%b4%d0%bd%d0%b0/1626394#1626394",
+		"platform": "Stack overflow",
+		"timestamp": 1790547646000,
+		"$type": "StackOverflowAnswerActivity"
 	}
 ]
