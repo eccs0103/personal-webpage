@@ -5,6 +5,7 @@ import { Controller } from "adaptive-extender/web";
 import { DOMBuilder } from "./view-builders.js";
 import { AnalyticsService } from "../../environment/services/analytics-service.js";
 import { WelcomeAction } from "../models/welcome-action.js";
+import { Spotlight } from "./spotlight.js";
 
 const analytics = AnalyticsService.instance;
 
@@ -45,22 +46,10 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 		});
 	}
 
-	#spotlight(button: HTMLButtonElement): void {
-		const observer = new IntersectionObserver(([entry]) => {
-			if (!entry.isIntersecting) return;
-			observer.disconnect();
-			button.addEventListener("blur", event => button.classList.remove("spotlight"), { once: true });
-			button.focus({ preventScroll: true });
-			button.classList.add("spotlight");
-		}, { threshold: 1 });
-		observer.observe(button);
-		button.scrollIntoView({ behavior: "smooth", block: "center" });
-	}
-
 	#showFilters(itemContainer: HTMLElement, buttonConnectionsHubTrigger: HTMLButtonElement): void {
 		const buttonPlatformMenuTrigger = [...itemContainer.getElements(HTMLButtonElement, "main button.platform-menu-trigger")].find(button => button.checkVisibility());
 		if (buttonPlatformMenuTrigger === undefined) return buttonConnectionsHubTrigger.click();
-		this.#spotlight(buttonPlatformMenuTrigger);
+		new Spotlight(buttonPlatformMenuTrigger).focus();
 	}
 
 	async run(itemContainer: HTMLElement): Promise<void> {
@@ -105,7 +94,7 @@ export class WelcomeRenderer extends Controller<[HTMLElement]> {
 		const buttonWelcomeTheme = this.#buildRow(divWelcomeRows, "theme", "Not your style?", "Switch to a calmer theme any time.", "Show me");
 		buttonWelcomeTheme.addEventListener("click", (event) => {
 			this.#choose(dialogWelcome, "theme");
-			this.#spotlight(buttonThemeTrigger);
+			new Spotlight(buttonThemeTrigger).focus();
 		});
 
 		this.#buildChangelogRow(divWelcomeRows, dialogWelcome, buttonChangelogTrigger);

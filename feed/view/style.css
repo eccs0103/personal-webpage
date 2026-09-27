@@ -1,3 +1,15 @@
+@keyframes spotlight {
+	from {
+		outline-color: transparent;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body .spotlight {
+		animation: none;
+	}
+}
+
 body {
 	margin-inline: auto;
 	width: 100%;
@@ -8,7 +20,7 @@ body {
 		overflow: hidden;
 	}
 
-	& button.spotlight {
+	& .spotlight {
 		position: relative;
 		z-index: 1;
 		border-radius: var(--size-small-gap);
@@ -618,17 +630,5 @@ body {
 			justify-content: flex-end;
 			border-top: var(--size-separator) solid var(--color-heavy-main);
 		}
-	}
-}
-
-@keyframes spotlight {
-	from {
-		outline-color: transparent;
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	body button.spotlight {
-		animation: none;
 	}
 }
