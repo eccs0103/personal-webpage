@@ -10,7 +10,7 @@ import { CacheService } from "../services/cache-service.js";
 import { MediaProxyEnvironment } from "../models/media-proxy-environment.js";
 
 //#region Telegram media proxy worker
-class TelegramMediaProxyWorker extends CloudflareWorker {
+class TelegramMediaProxyWorker extends CloudflareWorker<Environment> {
 	#factory: ResponseFactory = new ResponseFactory();
 	#cache: CacheService = new CacheService();
 
