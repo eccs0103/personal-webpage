@@ -494,16 +494,5 @@
 		"platform": "GitHub",
 		"timestamp": 1790637985000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "Infinite White",
-		"artists": [
-			"Steve Jablonsky"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b2734bb7e0c0ce5bd4f419564f24",
-		"url": "https://open.spotify.com/track/5I9Cov6VfGvpiHe2k9EY9l",
-		"platform": "Spotify",
-		"timestamp": 1790691414000,
-		"$type": "SpotifyLikeActivity"
 	}
 ]
