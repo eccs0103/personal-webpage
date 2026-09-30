@@ -17,6 +17,7 @@ import { TelegramWalker } from "../services/telegram-walker.js";
 import { NpmWalker } from "../services/npm-walker.js";
 import { SoundCloudWalker } from "../services/soundcloud-walker.js";
 import { Configuration } from "../models/configuration.js";
+import { CronPattern } from "../models/cron-pattern.js";
 import { type Bridge } from "../services/bridge.js";
 import { type ActivityWalker } from "../services/activity-walker.js";
 
@@ -47,14 +48,15 @@ class ActivityController extends Controller {
 	}
 
 	#updateIntro(configuration: Configuration): void {
-		const date = new Date();
-		const key = `${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
-		const content = specialDictionary.get(`1~${key}`);
-		if (content === undefined) {
-			configuration.intro = "Content is generated automatically. In case of complaints, please contact the developer.";
+		const now = new Date();
+		for (const [key, content] of specialDictionary) {
+			if (!key.startsWith("1~")) continue;
+			const pattern = CronPattern.parse(key.substring(2));
+			if (!pattern.match(now)) continue;
+			configuration.intro = content;
 			return;
 		}
-		configuration.intro = content;
+		configuration.intro = "Content is generated automatically. In case of complaints, please contact the developer.";
 	}
 
 	#updateOutro(configuration: Configuration): void {
