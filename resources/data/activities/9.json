@@ -512,5 +512,126 @@
 		"platform": "GitHub",
 		"timestamp": 1790774528000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/27f25eb3ec8fb4e7245aec8b48705a0812738773.jpg",
+		"title": "Web Security Badge",
+		"description": "Escape a spider's web and survive.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790790735000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/4cfa107040054253f82d9d3dbf69a97d84701c19.jpg",
+		"title": "Tread Lightly Badge",
+		"description": "Climb past the ROOTS without ever having more than 25% spores.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790792025000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d7fbe6dcb35a51e67be5f38023b99b7cc90e4dd1.jpg",
+		"title": "Forestry Badge",
+		"description": "Climb past the ROOTS.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790792025000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d8e491ed5b6489b4b9c44cca9b0d8422267a8a53.jpg",
+		"title": "Endurance Badge",
+		"description": "Climb 50m upwards without touching the ground.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790793256000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/ec338a888bb02b501e139b3f5184a83c1589a0d5.jpg",
+		"title": "High Altitude Badge",
+		"description": "Climb 5000m total.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790793890000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/97cb4ca98da4fccf015d3dd893937b3a9172f62e.jpg",
+		"title": "Nomad Badge",
+		"description": "Climb past the MESA.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790793896000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/eb842f863d8cbb7c769fec2ac2161f56776d8093.jpg",
+		"title": "Well Rested Badge",
+		"description": "Consume The Early Worm.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790794496000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/a9e2236a6aa83d8cf0640e1317fb24bf27a2f5b0.jpg",
+		"title": "Wanderer Badge",
+		"description": "Climb past the GLOOM.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790794732000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/05b417a939ac2c4e6ddcece2a3e694b59b4e7a45.jpg",
+		"title": "Money in a bottle",
+		"description": "Find money in a bottle",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1790795750000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/ec4cf0382f82ce1b2a603c436c6e388316bd02ce.jpg",
+		"title": "Bilingual",
+		"description": "Earn your first euro",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1790797001000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/57d3cc31607d6c7532174c784e5be3ee7c51687b.jpg",
+		"title": "Hobin Rood",
+		"description": "Kill a creature with an arrow",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1790797195000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
