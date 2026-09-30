@@ -43,15 +43,11 @@ export class CronField {
 //#endregion
 //#region Cron pattern
 export class CronPattern {
-	#minute: CronField;
-	#hour: CronField;
 	#day: CronField;
 	#month: CronField;
 	#weekday: CronField;
 
-	constructor(minute: CronField, hour: CronField, day: CronField, month: CronField, weekday: CronField) {
-		this.#minute = minute;
-		this.#hour = hour;
+	constructor(day: CronField, month: CronField, weekday: CronField) {
 		this.#day = day;
 		this.#month = month;
 		this.#weekday = weekday;
@@ -59,9 +55,9 @@ export class CronPattern {
 
 	static parse(text: string): CronPattern {
 		const fields = text.trim().split(/\s+/);
-		if (fields.length !== 5) throw new SyntaxError(`Cron pattern '${text}' must have 5 fields`);
-		const [minute, hour, day, month, weekday] = fields;
-		return new CronPattern(CronField.parse(minute, 0, 59), CronField.parse(hour, 0, 23), CronField.parse(day, 1, 31), CronField.parse(month, 1, 12), CronField.parse(weekday, 0, 6));
+		if (fields.length !== 3) throw new SyntaxError(`Cron pattern '${text}' must have 3 fields`);
+		const [day, month, weekday] = fields;
+		return new CronPattern(CronField.parse(day, 1, 31), CronField.parse(month, 1, 12), CronField.parse(weekday, 0, 6));
 	}
 
 	#matchDay(date: Date): boolean {
@@ -72,8 +68,6 @@ export class CronPattern {
 	}
 
 	match(date: Date): boolean {
-		if (!this.#minute.has(date.getMinutes())) return false;
-		if (!this.#hour.has(date.getHours())) return false;
 		if (!this.#month.has(date.getMonth() + 1)) return false;
 		return this.#matchDay(date);
 	}
