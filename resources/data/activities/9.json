@@ -525,9 +525,9 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/4cfa107040054253f82d9d3dbf69a97d84701c19.jpg",
-		"title": "Tread Lightly Badge",
-		"description": "Climb past the ROOTS without ever having more than 25% spores.",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d7fbe6dcb35a51e67be5f38023b99b7cc90e4dd1.jpg",
+		"title": "Forestry Badge",
+		"description": "Climb past the ROOTS.",
 		"url": "https://steamcommunity.com/stats/3527290/achievements",
 		"game": "PEAK",
 		"webpage": "https://store.steampowered.com/app/3527290",
@@ -536,9 +536,9 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d7fbe6dcb35a51e67be5f38023b99b7cc90e4dd1.jpg",
-		"title": "Forestry Badge",
-		"description": "Climb past the ROOTS.",
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/4cfa107040054253f82d9d3dbf69a97d84701c19.jpg",
+		"title": "Tread Lightly Badge",
+		"description": "Climb past the ROOTS without ever having more than 25% spores.",
 		"url": "https://steamcommunity.com/stats/3527290/achievements",
 		"game": "PEAK",
 		"webpage": "https://store.steampowered.com/app/3527290",
