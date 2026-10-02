@@ -653,5 +653,78 @@
 		"platform": "Spotify",
 		"timestamp": 1790933822000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/da9184f21ff1dae46b4de56ffda9a9458c4bfa09.jpg",
+		"title": "Alpinist Badge",
+		"description": "Climb past the ALPINE.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790976124000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/59f105343a7cda0259cfabd1992463f28dd95200.jpg",
+		"title": "Cooking Badge",
+		"description": "Cook 20 meals at campfires.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790976152000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/7904cc232eac6ffb345a96f2a265b1db4c1c535e.jpg",
+		"title": "Plunderer Badge",
+		"description": "Open 15 luggages in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790977017000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/5401aa59d9da99722a2b440cedf2bbe39baef566.jpg",
+		"title": "Volcanology Badge",
+		"description": "Climb past the CALDERA.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790977128000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/82d65f1b4dd1482707d2f2c2f74d52521adb8be1.jpg",
+		"title": "Participation Badge",
+		"description": "Have a friend escape the island without you.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1790978385000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "1a8695ed4415f485fbfff60b4c42d92919b8f24b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790981702000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "526d99549b0c9e2f877e4c582c3a107f14217482",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1790981732000,
+		"$type": "GitHubPushActivity"
 	}
 ]
