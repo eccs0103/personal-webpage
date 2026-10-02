@@ -642,5 +642,16 @@
 		"platform": "Steam",
 		"timestamp": 1790797195000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Моя звезда",
+		"artists": [
+			"Dzhenis"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ae5e869fa29cd9c38f8e2bed",
+		"url": "https://open.spotify.com/track/15DuJJ15udhvMzuRGolmfd",
+		"platform": "Spotify",
+		"timestamp": 1790933822000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
