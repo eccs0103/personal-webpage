@@ -32,7 +32,7 @@
 		"@google/generative-ai": "^0.24.1",
 		"@mtcute/node": "^0.29.4",
 		"@mtcute/web": "^0.29.4",
-		"adaptive-extender": "^1.0.6",
+		"adaptive-extender": "^1.1.0",
 		"dotenv": "^17.3.1"
 	},
 	"overrides": {
