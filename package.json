@@ -20,24 +20,19 @@
 		"deploy:telegram-proxy": "wrangler deploy --config environment/workers/telegram-proxy/wrangler.jsonc"
 	},
 	"devDependencies": {
-		"@cloudflare/vite-plugin": "^1.45.0",
-		"@cloudflare/workers-types": "^5.20260716.1",
-		"@types/node": "^24.10.1",
-		"tsx": "^4.21.0",
+		"@cloudflare/vite-plugin": "^1.62.5",
+		"@cloudflare/workers-types": "^5.20261003.1",
+		"@types/node": "^24.19.1",
+		"tsx": "^4.23.15",
 		"typescript": "^7.0.2",
-		"vite": "^7.3.0",
-		"wrangler": "^4.111.0"
+		"vite": "^7.3.6",
+		"wrangler": "^4.147.0"
 	},
 	"dependencies": {
 		"@google/generative-ai": "^0.24.1",
-		"@mtcute/node": "^0.29.4",
-		"@mtcute/web": "^0.29.4",
+		"@mtcute/node": "^0.29.7",
+		"@mtcute/web": "^0.29.7",
 		"adaptive-extender": "^1.1.0",
-		"dotenv": "^17.3.1"
-	},
-	"overrides": {
-		"undici": ">=7.28.0",
-		"esbuild": "^0.28.1",
-		"sharp": "^0.35.3"
+		"dotenv": "^17.4.2"
 	}
 }
