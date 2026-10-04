@@ -30,6 +30,8 @@ resources/**/soundcloud-token.json
 # My personal / temporary files
 .*
 !.gitignore
+!.gitattributes
+!.editorconfig
 !.npmignore
 !.github
 !.node-version

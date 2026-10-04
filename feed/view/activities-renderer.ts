@@ -38,6 +38,7 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 	#isSentinelIntersecting: boolean = true;
 	#page: number = 0;
 	#isLoading: boolean = false;
+	#isCompleted: boolean = false;
 
 	#attachMediaController(itemContainer: HTMLElement): void {
 		itemContainer.addEventListener("play", (event) => {
@@ -54,7 +55,6 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 	#renderChunk(itemContainer: HTMLElement, cursor: ArrayCursor<Activity>, collector: ActivityCollector, registry: ActivityRegistry, platforms: Map<string, Platform>, batch: number, observerAnimatedReveal: IntersectionObserver, isFinal: boolean): boolean {
 		let rendered = 0;
 		while (cursor.inRange && rendered < batch) {
-			const index = cursor.index;
 			if (collector.isConsumed(cursor.current)) {
 				cursor.index++;
 				continue;
@@ -64,14 +64,11 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 				cursor.index++;
 				continue;
 			}
-			const buffer = collector.findGroup(cursor, root);
+			const buffer = collector.findGroup(cursor, root, isFinal);
+			if (buffer === null) return false;
 			if (buffer.length < 1) {
 				cursor.index++;
 				continue;
-			}
-			if (!isFinal && !cursor.inRange) {
-				cursor.index = index;
-				return false;
 			}
 			const strategy = registry.findStrategy(root);
 			if (strategy === null) continue;
@@ -85,8 +82,14 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 	async #render(itemContainer: HTMLElement, context: RenderContext): Promise<unknown> {
 		if (!this.#isSentinelIntersecting) return;
 		const { cursor, collector, registry, platforms, outro, batch, observerAnimatedReveal, observerDynamicLoad, itemSentinel, activities } = context;
-		const hasMore = this.#renderChunk(itemContainer, cursor, collector, registry, platforms, batch, observerAnimatedReveal, false);
+		const isCompleted = this.#isCompleted;
+		const hasMore = this.#renderChunk(itemContainer, cursor, collector, registry, platforms, batch, observerAnimatedReveal, isCompleted);
 		if (hasMore) return requestAnimationFrame(this.#render.bind(this, itemContainer, context));
+		if (isCompleted) {
+			observerDynamicLoad.disconnect();
+			ActivityBuilder.newOutro(itemContainer, itemSentinel, outro);
+			return;
+		}
 
 		if (this.#isLoading) return;
 		this.#isLoading = true;
@@ -98,9 +101,8 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 		}
 
 		analytics.dispatch("feed_completed", new FeedCompleted(this.#page));
-		this.#renderChunk(itemContainer, cursor, collector, registry, platforms, batch, observerAnimatedReveal, true);
-		observerDynamicLoad.disconnect();
-		ActivityBuilder.newOutro(itemContainer, itemSentinel, outro);
+		this.#isCompleted = true;
+		return requestAnimationFrame(this.#render.bind(this, itemContainer, context));
 	}
 
 	async run(itemContainer: HTMLElement, activities: DataTable<typeof Activity>, configuration: Configuration, registry: ActivityRegistry, options: Partial<ActivitiesRendererOptions> = {}): Promise<void> {

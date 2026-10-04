@@ -48,7 +48,8 @@ export class ActivityCollector {
 		return null;
 	}
 
-	#findGroupConsecutive(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, gap: Timespan): Activity[] {
+	#findGroupConsecutive(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, gap: Timespan, isFinal: boolean): Activity[] | null {
+		const index = cursor.index;
 		const buffer: Activity[] = [];
 		let { current } = cursor;
 		buffer.push(current);
@@ -60,36 +61,45 @@ export class ActivityCollector {
 			current = next;
 			cursor.index++;
 		}
+		if (!isFinal && !cursor.inRange) {
+			cursor.index = index;
+			return null;
+		}
 		return buffer;
 	}
 
-	#findGroupPassThrough(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, gap: Timespan): Activity[] {
+	#consume(cursor: ArrayCursor<Activity>, buffer: Activity[]): Activity[] {
+		const consumed = this.#consumed;
+		for (const activity of buffer) consumed.add(activity);
+		cursor.index++;
+		return buffer;
+	}
+
+	#findGroupPassThrough(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, gap: Timespan, isFinal: boolean): Activity[] | null {
 		const source = this.#source;
 		const consumed = this.#consumed;
 		const buffer: Activity[] = [];
 		const anchor = cursor.current;
 		buffer.push(anchor);
-		consumed.add(anchor);
-		cursor.index++;
 
 		let last = anchor;
-		for (let index = cursor.index; index < source.length; index++) {
+		for (let index = cursor.index + 1; index < source.length; index++) {
 			const candidate = source[index];
 			if (consumed.has(candidate)) continue;
 			if (!(candidate instanceof root)) continue;
 			const difference = Timespan.fromValue(last.timestamp.valueOf() - candidate.timestamp.valueOf());
-			if (difference.valueOf() > gap.valueOf()) break;
+			if (difference.valueOf() > gap.valueOf()) return this.#consume(cursor, buffer);
 			buffer.push(candidate);
-			consumed.add(candidate);
 			last = candidate;
 		}
-		return buffer;
+		if (!isFinal) return null;
+		return this.#consume(cursor, buffer);
 	}
 
-	findGroup(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>): Activity[] {
+	findGroup(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, isFinal: boolean): Activity[] | null {
 		const { passThrough, gap } = ReferenceError.suppress(this.#roots.get(root));
-		if (passThrough) return this.#findGroupPassThrough(cursor, root, gap);
-		return this.#findGroupConsecutive(cursor, root, gap);
+		if (passThrough) return this.#findGroupPassThrough(cursor, root, gap, isFinal);
+		return this.#findGroupConsecutive(cursor, root, gap, isFinal);
 	}
 }
 //#endregion
