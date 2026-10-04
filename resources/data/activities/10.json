@@ -1,5 +1,23 @@
 [
 	{
+		"package": "adaptive-extender",
+		"version": "1.1.1",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.1",
+		"platform": "npm",
+		"timestamp": 1791082772280,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"sha": "aac53c8dc879a8ae97f25433ce5c0d89119a99a6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791084909000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "1eb04bf6f1d39a30bb2df0a80fa14530f9bc1573",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -16,5 +34,17 @@
 		"platform": "GitHub",
 		"timestamp": 1791085001000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "Haunt - WHITE Remix",
+		"artists": [
+			"Code: Pandorum",
+			"WHITE"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273bb3575ad015d1c092d74283b",
+		"url": "https://open.spotify.com/track/2gHoOxOU8AscIcHCFYI5t0",
+		"platform": "Spotify",
+		"timestamp": 1791113639000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
