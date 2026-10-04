@@ -52,24 +52,18 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 		}, true);
 	}
 
-	#renderChunk(itemContainer: HTMLElement, cursor: ArrayCursor<Activity>, collector: ActivityCollector, registry: ActivityRegistry, platforms: Map<string, Platform>, batch: number, observerAnimatedReveal: IntersectionObserver, isFinal: boolean): boolean {
+	#renderChunk(itemContainer: HTMLElement, context: RenderContext, isFinal: boolean): boolean {
+		const { cursor, collector, registry, platforms, batch, observerAnimatedReveal } = context;
 		let rendered = 0;
 		while (cursor.inRange && rendered < batch) {
-			if (collector.isConsumed(cursor.current)) {
-				cursor.index++;
-				continue;
-			}
-			const root = collector.findRoot(cursor.current);
-			if (root === null) {
+			const { current } = cursor;
+			const root = collector.findRoot(current);
+			if (root === null || collector.isConsumed(current)) {
 				cursor.index++;
 				continue;
 			}
 			const buffer = collector.findGroup(cursor, root, isFinal);
 			if (buffer === null) return false;
-			if (buffer.length < 1) {
-				cursor.index++;
-				continue;
-			}
 			const strategy = registry.findStrategy(root);
 			if (strategy === null) continue;
 			const activity = ActivityBuilder.newContainer(itemContainer, platforms, buffer[0], observerAnimatedReveal);
@@ -79,30 +73,34 @@ export class ActivitiesRenderer extends Controller<[HTMLElement, DataTable<typeo
 		return cursor.inRange;
 	}
 
-	async #render(itemContainer: HTMLElement, context: RenderContext): Promise<unknown> {
-		if (!this.#isSentinelIntersecting) return;
-		const { cursor, collector, registry, platforms, outro, batch, observerAnimatedReveal, observerDynamicLoad, itemSentinel, activities } = context;
-		const isCompleted = this.#isCompleted;
-		const hasMore = this.#renderChunk(itemContainer, cursor, collector, registry, platforms, batch, observerAnimatedReveal, isCompleted);
-		if (hasMore) return requestAnimationFrame(this.#render.bind(this, itemContainer, context));
-		if (isCompleted) {
-			observerDynamicLoad.disconnect();
-			ActivityBuilder.newOutro(itemContainer, itemSentinel, outro);
-			return;
-		}
+	#proceed(itemContainer: HTMLElement, context: RenderContext): void {
+		requestAnimationFrame(this.#render.bind(this, itemContainer, context));
+	}
 
-		if (this.#isLoading) return;
+	#finish(itemContainer: HTMLElement, context: RenderContext): void {
+		const { observerDynamicLoad, itemSentinel, outro } = context;
+		observerDynamicLoad.disconnect();
+		ActivityBuilder.newOutro(itemContainer, itemSentinel, outro);
+	}
+
+	async #load(activities: DataTable<typeof Activity>): Promise<void> {
 		this.#isLoading = true;
 		const isLoaded = await activities.load(this.#page++);
 		this.#isLoading = false;
-		if (isLoaded) {
-			analytics.dispatch("feed_batch_loaded", new FeedBatchLoaded(this.#page));
-			return requestAnimationFrame(this.#render.bind(this, itemContainer, context));
-		}
-
+		if (isLoaded) return analytics.dispatch("feed_batch_loaded", new FeedBatchLoaded(this.#page));
 		analytics.dispatch("feed_completed", new FeedCompleted(this.#page));
 		this.#isCompleted = true;
-		return requestAnimationFrame(this.#render.bind(this, itemContainer, context));
+	}
+
+	async #render(itemContainer: HTMLElement, context: RenderContext): Promise<void> {
+		if (!this.#isSentinelIntersecting) return;
+		const isCompleted = this.#isCompleted;
+		const hasMore = this.#renderChunk(itemContainer, context, isCompleted);
+		if (hasMore) return this.#proceed(itemContainer, context);
+		if (isCompleted) return this.#finish(itemContainer, context);
+		if (this.#isLoading) return;
+		await this.#load(context.activities);
+		this.#proceed(itemContainer, context);
 	}
 
 	async run(itemContainer: HTMLElement, activities: DataTable<typeof Activity>, configuration: Configuration, registry: ActivityRegistry, options: Partial<ActivitiesRendererOptions> = {}): Promise<void> {

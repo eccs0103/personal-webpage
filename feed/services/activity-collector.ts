@@ -49,22 +49,19 @@ export class ActivityCollector {
 	}
 
 	#findGroupConsecutive(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, gap: Timespan, isFinal: boolean): Activity[] | null {
-		const index = cursor.index;
-		const buffer: Activity[] = [];
-		let { current } = cursor;
-		buffer.push(current);
-		cursor.index++;
-		while (cursor.inRange) {
-			const next = cursor.current;
-			if (!this.#isSameGroup(current, next, root, gap)) break;
-			buffer.push(next);
-			current = next;
-			cursor.index++;
+		const source = this.#source;
+		const anchor = cursor.current;
+		const buffer: Activity[] = [anchor];
+		let last = anchor;
+		let index = cursor.index + 1;
+		for (; index < source.length; index++) {
+			const candidate = source[index];
+			if (!this.#isSameGroup(last, candidate, root, gap)) break;
+			buffer.push(candidate);
+			last = candidate;
 		}
-		if (!isFinal && !cursor.inRange) {
-			cursor.index = index;
-			return null;
-		}
+		if (!isFinal && index === source.length) return null;
+		cursor.index = index;
 		return buffer;
 	}
 
@@ -78,17 +75,13 @@ export class ActivityCollector {
 	#findGroupPassThrough(cursor: ArrayCursor<Activity>, root: TypeOf<Activity>, gap: Timespan, isFinal: boolean): Activity[] | null {
 		const source = this.#source;
 		const consumed = this.#consumed;
-		const buffer: Activity[] = [];
 		const anchor = cursor.current;
-		buffer.push(anchor);
-
+		const buffer: Activity[] = [anchor];
 		let last = anchor;
 		for (let index = cursor.index + 1; index < source.length; index++) {
 			const candidate = source[index];
-			if (consumed.has(candidate)) continue;
-			if (!(candidate instanceof root)) continue;
-			const difference = Timespan.fromValue(last.timestamp.valueOf() - candidate.timestamp.valueOf());
-			if (difference.valueOf() > gap.valueOf()) return this.#consume(cursor, buffer);
+			if (consumed.has(candidate) || !(candidate instanceof root)) continue;
+			if (!this.#isSameGroup(last, candidate, root, gap)) return this.#consume(cursor, buffer);
 			buffer.push(candidate);
 			last = candidate;
 		}
