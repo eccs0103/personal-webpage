@@ -167,6 +167,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "9391ae63b1fb165ce7571984bbb7efe3de260aa1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791129792000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"file_name": "39.jpg",
 		"media_type": "photo",
 		"content": "Вот такая хуйня собачка",
