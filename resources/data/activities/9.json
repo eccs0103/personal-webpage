@@ -1,16 +1,5 @@
 [
 	{
-		"title": "Дикари",
-		"artists": [
-			"Xassa"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273b0ba21e1e41467db196cc54a",
-		"url": "https://open.spotify.com/track/3mTtr3OAHVUS9Sv72OeNCZ",
-		"platform": "Spotify",
-		"timestamp": 1789723395000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
 		"sha": "0a2f26d3e447c005603dbb531a15434e4dc5fe03",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -961,6 +950,15 @@
 		"repository": "cheatsheet",
 		"platform": "GitHub",
 		"timestamp": 1791062968000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "708cc2fe67fc36c572044602f3aaf1024aeef05e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791062972000,
 		"$type": "GitHubPushActivity"
 	}
 ]

@@ -386,15 +386,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "80e0c205313258315c1b15a7985766cb0aaf52e1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1788788908000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/6dd241ec65b3f2b01f98b522d4654dee4d049b73.jpg",
 		"title": "Getting started",
 		"description": "Kill your first creature",
@@ -1004,5 +995,16 @@
 		"platform": "GitHub",
 		"timestamp": 1789668643000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "Дикари",
+		"artists": [
+			"Xassa"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273b0ba21e1e41467db196cc54a",
+		"url": "https://open.spotify.com/track/3mTtr3OAHVUS9Sv72OeNCZ",
+		"platform": "Spotify",
+		"timestamp": 1789723395000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]

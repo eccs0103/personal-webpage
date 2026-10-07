@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "708cc2fe67fc36c572044602f3aaf1024aeef05e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062972000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "b54c7293215c4a378712f6b00cc3317abc6dcfee",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
