@@ -241,5 +241,15 @@
 		"platform": "GitHub",
 		"timestamp": 1791272832000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"file_name": "40.jpg",
+		"media_type": "photo",
+		"content": "Бетонщик at NRGaming",
+		"channel_id": -1003471238866,
+		"message_id": 40,
+		"platform": "Telegram",
+		"timestamp": 1791397079000,
+		"$type": "TelegramMediaPostActivity"
 	}
 ]
