@@ -289,6 +289,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "4706569431c780cfdd05aa04f643d37a4053570f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1791454740000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "645c900fb2a3af8f3b0ce0299adf9240bffc9bbc",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
@@ -298,12 +307,30 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "de28f8b3b398088df69703d31966df92fdf7a9c1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791454869000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "a540b1de0f93113b1eec37a43fd10c38befff581",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/shortcuts",
 		"repository": "shortcuts",
 		"platform": "GitHub",
 		"timestamp": 1791454934000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "3d328a42565a2754bf9d64ac488e52ddb9b55f5a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791454972000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -365,6 +392,24 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "4041574ad57217b92ce1d62d5ad3f3f339592646",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456545000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c431636c76c768bdfa8653cc6aa4b1ca77587124",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456943000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"package": "@eccs0103/claude-cli-status-line",
 		"version": "1.4.0",
 		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
@@ -383,6 +428,15 @@
 		"platform": "GitHub",
 		"timestamp": 1791458235000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "44235bea94b6daf40f89386c9177367f4de0e98d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458462000,
+		"$type": "GitHubPushActivity"
 	},
 	{
 		"title": "1.4.1",
