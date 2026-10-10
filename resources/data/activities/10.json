@@ -1,32 +1,5 @@
 [
 	{
-		"sha": "b54c7293215c4a378712f6b00cc3317abc6dcfee",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791063865000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "de409ace1dea30496927789d260136c7e35a6ac3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791063927000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "99add02fcbb1ec823dd65c4e48c7a286e78f35b0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791064651000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "324854ab8fbfff98142d99477cc97a958a1535e7",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",

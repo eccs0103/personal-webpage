@@ -501,24 +501,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"name": "application-fixes",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789030873000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"name": "telegram-theme-converter",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789032214000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
 		"name": "birthday-notifications",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -543,15 +525,6 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1789039934000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0dbd3075f945c1c0a087e9850f83cec5246a569c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1789040145000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1006,5 +979,32 @@
 		"platform": "Spotify",
 		"timestamp": 1789723395000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "0a2f26d3e447c005603dbb531a15434e4dc5fe03",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789753931000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "06ac7e9457ea1ff5d15198e40736ba9d179f15b0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789753936000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2fffe82360a329044fbd544a9de69f08246b694e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789753942000,
+		"$type": "GitHubPushActivity"
 	}
 ]
