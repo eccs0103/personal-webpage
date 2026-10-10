@@ -1,41 +1,5 @@
 [
 	{
-		"sha": "324854ab8fbfff98142d99477cc97a958a1535e7",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791064656000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "225298e956a24c223e94aa31409225fcd8c5ec44",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791064662000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "b6a29ac51269cd117512fc5b84967307e7f72db5",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791064666000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "b6b220c99774957679d760245b874da493d3b25d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791064671000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "5bac741e0786b13d19e07c310629d3490c361ec1",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
@@ -439,5 +403,38 @@
 		"platform": "npm",
 		"timestamp": 1791458743113,
 		"$type": "NpmPublishActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f8da9f53f5938be55aef11a9890b6713164471d6.jpg",
+		"title": "Arborist Badge",
+		"description": "Reach the top of a really big tree.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664407000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/05543471ee7f7ab73d2c873b6157ca2c5cfa7b27.jpg",
+		"title": "Toxicology Badge",
+		"description": "Restore 200 total poison by using items.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664629000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d6e7927521bbb5f779e5f5c164d968f23597256b.jpg",
+		"title": "Jester Badge",
+		"description": "Open 2 Clown Luggage in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791669183000,
+		"$type": "SteamAchievementActivity"
 	}
 ]

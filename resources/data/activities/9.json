@@ -1,42 +1,5 @@
 [
 	{
-		"sha": "9bad6cb8441805b82f0086dda2fb0d403dbb4963",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789754833000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "94ffe37c14acb218a100e648ca716b9e63966700",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789762895000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "d9fbb6c090b6c284e89dc28312b534d7f308b7ee",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789764747000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"file_name": "37.jpg",
-		"media_type": "photo",
-		"content": null,
-		"channel_id": -1003471238866,
-		"message_id": 37,
-		"platform": "Telegram",
-		"timestamp": 1789765686000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/3e5fc76b70c9f5f05f986d602a18031e9c4fa23e.jpg",
 		"title": "Frozen in Time",
 		"description": null,
@@ -959,6 +922,42 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1791064651000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "324854ab8fbfff98142d99477cc97a958a1535e7",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791064656000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "225298e956a24c223e94aa31409225fcd8c5ec44",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1791064662000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "b6a29ac51269cd117512fc5b84967307e7f72db5",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791064666000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "b6b220c99774957679d760245b874da493d3b25d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791064671000,
 		"$type": "GitHubPushActivity"
 	}
 ]
