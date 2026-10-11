@@ -1,35 +1,5 @@
 [
 	{
-		"sha": "c7b656c57489186353b1f4959d4b788e51c3dd5b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791084964000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f2a4984434cd50373009a58d3fedce89655c23c4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791085001000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "Haunt - WHITE Remix",
-		"artists": [
-			"Code: Pandorum",
-			"WHITE"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273bb3575ad015d1c092d74283b",
-		"url": "https://open.spotify.com/track/2gHoOxOU8AscIcHCFYI5t0",
-		"platform": "Spotify",
-		"timestamp": 1791113639000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
 		"sha": "df157824192861875057540c5285ff5f35f4e686",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",

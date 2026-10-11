@@ -1,32 +1,5 @@
 [
 	{
-		"name": "layered-engine-implementation",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790245705000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "4a58ac28cc6f50b19657323fa02bea23fe503a0a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790245910000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cb9bd856ce553f91d7f5041a6ef646a34477dca1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790245914000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "7b98fe4350825832d807d4eac1497932e0d12adc",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -953,5 +926,35 @@
 		"platform": "GitHub",
 		"timestamp": 1791084943000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c7b656c57489186353b1f4959d4b788e51c3dd5b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791084964000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f2a4984434cd50373009a58d3fedce89655c23c4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791085001000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "Haunt - WHITE Remix",
+		"artists": [
+			"Code: Pandorum",
+			"WHITE"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273bb3575ad015d1c092d74283b",
+		"url": "https://open.spotify.com/track/2gHoOxOU8AscIcHCFYI5t0",
+		"platform": "Spotify",
+		"timestamp": 1791113639000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
