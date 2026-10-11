@@ -519,24 +519,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "46daca286d79dee55c23adc3fca705c93ba45482",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789042469000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "5651eb9704fd1991b43f501065a24073f568d163",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789042525000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "ba3c4ebfaf28a0a4d4f1271c0d3068cf4b62d3cd",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -544,15 +526,6 @@
 		"platform": "GitHub",
 		"timestamp": 1789042581000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "birthday-notifications",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789042597000,
-		"$type": "GitHubDeleteBranchActivity"
 	},
 	{
 		"sha": "bafa45fc0368384bbf513536cfb41f81ac53466d",
@@ -573,15 +546,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "601e2e85f0a9e38743f06c07f6b564b2d75d7cae",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1789046404000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "4a305eacb18b1149f93aea4a61da34b075552f7c",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -591,30 +555,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "7d624c1f309997eeb8d7ec315fec4d50a6f44f04",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1789059490000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "6d9aea137e7f0a1cf580b26c5e1f2ce20ac27986",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1789059510000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "52eb6bfd6d89ee284360bcabaa67ddd0d4f15bc6",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1789059524000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1007,5 +953,67 @@
 		"platform": "Telegram",
 		"timestamp": 1789765686000,
 		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/3e5fc76b70c9f5f05f986d602a18031e9c4fa23e.jpg",
+		"title": "Frozen in Time",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1789824346000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/0b89d8dacb03eabb93041f02e623729ca3e4c41b.jpg",
+		"title": "I Am The Law",
+		"description": "Complete all Cyberpsycho Sightings.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1789935643000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Gr4ves (feat. Johnny Gr4ves)",
+		"artists": [
+			"Konrad OldMoney",
+			"Kyubik",
+			"Johnny Gr4ves"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273247bf1341aea44ca29427f44",
+		"url": "https://open.spotify.com/track/7C8nA84nqtzdTZdKq9YVGF",
+		"platform": "Spotify",
+		"timestamp": 1790001943000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "e921781568190307804678a6332ac73970d1a762",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790110313000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "e0d11104a66df52552f8d642718a88e94fe33bdc",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790147527000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8ccba55b042064c257421185ba0547c292722263",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790191292000,
+		"$type": "GitHubPushActivity"
 	}
 ]
