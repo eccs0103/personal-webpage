@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "bb7abdfc25abfd19c7b0e9e7e3b6a8ab49a911d3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790277029000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "a67ee9fd42668954aa32500bcccd5973754a098e",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
@@ -954,6 +945,16 @@
 		"content": "Вот такая хуйня собачка",
 		"channel_id": -1003471238866,
 		"message_id": 39,
+		"platform": "Telegram",
+		"timestamp": 1791189322000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"file_name": "38.jpg",
+		"media_type": "photo",
+		"content": "Вот такая хуйня собачка",
+		"channel_id": -1003471238866,
+		"message_id": 38,
 		"platform": "Telegram",
 		"timestamp": 1791189322000,
 		"$type": "TelegramMediaPostActivity"

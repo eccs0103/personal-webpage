@@ -1,15 +1,5 @@
 [
 	{
-		"file_name": "38.jpg",
-		"media_type": "photo",
-		"content": "Вот такая хуйня собачка",
-		"channel_id": -1003471238866,
-		"message_id": 38,
-		"platform": "Telegram",
-		"timestamp": 1791189322000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
 		"sha": "36f90703ce1bd643740b881a8c3e8632b6309fe8",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
@@ -333,5 +323,38 @@
 		"platform": "Spotify",
 		"timestamp": 1791741451000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/41ce6d7161b1da52240972e63e0169007cb78b67.jpg",
+		"title": "Cool Cucumber Badge",
+		"description": "Climb past the MESA without ever having more than 10% Heat.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791751404000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/cd4367de9dca4e160bdf86297d7e9003cb791c74.jpg",
+		"title": "First Aid Badge",
+		"description": "Heal your friends for 100 points of injury in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791753968000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/6541523d91357a00bb49e24567429de6505ddcd3.jpg",
+		"title": "Peak Badge",
+		"description": "Reach the PEAK.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791754270000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
