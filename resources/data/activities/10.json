@@ -1,24 +1,5 @@
 [
 	{
-		"sha": "9391ae63b1fb165ce7571984bbb7efe3de260aa1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791129792000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"file_name": "39.jpg",
-		"media_type": "photo",
-		"content": "Вот такая хуйня собачка",
-		"channel_id": -1003471238866,
-		"message_id": 39,
-		"platform": "Telegram",
-		"timestamp": 1791189322000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
 		"file_name": "38.jpg",
 		"media_type": "photo",
 		"content": "Вот такая хуйня собачка",
@@ -341,5 +322,16 @@
 		"platform": "Steam",
 		"timestamp": 1791669183000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Fuego",
+		"artists": [
+			"Hopex"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273c3a04784337bf86257c7b789",
+		"url": "https://open.spotify.com/track/2aqvHq5uTCkdEteQLiftzb",
+		"platform": "Spotify",
+		"timestamp": 1791741451000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
