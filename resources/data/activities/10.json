@@ -1,42 +1,5 @@
 [
 	{
-		"sha": "a2375049eb635130ff444d3478552e6df1bff66b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791195080000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "332ab9cacb1ad247362f8fe088c0d09d2d477bd8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1791272827000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8a3cc4e9524ea885d1919bc8486d4668eaf2f365",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1791272832000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"file_name": "40.jpg",
-		"media_type": "photo",
-		"content": "Бетонщик at NRGaming",
-		"channel_id": -1003471238866,
-		"message_id": 40,
-		"platform": "Telegram",
-		"timestamp": 1791397079000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
 		"sha": "9049600e56b8d98f079248e122fd33e28e12c9e9",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
