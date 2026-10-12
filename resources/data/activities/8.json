@@ -528,30 +528,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "4a305eacb18b1149f93aea4a61da34b075552f7c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789047118000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "0a1edf72779288625afa4080b7a265762ecfe855",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1789068657000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "442b05202427adeeca4cc553c7b778d1c1eba350",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1789115177000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1013,5 +995,25 @@
 		"platform": "GitHub",
 		"timestamp": 1790283766000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "layered-engine-implementation",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1790283790000,
+		"$type": "GitHubDeleteBranchActivity"
+	},
+	{
+		"title": "3.5.0",
+		"tag_name": "3.5.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1790283828000,
+		"$type": "GitHubReleaseActivity"
 	}
 ]
