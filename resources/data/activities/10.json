@@ -1,25 +1,5 @@
 [
 	{
-		"sha": "36f90703ce1bd643740b881a8c3e8632b6309fe8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791193960000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.0.0",
-		"tag_name": "3.0.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791194218000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
 		"sha": "a2375049eb635130ff444d3478552e6df1bff66b",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",

@@ -1,23 +1,5 @@
 [
 	{
-		"sha": "a67ee9fd42668954aa32500bcccd5973754a098e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790283647000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ed8299889c5402f82a1cb4150fe28761b40e87e2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790283698000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "22ea8dbbd49a4127836542a90dd4e98f19ae7f1c",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -958,5 +940,25 @@
 		"platform": "Telegram",
 		"timestamp": 1791189322000,
 		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"sha": "36f90703ce1bd643740b881a8c3e8632b6309fe8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791193960000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "3.0.0",
+		"tag_name": "3.0.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791194218000,
+		"$type": "GitHubReleaseActivity"
 	}
 ]

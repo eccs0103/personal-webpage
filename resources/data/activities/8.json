@@ -519,24 +519,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "ba3c4ebfaf28a0a4d4f1271c0d3068cf4b62d3cd",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789042581000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "bafa45fc0368384bbf513536cfb41f81ac53466d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789046235000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "51f3cb7bb31adc04920a160f7494aa0a7b82306c",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -1012,6 +994,24 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1790277029000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a67ee9fd42668954aa32500bcccd5973754a098e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790283647000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ed8299889c5402f82a1cb4150fe28761b40e87e2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1790283698000,
 		"$type": "GitHubPushActivity"
 	}
 ]
