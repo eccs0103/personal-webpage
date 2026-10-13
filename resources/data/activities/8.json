@@ -546,15 +546,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "a6088101e19a8436e1a200a046f15534168e9f28",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1789238411000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "78dfea3234c623e6313d237c32c9d2b6e601aa9b",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -1015,5 +1006,16 @@
 		"platform": "GitHub",
 		"timestamp": 1790283828000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/556c0c0692cab204e7bee791989d209b8720c1f6.jpg",
+		"title": "Through the Forgotten City",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1790375769000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
