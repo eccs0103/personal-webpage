@@ -580,6 +580,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "c770224dd4fc8634b10e1996d4d304b4e9e52d6e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848842000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "2488b506fd26954c22214afd99d26c8d431b1a6d",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -634,12 +643,30 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "c5c5c946b9168bcfe415aaedb00e95c14015655f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848878000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "054d06fab90708bb0e5f90df314156e0c48404e4",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1791848883000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "b87b693ef26b6dec3ac978f3bcbad475634d3c52",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848888000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -726,5 +753,27 @@
 		"platform": "GitHub",
 		"timestamp": 1791921741000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/4e13456429b07d12f2eb8cda87c4d46b408dd128.jpg",
+		"title": "Hang Gliding Badge",
+		"description": "Fly 100m with the Glider without touching the ground.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1792004728000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/cd63536e849abccb956946a00f8d9ee99009af81.jpg",
+		"title": "Lone Wolf Badge",
+		"description": "Escape the island in a solo expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1792008043000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
