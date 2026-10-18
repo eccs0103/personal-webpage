@@ -2,33 +2,24 @@
 
 import "adaptive-extender/web";
 import { Controller, Timespan } from "adaptive-extender/web";
-import { ActivitiesRenderer } from "../view/activities-renderer.js";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { ClientBridge } from "../services/client-bridge.js";
 import { DataTable } from "../services/data-table.js";
 import { Activity, GitHubActivity, NpmActivity, SoundCloudActivity, SpotifyActivity, StackOverflowActivity, SteamAchievementActivity, SteamScreenshotActivity, TelegramActivity } from "../models/activity.js";
-import { FooterRenderer } from "../view/footer-renderer.js";
-import { HeaderRenderer } from "../view/header-renderer.js";
 import { Configuration } from "../models/configuration.js";
 import { ChangelogEntry, type ChangelogEntryScheme } from "../models/changelog.js";
 import { type Bridge } from "../services/bridge.js";
 import { SettingsService } from "../services/settings-service.js";
 import { ChangelogService } from "../services/changelog-service.js";
-import { ChangelogRenderer } from "../view/changelog-renderer.js";
-import { WelcomeRenderer } from "../view/welcome-renderer.js";
-import { PlatformMenuRenderer } from "../view/platform-menu-renderer.js";
 import { VisitService } from "../services/visit-service.js";
 import { AnalyticsController } from "../../environment/controllers/analytics-controller.js";
 import { MetadataController } from "./metadata-controller.js";
 import { ActivityRegistry } from "../services/activity-registry.js";
-import { GitHubRenderStrategy } from "../view/github-render-strategy.js";
-import { SpotifyRenderStrategy } from "../view/spotify-render-strategy.js";
-import { SteamRenderStrategy } from "../view/steam-render-strategy.js";
-import { StackOverflowRenderStrategy } from "../view/stack-overflow-render-strategy.js";
-import { TelegramRenderStrategy } from "../view/telegram-render-strategy.js";
-import { NpmRenderStrategy } from "../view/npm-render-strategy.js";
-import { SoundCloudRenderStrategy } from "../view/soundcloud-render-strategy.js";
+import { FeedLoader } from "../services/feed-loader.js";
+import { GitHubRenderStrategy, NpmRenderStrategy, SoundCloudRenderStrategy, SpotifyRenderStrategy, StackOverflowRenderStrategy, SteamRenderStrategy, TelegramRenderStrategy } from "../view/render-strategies.js";
 import { TranslationGuard } from "../view/translation-guard.js";
-import { ThemeRenderer } from "../view/theme-renderer.js";
+import { FeedApp } from "../view/feed-app.js";
 
 const { baseURI, body } = document;
 
@@ -65,14 +56,15 @@ class WebpageController extends Controller {
 		return registry;
 	}
 
-	async #launchDialogs(changelog: ChangelogService, visits: VisitService): Promise<void> {
+	async #mount(configuration: Configuration, settings: SettingsService, changelog: ChangelogService, visits: VisitService, loader: FeedLoader): Promise<void> {
 		const { searchParams } = new URL(location.href);
 		const isWelcomeDue = visits.isWelcomeDue || searchParams.has("welcome");
 		await visits.markVisited();
 		if (isWelcomeDue) await changelog.skipHistory();
-		await ChangelogRenderer.launch(body, changelog, isWelcomeDue);
-		if (!isWelcomeDue) return;
-		await WelcomeRenderer.launch(body);
+		const unseen = isWelcomeDue ? [] : changelog.unseen;
+		if (unseen.length > 0) await changelog.markAsSeen();
+		const divRoot = body.getElement(HTMLDivElement, "div#root");
+		createRoot(divRoot).render(<StrictMode><FeedApp configuration={configuration} settings={settings} changelog={changelog} unseen={unseen} welcome={isWelcomeDue} loader={loader} /></StrictMode>);
 	}
 
 	async run(): Promise<void> {
@@ -81,23 +73,17 @@ class WebpageController extends Controller {
 		const configuration = await this.#readConfiguration(new URL("../data/feed-configuration.json", baseURI));
 		const { platforms } = configuration;
 		const settings = new SettingsService(new Map(platforms.filter(platform => platform.status === "connected").map(platform => [platform.name, true])));
-		const main = await body.getElementAsync(HTMLElement, "main");
 		const activities = new DataTable(this.#bridge, new URL("../data/activities", baseURI), Activity);
-		const footer = await body.getElementAsync(HTMLElement, "footer");
 		const dataChangelog = await this.#readChangelog(new URL("../data/feed-changelog.json", baseURI));
 		const changelog = new ChangelogService(dataChangelog);
 		const registry = this.#newRegistry(new URL(configuration.urlProxy));
+		const loader = new FeedLoader(activities, registry);
 
-		const promiseHeader = HeaderRenderer.launch(body, settings, platforms);
-		const promiseTheme = ThemeRenderer.launch(body);
-		const promiseActivities = ActivitiesRenderer.launch(main, activities, configuration, registry);
-		const promiseFooter = FooterRenderer.launch(footer);
-		const promisePlatformMenu = PlatformMenuRenderer.launch(body, platforms);
-		const promiseDialogs = this.#launchDialogs(changelog, new VisitService());
+		const mounting = this.#mount(configuration, settings, changelog, new VisitService(), loader);
 		const promiseMetadata = MetadataController.launch(platforms);
 		const promiseAnalytics = AnalyticsController.launch();
 
-		await Promise.all([promiseHeader, promiseTheme, promiseActivities, promiseFooter, promisePlatformMenu, promiseDialogs, promiseMetadata, promiseAnalytics]);
+		await Promise.all([mounting, promiseMetadata, promiseAnalytics]);
 	}
 
 	async catch(error: Error): Promise<void> {

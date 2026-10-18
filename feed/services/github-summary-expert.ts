@@ -1,6 +1,7 @@
 "use strict";
 
 import { Optional, Random } from "adaptive-extender/web";
+import { type ReactElement } from "react";
 import { GitHubCreateRepositoryActivity, GitHubCreateTagActivity, GitHubDeleteBranchActivity, GitHubDeleteTagActivity, GitHubPushActivity, GitHubReleaseActivity, type GitHubActivity } from "../models/activity.js";
 import { TextExpert } from "./text-expert.js";
 import type { LinkCreationOptions } from "../view/view-builders.js";
@@ -67,13 +68,13 @@ class WorkflowReport {
 //#endregion
 //#region Summary context
 export class SummaryContext {
-	readonly #primary: Node | undefined;
-	readonly #secondary: Node | undefined;
+	readonly #primary: ReactElement | undefined;
+	readonly #secondary: ReactElement | undefined;
 	readonly #magnitude: number;
 	readonly #label: string;
 	readonly #modifier: string;
 
-	constructor(primary: Node | undefined, secondary: Node | undefined, magnitude: number, label: string, modifier: string) {
+	constructor(primary: ReactElement | undefined, secondary: ReactElement | undefined, magnitude: number, label: string, modifier: string) {
 		this.#primary = primary;
 		this.#secondary = secondary;
 		this.#magnitude = magnitude;
@@ -81,11 +82,11 @@ export class SummaryContext {
 		this.#modifier = modifier;
 	}
 
-	get primary(): Node {
+	get primary(): ReactElement {
 		return ReferenceError.suppress(this.#primary, "Primary repository is missing");
 	}
 
-	get secondary(): Node {
+	get secondary(): ReactElement {
 		return ReferenceError.suppress(this.#secondary, "Secondary repository is missing");
 	}
 
@@ -108,7 +109,7 @@ export interface PrinterFunction {
 }
 
 export interface LinkerFunction {
-	(url: URL, options: Partial<LinkCreationOptions>): Node;
+	(url: URL, options: Partial<LinkCreationOptions>): ReactElement;
 }
 
 export interface TemplateRenderer {

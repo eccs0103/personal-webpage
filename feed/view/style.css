@@ -29,6 +29,11 @@ body {
 		animation: spotlight var(--time-reveal-duration) ease-out;
 	}
 
+	& span.icon.external {
+		--url: url(../../assets/icons/external.svg);
+		width: fit-content;
+	}
+
 	& header {
 		& img.logo {
 			width: calc(6 * var(--size-standart));
@@ -282,10 +287,18 @@ body {
 
 						&.carousel-previous {
 							left: var(--size-gap);
+
+							& > span.icon {
+								--url: url(../../assets/icons/left.svg);
+							}
 						}
 
 						&.carousel-next {
 							right: var(--size-gap);
+
+							& > span.icon {
+								--url: url(../../assets/icons/right.svg);
+							}
 						}
 					}
 
@@ -450,6 +463,10 @@ body {
 
 				& a.telegram-document {
 					width: 100%;
+
+					& > span.icon {
+						--url: url(../../assets/icons/file.svg);
+					}
 				}
 			}
 		}

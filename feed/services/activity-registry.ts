@@ -1,12 +1,13 @@
 "use strict";
 
 import "adaptive-extender/web";
+import { type ReactElement } from "react";
 import { Activity } from "../models/activity.js";
 import { ActivityCollector, type GroupingOptions, type TypeOf } from "./activity-collector.js";
 
 //#region Activity registry
 export interface ActivityRenderStrategy<T extends Activity> {
-	render(itemContainer: HTMLElement, buffer: readonly T[]): void;
+	render(buffer: readonly T[]): ReactElement;
 }
 
 export class ActivityRegistry {
