@@ -4,7 +4,8 @@ import "adaptive-extender/web";
 import { type Dispatch, memo, type ReactElement, type RefObject, type SetStateAction, type SyntheticEvent, useEffect, useMemo, useRef, useState } from "react";
 import { type Activity } from "../models/activity.js";
 import { type Platform } from "../models/configuration.js";
-import { type FeedLoader } from "../services/feed-loader.js";
+import { flushSync } from "react-dom";
+import { type FeedListener, type FeedLoader } from "../services/feed-loader.js";
 import { TextExpert } from "../services/text-expert.js";
 import { AnalyticsService } from "../../environment/services/analytics-service.js";
 import { MediaPlay } from "../models/media-play.js";
@@ -56,15 +57,19 @@ class FeedPump {
 		this.#completed(true);
 	}
 
+	#append(cards: readonly (readonly [Activity, ReactElement])[]): void {
+		flushSync(() => this.#cards(previous => [...previous, ...cards]));
+	}
+
 	async #run(): Promise<void> {
 		if (this.#isRunning) return;
 		this.#isRunning = true;
 		try {
 			const loader = this.#loader;
+			const listener: FeedListener = this.#append.bind(this);
 			while (this.#isSentinelIntersecting) {
-				const cards = await loader.next();
-				if (cards === null) return this.#finish();
-				this.#cards(previous => [...previous, ...cards]);
+				const hasNext = await loader.next(listener);
+				if (!hasNext) return this.#finish();
 				await this.#frame();
 			}
 		} finally {
@@ -81,7 +86,6 @@ class FeedPump {
 		const observer = new IntersectionObserver(this.#observe.bind(this), { rootMargin: "200px" });
 		this.#observer = observer;
 		observer.observe(divSentinel);
-		void this.#run();
 	}
 
 	disconnect(): void {

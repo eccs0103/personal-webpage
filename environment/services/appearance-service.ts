@@ -16,11 +16,11 @@ export class AppearanceService {
 
 		const key = AppearanceService.#key;
 		try {
-			this.#repository = localStorage.openBufferedCell(key, Appearance, new Appearance(Theme.blackwall));
+			this.#repository = localStorage.openBufferedCell(key, Appearance, new Appearance(Theme.material));
 		} catch (reason) {
 			if (!(reason instanceof SyntaxError)) throw reason;
 			localStorage.removeItem(key);
-			this.#repository = localStorage.openBufferedCell(key, Appearance, new Appearance(Theme.blackwall));
+			this.#repository = localStorage.openBufferedCell(key, Appearance, new Appearance(Theme.material));
 		}
 	}
 

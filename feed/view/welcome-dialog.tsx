@@ -60,7 +60,7 @@ export function WelcomeDialog({ open, changelog, onProfiles, onFilters, onTheme,
 			<div className="welcome-rows" translate="yes">
 				<WelcomeRow action="profiles" title="Find me elsewhere" description="Every profile I have, in one place." text="Show platforms" onChoose={() => { choose("profiles"); onProfiles(); }} />
 				<WelcomeRow action="filters" title="Hide what you don't care about" description="Tap a platform name on any post." text="Show me" onChoose={() => { choose("filters"); onFilters(); }} />
-				<WelcomeRow action="theme" title="Not your style?" description="Switch to a calmer theme any time." text="Show me" onChoose={() => { choose("theme"); onTheme(); }} />
+				<WelcomeRow action="theme" title="Wanna feel another side?" description="There is something behind the wall. One click lets it through." text="Show me" onChoose={() => { choose("theme"); onTheme(); }} />
 				{changelog && <WelcomeRow action="changelog" title="See what's new" description="Recent changes to this page." text="Change log" onChoose={() => { choose("changelog"); onChangelog(); }} />}
 			</div>
 			<div className="welcome-footer flex alt-center with-gap with-padding large-padding" translate="yes">

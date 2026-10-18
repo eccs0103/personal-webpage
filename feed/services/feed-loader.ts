@@ -14,6 +14,10 @@ import { FeedCompleted } from "../models/feed-completed.js";
 const analytics = AnalyticsService.instance;
 
 //#region Feed loader
+export interface FeedListener {
+	(cards: readonly (readonly [Activity, ReactElement])[]): void;
+}
+
 export interface FeedLoaderOptions {
 	batch: number;
 }
@@ -69,15 +73,15 @@ export class FeedLoader {
 		this.#isCompleted = true;
 	}
 
-	async next(): Promise<(readonly [Activity, ReactElement])[] | null> {
-		while (true) {
-			const cards: (readonly [Activity, ReactElement])[] = [];
-			const isCompleted = this.#isCompleted;
-			const hasMore = this.#renderChunk(cards, isCompleted);
-			if (hasMore || cards.length > 0) return cards;
-			if (isCompleted) return null;
-			await this.#load();
-		}
+	async next(listener: FeedListener): Promise<boolean> {
+		const cards: (readonly [Activity, ReactElement])[] = [];
+		const isCompleted = this.#isCompleted;
+		const hasMore = this.#renderChunk(cards, isCompleted);
+		if (cards.length > 0) listener(cards);
+		if (hasMore) return true;
+		if (isCompleted) return false;
+		await this.#load();
+		return true;
 	}
 }
 //#endregion
