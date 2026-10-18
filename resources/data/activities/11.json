@@ -29,6 +29,15 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
+		"sha": "d543363ff5997bf3655729acb15ac648d21d61c1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1792298812000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "d1ed80985b2a5bce95d92fbc1a8768516165d957",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
@@ -65,5 +74,14 @@
 		"platform": "GitHub",
 		"timestamp": 1792299448000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "2af49e1908bf47b19ad12d93eee6b4ed3967d535",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792362666000,
+		"$type": "GitHubPushActivity"
 	}
 ]
