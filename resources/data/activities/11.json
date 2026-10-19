@@ -1,14 +1,5 @@
 [
 	{
-		"package": "adaptive-extender",
-		"version": "1.1.5",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.5",
-		"platform": "npm",
-		"timestamp": 1792297859700,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"title": "1.1.5",
 		"tag_name": "1.1.5",
 		"is_prerelease": false,
@@ -73,6 +64,15 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1792362666000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a7123eb6b384c2811490b3d1040496aee851f851",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792362682000,
 		"$type": "GitHubPushActivity"
 	}
 ]
