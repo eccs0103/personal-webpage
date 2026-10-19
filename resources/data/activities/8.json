@@ -781,15 +781,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "94ffe37c14acb218a100e648ca716b9e63966700",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1789762895000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "d9fbb6c090b6c284e89dc28312b534d7f308b7ee",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -1017,5 +1008,14 @@
 		"platform": "Steam",
 		"timestamp": 1790375769000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "1fc6ee4298254893f6b1da4cc0463c0f97265461",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1790389742000,
+		"$type": "GitHubPushActivity"
 	}
 ]
