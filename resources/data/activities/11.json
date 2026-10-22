@@ -194,7 +194,7 @@
 	},
 	{
 		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/g-helper",
+		"url": "https://github.com/seerge/g-helper",
 		"repository": "g-helper",
 		"platform": "GitHub",
 		"timestamp": 1792407839000,
@@ -221,5 +221,14 @@
 		"platform": "Spotify",
 		"timestamp": 1792449871000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "5fd996154100634f3a4a6446dc3c6fea9b133fc2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792673725000,
+		"$type": "GitHubPushActivity"
 	}
 ]
