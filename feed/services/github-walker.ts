@@ -64,8 +64,8 @@ class GitHubEventSource extends ActivitySource<GitHubEvent, unknown> {
 		const username = event.actor.login;
 		const parts = repo.name.split("/", 2);
 		if (parts.length < 2) throw new SyntaxError(`Incorrect syntax of '${repo.name}' repository`);
-		const [, repository] = parts;
-		const url = `https://github.com/${username}/${repository}`;
+		const [owner, repository] = parts;
+		const url = `https://github.com/${owner}/${repository}`;
 		if (payload instanceof GitHubPushEventPayload) {
 			yield new GitHubPushActivity(platform, timestamp, username, url, repository, payload.head);
 		}
