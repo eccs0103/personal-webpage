@@ -239,5 +239,15 @@
 		"platform": "GitHub",
 		"timestamp": 1792712183000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"file_name": "41.jpg",
+		"media_type": "photo",
+		"content": "Somehow hit 1,000+ commits this year. Not even sure if that's a good or a bad thing.",
+		"channel_id": -1003471238866,
+		"message_id": 41,
+		"platform": "Telegram",
+		"timestamp": 1792750865000,
+		"$type": "TelegramMediaPostActivity"
 	}
 ]
