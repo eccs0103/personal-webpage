@@ -35,7 +35,7 @@
 		"@google/generative-ai": "^0.24.1",
 		"@mtcute/node": "^0.29.7",
 		"@mtcute/web": "^0.29.7",
-		"adaptive-extender": "^1.1.5",
+		"adaptive-extender": "^1.1.6",
 		"dotenv": "^17.4.2",
 		"react": "^19.3.0",
 		"react-dom": "^19.3.0"
