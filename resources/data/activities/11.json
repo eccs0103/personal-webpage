@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "43f46e5d6d3c266f4a2954f9dd7d83f8fa2ea6ea",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792282537000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "3c39fc6605c48753a401b10e3268ae6a18884303",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
