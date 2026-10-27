@@ -138,9 +138,7 @@ body {
 						line-height: 1.5;
 						border-left: var(--size-separator) solid var(--color-light-negative);
 					}
-				}
 
-				& details.npm-collection {
 					& ul.collection-content > li:not(:last-child) {
 						margin-bottom: var(--size-gap);
 					}
@@ -149,7 +147,8 @@ body {
 						align-items: center;
 					}
 
-					& a.package-name {
+					& a.package-name,
+					& a.repository-name {
 						font-weight: bold;
 					}
 

@@ -197,10 +197,12 @@ export class GitHubSummaryExpert {
 				highlight = activity.repository;
 			}
 			if (activity instanceof GitHubReleaseActivity) {
+				if (releases === 0) {
+					label = activity.title;
+					modifier = activity.isPrerelease ? "beta" : "update";
+					highlight = activity.repository;
+				}
 				releases++;
-				label = activity.title;
-				modifier = activity.isPrerelease ? "beta" : "update";
-				highlight = activity.repository;
 			}
 			if (activity instanceof GitHubDeleteBranchActivity) {
 				deletions++;
@@ -212,11 +214,9 @@ export class GitHubSummaryExpert {
 			}
 		}
 
-		if (deletions > 0) {
-			if (hasBranchDeletions && !hasTagDeletions) modifier = "old drafts";
-			else if (hasTagDeletions && !hasBranchDeletions) modifier = "unused versions";
-			else modifier = "stale data";
-		}
+		let cleanup: string = "stale data";
+		if (hasBranchDeletions && !hasTagDeletions) cleanup = "old drafts";
+		else if (hasTagDeletions && !hasBranchDeletions) cleanup = "unused versions";
 
 		const repositories = Array
 			.from(usage)
@@ -232,7 +232,7 @@ export class GitHubSummaryExpert {
 			return new WorkflowReport(ReportVibes.creation, highlight ?? primary, undefined, creations, "new project", "experiment", urls);
 		}
 		if (deletions > 0 && (deletions > total / 3 || total === deletions)) {
-			return new WorkflowReport(ReportVibes.cleanup, primary, undefined, deletions, "cleanup", modifier, urls);
+			return new WorkflowReport(ReportVibes.cleanup, primary, undefined, deletions, "cleanup", cleanup, urls);
 		}
 		if (repositories.length > 1) {
 			const others = repositories.length - 1;

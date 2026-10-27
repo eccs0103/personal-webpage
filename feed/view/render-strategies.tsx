@@ -11,85 +11,73 @@ import { Carousel, Description, ExternalIcon, ExternalLink, LazyImage, type Link
 
 //#region GitHub render strategy
 export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivity> {
-	#renderPush(activity: GitHubPushActivity, count: number): ReactElement {
-		const { url, sha, repository } = activity;
-		return <>{"Published "}<ExternalLink url={new URL(`${url}/commit/${sha}`)} text={`${count} update${TextExpert.getPluralSuffix(count)}`} />{" to the source code of "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{"."}</>;
+	#renderPush(pushes: readonly GitHubPushActivity[]): ReactElement {
+		const [{ url, sha }] = pushes;
+		const count = pushes.length;
+		return <>{"Published "}<ExternalLink url={new URL(`${url}/commit/${sha}`)} text={`${count} update${TextExpert.getPluralSuffix(count)}`} /></>;
 	}
 
-	#renderRelease(activity: GitHubReleaseActivity): ReactElement {
-		const { isPrerelease, title, url, repository, tagName } = activity;
-		return <>{isPrerelease ? "Rolled out a test version " : "Shipped update "}<ExternalLink url={new URL(`${url}/releases/tag/${tagName}`)} text={title} />{" for "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{"."}</>;
+	#renderBadge(url: string, name: string, disabled: boolean): ReactElement {
+		const version = Version.tryParse(name);
+		const classes = version === null ? "version-badge" : `version-badge bump-${TextExpert.getBump(version)}`;
+		return <ExternalLink key={name} url={new URL(`${url}/releases/tag/${name}`)} text={name} disabled={disabled} translate="no" className={classes} />;
 	}
 
 	#renderWatch(activity: GitHubWatchActivity): ReactElement {
-		const { repository, url } = activity;
-		return <>{"Discovered and bookmarked the "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{" open-source project."}</>;
-	}
-
-	#renderCreateTag(activity: GitHubCreateTagActivity): ReactElement {
-		const { name, url, repository } = activity;
-		return <>{"Marked a new milestone "}<ExternalLink url={new URL(`${url}/releases/tag/${name}`)} text={name} translate="no" />{" in "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{" history."}</>;
+		void activity;
+		return <>{"Discovered and bookmarked this open-source project"}</>;
 	}
 
 	#renderCreateBranch(activity: GitHubCreateBranchActivity): ReactElement {
-		const { name, url, repository } = activity;
-		return <>{"Started working on a new feature \""}<ExternalLink url={new URL(`${url}/tree/${name}`)} text={name} translate="no" />{"\" in "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{"."}</>;
+		const { name, url } = activity;
+		return <>{"Started working on a new feature \""}<ExternalLink url={new URL(`${url}/tree/${name}`)} text={name} translate="no" />{"\""}</>;
 	}
 
 	#renderCreateRepository(activity: GitHubCreateRepositoryActivity): ReactElement {
-		const { name, url } = activity;
-		return <>{"Initiated a new repository named "}<ExternalLink url={new URL(url)} text={name} translate="no" />{"."}</>;
-	}
-
-	#renderDeleteTag(activity: GitHubDeleteTagActivity): ReactElement {
-		const { name, repository, url } = activity;
-		return <>{"Unpublished version "}<ExternalLink url={new URL(`${url}/releases/tag/${name}`)} text={name} disabled translate="no" />{" from "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{"."}</>;
+		void activity;
+		return <>{"Initiated this new repository"}</>;
 	}
 
 	#renderDeleteBranch(activity: GitHubDeleteBranchActivity): ReactElement {
-		const { name, url, repository } = activity;
-		return <>{"Finished working on the \""}<ExternalLink url={new URL(`${url}/tree/${name}`)} text={name} disabled translate="no" />{"\" feature in "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{"."}</>;
+		const { name, url } = activity;
+		return <>{"Finished working on the \""}<ExternalLink url={new URL(`${url}/tree/${name}`)} text={name} disabled translate="no" />{"\" feature"}</>;
 	}
 
 	#renderFork(activity: GitHubForkActivity): ReactElement {
-		const { url, repository, urlFork, forkName } = activity;
-		return <>{"Forked "}<ExternalLink url={new URL(url)} text={repository} translate="no" />{" into "}<ExternalLink url={new URL(urlFork)} text={forkName} translate="no" />{"."}</>;
+		const { urlFork, forkName } = activity;
+		return <>{"Forked into "}<ExternalLink url={new URL(urlFork)} text={forkName} translate="no" /></>;
 	}
 
 	#renderIssueOpen(activity: GitHubIssueOpenActivity): ReactElement {
-		const { title, urlIssue, repository } = activity;
-		return <>{"Flagged a new issue "}<ExternalLink url={new URL(urlIssue)} text={title} />{" in "}<Textbox text={repository} translate="no" />{"."}</>;
+		const { title, urlIssue } = activity;
+		return <>{"Flagged a new issue "}<ExternalLink url={new URL(urlIssue)} text={title} /></>;
 	}
 
 	#renderIssueClose(activity: GitHubIssueCloseActivity): ReactElement {
-		const { title, urlIssue, repository } = activity;
-		return <>{"Resolved issue "}<ExternalLink url={new URL(urlIssue)} text={title} />{" in "}<Textbox text={repository} translate="no" />{"."}</>;
+		const { title, urlIssue } = activity;
+		return <>{"Resolved issue "}<ExternalLink url={new URL(urlIssue)} text={title} /></>;
 	}
 
 	#renderPullRequestOpen(activity: GitHubPullRequestOpenActivity): ReactElement {
-		const { title, urlRequest, repository } = activity;
-		return <>{"Opened pull request "}<ExternalLink url={new URL(urlRequest)} text={title} />{" for "}<Textbox text={repository} translate="no" />{"."}</>;
+		const { title, urlRequest } = activity;
+		return <>{"Opened pull request "}<ExternalLink url={new URL(urlRequest)} text={title} /></>;
 	}
 
 	#renderPullRequestMerge(activity: GitHubPullRequestMergeActivity): ReactElement {
-		const { title, urlRequest, repository } = activity;
-		return <>{"Merged pull request "}<ExternalLink url={new URL(urlRequest)} text={title} />{" into "}<Textbox text={repository} translate="no" />{"."}</>;
+		const { title, urlRequest } = activity;
+		return <>{"Merged pull request "}<ExternalLink url={new URL(urlRequest)} text={title} /></>;
 	}
 
 	#renderPullRequestClose(activity: GitHubPullRequestCloseActivity): ReactElement {
-		const { title, urlRequest, repository } = activity;
-		return <>{"Closed pull request "}<ExternalLink url={new URL(urlRequest)} text={title} />{" for "}<Textbox text={repository} translate="no" />{" without merging."}</>;
+		const { title, urlRequest } = activity;
+		return <>{"Closed pull request "}<ExternalLink url={new URL(urlRequest)} text={title} />{" without merging"}</>;
 	}
 
-	#renderSingle(activity: GitHubActivity): ReactElement | null {
-		if (activity instanceof GitHubPushActivity) return this.#renderPush(activity, 1);
-		if (activity instanceof GitHubReleaseActivity) return this.#renderRelease(activity);
+	#renderLine(activity: GitHubActivity): ReactElement | null {
 		if (activity instanceof GitHubWatchActivity) return this.#renderWatch(activity);
-		if (activity instanceof GitHubCreateTagActivity) return this.#renderCreateTag(activity);
 		if (activity instanceof GitHubCreateBranchActivity) return this.#renderCreateBranch(activity);
 		if (activity instanceof GitHubCreateRepositoryActivity) return this.#renderCreateRepository(activity);
 		if (activity instanceof GitHubDeleteBranchActivity) return this.#renderDeleteBranch(activity);
-		if (activity instanceof GitHubDeleteTagActivity) return this.#renderDeleteTag(activity);
 		if (activity instanceof GitHubForkActivity) return this.#renderFork(activity);
 		if (activity instanceof GitHubIssueOpenActivity) return this.#renderIssueOpen(activity);
 		if (activity instanceof GitHubIssueCloseActivity) return this.#renderIssueClose(activity);
@@ -97,6 +85,36 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		if (activity instanceof GitHubPullRequestMergeActivity) return this.#renderPullRequestMerge(activity);
 		if (activity instanceof GitHubPullRequestCloseActivity) return this.#renderPullRequestClose(activity);
 		return null;
+	}
+
+	#renderRepository(repository: string, entries: readonly GitHubActivity[]): ReactElement {
+		const [{ url }] = entries;
+		const pushes: GitHubPushActivity[] = [];
+		const badges: Map<string, ReactElement> = new Map();
+		const lines: ReactElement[] = [];
+
+		// The buffer runs newest first; badges read oldest to newest, like npm versions.
+		for (const activity of entries.toReversed()) {
+			if (activity instanceof GitHubPushActivity) pushes.unshift(activity);
+			else if (activity instanceof GitHubReleaseActivity) badges.set(activity.tagName, this.#renderBadge(url, activity.tagName, false));
+			else if (activity instanceof GitHubCreateTagActivity) badges.set(activity.name, this.#renderBadge(url, activity.name, false));
+			else if (activity instanceof GitHubDeleteTagActivity) badges.set(activity.name, this.#renderBadge(url, activity.name, true));
+		}
+		if (pushes.length > 0) lines.push(<span key={lines.length} translate="yes">{this.#renderPush(pushes)}</span>);
+		for (const activity of entries) {
+			const line = this.#renderLine(activity);
+			if (line !== null) lines.push(<span key={lines.length} translate="yes">{line}</span>);
+		}
+
+		return (
+			<li key={repository} className="flex column" translate="yes">
+				<div className="title-row flex wrap with-gap small-gap" translate="yes">
+					<ExternalLink url={new URL(url)} text={repository} translate="no" className="repository-name" />
+					{Array.from(badges.values())}
+				</div>
+				{lines}
+			</li>
+		);
 	}
 
 	#link(url: URL, options: Partial<LinkCreationOptions>): ReactElement {
@@ -122,25 +140,16 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		const printer: PrinterFunction = this.#print.bind(this, nodes);
 		template(printer, context);
 
+		const groups: Map<string, GitHubActivity[]> = new Map();
+		for (const activity of activities) {
+			const group = groups.get(activity.repository);
+			if (group === undefined) groups.set(activity.repository, [activity]);
+			else group.push(activity);
+		}
+
 		const items: ReactElement[] = [];
-		for (let index = 0; index < activities.length; index++) {
-			const activity = activities[index];
-
-			if (!(activity instanceof GitHubPushActivity)) {
-				items.push(<li key={index} translate="yes">{this.#renderSingle(activity)}</li>);
-				continue;
-			}
-
-			const key = index;
-			let count = 1;
-			while (index + 1 < activities.length) {
-				const current = activities[index + 1];
-				if (!(current instanceof GitHubPushActivity)) break;
-				if (current.repository !== activity.repository) break;
-				count++;
-				index++;
-			}
-			items.push(<li key={key} translate="yes">{this.#renderPush(activity, count)}</li>);
+		for (const [repository, entries] of groups) {
+			items.push(this.#renderRepository(repository, entries));
 		}
 
 		return (
@@ -160,19 +169,13 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 //#endregion
 //#region Npm render strategy
 export class NpmRenderStrategy implements ActivityRenderStrategy<NpmActivity> {
-	static #getBump(version: Version): string {
-		if (version.patch !== 0) return "patch";
-		if (version.minor !== 0) return "minor";
-		return "major";
-	}
-
 	#renderPackage(name: string, entries: readonly NpmPublishActivity[]): ReactElement {
 		const sorted = entries.toSorted((left, right) => Version.compare(left.version, right.version));
 
 		let description: string | null = null;
 		const badges: ReactElement[] = [];
 		for (const entry of sorted) {
-			badges.push(<ExternalLink key={badges.length} url={new URL(entry.url)} text={entry.version.toString()} translate="no" className={`version-badge bump-${NpmRenderStrategy.#getBump(entry.version)}`} />);
+			badges.push(<ExternalLink key={badges.length} url={new URL(entry.url)} text={entry.version.toString()} translate="no" className={`version-badge bump-${TextExpert.getBump(entry.version)}`} />);
 			if (entry.description !== null) description = entry.description;
 		}
 

@@ -1,6 +1,6 @@
 "use strict";
 
-import { Timespan } from "adaptive-extender/core";
+import { Timespan, Version } from "adaptive-extender/core";
 
 const { trunc } = Math;
 
@@ -14,6 +14,12 @@ export class TextExpert {
 	static getIndefiniteCardinal(count: number): string {
 		if (count === 1) return "a";
 		return count.toString();
+	}
+
+	static getBump(version: Version): string {
+		if (version.patch !== 0) return "patch";
+		if (version.minor !== 0) return "minor";
+		return "major";
 	}
 
 	static formatTime(timestamp: Date): string {
