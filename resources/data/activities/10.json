@@ -1,23 +1,5 @@
 [
 	{
-		"sha": "de28f8b3b398088df69703d31966df92fdf7a9c1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791454869000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a540b1de0f93113b1eec37a43fd10c38befff581",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1791454934000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "3d328a42565a2754bf9d64ac488e52ddb9b55f5a",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -929,6 +911,24 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1792282543000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2c84a377ff14c3267f6178381adbb0e00203f679",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792282548000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c942751d3c0123b59bb28ad17b132bd1b95001e5",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792282553000,
 		"$type": "GitHubPushActivity"
 	}
 ]

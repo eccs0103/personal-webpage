@@ -27,24 +27,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "d6ae6712af4ae3443c37b893de2be483cc35e19e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790522581000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "7636f59b65786c685ec077cf0885241c93c44927",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790523408000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/1c7eb9a4f5e33c592fe3e205c33edcfca8fd25c1.jpg",
 		"title": "Beachcomber Badge",
 		"description": "Climb past the SHORE.",
@@ -956,6 +938,24 @@
 		"repository": "cheatsheet",
 		"platform": "GitHub",
 		"timestamp": 1791454764000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "de28f8b3b398088df69703d31966df92fdf7a9c1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791454869000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a540b1de0f93113b1eec37a43fd10c38befff581",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1791454934000,
 		"$type": "GitHubPushActivity"
 	}
 ]
