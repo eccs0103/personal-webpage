@@ -1,45 +1,5 @@
 [
 	{
-		"sha": "3d328a42565a2754bf9d64ac488e52ddb9b55f5a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791454972000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "32d04c9f2ddb2bc84896c3837dcfe34be59b60c1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791455267000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.2",
-		"tag_name": "1.1.2",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791455365000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"title": "3.0.1",
-		"tag_name": "3.0.1",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791455530000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
 		"package": "adaptive-extender",
 		"version": "1.1.2",
 		"description": "Adaptive library for JS/TS development environments",
@@ -930,5 +890,43 @@
 		"platform": "GitHub",
 		"timestamp": 1792282553000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "473afa1646e5d540270a50880e9b5c52b0a6bf58",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792282558000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "55f7f154c910753e21f6d76642d69f1239c0a733",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1792297640000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "1.1.5",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.5",
+		"platform": "npm",
+		"timestamp": 1792297859700,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"title": "1.1.5",
+		"tag_name": "1.1.5",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1792298059000,
+		"$type": "GitHubReleaseActivity"
 	}
 ]
