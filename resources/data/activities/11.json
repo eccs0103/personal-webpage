@@ -676,5 +676,37 @@
 		"platform": "GitHub",
 		"timestamp": 1793193370000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"title": "Где нас нет",
+		"artists": [
+			"Oxxxymiron"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273b0ae3859408c3968f713bf2c",
+		"url": "https://open.spotify.com/track/3lE8RY6yZoGqqJeZS06u6J",
+		"platform": "Spotify",
+		"timestamp": 1793349775000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"file_name": "42.jpg",
+		"media_type": "photo",
+		"content": null,
+		"channel_id": -1003471238866,
+		"message_id": 42,
+		"platform": "Telegram",
+		"timestamp": 1793361230000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"title": "Nostalgia",
+		"artists": [
+			"Bronik Beats"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273f94920d82ef5b7f865b7554d",
+		"url": "https://open.spotify.com/track/1FWCjy2rjGxImUGxD2TPcL",
+		"platform": "Spotify",
+		"timestamp": 1793361863000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
