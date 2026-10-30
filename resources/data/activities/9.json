@@ -139,15 +139,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "f34561ff7c2ee21b26242b0030a09ec9c7e4e05d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790774528000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/27f25eb3ec8fb4e7245aec8b48705a0812738773.jpg",
 		"title": "Web Security Badge",
 		"description": "Escape a spider's web and survive.",
@@ -961,5 +952,14 @@
 		"platform": "GitHub",
 		"timestamp": 1791455530000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "1.1.2",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.2",
+		"platform": "npm",
+		"timestamp": 1791455776218,
+		"$type": "NpmPublishActivity"
 	}
 ]
