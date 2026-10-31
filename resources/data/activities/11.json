@@ -705,6 +705,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "76ef89f2446a17fb2223d285f47f09610281b09c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1793278740000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "6de69a667cc953e272b59fa58ff3068cff2b053a",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/shortcuts",
@@ -753,5 +762,27 @@
 		"platform": "Spotify",
 		"timestamp": 1793361863000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/080311b4db37226006349b94c06f17520ee13fa7.jpg",
+		"title": "Survivalist Badge",
+		"description": "Escape the island without ever losing consciousness.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793474975000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e748ca99706ac0b09ae5328747b13e6a1d2d42bf.jpg",
+		"title": "Bookworm Badge",
+		"description": "Read the Scoutmaster’s final journal entry.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793475804000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
