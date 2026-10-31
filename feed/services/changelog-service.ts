@@ -3,6 +3,7 @@
 import "adaptive-extender/web";
 import { type BufferedCell } from "adaptive-extender/web";
 import { ChangelogEntry, ChangelogState } from "../models/changelog.js";
+import { LegacyCell } from "./legacy-cell.js";
 
 //#region Changelog service
 export class ChangelogService {
@@ -11,7 +12,8 @@ export class ChangelogService {
 
 	constructor(entries: readonly ChangelogEntry[]) {
 		this.#entries = [...entries].sort((first, second) => second.date.valueOf() - first.date.valueOf());
-		this.#repository = localStorage.openBufferedCell("Personal webpage\\Feed\\Changelog", ChangelogState, new ChangelogState(null));
+		LegacyCell.migrate("Personal webpage\\Feed\\Changelog", "Personal webpage\\Changelog");
+		this.#repository = localStorage.openBufferedCell("Personal webpage\\Changelog", ChangelogState, new ChangelogState(null));
 	}
 
 	get entries(): readonly ChangelogEntry[] {

@@ -3,20 +3,22 @@
 import "adaptive-extender/web";
 import { type BufferedCell } from "adaptive-extender/web";
 import { OldSettings, Settings } from "../models/settings.js";
+import { LegacyCell } from "./legacy-cell.js";
 
 //#region Settings service
 export class SettingsService {
 	#repository: BufferedCell<typeof Settings>;
 
 	constructor(preferences: Map<string, boolean>) {
+		LegacyCell.migrate("Personal webpage\\Feed\\Settings", "Personal webpage\\Settings");
 		try {
-			this.#repository = localStorage.openBufferedCell("Personal webpage\\Feed\\Settings", Settings, new Settings(preferences));
+			this.#repository = localStorage.openBufferedCell("Personal webpage\\Settings", Settings, new Settings(preferences));
 		} catch (reason) {
 			if (!(reason instanceof SyntaxError)) throw reason;
-			const { platforms } = localStorage.openBufferedCell("Personal webpage\\Feed\\Settings", OldSettings, new OldSettings([])).content;
+			const { platforms } = localStorage.openBufferedCell("Personal webpage\\Settings", OldSettings, new OldSettings([])).content;
 			const recovered = new Map(platforms.map(preference => [preference, true]));
-			localStorage.removeItem("Personal webpage\\Feed\\Settings");
-			this.#repository = localStorage.openBufferedCell("Personal webpage\\Feed\\Settings", Settings, new Settings(recovered));
+			localStorage.removeItem("Personal webpage\\Settings");
+			this.#repository = localStorage.openBufferedCell("Personal webpage\\Settings", Settings, new Settings(recovered));
 		}
 
 		const stored = this.#repository.content.preferences;

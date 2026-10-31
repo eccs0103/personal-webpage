@@ -3,6 +3,7 @@
 import "adaptive-extender/web";
 import { Timespan, type BufferedCell } from "adaptive-extender/web";
 import { VisitState } from "../models/visit.js";
+import { LegacyCell } from "./legacy-cell.js";
 
 //#region Visit service
 export class VisitService {
@@ -11,7 +12,8 @@ export class VisitService {
 	#isWelcomeDue: boolean;
 
 	constructor() {
-		this.#repository = localStorage.openBufferedCell("Personal webpage\\Feed\\Visit", VisitState, new VisitState(null));
+		LegacyCell.migrate("Personal webpage\\Feed\\Visit", "Personal webpage\\Visit");
+		this.#repository = localStorage.openBufferedCell("Personal webpage\\Visit", VisitState, new VisitState(null));
 		this.#isWelcomeDue = this.#repository.content.isAbsentLongerThan(VisitService.#absence, new Date());
 	}
 
