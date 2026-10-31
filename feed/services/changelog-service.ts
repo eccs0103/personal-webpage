@@ -13,7 +13,7 @@ export class ChangelogService {
 	constructor(entries: readonly ChangelogEntry[]) {
 		this.#entries = [...entries].sort((first, second) => second.date.valueOf() - first.date.valueOf());
 		LegacyCell.migrate("Personal webpage\\Feed\\Changelog", "Personal webpage\\Changelog");
-		this.#repository = localStorage.openBufferedCell("Personal webpage\\Changelog", ChangelogState, new ChangelogState(null));
+		this.#repository = localStorage.openBufferedCell("Personal webpage\\Changelog", ChangelogState, new ChangelogState());
 	}
 
 	get entries(): readonly ChangelogEntry[] {

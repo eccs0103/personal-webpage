@@ -44,17 +44,6 @@ export interface ChangelogStateScheme {
 
 export class ChangelogState extends Model {
 	@Field(Nullable.Of(Date), { name: "last_seen" })
-	lastSeen: Date | null;
-
-	constructor();
-	constructor(lastSeen: Date | null);
-	constructor(lastSeen?: Date | null) {
-		if (lastSeen === undefined) {
-			super();
-			return;
-		}
-		super();
-		this.lastSeen = lastSeen;
-	}
+	lastSeen: Date | null = null;
 }
 //#endregion

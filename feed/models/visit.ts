@@ -10,18 +10,7 @@ export interface VisitStateScheme {
 
 export class VisitState extends Model {
 	@Field(Nullable.Of(Date), { name: "last_visit" })
-	lastVisit: Date | null;
-
-	constructor();
-	constructor(lastVisit: Date | null);
-	constructor(lastVisit?: Date | null) {
-		if (lastVisit === undefined) {
-			super();
-			return;
-		}
-		super();
-		this.lastVisit = lastVisit;
-	}
+	lastVisit: Date | null = null;
 
 	isAbsentLongerThan(absence: Readonly<Timespan>, now: Date): boolean {
 		const { lastVisit } = this;

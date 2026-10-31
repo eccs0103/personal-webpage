@@ -15,19 +15,7 @@ export interface AppearanceScheme {
 
 export class Appearance extends Model {
 	@Field(Enum.Of(Theme), { name: "theme" })
-	theme: Theme;
-
-	constructor();
-	constructor(theme: Theme);
-	constructor(theme?: Theme) {
-		if (theme === undefined) {
-			super();
-			return;
-		}
-
-		super();
-		this.theme = theme;
-	}
+	theme: Theme = Theme.material;
 
 	next(): void {
 		const themes = Object.values(Theme);

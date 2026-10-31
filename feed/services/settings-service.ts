@@ -12,10 +12,10 @@ export class SettingsService {
 	constructor(preferences: Map<string, boolean>) {
 		LegacyCell.migrate("Personal webpage\\Feed\\Settings", "Personal webpage\\Settings");
 		try {
-			this.#repository = localStorage.openBufferedCell("Personal webpage\\Settings", Settings, new Settings(preferences));
+			this.#repository = localStorage.openBufferedCell("Personal webpage\\Settings", Settings, new Settings());
 		} catch (reason) {
 			if (!(reason instanceof SyntaxError)) throw reason;
-			const { platforms } = localStorage.openBufferedCell("Personal webpage\\Settings", OldSettings, new OldSettings([])).content;
+			const { platforms } = localStorage.openBufferedCell("Personal webpage\\Settings", OldSettings, new OldSettings()).content;
 			const recovered = new Map(platforms.map(preference => [preference, true]));
 			localStorage.removeItem("Personal webpage\\Settings");
 			this.#repository = localStorage.openBufferedCell("Personal webpage\\Settings", Settings, new Settings(recovered));

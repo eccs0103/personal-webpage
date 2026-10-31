@@ -13,7 +13,7 @@ export class VisitService {
 
 	constructor() {
 		LegacyCell.migrate("Personal webpage\\Feed\\Visit", "Personal webpage\\Visit");
-		this.#repository = localStorage.openBufferedCell("Personal webpage\\Visit", VisitState, new VisitState(null));
+		this.#repository = localStorage.openBufferedCell("Personal webpage\\Visit", VisitState, new VisitState());
 		this.#isWelcomeDue = this.#repository.content.isAbsentLongerThan(VisitService.#absence, new Date());
 	}
 

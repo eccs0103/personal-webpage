@@ -16,19 +16,7 @@ export interface OldSettingsScheme {
  */
 export class OldSettings extends Model {
 	@Field(Array.Of(String), { name: "preferences" })
-	platforms: string[];
-
-	constructor();
-	constructor(platforms: string[]);
-	constructor(platforms?: string[]) {
-		if (platforms === undefined) {
-			super();
-			return;
-		}
-
-		super();
-		this.platforms = platforms;
-	}
+	platforms: string[] = [];
 }
 //#endregion
 //#region Settings
@@ -38,7 +26,7 @@ export interface SettingsScheme {
 
 export class Settings extends Model {
 	@Field(Map.AsRecord(Boolean), { name: "preferences" })
-	preferences: Map<string, boolean>;
+	preferences: Map<string, boolean> = new Map();
 
 	constructor();
 	constructor(preferences: Map<string, boolean>);
