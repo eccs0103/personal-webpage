@@ -784,5 +784,27 @@
 		"platform": "Steam",
 		"timestamp": 1793475804000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f2b577c84bea7f45ccc79ca2ccb2adcc2b99e120.jpg",
+		"title": "Mentorship Badge",
+		"description": "Have a 1-on-1 with the Scoutmaster.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793480141000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/40606fe9cbafb08a0e15d20315829f6747b335f9.jpg",
+		"title": "Emergency Preparedness Badge",
+		"description": "Heal an unconscious friend with an item to save them from death.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793482206000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
