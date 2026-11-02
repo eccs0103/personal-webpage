@@ -1,481 +1,5 @@
 [
 	{
-		"sha": "ea64bcd0afdd46fa65cbdaa277da0cb25cc1cfe4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1782982907000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "core-update",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783078577000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "6eb07aa46def971e9362891ee35fd8c40ee2f2bb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783087223000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/05ff7e765a0c55d4ace7f21f1d0155aff866b59f.jpg",
-		"title": "Fully Charged",
-		"description": "Unlock all bioboost upgrades.",
-		"url": "https://steamcommunity.com/stats/1605250/achievements",
-		"game": "Moros Protocol",
-		"webpage": "https://store.steampowered.com/app/1605250",
-		"platform": "Steam",
-		"timestamp": 1783115905000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/f255023acd2636c5c32c0ca57546587662e76bc7.jpg",
-		"title": "And He Wandered the Earth",
-		"description": "Complete the prologue on any difficulty.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783371959000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/e93de03c02bdfcb2c370302b5e389b619a8b244c.jpg",
-		"title": "Carnival Trickster",
-		"description": "Win at all carnival games.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783374531000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/f29b7d62df7e1da6edbb124e97f3fbbe11b567f5.jpg",
-		"title": "Forbidden Love",
-		"description": "Complete chapter I on any difficulty.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783547277000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "68d4dd40c9fad99c20c01f37515496b46d461079",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783627490000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "968b3bd08417c501fde967d4d940794d1b31f1d8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783627579000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "968b3bd08417c501fde967d4d940794d1b31f1d8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783627606000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "core-update",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783627621000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/e133c94ae84ed2e36791969998a6022b0c716759.jpg",
-		"title": "Ironclad",
-		"description": "Fully upgrade a weapon.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783632733000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/f37b2f93d9976caf00a6380920c5669c6a1cef66.jpg",
-		"title": "Idol of the Century",
-		"description": "Defeat 100 enemies.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783634318000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"name": "delivery-optimization",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1783690987000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "51dc0d4c8397adf230d6fb58c42a3fc851e9887b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1783691500000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "44cf0056fa17c90cf1d10e79656d9eeb5563a453",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1783692951000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "b8467b37e599db7bd837135defd929d8597d1532",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783706641000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/6e716f2bd341820292a728278dca43a3443fe823.jpg",
-		"title": "The Promised Prince",
-		"description": "Complete chapter II on any difficulty.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783722461000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1790930/33f0d72d54dd64817ce603f7aa66a2ce8989e425.jpg",
-		"title": "Phlebotomist",
-		"description": "Fully upgrade the syringe satchel.",
-		"url": "https://steamcommunity.com/stats/1790930/achievements",
-		"game": "Crisol: Theater of Idols",
-		"webpage": "https://store.steampowered.com/app/1790930",
-		"platform": "Steam",
-		"timestamp": 1783782900000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/6a9014a7962096578041f80d1c3a2b5bea1a1533.jpg",
-		"title": "Monstro's Tooth",
-		"description": null,
-		"url": "https://steamcommunity.com/stats/250900/achievements",
-		"game": "The Binding of Isaac: Rebirth",
-		"webpage": "https://store.steampowered.com/app/250900",
-		"platform": "Steam",
-		"timestamp": 1783784955000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/b3cb8d0f97ba33ddf1502768485fc7651b7ecfa0.jpg",
-		"title": "Lucky Rock",
-		"description": null,
-		"url": "https://steamcommunity.com/stats/250900/achievements",
-		"game": "The Binding of Isaac: Rebirth",
-		"webpage": "https://store.steampowered.com/app/250900",
-		"platform": "Steam",
-		"timestamp": 1783786945000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/33db595bc7f4ea2ce26977c3aa0b29e36f70b486.jpg",
-		"title": "Lil' Chubby",
-		"description": null,
-		"url": "https://steamcommunity.com/stats/250900/achievements",
-		"game": "The Binding of Isaac: Rebirth",
-		"webpage": "https://store.steampowered.com/app/250900",
-		"platform": "Steam",
-		"timestamp": 1783788890000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/bc4f54b85bcfc4579926eee659fe2ee195fe9180.jpg",
-		"title": "Butter Bean",
-		"description": null,
-		"url": "https://steamcommunity.com/stats/250900/achievements",
-		"game": "The Binding of Isaac: Rebirth",
-		"webpage": "https://store.steampowered.com/app/250900",
-		"platform": "Steam",
-		"timestamp": 1783789684000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "5270b5f8998733d14106d047b91704027f55d782",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1783812244000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8d3769f4a833593097a0f33ec201a493730bfbf9",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1783812249000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8d3769f4a833593097a0f33ec201a493730bfbf9",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1783812359000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "visualization-processing",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1783812373000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"sha": "a15887dddd9825449291cf39fc1bb18e262d4780",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1783813439000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9f88d2709d8592d5f1aeae9c01ee6971bfc4e2e0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783816652000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "dcbf7839bd8c3afd652f4f8ee20d5cbdda2b1029",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1783816861000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "Glory (No Glory pt. II)",
-		"artists": [
-			"Skan",
-			"Krale",
-			"Drama B",
-			"M.I.M.E"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b27398a509c41c6764e4924f14a5",
-		"url": "https://open.spotify.com/track/3yz0zJTqkujOy68uJGIzFd",
-		"platform": "Spotify",
-		"timestamp": 1783934063000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"title": "Fall Back to Nothing (feat. Saint Monet)",
-		"artists": [
-			"Subtronics",
-			"Saint Monet"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273e9227792e2211ec7bb7798bf",
-		"url": "https://open.spotify.com/track/2BKaOhRDmln79AvTiZecSm",
-		"platform": "Spotify",
-		"timestamp": 1783934071000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"name": "engine-fixes",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784015513000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "6a786b8070f01c1c51afa0dfd4dc238cdb41d3be",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784034722000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "7e9085b8cd8b6c55d46470859b7597bab6488d01",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784034725000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0bf3853c4901b9613ebeab0054ed825d57e0f445",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784034729000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8ee9ccc0bdb77d00881997802336601db52b696a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784034733000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a3690989c74f9e7c053ad3e235c8e54502122269",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784119804000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "312b836f07817f72f1039f101993723c45829c91",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784120126000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "31c1ecc9efe0439e4d1a2f200758573d0cfdbb86",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784123421000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "92a974b21c8a48d5022d2ad0857ded4199885f2b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784123425000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "92a974b21c8a48d5022d2ad0857ded4199885f2b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784123469000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.2.0",
-		"tag_name": "3.2.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784123576000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"file_name": "33.jpg",
-		"media_type": "photo",
-		"content": null,
-		"channel_id": -1003471238866,
-		"message_id": 33,
-		"platform": "Telegram",
-		"timestamp": 1784157750000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
-		"sha": "f29d81ed47bcdee67e404f80c9801fc2f2578aa8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784197635000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "7d35217de94088047e9c408e8308775c27daee60",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784197639000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "b0bff990436500398b21cd34c506bd79d3c3a2a0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784200118000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "engine-fixes",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1784200147000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"sha": "ae8e67861ca564f6cb6a924a500d98dfb7a56590",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1784223195000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "7600e0d5e827e8d146899ab6a4fa5e985ede5c7f",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
@@ -710,15 +234,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "1.0.4",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.0.4",
-		"platform": "npm",
-		"timestamp": 1784844439702,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"sha": "f83babac8eadd746486ccd3ee85c8ef6a8ce5fb2",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/adaptive-extender",
@@ -726,15 +241,6 @@
 		"platform": "GitHub",
 		"timestamp": 1784845675000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "1.0.5",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.0.5",
-		"platform": "npm",
-		"timestamp": 1784845729450,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "68d95328edf33403f5cd65032872701ec4e2dc2d",
@@ -974,5 +480,484 @@
 		"platform": "GitHub",
 		"timestamp": 1785327799000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "bcea8a087f1517ea16474fdbee9d7caa2aa4a39d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785327803000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5437f619af7775f6d9fce68aef1be2f2ae82f070",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1785327887000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5a80bdd67475325256a33931880b5fe5fe538b1f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1785327924000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "d36e84ecbb975ab478187720533f5d6b62f843af",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785331874000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8d55302762ed47fbe78d1b51b51a71ed0c5aaa79",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1785363879000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4b669110698d043b123ab15cce055ece4b8ba987",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1785364287000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fe20fe4e12900042a06be3dcd308f7d9c0230e51",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785368288000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8417601ba8893b02fffdd1a1a20036d19e0937fc",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785440946000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8846dcf434308511bf635ecd00845047d96b1a10",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785441716000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a4bc49497da228a9546de5be5c116ab5b8bb1418",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785441780000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "94c3b7f12dd83c7eeae838d7b18b8280da48f417",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785441870000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8846dcf434308511bf635ecd00845047d96b1a10",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785442046000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c459ff3f8409fb2062972d3744ca72641661d84a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785442444000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/26d6c25c2ca7e5877b26347fc05f5eb2dd504bbf.jpg",
+		"title": "Two Heads, One Bullet",
+		"description": "Kill or incapacitate 2 enemies with the same sniper rifle shot.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1785445539000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"name": "playlist-system",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785507944000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "25eeecb20ac5244f86a84ae389ecd6e06527b60f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785538004000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "03b2500b2738fc983617310297350dacb41a1e45",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785538041000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "034dc2117fdb0fa1141143b5d1bc15c6c1d43d22",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785538046000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5fb416f6f46dbf6e017da072db61ee41186e8e00",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785538052000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "0a3982cee40ee179b4460512d525a08d692bc177",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785538057000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "6103c5718dc8eafe4defa5a2a2187d4508b973a0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785539301000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "6103c5718dc8eafe4defa5a2a2187d4508b973a0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785539356000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "997b394335d7f193cd60ea5993c6dad9bae65503",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785539551000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "325d4b48c74137ed7875d3c8dfa3607cc0d17b38",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785540453000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8ef08c901114c1f57e45fc3e01c8049f7d3aff87",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785540486000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "3.3.0",
+		"tag_name": "3.3.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785540706000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "3d6857847cf3a9a88d016bcd429a494f2f26a4ad",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785543433000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5275e65a64fb5039c96baea3ec53fdb2a0f0f4ff",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785543453000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4c6bc77c01274536e6f63d433f91003f81bc87f5",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785543458000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "playlist-system",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785543471000,
+		"$type": "GitHubDeleteBranchActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/42d64a86bb4d50c2574612892ccdde465a020a54.jpg",
+		"title": "Equipped",
+		"description": "Acquire your first Tool",
+		"url": "https://steamcommunity.com/stats/1030300/achievements",
+		"game": "Hollow Knight: Silksong",
+		"webpage": "https://store.steampowered.com/app/1030300",
+		"platform": "Steam",
+		"timestamp": 1785703302000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/a34b4da6c1652ec31603b82de0e983173917b2ad.jpg",
+		"title": "Bound",
+		"description": "Bind your first Silk Skill",
+		"url": "https://steamcommunity.com/stats/1030300/achievements",
+		"game": "Hollow Knight: Silksong",
+		"webpage": "https://store.steampowered.com/app/1030300",
+		"platform": "Steam",
+		"timestamp": 1785703946000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/a3806725642c2918243b8db87d3e99a49e1f16e4.jpg",
+		"title": "Liberated",
+		"description": "Defeat the Bell Beast",
+		"url": "https://steamcommunity.com/stats/1030300/achievements",
+		"game": "Hollow Knight: Silksong",
+		"webpage": "https://store.steampowered.com/app/1030300",
+		"platform": "Steam",
+		"timestamp": 1785704741000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/4cae086731038d810d9df5af8977a24b4dc87a44.jpg",
+		"title": "Granted",
+		"description": "Grant your first wish",
+		"url": "https://steamcommunity.com/stats/1030300/achievements",
+		"game": "Hollow Knight: Silksong",
+		"webpage": "https://store.steampowered.com/app/1030300",
+		"platform": "Steam",
+		"timestamp": 1785705415000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/905525e54d5e41dfcb58458aaa7161fd7efd3ec0.jpg",
+		"title": "Escape Artist",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/739630/achievements",
+		"game": "Phasmophobia",
+		"webpage": "https://store.steampowered.com/app/739630",
+		"platform": "Steam",
+		"timestamp": 1785708969000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "4b6ef43eb5ae903edc834d83c5751f92298ad09b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785865907000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "173d6949a2777d6763053c37637f80678c05c1b0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785865912000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "852e5e4d8cf045bad8b412eaa78537087089f07d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1785866803000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "1.0.6",
+		"tag_name": "1.0.6",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1785866993000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "c8f8e90d2b0b99e548f7ae9fc6a3dc9a946346fd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1785867535000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "efeab84cd555c04c0ea167ddb6497b8237975882",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868063000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c3f49e544bee44fa11eca80b016ac910e2eb2824",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868068000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "01f58c2fbc03e3d5e5406c19d10ab76e9fea877e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868073000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "7696339cb9c5a26a63c8f92a44578f63ef7874a9",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868078000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "e670b843f68cd6a205732a0da7853205c6be116c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868083000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ee2566a72fae87657a6deb7fb868b9ad03bbfff9",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868088000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "18b7936c8dd6c41283256413351a2f9516a6403e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868093000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5f20c6254ec28dd473010f9928c2071a8a714b0d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868097000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "98964ace5af1b770e963dd3fe60c1d5593babc75",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868102000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "3.3.2",
+		"tag_name": "3.3.2",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1785868151000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/4ec3c928728e74479e25f398a1464c1f9ec7e98c.jpg",
+		"title": "First Blood",
+		"description": "Complete Syn",
+		"url": "https://steamcommunity.com/stats/1328350/achievements",
+		"game": "Turbo Overkill",
+		"webpage": "https://store.steampowered.com/app/1328350",
+		"platform": "Steam",
+		"timestamp": 1785870602000,
+		"$type": "SteamAchievementActivity"
 	}
 ]

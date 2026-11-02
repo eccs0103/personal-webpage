@@ -22,15 +22,6 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "0.7.3",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.7.3",
-		"platform": "npm",
-		"timestamp": 1761995639884,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/4661a30faeb37bb53a6646d4bf1478f9327f3c56.jpg",
 		"title": "Bolt-Ons",
 		"description": "Unlock 10 Character Heads or Skins.",
@@ -84,15 +75,6 @@
 		"platform": "SoundCloud",
 		"timestamp": 1762140694000,
 		"$type": "SoundCloudLikeActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.8.0",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.0",
-		"platform": "npm",
-		"timestamp": 1762163836605,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/a9746b6ab1402b5f6ef502d5dacb18cb1122641c.jpg",
@@ -275,33 +257,6 @@
 		"$type": "SpotifyLikeActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "0.8.1",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.1",
-		"platform": "npm",
-		"timestamp": 1764354861986,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.8.2",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.2",
-		"platform": "npm",
-		"timestamp": 1764375563014,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.8.3",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.3",
-		"platform": "npm",
-		"timestamp": 1764421389515,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"title": "Main Title",
 		"artists": [
 			"John Paesano",
@@ -338,24 +293,6 @@
 		"$type": "SpotifyLikeActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "0.8.4",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.4",
-		"platform": "npm",
-		"timestamp": 1764752756231,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.8.5",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.5",
-		"platform": "npm",
-		"timestamp": 1764865222399,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"title": "Half-Life",
 		"artists": [
 			"Essenger"
@@ -365,15 +302,6 @@
 		"platform": "Spotify",
 		"timestamp": 1765185667000,
 		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.8.6",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.6",
-		"platform": "npm",
-		"timestamp": 1765294221582,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"tags": [
@@ -451,15 +379,6 @@
 		"platform": "Steam",
 		"timestamp": 1766525342000,
 		"$type": "SteamAchievementActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.8.7",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.8.7",
-		"platform": "npm",
-		"timestamp": 1766664731311,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"title": "Where'd You Go",
@@ -1097,6 +1016,107 @@
 		"webpage": "https://store.steampowered.com/app/1649240",
 		"platform": "Steam",
 		"timestamp": 1768500858000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/ef5e5994a5f289c27fc5d2e8ee88cdfcaca80fff.jpg",
+		"title": "Florida Man",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1768680150000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/b240a30e93e20ac89a6662dda5693ab6d05ad8e5.jpg",
+		"title": "Damn, Gina",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1768690833000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/8b651d0d3a3344b062b89cf7f2cb2c647ee44947.jpg",
+		"title": "Zer0ed In",
+		"description": "Defeat all of Zer0's Targets of Opportunity.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1768691374000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/dee6388b6ecd469e399e13e8443408cdbf765291.jpg",
+		"title": "Eternal Ascent",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1768768068000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/cca532c0684e7088b79cbe8fb595fe6d94e08a47.jpg",
+		"title": "Broken, Restored, Empty",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1768768518000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/d58479400831b5b60c475476126833ce53a892ce.jpg",
+		"title": "Visions of the Past",
+		"description": "Complete a Xeno-archive set (excluding Tower of Sisyphus)",
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1768776959000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "The Sown",
+		"artists": [
+			"Celestial Void",
+			"IVEEN",
+			"Nightlark"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2739bbb03fbccee2eb37b0017b2",
+		"url": "https://open.spotify.com/track/0m6Oxh1Umanz547cfnLbQV",
+		"platform": "Spotify",
+		"timestamp": 1768783554000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/06a93118c349d13328a1e40bf7b072be13bb63dd.jpg",
+		"title": "Exoarchaeolo—You Get The Gist",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1768942470000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/59b522503bd8a1e8693e020f15ff756079a0fbbb.jpg",
+		"title": "Got Big Game",
+		"description": "Defeat all of Hammerlock's Legendary Hunts.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1768942594000,
 		"$type": "SteamAchievementActivity"
 	}
 ]

@@ -1,290 +1,5 @@
 [
 	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/6093cc3f69497239090da29be67d5c4a344ebf69.jpg",
-		"title": "Getting A Little On The Side",
-		"description": "Complete all Side Missions.",
-		"url": "https://steamcommunity.com/stats/397540/achievements",
-		"game": "Borderlands 3",
-		"webpage": "https://store.steampowered.com/app/397540",
-		"platform": "Steam",
-		"timestamp": 1780264017000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/983b1e50eab9344a77098e395f27eaf49276dc8b.jpg",
-		"title": "Ultimate Vault Hunter",
-		"description": "Unlock all Borderlands® 3 Achievements!",
-		"url": "https://steamcommunity.com/stats/397540/achievements",
-		"game": "Borderlands 3",
-		"webpage": "https://store.steampowered.com/app/397540",
-		"platform": "Steam",
-		"timestamp": 1780264017000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "d6a415dba46095a0c0a3aeef08b23657aa5812ff",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780346504000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ebd75f1e7513bd2e5d40b02b2ee341fd9c88223b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780355933000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "85735ac1fe0072c45f9c5cfb89085b3ee59f65c8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780357619000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "multi-threading-integrations",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780390220000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "89babb7bc1e664ae5378f12d99a7ec4c4043f8ce",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1780475201000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.10.1",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.10.1",
-		"platform": "npm",
-		"timestamp": 1780475251429,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"name": "main",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780530721000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.0.0",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.0.0",
-		"platform": "npm",
-		"timestamp": 1780531127496,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "5dd413d05103587a31341fca8cf67b2727f8454f",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780531381000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.0.1",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.0.1",
-		"platform": "npm",
-		"timestamp": 1780531571669,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "f3186d8efbc6d8df77d0443aed31f55bcd708869",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780531757000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3efde8ccdcfc5bc1429271c7b5ef5376f1b2570e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780593463000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.0.2",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.0.2",
-		"platform": "npm",
-		"timestamp": 1780593516167,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.0.3",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.0.3",
-		"platform": "npm",
-		"timestamp": 1780595988615,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "483e36492c0f0b797536479c2655feefa185b483",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780596006000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.0.3",
-		"tag_name": "1.0.3",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780596104000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "48429790365f1e84411fcdea50846ef8e84c9518",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617282000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fbb6755ca1c10f9263b2f26306b3181e7b09b171",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617286000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "207341cf88130ce449c313593f6ee2fb79883352",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617291000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "03a2a81609b30524baea62e548beabc4a9912c3a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617296000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "71bb521d2d20bdc8b3f9abc2a03d24266c2f72ec",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617301000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cdde5a8f5f436eb2a74dcc925b71734e76742bc4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617418000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "18beb34162c53216cdb96b6e39790018c9e7a83d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780618785000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "23c18c6691ca40cc37a512bda066abb50fcf04da",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780664063000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "bfa2540e4974b8263be4e7e8c2e3dc1d560efc18",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1780691007000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.10.3",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.10.3",
-		"platform": "npm",
-		"timestamp": 1780691096742,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "07ed8c2aa17cd70186a723b9eb412a8181ee2618",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780691819000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0afa994ed72a7aea415d42c7a8e846650bc95564",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780695082000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.0.4",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.0.4",
-		"platform": "npm",
-		"timestamp": 1780695104830,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"title": "0.10.3",
 		"tag_name": "0.10.3",
 		"is_prerelease": false,
@@ -418,15 +133,6 @@
 		"$type": "SteamAchievementActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "0.10.4",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.10.4",
-		"platform": "npm",
-		"timestamp": 1781294829213,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"title": "0.10.4",
 		"tag_name": "0.10.4",
 		"is_prerelease": false,
@@ -472,15 +178,6 @@
 		"platform": "GitHub",
 		"timestamp": 1781296688000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.10.5",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.10.5",
-		"platform": "npm",
-		"timestamp": 1781296947895,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "f2259cd361a19b38a6f331286c660b9265735953",
@@ -546,15 +243,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.1.0",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.1.0",
-		"platform": "npm",
-		"timestamp": 1781298889390,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"title": "0.10.5",
 		"tag_name": "0.10.5",
 		"is_prerelease": false,
@@ -584,15 +272,6 @@
 		"platform": "GitHub",
 		"timestamp": 1781299891000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.1.1",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.1.1",
-		"platform": "npm",
-		"timestamp": 1781299929120,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"title": "1.1.1",
@@ -883,15 +562,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "0.11.0",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.11.0",
-		"platform": "npm",
-		"timestamp": 1782002937146,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"sha": "fbd7b1302456dca4164d363e773b8382557552c2",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/adaptive-extender",
@@ -899,15 +569,6 @@
 		"platform": "GitHub",
 		"timestamp": 1782004738000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "0.11.1",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.11.1",
-		"platform": "npm",
-		"timestamp": 1782004776014,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "9bad6801dddb6eef3f4e2d1613a440da3d511b85",
@@ -937,15 +598,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "0.11.2",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.11.2",
-		"platform": "npm",
-		"timestamp": 1782061820824,
-		"$type": "NpmPublishActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/ab7327d33ba2ab245e45d5ac8ffe196b56efef9e.jpg",
 		"title": "Familiar Faces",
 		"description": "Defeat your first marine.",
@@ -954,6 +606,362 @@
 		"webpage": "https://store.steampowered.com/app/1605250",
 		"platform": "Steam",
 		"timestamp": 1782063005000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/14315aa379317587ce957f9969bfd83c9fa451ff.jpg",
+		"title": "Bug free",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782065069000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "05a2e6fa86eed6c9d3b17d022eaa9e6c6d693932",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782067451000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "0d2ec9550a6af5ecacf1536d95a3e8df48c461f0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1782083171000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "bda84502510352e995a812962e2b95b681fba7b6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1782083176000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1c764063103c6336f1f83f047bc022179a45ec8c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1782083436000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "dacd8435b7f7576e6204d7a5f5a1388abad4ddd5",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782083612000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "131f7a6e75c4baadafdc905fd7802eb09559086f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1782153808000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "638708c9ec59ed3a2396b106e141b5373895edbe",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1782153812000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a3fdd85378abedfefac1bcfd854b7610627308e1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782158059000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4d65151bb2652b959239512a75714ffc2f66ae35",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782158064000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "adf4d06a9390c6fbe6ee2ec64df127df2630b041",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782158069000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "d62f561a33f3a6ef2a1718121c7fabe3c5553131",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782158075000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fe7e9d64c39f2f0252f5dea2957b3703ded3c12e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782158081000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fe7e9d64c39f2f0252f5dea2957b3703ded3c12e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1782158180000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/206fff079ebb5e3af37e335c0e7060222b303e8e.jpg",
+		"title": "Mercyful",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782308364000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/8319067340f44fbc178c68ae22add346a9bbc2ab.jpg",
+		"title": "One-Man Army",
+		"description": "Kill 100 Jocaste's troops/robots.",
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782308364000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "be1dfcad1428e476e01cf6c4c89e086d1230b3d0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375085000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "d49c9e4baa65454ff9f9169ee11b872bc506beda",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375090000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1b5a94c0226f62794dda9b6e3a551f1987990032",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375095000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4fb5e044a38865010c04faf8cdc416deae1aaf43",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375100000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a93e7aa9aaea00115ec54f235a34b118ccee04a6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375104000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8939ecf24480d6a0163ddae9505f7f93c77cb436",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375356000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "dynamic-rendering",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375529000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "781eb00fe89cfb40248e2151bf3452226407d4a0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782375569000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "09f7dd09187d5ab6c00821dd7ef7df89fbf82168",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782395188000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "085b1b6c41e5d369f9b7e78879829c6412f84db1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782436057000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "48e674927dd115012742ed801bc9fcb2f55c7cea",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782436062000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "398f61031cd6a2f878e8ec80f1e218ad1a154e72",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782436067000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "6a90cceb0e8c82978c0470102d6972af4d27c2b6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782436071000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9a4b28f0e55a92c184d45ff6eb93d4bc8bfb4afe",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782436076000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fd927955df2d111cf92cc05b363631490b5f15c5",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782436080000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "cbc053f687ab96dacbdd9c5e54971b4f2acd3cfc",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782482334000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "7059adc71b5ba71fb395a8eb771b9982afcd55a8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782482337000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "886ece93d02ce8c3c250bcf1bb021998331db81b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1782482790000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/735ed6b79b1d8bcca1c83e573c479c020da177cf.jpg",
+		"title": "Augmented Reality",
+		"description": "Pick up 200 augments.",
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782507018000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/b6dfaae6bcbc957caea08f013a9d2d441fdd30ae.jpg",
+		"title": "Change of heart",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782508270000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/8a4a0cd5f97eee9391de85b546a4d62c16f1d5c2.jpg",
+		"title": "Almost there",
+		"description": "Complete two areas.",
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782508271000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1605250/56dfed6a5c9b79a0d1756b81ecddd1543259dc05.jpg",
+		"title": "Welcome aboard",
+		"description": "Learn the basics.",
+		"url": "https://steamcommunity.com/stats/1605250/achievements",
+		"game": "Moros Protocol",
+		"webpage": "https://store.steampowered.com/app/1605250",
+		"platform": "Steam",
+		"timestamp": 1782510666000,
 		"$type": "SteamAchievementActivity"
 	}
 ]

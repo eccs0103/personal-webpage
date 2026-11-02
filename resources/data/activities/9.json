@@ -1,549 +1,5 @@
 [
 	{
-		"sha": "61e872e261f07f75884537f754fcf93eaabd349c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790460178000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e985b4e41f31f6e285f307f0ab69601c48f80c5a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790522571000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a1d0d7ae2662c80cbd2d13ce85ee690d1acf2d28",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790522576000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/1c7eb9a4f5e33c592fe3e205c33edcfca8fd25c1.jpg",
-		"title": "Beachcomber Badge",
-		"description": "Climb past the SHORE.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790534499000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/de12d278a0764bf904a5f70bd0d5a0ce248c078d.jpg",
-		"title": "Esoterica Badge",
-		"description": "Obtain a mystical item.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790534540000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/8ae93a068c402d8c43241e19b302171050c0050f.jpg",
-		"title": "Foraging Badge",
-		"description": "Eat 5 different berries in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790535176000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e1e3550680fdce7c09093f29f2c9b205f737f4b4.jpg",
-		"title": "Trailblazer Badge",
-		"description": "Climb past the TROPICS.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790536277000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/7687e0907862bf82f0d64161bfbd9fa548482e32.jpg",
-		"title": "Happy Camper Badge",
-		"description": "Receive 5 Morale Boosts from campfires.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790542369000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"is_accepted": true,
-		"title": "Отцентрировать текст если строка одна",
-		"body": "<p>Без трюков не получиться. Нашел 2 пути:</p>\n<h2>С помощью flex</h2>\n<p>Сохраняем размеры контейнера, но трогаем как оно обрабатывается</p>\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\" data-babel-preset-react=\"false\" data-babel-preset-ts=\"false\">\n<div class=\"snippet-code\">\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>p {\n  width: 6em;\n  outline: 1px dotted red;\n\n  display: flex;\n  justify-content: center;\n\n  text-align: justify;\n  text-align-last: justify;\n  text-wrap: balance;\n}</code></pre>\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;p&gt;1 2 3 4 5 6 7 8 9 0&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5 6 7 8 9 0 1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1&lt;/p&gt;</code></pre>\n</div>\n</div>\n</p>\n<h2>За счет контейнера</h2>\n<p>Решаем проблему за счет размеров контейнера. Я бы сам не выбрал этот вариант. Хотя... смотря на задачу.</p>\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\" data-babel-preset-react=\"false\" data-babel-preset-ts=\"false\">\n<div class=\"snippet-code\">\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>p {\n  max-width: 6em;\n  outline: 1px dotted red;\n\n  width: fit-content;\n  margin-inline: auto;\n  \n  text-align: justify;\n  text-align-last: justify;\n  text-wrap: balance;\n}</code></pre>\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;p&gt;1 2 3 4 5 6 7 8 9 0&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5 6 7 8 9 0 1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1&lt;/p&gt;</code></pre>\n</div>\n</div>\n</p>\n",
-		"score": 4,
-		"url": "https://ru.stackoverflow.com/questions/1626393/%d0%9e%d1%82%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c-%d1%82%d0%b5%d0%ba%d1%81%d1%82-%d0%b5%d1%81%d0%bb%d0%b8-%d1%81%d1%82%d1%80%d0%be%d0%ba%d0%b0-%d0%be%d0%b4%d0%bd%d0%b0/1626394#1626394",
-		"platform": "Stack overflow",
-		"timestamp": 1790547646000,
-		"$type": "StackOverflowAnswerActivity"
-	},
-	{
-		"sha": "eba7139688d100198084f9af7c0a3434e25c78e5",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1790548417000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.0.8",
-		"tag_name": "1.0.8",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1790548540000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "1.0.8",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.0.8",
-		"platform": "npm",
-		"timestamp": 1790548682807,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "4c7e2f2d4eecf3635d731ea0f5bdc52659678324",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1790636644000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "21e27f072c88be04586ab162aad89751561858c2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790773947000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/27f25eb3ec8fb4e7245aec8b48705a0812738773.jpg",
-		"title": "Web Security Badge",
-		"description": "Escape a spider's web and survive.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790790735000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d7fbe6dcb35a51e67be5f38023b99b7cc90e4dd1.jpg",
-		"title": "Forestry Badge",
-		"description": "Climb past the ROOTS.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790792025000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/4cfa107040054253f82d9d3dbf69a97d84701c19.jpg",
-		"title": "Tread Lightly Badge",
-		"description": "Climb past the ROOTS without ever having more than 25% spores.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790792025000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d8e491ed5b6489b4b9c44cca9b0d8422267a8a53.jpg",
-		"title": "Endurance Badge",
-		"description": "Climb 50m upwards without touching the ground.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790793256000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/ec338a888bb02b501e139b3f5184a83c1589a0d5.jpg",
-		"title": "High Altitude Badge",
-		"description": "Climb 5000m total.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790793890000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/97cb4ca98da4fccf015d3dd893937b3a9172f62e.jpg",
-		"title": "Nomad Badge",
-		"description": "Climb past the MESA.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790793896000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/eb842f863d8cbb7c769fec2ac2161f56776d8093.jpg",
-		"title": "Well Rested Badge",
-		"description": "Consume The Early Worm.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790794496000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/a9e2236a6aa83d8cf0640e1317fb24bf27a2f5b0.jpg",
-		"title": "Wanderer Badge",
-		"description": "Climb past the GLOOM.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790794732000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/05b417a939ac2c4e6ddcece2a3e694b59b4e7a45.jpg",
-		"title": "Money in a bottle",
-		"description": "Find money in a bottle",
-		"url": "https://steamcommunity.com/stats/4001890/achievements",
-		"game": "How to Fish",
-		"webpage": "https://store.steampowered.com/app/4001890",
-		"platform": "Steam",
-		"timestamp": 1790795750000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/ec4cf0382f82ce1b2a603c436c6e388316bd02ce.jpg",
-		"title": "Bilingual",
-		"description": "Earn your first euro",
-		"url": "https://steamcommunity.com/stats/4001890/achievements",
-		"game": "How to Fish",
-		"webpage": "https://store.steampowered.com/app/4001890",
-		"platform": "Steam",
-		"timestamp": 1790797001000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/57d3cc31607d6c7532174c784e5be3ee7c51687b.jpg",
-		"title": "Hobin Rood",
-		"description": "Kill a creature with an arrow",
-		"url": "https://steamcommunity.com/stats/4001890/achievements",
-		"game": "How to Fish",
-		"webpage": "https://store.steampowered.com/app/4001890",
-		"platform": "Steam",
-		"timestamp": 1790797195000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"title": "Моя звезда",
-		"artists": [
-			"Dzhenis"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273ae5e869fa29cd9c38f8e2bed",
-		"url": "https://open.spotify.com/track/15DuJJ15udhvMzuRGolmfd",
-		"platform": "Spotify",
-		"timestamp": 1790933822000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/da9184f21ff1dae46b4de56ffda9a9458c4bfa09.jpg",
-		"title": "Alpinist Badge",
-		"description": "Climb past the ALPINE.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790976124000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/59f105343a7cda0259cfabd1992463f28dd95200.jpg",
-		"title": "Cooking Badge",
-		"description": "Cook 20 meals at campfires.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790976152000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/7904cc232eac6ffb345a96f2a265b1db4c1c535e.jpg",
-		"title": "Plunderer Badge",
-		"description": "Open 15 luggages in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790977017000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/5401aa59d9da99722a2b440cedf2bbe39baef566.jpg",
-		"title": "Volcanology Badge",
-		"description": "Climb past the CALDERA.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790977128000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/82d65f1b4dd1482707d2f2c2f74d52521adb8be1.jpg",
-		"title": "Participation Badge",
-		"description": "Have a friend escape the island without you.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790978385000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "04fe19798dd16cba682538efca5f54c5b323f895",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1790981655000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1a8695ed4415f485fbfff60b4c42d92919b8f24b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790981702000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "526d99549b0c9e2f877e4c582c3a107f14217482",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790981732000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "2c026de969ed9b59eb3fdbfe19ff158976a31605",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058935000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1fae03a66c44a1d18f307432eeab39be2c4639b3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058941000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "78cb352887a17035d858586f805929d23525c56b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058950000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3877937dcf53b51a3e1e5b7e889118fc893fab25",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058957000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ace1e6bd1d4eed140731969528221019c9ac91ce",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058966000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.0",
-		"tag_name": "1.1.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791059004000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "1.1.0",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.0",
-		"platform": "npm",
-		"timestamp": 1791059303509,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "67df5ac9caf085cb103919b6bf0bcd8e72d66f26",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791060570000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0ceb2b843d7429831b690dd9b4d668e61d5a3418",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791060662000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1522eeb2279c58b45d01a01e022dc6f7156f41b2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791060832000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a44f42a339491b4e84c41dffa29ba9f74c491f1a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791062763000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "7b4164cb10b752bbb62f266aa2dbfc3965a804fb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791062821000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cb0a97b088498dd543ab0dc581c83da0a005c04b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791062846000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "092360d68b8957c54560c856ef06c7b139e0db0f",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062905000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3ad8e924d79a5122bc842334c3478f2110b29eff",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062911000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ee55562d6d7439e732f2ae4b3848b8bad7f1c388",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062915000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fc97faf54f6e3ce38a64c59078c25561bbb969a0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062921000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ec59d75687f8632a27d3d0d570d853948b08acbe",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062925000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "57f868bd2659e867b92ac9d70e6a9d03ec7d2604",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062930000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0f610094c731ddc2c0b6aa3c75c166d4813a0e40",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062935000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "757eefd9205593160e68bfb75fe9222112b5ba54",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062940000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "454fba7c56824b94a54a2845ec9d0f82107e8d3c",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
@@ -679,15 +135,6 @@
 		"platform": "GitHub",
 		"timestamp": 1791082658000,
 		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"package": "adaptive-extender",
-		"version": "1.1.1",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.1",
-		"platform": "npm",
-		"timestamp": 1791082772280,
-		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "aac53c8dc879a8ae97f25433ce5c0d89119a99a6",
@@ -954,12 +401,534 @@
 		"$type": "GitHubReleaseActivity"
 	},
 	{
-		"package": "adaptive-extender",
-		"version": "1.1.2",
-		"description": "Adaptive library for JS/TS development environments",
-		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.2",
-		"platform": "npm",
-		"timestamp": 1791455776218,
-		"$type": "NpmPublishActivity"
+		"sha": "e982f297e1098a6dccbd5846b2a8ab4aebac39c8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456532000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "74fe473ef30c998fc2f5423a5587ebf0ab84a415",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456536000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f04b961f9650b8f31131e086cbf17d04cd8baaeb",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456540000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4041574ad57217b92ce1d62d5ad3f3f339592646",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456545000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c431636c76c768bdfa8653cc6aa4b1ca77587124",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456943000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "1.4.0",
+		"tag_name": "1.4.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458235000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "44235bea94b6daf40f89386c9177367f4de0e98d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458462000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "1.4.1",
+		"tag_name": "1.4.1",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458573000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f8da9f53f5938be55aef11a9890b6713164471d6.jpg",
+		"title": "Arborist Badge",
+		"description": "Reach the top of a really big tree.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664407000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/05543471ee7f7ab73d2c873b6157ca2c5cfa7b27.jpg",
+		"title": "Toxicology Badge",
+		"description": "Restore 200 total poison by using items.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664629000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d6e7927521bbb5f779e5f5c164d968f23597256b.jpg",
+		"title": "Jester Badge",
+		"description": "Open 2 Clown Luggage in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791669183000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Fuego",
+		"artists": [
+			"Hopex"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273c3a04784337bf86257c7b789",
+		"url": "https://open.spotify.com/track/2aqvHq5uTCkdEteQLiftzb",
+		"platform": "Spotify",
+		"timestamp": 1791741451000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/41ce6d7161b1da52240972e63e0169007cb78b67.jpg",
+		"title": "Cool Cucumber Badge",
+		"description": "Climb past the MESA without ever having more than 10% Heat.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791751404000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/cd4367de9dca4e160bdf86297d7e9003cb791c74.jpg",
+		"title": "First Aid Badge",
+		"description": "Heal your friends for 100 points of injury in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791753968000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/6541523d91357a00bb49e24567429de6505ddcd3.jpg",
+		"title": "Peak Badge",
+		"description": "Reach the PEAK.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791754270000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"name": "new-ai-visualizations",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809394000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "808248e9e5b836f027dd92f8d76da7b24313421c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809413000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "855df0c05f9b6e93df58317d23b48a5176657149",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809417000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ef94d75ab5fd2d5073f395a790491897743e1885",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809420000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a066d85d82811cee84bb73ea8072f7d49e582d99",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809423000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9ed1c9aa54e0b2f69ff3498a01845c8e30a6099a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809426000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ee1a0625f39587fb03214b2aeaa1c77420b2c258",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809429000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "bdbf529615b4d7b49a4fc4e55409901dc21ed225",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809432000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "30736a992e7c251d1ad9c8d7df3bc856aad3ecd4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809435000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "44c6e5acc7952ce930f85f246627c28e85622c97",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809438000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "78fc688beafd9e0844fcb2b1843431b718f9cd54",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809444000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "66addb75b9064750b06a8b59ebdafabd33f6971f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809447000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "6720c313bc05c06272bc4c8e65612cb2ca3f25a8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809450000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "87401c3489a285fb062be3812ddae00dd8ab1f9d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809452000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1a74d2ad32f0ecb17b5cc67edfd446a233d1e30e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809455000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4986cb8074dc957bcc04c305cf9ffc6e923496f3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809459000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a56b8dadeb3d8ec587f1e8dba50fbc9cb2d80830",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809464000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "258421277d42832376e6383584e36b2cefc26fbe",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809467000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4c1502ce4ddb2cdc946759925a2cc0eb1ba232b3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809471000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "76b2242e547befdda9ae7c00d69547e295cd6ae3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809473000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "d4b20d62d0245460c256dabc611d3560f477eb17",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809476000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "75abf419a4b79dd8d66153e28258d1cc90f9b2a3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809482000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1bdd65deccf38972cd2343a2a4e3c182f7d3c898",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809485000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "29a9e60e70d067edbab248f9f426b0599ca43a1e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809488000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5469b65b60b58b9b32194e3813fd1e912470f8c8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809491000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ba2c794d945fe2295e521530cbb865e0c26c8a3c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809494000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "53ede19d7b9bce07b2c1e7e772da5d40b14e9e38",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1791812331000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "7cb4e2e35d06216a29a6ae1e95e4349d81e626f2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791812383000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2f737d9d22d552fadd6dfe4ef5332cf14b23250f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791812467000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "26948630e5a088c82064f25b0cb177da5dfd7729",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1791812503000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f5b7874ed6435c27bc3ecea766ea3a4e3a03688a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791812539000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "dae6e91486bab907551746be6f3c2a16aa7a729e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848827000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ffbec9757d64d1be59f38ac7b40bd8a54ae28d52",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848832000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "30d2decf1c01b12f944a9b34a1de40835219d4cd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848837000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c770224dd4fc8634b10e1996d4d304b4e9e52d6e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848842000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2488b506fd26954c22214afd99d26c8d431b1a6d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848847000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "748fe49f0c5c33fde10864f71e054b474e6d815a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848852000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a86e988ccca17aa57f7e34edb4d96c04eb946b61",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848857000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "0e16fff33d33686a413b9829a7b1252c964f17f6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848862000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "797f331701242b17ca62d0d71d21d1d7d671b175",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848867000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1e1183274f43b8bd960a47f1b48735d9de722c3a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848873000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c5c5c946b9168bcfe415aaedb00e95c14015655f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848878000,
+		"$type": "GitHubPushActivity"
 	}
 ]
