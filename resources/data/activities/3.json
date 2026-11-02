@@ -1,5 +1,245 @@
 [
 	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/236713a46691022704a749c5587084ed2e476b9f.jpg",
+		"title": "The Twins Discovered",
+		"description": "Successfully identify The Twins for the first time",
+		"url": "https://steamcommunity.com/stats/739630/achievements",
+		"game": "Phasmophobia",
+		"webpage": "https://store.steampowered.com/app/739630",
+		"platform": "Steam",
+		"timestamp": 1777233679000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "86accd580a9d8dd0283ee284bbae2a81b9b1881d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1777294472000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/7d3bac94dbdaa8e05388b43bb3f58bc0a1e12d90.jpg",
+		"title": "Devoted",
+		"description": "Complete 10 weekly tasks",
+		"url": "https://steamcommunity.com/stats/739630/achievements",
+		"game": "Phasmophobia",
+		"webpage": "https://store.steampowered.com/app/739630",
+		"platform": "Steam",
+		"timestamp": 1777491040000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/9282b51b3ffac2fbdcdf9c43e53d22097d380280.jpg",
+		"title": "Fully Loaded",
+		"description": "Unlock all tier three equipment",
+		"url": "https://steamcommunity.com/stats/739630/achievements",
+		"game": "Phasmophobia",
+		"webpage": "https://store.steampowered.com/app/739630",
+		"platform": "Steam",
+		"timestamp": 1777499272000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"file_name": "32.jpg",
+		"media_type": "photo",
+		"content": null,
+		"channel_id": -1003471238866,
+		"message_id": 32,
+		"platform": "Telegram",
+		"timestamp": 1777567882000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"sha": "e8b63e44ff8739972b633ce9597a94bf48f517a4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1777588001000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fdce3966e28c70d0a40831131b580b720793f4e0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1777588812000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fdce3966e28c70d0a40831131b580b720793f4e0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1777588847000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "enhanced-intellisense",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1777588859000,
+		"$type": "GitHubDeleteBranchActivity"
+	},
+	{
+		"title": "0.5.0",
+		"tag_name": "0.5.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1777588895000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/739630/b8ee65cd65aaa641b46c4088a21eed493af5ca38.jpg",
+		"title": "Flawless Execution",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/739630/achievements",
+		"game": "Phasmophobia",
+		"webpage": "https://store.steampowered.com/app/739630",
+		"platform": "Steam",
+		"timestamp": 1777747939000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/68e9258c0f0cb997bd884af741f411766d551e78.jpg",
+		"title": "Don't Be A Stranger",
+		"description": "Return for a chat with the Clapstructor.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1777914246000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/82fa77fef53472e2caf2202d0001640b22e914b9.jpg",
+		"title": "Killer Look",
+		"description": "Complete the Mayor's outfit.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1777931281000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/900eca253336b33e887b0bc32b41eb0f9f19a3b5.jpg",
+		"title": "Firebug",
+		"description": "Sabotage all statues for Ember.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1777931388000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/23391d4380dfccd36844d5752c5f68cba032303f.jpg",
+		"title": "Scovillain",
+		"description": "Destroy all of Mr. Torgue's hot sauces.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1777931522000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/1f9d1aec84f40a513fa95e509595eeaf7102e9e5.jpg",
+		"title": "A Proper Hand-Off",
+		"description": "Complete mission “All Bets Off”.",
+		"url": "https://steamcommunity.com/stats/397540/achievements",
+		"game": "Borderlands 3",
+		"webpage": "https://store.steampowered.com/app/397540",
+		"platform": "Steam",
+		"timestamp": 1777932424000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/96b9d0c95bc80867a61a2870c6ddec9ab424f728.jpg",
+		"title": "Gun Fu",
+		"description": "Kill or incapacitate 3 enemies in quick succession with a revolver or pistol in close combat.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1778017377000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Minor",
+		"artists": [
+			"Mari Sarg",
+			"Naret"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b27347f45ccaaa207aea35cac0c2",
+		"url": "https://open.spotify.com/track/6x8jarv03TvOIYLbOgbPIQ",
+		"platform": "Spotify",
+		"timestamp": 1778051534000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Я тебе кохаю",
+		"artists": [
+			"MOHSEN"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273e00161af14a1b8096cede364",
+		"url": "https://open.spotify.com/track/3PrPGIXi0rT0UKh2Cp8Iqc",
+		"platform": "Spotify",
+		"timestamp": 1778051541000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Shadows of Despair",
+		"artists": [
+			"Through The Angel's Eye",
+			"W!CKED"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b27305648ef5fb8bd2dd7b70317b",
+		"url": "https://open.spotify.com/track/4ICjHayXFUym4Xu9xq71gE",
+		"platform": "Spotify",
+		"timestamp": 1778051548000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Glitch",
+		"artists": [
+			"Bronik Beats"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2730492935e47f2e15c07020571",
+		"url": "https://open.spotify.com/track/05SbY2LtKYleDS8MERqhZd",
+		"platform": "Spotify",
+		"timestamp": 1778051554000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "256e4ee0694483a6b2e6cb89b4355a73d760210f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/quartz",
+		"repository": "quartz",
+		"platform": "GitHub",
+		"timestamp": 1778092164000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2bf00c596294d9b30539b74cf55be646a137129a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/quartz",
+		"repository": "quartz",
+		"platform": "GitHub",
+		"timestamp": 1778092170000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "64c66db41782c7a7bb9396c92dd15642ae1e1450",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/quartz",
@@ -245,6 +485,15 @@
 		"platform": "GitHub",
 		"timestamp": 1779226758000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "0.10.0",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/0.10.0",
+		"platform": "npm",
+		"timestamp": 1779226801418,
+		"$type": "NpmPublishActivity"
 	},
 	{
 		"title": "0.10.0",
@@ -713,227 +962,5 @@
 		"platform": "Steam",
 		"timestamp": 1780264016000,
 		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/6093cc3f69497239090da29be67d5c4a344ebf69.jpg",
-		"title": "Getting A Little On The Side",
-		"description": "Complete all Side Missions.",
-		"url": "https://steamcommunity.com/stats/397540/achievements",
-		"game": "Borderlands 3",
-		"webpage": "https://store.steampowered.com/app/397540",
-		"platform": "Steam",
-		"timestamp": 1780264017000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/397540/983b1e50eab9344a77098e395f27eaf49276dc8b.jpg",
-		"title": "Ultimate Vault Hunter",
-		"description": "Unlock all Borderlands® 3 Achievements!",
-		"url": "https://steamcommunity.com/stats/397540/achievements",
-		"game": "Borderlands 3",
-		"webpage": "https://store.steampowered.com/app/397540",
-		"platform": "Steam",
-		"timestamp": 1780264017000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "d6a415dba46095a0c0a3aeef08b23657aa5812ff",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780346504000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ebd75f1e7513bd2e5d40b02b2ee341fd9c88223b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780355933000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "85735ac1fe0072c45f9c5cfb89085b3ee59f65c8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780357619000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "multi-threading-integrations",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780390220000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "89babb7bc1e664ae5378f12d99a7ec4c4043f8ce",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1780475201000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "main",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780530721000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "5dd413d05103587a31341fca8cf67b2727f8454f",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780531381000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f3186d8efbc6d8df77d0443aed31f55bcd708869",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780531757000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3efde8ccdcfc5bc1429271c7b5ef5376f1b2570e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780593463000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "483e36492c0f0b797536479c2655feefa185b483",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780596006000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.0.3",
-		"tag_name": "1.0.3",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780596104000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "48429790365f1e84411fcdea50846ef8e84c9518",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617282000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fbb6755ca1c10f9263b2f26306b3181e7b09b171",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617286000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "207341cf88130ce449c313593f6ee2fb79883352",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617291000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "03a2a81609b30524baea62e548beabc4a9912c3a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617296000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "71bb521d2d20bdc8b3f9abc2a03d24266c2f72ec",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617301000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cdde5a8f5f436eb2a74dcc925b71734e76742bc4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780617418000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "18beb34162c53216cdb96b6e39790018c9e7a83d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780618785000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "23c18c6691ca40cc37a512bda066abb50fcf04da",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780664063000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "bfa2540e4974b8263be4e7e8c2e3dc1d560efc18",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1780691007000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "07ed8c2aa17cd70186a723b9eb412a8181ee2618",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1780691819000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0afa994ed72a7aea415d42c7a8e846650bc95564",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1780695082000,
-		"$type": "GitHubPushActivity"
 	}
 ]

@@ -1,5 +1,551 @@
 [
 	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/3aed041e7c8584ae31b35b0a41ddaf9550dda1ce.jpg",
+		"title": "Aprils fool",
+		"description": "Unlocked a new challenge.",
+		"url": "https://steamcommunity.com/stats/250900/achievements",
+		"game": "The Binding of Isaac: Rebirth",
+		"webpage": "https://store.steampowered.com/app/250900",
+		"platform": "Steam",
+		"timestamp": 1786309950000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/285579eddf1dd9c100eb0469cfab62fc9b65c40a.jpg",
+		"title": "Item Descriptions",
+		"description": "Read Up!",
+		"url": "https://steamcommunity.com/stats/250900/achievements",
+		"game": "The Binding of Isaac: Rebirth",
+		"webpage": "https://store.steampowered.com/app/250900",
+		"platform": "Steam",
+		"timestamp": 1786309950000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1030300/27d60711d57bc5e263ba787f731be7fc5d8b17c7.jpg",
+		"title": "Fanatic",
+		"description": "Defeat Widow",
+		"url": "https://steamcommunity.com/stats/1030300/achievements",
+		"game": "Hollow Knight: Silksong",
+		"webpage": "https://store.steampowered.com/app/1030300",
+		"platform": "Steam",
+		"timestamp": 1786398812000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/4b15bed7a64bc15d531ca0c0026b18fa34b0f4a5.jpg",
+		"title": "Paradise Pile-up",
+		"description": "Kill up to 8 enemies with 1 Waster explosive shot",
+		"url": "https://steamcommunity.com/stats/1328350/achievements",
+		"game": "Turbo Overkill",
+		"webpage": "https://store.steampowered.com/app/1328350",
+		"platform": "Steam",
+		"timestamp": 1786436418000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/b0cb002a571c23be0743cef3c9ff926762ba6562.jpg",
+		"title": "Police Story",
+		"description": "Complete Open Season",
+		"url": "https://steamcommunity.com/stats/1328350/achievements",
+		"game": "Turbo Overkill",
+		"webpage": "https://store.steampowered.com/app/1328350",
+		"platform": "Steam",
+		"timestamp": 1786439098000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1328350/af6b6bc2216474d18fe0398f07de373b6a8c8bbc.jpg",
+		"title": "Predator",
+		"description": "Complete Dead Plaza",
+		"url": "https://steamcommunity.com/stats/1328350/achievements",
+		"game": "Turbo Overkill",
+		"webpage": "https://store.steampowered.com/app/1328350",
+		"platform": "Steam",
+		"timestamp": 1786442972000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/3945a4e6479605ab55c7dae52857e040d118d5c7.jpg",
+		"title": "All the President's Men",
+		"description": "Save President Myers.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786481654000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/cf77d0555d0222cdcbe7fb19a7e38871c820f230.jpg",
+		"title": "Arachnophobia",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786483852000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/a9109d1262f0121dd2c4369a5cbbdde0b7c347bb.jpg",
+		"title": "Ten out of Ten",
+		"description": "Reach the max level in any skill.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786494271000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/dffa26250fa32ba85772c75eec4fd7d8765fe157.jpg",
+		"title": "Judgement Day",
+		"description": "Eliminate three bosses from the \"Increased criminal activity\" category.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786557162000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "MUTILATOR (SLOWED) - RXDXVIL REMIX",
+		"artists": [
+			"ZMAJOR",
+			"RXDXVIL"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ef6828f5524743ac004610fa",
+		"url": "https://open.spotify.com/track/2hVRkbcl0O6OMVq3phE2cG",
+		"platform": "Spotify",
+		"timestamp": 1786613015000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/5fe10094d667c5f6da21589aad5c8ebd07f0e78b.jpg",
+		"title": "The Wandering Fool",
+		"description": "Find all the tarot graffiti for the job Fool on the Hill.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1786655321000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "adb571ace9a45d9a489e28ec5d696c399640d398",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1786841571000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c8da5ce9d883984cbc2eeb7b8ab8745bd2394ab7",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1787135929000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/594432b0da5af1d3cc01394cc853c04abb5baf4b.jpg",
+		"title": "Easy Come, Easy Go",
+		"description": "Steal the Arasaka medical truck or deliver 10 vehicles to El Capitan.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787170031000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/6d73d22167309783b6128282dbd00154df5fb0ae.jpg",
+		"title": "The APB is Not Enough",
+		"description": "Become Dogtown's most wanted criminal.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787179173000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/d02f68667532c5497561799ccb2dae4692cad14d.jpg",
+		"title": "Dirty Deeds",
+		"description": "Complete every Gig in Dogtown.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787350927000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/ad8075ab98162f93a200fc6a8c55cccf4c8d1b1d.jpg",
+		"title": "King of Wands",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1787356848000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/465200/dc6b1124fbe116c14e63b882b230237900f218ab.jpg",
+		"title": "Incredible Fury Unleashed",
+		"description": "Complete the game in Incredible game mode",
+		"url": "https://steamcommunity.com/stats/465200/achievements",
+		"game": "Fury Unleashed",
+		"webpage": "https://store.steampowered.com/app/465200",
+		"platform": "Steam",
+		"timestamp": 1787430857000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/465200/7e43f9ec1f373db80f2451f5ed98ead000923798.jpg",
+		"title": "A good start",
+		"description": "Finish a chapter with full health points without using fast travel",
+		"url": "https://steamcommunity.com/stats/465200/achievements",
+		"game": "Fury Unleashed",
+		"webpage": "https://store.steampowered.com/app/465200",
+		"platform": "Steam",
+		"timestamp": 1787431670000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Добро пожаловать в мой ад",
+		"artists": [
+			"Чёрная Тайга"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ff2ac1efd68fce192c76b8e9",
+		"url": "https://open.spotify.com/track/4AcQF0Tvuwf1XQhfdxLM5n",
+		"platform": "Spotify",
+		"timestamp": 1787605729000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "НАЙМАН",
+		"artists": [
+			"Чёрная Тайга",
+			"Drummatix"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273a5feda5fec64909e414e2b20",
+		"url": "https://open.spotify.com/track/60YxD3lUsspNoWKXQbxGI5",
+		"platform": "Spotify",
+		"timestamp": 1787605739000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Трамвай",
+		"artists": [
+			"ANDREEW"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273f7876332856c82ee89a1e066",
+		"url": "https://open.spotify.com/track/3LjyY8znDkEOhlH4cwdaKy",
+		"platform": "Spotify",
+		"timestamp": 1787683008000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Sakura",
+		"artists": [
+			"Xcho"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273ae62a7289470ebd4d3c3d345",
+		"url": "https://open.spotify.com/track/2r5ttfZky6fdIo7LY3UNvl",
+		"platform": "Spotify",
+		"timestamp": 1787733722000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/7ae50754d5cf0c37a73c2e0d4e88410cd51dd5b9.jpg",
+		"title": "Autojock",
+		"description": "Buy all vehicles available for purchase.",
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1788010010000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Take Me There",
+		"artists": [
+			"DA TI"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2731de2a89a3db47c711597f2d2",
+		"url": "https://open.spotify.com/track/5Xlm6r0hBIxe0OvtfUG9UX",
+		"platform": "Spotify",
+		"timestamp": 1788105087000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/cde8a1784b16dd8e9d4caf4b4ccaff48c31b8f05.jpg",
+		"title": "Eyes Closed",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1788206026000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"file_name": "36.jpg",
+		"media_type": "photo",
+		"content": null,
+		"channel_id": -1003471238866,
+		"message_id": 36,
+		"platform": "Telegram",
+		"timestamp": 1788295885000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"file_name": "35.jpg",
+		"media_type": "photo",
+		"content": null,
+		"channel_id": -1003471238866,
+		"message_id": 35,
+		"platform": "Telegram",
+		"timestamp": 1788295885000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"file_name": "34.jpg",
+		"media_type": "photo",
+		"content": null,
+		"channel_id": -1003471238866,
+		"message_id": 34,
+		"platform": "Telegram",
+		"timestamp": 1788295885000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"title": "Pulse Runner",
+		"artists": [
+			"Helmut Schenker"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273e8a121f526d840797f25a0b6",
+		"url": "https://open.spotify.com/track/7qqY3MgFUHc8mL3Qajha2a",
+		"platform": "Spotify",
+		"timestamp": 1788447927000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1649240/942a0a82a8aa47a92769bf2ebb83410f841fd9f3.jpg",
+		"title": "Past the Ruins",
+		"description": "Finish Overgrown Ruins Survey",
+		"url": "https://steamcommunity.com/stats/1649240/achievements",
+		"game": "Returnal™",
+		"webpage": "https://store.steampowered.com/app/1649240",
+		"platform": "Steam",
+		"timestamp": 1788457465000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Lamia",
+		"artists": [
+			"Carpö",
+			"idreamu"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2732ce8875813535e7ff74980d2",
+		"url": "https://open.spotify.com/track/1A1cXD7bOBUOiwWEZPPxWI",
+		"platform": "Spotify",
+		"timestamp": 1788472436000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "18c238947a52fff18b904d2e21435bf10513c471",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1788705128000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "e0a001fddf48c91cfae07742680edbe43144e2bf",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1788705177000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "7d1c07ff0997bf6fbede234877c415c5a32896e5",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1788785182000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/6dd241ec65b3f2b01f98b522d4654dee4d049b73.jpg",
+		"title": "Getting started",
+		"description": "Kill your first creature",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788802572000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/b2d534bef56baa1529465cdf37f06a0c8e5b2ad8.jpg",
+		"title": "Drip",
+		"description": "Kill a drip creature",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788802629000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/fe3f2fff4b264155ff6433c2cbdeef6462454979.jpg",
+		"title": "Who stole my beer",
+		"description": "Find and kill the culprit, and bring it to the lighthouse keeper",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788803750000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/f4237c00b430233fd4cdbca4350dc37a07fc82ba.jpg",
+		"title": "Getting an upgrade",
+		"description": "Upgrade the engine on the boat",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788805592000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/b6595a889f04c3b8c639cf9ebe54d2841ecc822e.jpg",
+		"title": "Let me go",
+		"description": "Get picked up by a seagull",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788810362000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/5e68e833d65a5892b8a75e42a4d4e3dfc4fe991a.jpg",
+		"title": "Impressive",
+		"description": "Get a 5x killscore multiplier",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788810362000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/a55985a010ece627f4dff09393720b4c4e79d369.jpg",
+		"title": "360 no scope",
+		"description": "Kill a creature with a 360 no scope",
+		"url": "https://steamcommunity.com/stats/4001890/achievements",
+		"game": "How to Fish",
+		"webpage": "https://store.steampowered.com/app/4001890",
+		"platform": "Steam",
+		"timestamp": 1788811014000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/1091500/61c7ccea74b66ef3f5d51c078d900d930346e74a.jpg",
+		"title": "The Wheel of Fortune",
+		"description": null,
+		"url": "https://steamcommunity.com/stats/1091500/achievements",
+		"game": "Cyberpunk 2077",
+		"webpage": "https://store.steampowered.com/app/1091500",
+		"platform": "Steam",
+		"timestamp": 1788899396000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"name": "application-fixes",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1788996095000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "c64139901b5a181f91f10a251a277693960428cd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789000598000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c64139901b5a181f91f10a251a277693960428cd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789030842000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "25c584c5c67fa98c120c68d76d53cb78d5cda924",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1789039934000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9cec0edf735f18a036115cc189562e0c2d948b66",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789042465000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "51f3cb7bb31adc04920a160f7494aa0a7b82306c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1789046239000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "0a1edf72779288625afa4080b7a265762ecfe855",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1789068657000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "21e40427feb9cbcd05f458fec8feb71403865798",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1789238406000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "78dfea3234c623e6313d237c32c9d2b6e601aa9b",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -168,6 +714,15 @@
 		"platform": "GitHub",
 		"timestamp": 1789665127000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "1.0.7",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.0.7",
+		"platform": "npm",
+		"timestamp": 1789665164267,
+		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "bb2fdee20233d1ec8ba813d444b51f0e4e19eb78",
@@ -461,532 +1016,6 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1790389747000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "61e872e261f07f75884537f754fcf93eaabd349c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790460178000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e985b4e41f31f6e285f307f0ab69601c48f80c5a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790522571000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a1d0d7ae2662c80cbd2d13ce85ee690d1acf2d28",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790522576000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/1c7eb9a4f5e33c592fe3e205c33edcfca8fd25c1.jpg",
-		"title": "Beachcomber Badge",
-		"description": "Climb past the SHORE.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790534499000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/de12d278a0764bf904a5f70bd0d5a0ce248c078d.jpg",
-		"title": "Esoterica Badge",
-		"description": "Obtain a mystical item.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790534540000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/8ae93a068c402d8c43241e19b302171050c0050f.jpg",
-		"title": "Foraging Badge",
-		"description": "Eat 5 different berries in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790535176000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e1e3550680fdce7c09093f29f2c9b205f737f4b4.jpg",
-		"title": "Trailblazer Badge",
-		"description": "Climb past the TROPICS.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790536277000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/7687e0907862bf82f0d64161bfbd9fa548482e32.jpg",
-		"title": "Happy Camper Badge",
-		"description": "Receive 5 Morale Boosts from campfires.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790542369000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"is_accepted": true,
-		"title": "Отцентрировать текст если строка одна",
-		"body": "<p>Без трюков не получиться. Нашел 2 пути:</p>\n<h2>С помощью flex</h2>\n<p>Сохраняем размеры контейнера, но трогаем как оно обрабатывается</p>\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\" data-babel-preset-react=\"false\" data-babel-preset-ts=\"false\">\n<div class=\"snippet-code\">\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>p {\n  width: 6em;\n  outline: 1px dotted red;\n\n  display: flex;\n  justify-content: center;\n\n  text-align: justify;\n  text-align-last: justify;\n  text-wrap: balance;\n}</code></pre>\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;p&gt;1 2 3 4 5 6 7 8 9 0&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5 6 7 8 9 0 1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1&lt;/p&gt;</code></pre>\n</div>\n</div>\n</p>\n<h2>За счет контейнера</h2>\n<p>Решаем проблему за счет размеров контейнера. Я бы сам не выбрал этот вариант. Хотя... смотря на задачу.</p>\n<p><div class=\"snippet\" data-lang=\"js\" data-hide=\"false\" data-console=\"true\" data-babel=\"false\" data-babel-preset-react=\"false\" data-babel-preset-ts=\"false\">\n<div class=\"snippet-code\">\n<pre class=\"snippet-code-css lang-css prettyprint-override\"><code>p {\n  max-width: 6em;\n  outline: 1px dotted red;\n\n  width: fit-content;\n  margin-inline: auto;\n  \n  text-align: justify;\n  text-align-last: justify;\n  text-wrap: balance;\n}</code></pre>\n<pre class=\"snippet-code-html lang-html prettyprint-override\"><code>&lt;p&gt;1 2 3 4 5 6 7 8 9 0&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5 6 7 8 9 0 1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1 2 3 4 5&lt;/p&gt;\n&lt;p&gt;1&lt;/p&gt;</code></pre>\n</div>\n</div>\n</p>\n",
-		"score": 4,
-		"url": "https://ru.stackoverflow.com/questions/1626393/%d0%9e%d1%82%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c-%d1%82%d0%b5%d0%ba%d1%81%d1%82-%d0%b5%d1%81%d0%bb%d0%b8-%d1%81%d1%82%d1%80%d0%be%d0%ba%d0%b0-%d0%be%d0%b4%d0%bd%d0%b0/1626394#1626394",
-		"platform": "Stack overflow",
-		"timestamp": 1790547646000,
-		"$type": "StackOverflowAnswerActivity"
-	},
-	{
-		"sha": "eba7139688d100198084f9af7c0a3434e25c78e5",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1790548417000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.0.8",
-		"tag_name": "1.0.8",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1790548540000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "4c7e2f2d4eecf3635d731ea0f5bdc52659678324",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1790636644000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "21e27f072c88be04586ab162aad89751561858c2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790773947000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/27f25eb3ec8fb4e7245aec8b48705a0812738773.jpg",
-		"title": "Web Security Badge",
-		"description": "Escape a spider's web and survive.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790790735000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d7fbe6dcb35a51e67be5f38023b99b7cc90e4dd1.jpg",
-		"title": "Forestry Badge",
-		"description": "Climb past the ROOTS.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790792025000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/4cfa107040054253f82d9d3dbf69a97d84701c19.jpg",
-		"title": "Tread Lightly Badge",
-		"description": "Climb past the ROOTS without ever having more than 25% spores.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790792025000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d8e491ed5b6489b4b9c44cca9b0d8422267a8a53.jpg",
-		"title": "Endurance Badge",
-		"description": "Climb 50m upwards without touching the ground.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790793256000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/ec338a888bb02b501e139b3f5184a83c1589a0d5.jpg",
-		"title": "High Altitude Badge",
-		"description": "Climb 5000m total.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790793890000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/97cb4ca98da4fccf015d3dd893937b3a9172f62e.jpg",
-		"title": "Nomad Badge",
-		"description": "Climb past the MESA.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790793896000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/eb842f863d8cbb7c769fec2ac2161f56776d8093.jpg",
-		"title": "Well Rested Badge",
-		"description": "Consume The Early Worm.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790794496000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/a9e2236a6aa83d8cf0640e1317fb24bf27a2f5b0.jpg",
-		"title": "Wanderer Badge",
-		"description": "Climb past the GLOOM.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790794732000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/05b417a939ac2c4e6ddcece2a3e694b59b4e7a45.jpg",
-		"title": "Money in a bottle",
-		"description": "Find money in a bottle",
-		"url": "https://steamcommunity.com/stats/4001890/achievements",
-		"game": "How to Fish",
-		"webpage": "https://store.steampowered.com/app/4001890",
-		"platform": "Steam",
-		"timestamp": 1790795750000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/ec4cf0382f82ce1b2a603c436c6e388316bd02ce.jpg",
-		"title": "Bilingual",
-		"description": "Earn your first euro",
-		"url": "https://steamcommunity.com/stats/4001890/achievements",
-		"game": "How to Fish",
-		"webpage": "https://store.steampowered.com/app/4001890",
-		"platform": "Steam",
-		"timestamp": 1790797001000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/4001890/57d3cc31607d6c7532174c784e5be3ee7c51687b.jpg",
-		"title": "Hobin Rood",
-		"description": "Kill a creature with an arrow",
-		"url": "https://steamcommunity.com/stats/4001890/achievements",
-		"game": "How to Fish",
-		"webpage": "https://store.steampowered.com/app/4001890",
-		"platform": "Steam",
-		"timestamp": 1790797195000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"title": "Моя звезда",
-		"artists": [
-			"Dzhenis"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273ae5e869fa29cd9c38f8e2bed",
-		"url": "https://open.spotify.com/track/15DuJJ15udhvMzuRGolmfd",
-		"platform": "Spotify",
-		"timestamp": 1790933822000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/da9184f21ff1dae46b4de56ffda9a9458c4bfa09.jpg",
-		"title": "Alpinist Badge",
-		"description": "Climb past the ALPINE.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790976124000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/59f105343a7cda0259cfabd1992463f28dd95200.jpg",
-		"title": "Cooking Badge",
-		"description": "Cook 20 meals at campfires.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790976152000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/7904cc232eac6ffb345a96f2a265b1db4c1c535e.jpg",
-		"title": "Plunderer Badge",
-		"description": "Open 15 luggages in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790977017000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/5401aa59d9da99722a2b440cedf2bbe39baef566.jpg",
-		"title": "Volcanology Badge",
-		"description": "Climb past the CALDERA.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790977128000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/82d65f1b4dd1482707d2f2c2f74d52521adb8be1.jpg",
-		"title": "Participation Badge",
-		"description": "Have a friend escape the island without you.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1790978385000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "04fe19798dd16cba682538efca5f54c5b323f895",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1790981655000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1a8695ed4415f485fbfff60b4c42d92919b8f24b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1790981702000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "526d99549b0c9e2f877e4c582c3a107f14217482",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1790981732000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "2c026de969ed9b59eb3fdbfe19ff158976a31605",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058935000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1fae03a66c44a1d18f307432eeab39be2c4639b3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058941000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "78cb352887a17035d858586f805929d23525c56b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058950000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3877937dcf53b51a3e1e5b7e889118fc893fab25",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058957000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ace1e6bd1d4eed140731969528221019c9ac91ce",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058966000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.0",
-		"tag_name": "1.1.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791059004000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "67df5ac9caf085cb103919b6bf0bcd8e72d66f26",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791060570000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0ceb2b843d7429831b690dd9b4d668e61d5a3418",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791060662000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1522eeb2279c58b45d01a01e022dc6f7156f41b2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791060832000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a44f42a339491b4e84c41dffa29ba9f74c491f1a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791062763000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "7b4164cb10b752bbb62f266aa2dbfc3965a804fb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791062821000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cb0a97b088498dd543ab0dc581c83da0a005c04b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791062846000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "092360d68b8957c54560c856ef06c7b139e0db0f",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062905000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3ad8e924d79a5122bc842334c3478f2110b29eff",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062911000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ee55562d6d7439e732f2ae4b3848b8bad7f1c388",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062915000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fc97faf54f6e3ce38a64c59078c25561bbb969a0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062921000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ec59d75687f8632a27d3d0d570d853948b08acbe",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062925000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "57f868bd2659e867b92ac9d70e6a9d03ec7d2604",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062930000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0f610094c731ddc2c0b6aa3c75c166d4813a0e40",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062935000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "757eefd9205593160e68bfb75fe9222112b5ba54",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062940000,
 		"$type": "GitHubPushActivity"
 	}
 ]

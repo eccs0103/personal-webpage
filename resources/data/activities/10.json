@@ -1,5 +1,536 @@
 [
 	{
+		"sha": "f04b961f9650b8f31131e086cbf17d04cd8baaeb",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456540000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4041574ad57217b92ce1d62d5ad3f3f339592646",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456545000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c431636c76c768bdfa8653cc6aa4b1ca77587124",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456943000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"package": "@eccs0103/claude-cli-status-line",
+		"version": "1.4.0",
+		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
+		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.4.0",
+		"platform": "npm",
+		"timestamp": 1791457101093,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"title": "1.4.0",
+		"tag_name": "1.4.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458235000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "44235bea94b6daf40f89386c9177367f4de0e98d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458462000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "1.4.1",
+		"tag_name": "1.4.1",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458573000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"package": "@eccs0103/claude-cli-status-line",
+		"version": "1.4.1",
+		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
+		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.4.1",
+		"platform": "npm",
+		"timestamp": 1791458743113,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f8da9f53f5938be55aef11a9890b6713164471d6.jpg",
+		"title": "Arborist Badge",
+		"description": "Reach the top of a really big tree.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664407000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/05543471ee7f7ab73d2c873b6157ca2c5cfa7b27.jpg",
+		"title": "Toxicology Badge",
+		"description": "Restore 200 total poison by using items.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664629000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d6e7927521bbb5f779e5f5c164d968f23597256b.jpg",
+		"title": "Jester Badge",
+		"description": "Open 2 Clown Luggage in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791669183000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Fuego",
+		"artists": [
+			"Hopex"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273c3a04784337bf86257c7b789",
+		"url": "https://open.spotify.com/track/2aqvHq5uTCkdEteQLiftzb",
+		"platform": "Spotify",
+		"timestamp": 1791741451000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/41ce6d7161b1da52240972e63e0169007cb78b67.jpg",
+		"title": "Cool Cucumber Badge",
+		"description": "Climb past the MESA without ever having more than 10% Heat.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791751404000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/cd4367de9dca4e160bdf86297d7e9003cb791c74.jpg",
+		"title": "First Aid Badge",
+		"description": "Heal your friends for 100 points of injury in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791753968000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/6541523d91357a00bb49e24567429de6505ddcd3.jpg",
+		"title": "Peak Badge",
+		"description": "Reach the PEAK.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791754270000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"name": "new-ai-visualizations",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809394000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "808248e9e5b836f027dd92f8d76da7b24313421c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809413000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "855df0c05f9b6e93df58317d23b48a5176657149",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809417000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ef94d75ab5fd2d5073f395a790491897743e1885",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809420000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a066d85d82811cee84bb73ea8072f7d49e582d99",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809423000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9ed1c9aa54e0b2f69ff3498a01845c8e30a6099a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809426000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ee1a0625f39587fb03214b2aeaa1c77420b2c258",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809429000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "bdbf529615b4d7b49a4fc4e55409901dc21ed225",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809432000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "30736a992e7c251d1ad9c8d7df3bc856aad3ecd4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809435000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "44c6e5acc7952ce930f85f246627c28e85622c97",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809438000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "78fc688beafd9e0844fcb2b1843431b718f9cd54",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809444000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "66addb75b9064750b06a8b59ebdafabd33f6971f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809447000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "6720c313bc05c06272bc4c8e65612cb2ca3f25a8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809450000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "87401c3489a285fb062be3812ddae00dd8ab1f9d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809452000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1a74d2ad32f0ecb17b5cc67edfd446a233d1e30e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809455000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4986cb8074dc957bcc04c305cf9ffc6e923496f3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809459000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a56b8dadeb3d8ec587f1e8dba50fbc9cb2d80830",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809464000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "258421277d42832376e6383584e36b2cefc26fbe",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809467000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4c1502ce4ddb2cdc946759925a2cc0eb1ba232b3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809471000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "76b2242e547befdda9ae7c00d69547e295cd6ae3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809473000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "d4b20d62d0245460c256dabc611d3560f477eb17",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809476000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "75abf419a4b79dd8d66153e28258d1cc90f9b2a3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809482000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1bdd65deccf38972cd2343a2a4e3c182f7d3c898",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809485000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "29a9e60e70d067edbab248f9f426b0599ca43a1e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809488000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5469b65b60b58b9b32194e3813fd1e912470f8c8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809491000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ba2c794d945fe2295e521530cbb865e0c26c8a3c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809494000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "53ede19d7b9bce07b2c1e7e772da5d40b14e9e38",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1791812331000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "7cb4e2e35d06216a29a6ae1e95e4349d81e626f2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1791812383000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2f737d9d22d552fadd6dfe4ef5332cf14b23250f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1791812467000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "26948630e5a088c82064f25b0cb177da5dfd7729",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1791812503000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f5b7874ed6435c27bc3ecea766ea3a4e3a03688a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791812539000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "dae6e91486bab907551746be6f3c2a16aa7a729e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848827000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ffbec9757d64d1be59f38ac7b40bd8a54ae28d52",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848832000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "30d2decf1c01b12f944a9b34a1de40835219d4cd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848837000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c770224dd4fc8634b10e1996d4d304b4e9e52d6e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848842000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2488b506fd26954c22214afd99d26c8d431b1a6d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848847000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "748fe49f0c5c33fde10864f71e054b474e6d815a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848852000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a86e988ccca17aa57f7e34edb4d96c04eb946b61",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848857000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "0e16fff33d33686a413b9829a7b1252c964f17f6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848862000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "797f331701242b17ca62d0d71d21d1d7d671b175",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848867000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1e1183274f43b8bd960a47f1b48735d9de722c3a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848873000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c5c5c946b9168bcfe415aaedb00e95c14015655f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791848878000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "054d06fab90708bb0e5f90df314156e0c48404e4",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -45,6 +576,15 @@
 		"platform": "GitHub",
 		"timestamp": 1791915100000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "1.1.3",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.3",
+		"platform": "npm",
+		"timestamp": 1791915326215,
+		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "23f47a1998dc3495a2d3e83a587215ca72edf64c",
@@ -188,6 +728,15 @@
 		"platform": "GitHub",
 		"timestamp": 1792280443000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "1.1.4",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.4",
+		"platform": "npm",
+		"timestamp": 1792280447414,
+		"$type": "NpmPublishActivity"
 	},
 	{
 		"sha": "d7ba90de826825b608a6871afb6c6557770010d6",
@@ -334,6 +883,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"package": "adaptive-extender",
+		"version": "1.1.5",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.1.5",
+		"platform": "npm",
+		"timestamp": 1792297859700,
+		"$type": "NpmPublishActivity"
+	},
+	{
 		"title": "1.1.5",
 		"tag_name": "1.1.5",
 		"is_prerelease": false,
@@ -369,556 +927,6 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1792298871000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "2b4e4008bcae0272ff89795310dd3378ffbefab2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1792298900000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fcf0b153ab3feec669247112e671501e1d8db010",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792298927000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1b53fd07ff04c014952da0778ea132c960f93e39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792299200000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "aa9099b0a135c6f189868e149a55146da2ab1689",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792299205000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "aa9099b0a135c6f189868e149a55146da2ab1689",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792299378000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.7.0",
-		"tag_name": "3.7.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792299448000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "2af49e1908bf47b19ad12d93eee6b4ed3967d535",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792362666000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9e6f34beaa9eafbc482d9a989f7faa9a0da88e93",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792362671000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e909c7ddb7eaafd390f438821091358eec4d7bac",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792362677000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a7123eb6b384c2811490b3d1040496aee851f851",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792362682000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"username": "eccs0103",
-		"url": "https://github.com/seerge/g-helper",
-		"repository": "g-helper",
-		"platform": "GitHub",
-		"timestamp": 1792407839000,
-		"$type": "GitHubWatchActivity"
-	},
-	{
-		"title": "Archangel",
-		"artists": [
-			"Pandocrator"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273e9bf95f38e22bebab3329185",
-		"url": "https://open.spotify.com/track/3PJwmFUfd09rCPQrFwaGTM",
-		"platform": "Spotify",
-		"timestamp": 1792449867000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"title": "Genesis",
-		"artists": [
-			"Pandocrator"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273e9bf95f38e22bebab3329185",
-		"url": "https://open.spotify.com/track/2JSlCtX7IOr2eGb1lDwF16",
-		"platform": "Spotify",
-		"timestamp": 1792449871000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"sha": "5fd996154100634f3a4a6446dc3c6fea9b133fc2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792673725000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9417d25edc76af5c6b8aeb11fbf7cdce07325cdf",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792711923000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8e502419cd2bd9b87776f90328e15a5b404f8459",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792712147000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "685bd5ee28283986521fb7466fc1571ba54f9e9b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1792712183000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"file_name": "41.jpg",
-		"media_type": "photo",
-		"content": "Somehow hit 1,000+ commits this year. Not even sure if that's a good or a bad thing.",
-		"channel_id": -1003471238866,
-		"message_id": 41,
-		"platform": "Telegram",
-		"timestamp": 1792750865000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
-		"sha": "5bfb70230e5d1807822c41bc9bc0d0e9ddd29ebb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1792794382000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.6",
-		"tag_name": "1.1.6",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1792794560000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "a1831634367ae9ad36280cb7fb8efc41dff4b315",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792794993000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a7609bfa0ba40e93449767c15b9d8799911f3da2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1792795054000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9c202d8bbd5ce8d2a49c45088daae344ab3b56f8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792795087000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "64bffc09a7bff2271b9d4d461c9b175f810c90d2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795273000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "363fd84b7d579867d0ac92a3daa1707a55109ae4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795278000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "35f1aff1b14c3d63d26e03f8522bffc4e2b49b35",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795332000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "911622abcffefe9aa23702a2664a367bfb399ff7",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795337000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "02614c58b68f86aac3e382855e55d00d3d2326ea",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795342000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "30782d1c6bf289b06c31cbcc532566a109cb6cb1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792795424000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cecaffdbba1ab97d40f2e8f5427e4d77552a8b90",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795477000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "974509b62a46190fa3056bacfa10ae9520c7bc70",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1792795554000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f2b24773f733fbd7d7563e200a4465533c298916",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792795597000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3138574f5a39fb31fe023103ff90adc0daee38fa",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795625000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "150205381b780266add22e2dd5a836e7ec9b7614",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792863619000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "visualization-with-stems",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793023325000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "f89234e311d65d8b36d2983728dbe44557149ecb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041580000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "adf68c7153f1b8f9c4cdcb5107e736fb0ab19429",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041585000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "66ac1a8c76cc11f1c125d6e4338f05d720413ae7",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041589000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9efa7f4ea7654d9bf26690b82db64ee817cd0d87",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041594000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ab20cb050b0b913e4c06b7e38b1c202f010ec364",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041598000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "39ff7d27bc6cef91ab06ed918de84a592cc3cafd",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041603000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f1eddeae701756740733f9a744cb5a8d4feba984",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041607000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e5198d66607fdcf854ed66987698ddfbe1f956a6",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041612000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3622f4f72b50f908fbe2867de073377ec5c030c1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041617000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cbc5f14171474843c632b974639bd9eab2f2e383",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041621000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "86960e362171bea1db5b316988efd03247eb4908",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041625000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ea03edc8a2a0604432bff474d5ee716a017d1367",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041630000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3b05dfc0cdf39c9138176e7091b0e68db2d08440",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041634000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047457000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047490000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "visualization-with-stems",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047508000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047887000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "63cdffbc02aa81e3d5af867012e430e97491014e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052794000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a8775e66159d9e5ac6dc7f9ff7c6df330f43d2b4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052799000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e69d52bae2ab073b10796ba08feb886584b878a3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052804000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.8.0",
-		"tag_name": "3.8.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052824000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "a84fc963279b8419afe62ea15f0f3fa5fc3a3ed9",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1793099559000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "c0bc7f8636dea561e26dfb92b248ff32bf635ab3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1793131298000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "c09a9b2907c1fb72de3832118887c750c386f56d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1793135572000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "480f2936d3f10faf444a4f8956da8fae2f2e9b30",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1793137491000,
 		"$type": "GitHubPushActivity"
 	}
 ]
