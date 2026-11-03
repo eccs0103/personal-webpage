@@ -353,15 +353,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "78cb352887a17035d858586f805929d23525c56b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058950000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "3877937dcf53b51a3e1e5b7e889118fc893fab25",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/adaptive-extender",
@@ -369,26 +360,6 @@
 		"platform": "GitHub",
 		"timestamp": 1791058957000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ace1e6bd1d4eed140731969528221019c9ac91ce",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791058966000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.0",
-		"tag_name": "1.1.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791059004000,
-		"$type": "GitHubReleaseActivity"
 	},
 	{
 		"package": "adaptive-extender",
@@ -400,15 +371,6 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
-		"sha": "67df5ac9caf085cb103919b6bf0bcd8e72d66f26",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791060570000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "0ceb2b843d7429831b690dd9b4d668e61d5a3418",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
@@ -418,39 +380,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "1522eeb2279c58b45d01a01e022dc6f7156f41b2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791060832000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a44f42a339491b4e84c41dffa29ba9f74c491f1a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1791062763000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "7b4164cb10b752bbb62f266aa2dbfc3965a804fb",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1791062821000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "cb0a97b088498dd543ab0dc581c83da0a005c04b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791062846000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -472,84 +407,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "ee55562d6d7439e732f2ae4b3848b8bad7f1c388",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062915000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fc97faf54f6e3ce38a64c59078c25561bbb969a0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062921000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ec59d75687f8632a27d3d0d570d853948b08acbe",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062925000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "57f868bd2659e867b92ac9d70e6a9d03ec7d2604",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062930000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "0f610094c731ddc2c0b6aa3c75c166d4813a0e40",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062935000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "757eefd9205593160e68bfb75fe9222112b5ba54",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062940000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "454fba7c56824b94a54a2845ec9d0f82107e8d3c",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
 		"repository": "cheatsheet",
 		"platform": "GitHub",
 		"timestamp": 1791062945000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f1fb94e2698fd7046794a46adb880711ca5c7b08",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062950000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "fb2a5cb03240943bf4c8a0d86d9c929982da810c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062960000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -562,39 +425,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "708cc2fe67fc36c572044602f3aaf1024aeef05e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791062972000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "b54c7293215c4a378712f6b00cc3317abc6dcfee",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791063865000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "de409ace1dea30496927789d260136c7e35a6ac3",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
 		"repository": "applications",
 		"platform": "GitHub",
 		"timestamp": 1791063927000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "99add02fcbb1ec823dd65c4e48c7a286e78f35b0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791064651000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -613,15 +449,6 @@
 		"repository": "applications",
 		"platform": "GitHub",
 		"timestamp": 1791064662000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "b6a29ac51269cd117512fc5b84967307e7f72db5",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791064666000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -960,6 +787,195 @@
 		"repository": "claude-cli-status-line",
 		"platform": "GitHub",
 		"timestamp": 1791456536000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f04b961f9650b8f31131e086cbf17d04cd8baaeb",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456540000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4041574ad57217b92ce1d62d5ad3f3f339592646",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456545000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "c431636c76c768bdfa8653cc6aa4b1ca77587124",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791456943000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"package": "@eccs0103/claude-cli-status-line",
+		"version": "1.4.0",
+		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
+		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.4.0",
+		"platform": "npm",
+		"timestamp": 1791457101093,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"title": "1.4.0",
+		"tag_name": "1.4.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458235000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "44235bea94b6daf40f89386c9177367f4de0e98d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458462000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "1.4.1",
+		"tag_name": "1.4.1",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1791458573000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"package": "@eccs0103/claude-cli-status-line",
+		"version": "1.4.1",
+		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
+		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.4.1",
+		"platform": "npm",
+		"timestamp": 1791458743113,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f8da9f53f5938be55aef11a9890b6713164471d6.jpg",
+		"title": "Arborist Badge",
+		"description": "Reach the top of a really big tree.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664407000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/05543471ee7f7ab73d2c873b6157ca2c5cfa7b27.jpg",
+		"title": "Toxicology Badge",
+		"description": "Restore 200 total poison by using items.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791664629000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d6e7927521bbb5f779e5f5c164d968f23597256b.jpg",
+		"title": "Jester Badge",
+		"description": "Open 2 Clown Luggage in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791669183000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"title": "Fuego",
+		"artists": [
+			"Hopex"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273c3a04784337bf86257c7b789",
+		"url": "https://open.spotify.com/track/2aqvHq5uTCkdEteQLiftzb",
+		"platform": "Spotify",
+		"timestamp": 1791741451000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/41ce6d7161b1da52240972e63e0169007cb78b67.jpg",
+		"title": "Cool Cucumber Badge",
+		"description": "Climb past the MESA without ever having more than 10% Heat.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791751404000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/cd4367de9dca4e160bdf86297d7e9003cb791c74.jpg",
+		"title": "First Aid Badge",
+		"description": "Heal your friends for 100 points of injury in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791753968000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/6541523d91357a00bb49e24567429de6505ddcd3.jpg",
+		"title": "Peak Badge",
+		"description": "Reach the PEAK.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1791754270000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"name": "new-ai-visualizations",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809394000,
+		"$type": "GitHubCreateBranchActivity"
+	},
+	{
+		"sha": "808248e9e5b836f027dd92f8d76da7b24313421c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809413000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "855df0c05f9b6e93df58317d23b48a5176657149",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809417000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ef94d75ab5fd2d5073f395a790491897743e1885",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809420000,
 		"$type": "GitHubPushActivity"
 	}
 ]

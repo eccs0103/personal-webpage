@@ -1,194 +1,5 @@
 [
 	{
-		"sha": "f04b961f9650b8f31131e086cbf17d04cd8baaeb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1791456540000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "4041574ad57217b92ce1d62d5ad3f3f339592646",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1791456545000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "c431636c76c768bdfa8653cc6aa4b1ca77587124",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1791456943000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.4.0",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.4.0",
-		"platform": "npm",
-		"timestamp": 1791457101093,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"title": "1.4.0",
-		"tag_name": "1.4.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1791458235000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "44235bea94b6daf40f89386c9177367f4de0e98d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1791458462000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.4.1",
-		"tag_name": "1.4.1",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/claude-cli-status-line",
-		"repository": "claude-cli-status-line",
-		"platform": "GitHub",
-		"timestamp": 1791458573000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"package": "@eccs0103/claude-cli-status-line",
-		"version": "1.4.1",
-		"description": "Claude CLI status line command that renders workspace, git branch, model, rate limits and context window as an ANSI-colored line",
-		"url": "https://www.npmjs.com/package/@eccs0103/claude-cli-status-line/v/1.4.1",
-		"platform": "npm",
-		"timestamp": 1791458743113,
-		"$type": "NpmPublishActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f8da9f53f5938be55aef11a9890b6713164471d6.jpg",
-		"title": "Arborist Badge",
-		"description": "Reach the top of a really big tree.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1791664407000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/05543471ee7f7ab73d2c873b6157ca2c5cfa7b27.jpg",
-		"title": "Toxicology Badge",
-		"description": "Restore 200 total poison by using items.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1791664629000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/d6e7927521bbb5f779e5f5c164d968f23597256b.jpg",
-		"title": "Jester Badge",
-		"description": "Open 2 Clown Luggage in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1791669183000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"title": "Fuego",
-		"artists": [
-			"Hopex"
-		],
-		"cover": "https://i.scdn.co/image/ab67616d0000b273c3a04784337bf86257c7b789",
-		"url": "https://open.spotify.com/track/2aqvHq5uTCkdEteQLiftzb",
-		"platform": "Spotify",
-		"timestamp": 1791741451000,
-		"$type": "SpotifyLikeActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/41ce6d7161b1da52240972e63e0169007cb78b67.jpg",
-		"title": "Cool Cucumber Badge",
-		"description": "Climb past the MESA without ever having more than 10% Heat.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1791751404000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/cd4367de9dca4e160bdf86297d7e9003cb791c74.jpg",
-		"title": "First Aid Badge",
-		"description": "Heal your friends for 100 points of injury in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1791753968000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/6541523d91357a00bb49e24567429de6505ddcd3.jpg",
-		"title": "Peak Badge",
-		"description": "Reach the PEAK.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1791754270000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"name": "new-ai-visualizations",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791809394000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "808248e9e5b836f027dd92f8d76da7b24313421c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791809413000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "855df0c05f9b6e93df58317d23b48a5176657149",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791809417000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ef94d75ab5fd2d5073f395a790491897743e1885",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1791809420000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "a066d85d82811cee84bb73ea8072f7d49e582d99",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -927,6 +738,183 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1792298871000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "2b4e4008bcae0272ff89795310dd3378ffbefab2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1792298900000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "fcf0b153ab3feec669247112e671501e1d8db010",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1792298927000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1b53fd07ff04c014952da0778ea132c960f93e39",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792299200000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "aa9099b0a135c6f189868e149a55146da2ab1689",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792299205000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "aa9099b0a135c6f189868e149a55146da2ab1689",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792299378000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "3.7.0",
+		"tag_name": "3.7.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1792299448000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "2af49e1908bf47b19ad12d93eee6b4ed3967d535",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792362666000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9e6f34beaa9eafbc482d9a989f7faa9a0da88e93",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792362671000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "e909c7ddb7eaafd390f438821091358eec4d7bac",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792362677000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a7123eb6b384c2811490b3d1040496aee851f851",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792362682000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"username": "eccs0103",
+		"url": "https://github.com/seerge/g-helper",
+		"repository": "g-helper",
+		"platform": "GitHub",
+		"timestamp": 1792407839000,
+		"$type": "GitHubWatchActivity"
+	},
+	{
+		"title": "Archangel",
+		"artists": [
+			"Pandocrator"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273e9bf95f38e22bebab3329185",
+		"url": "https://open.spotify.com/track/3PJwmFUfd09rCPQrFwaGTM",
+		"platform": "Spotify",
+		"timestamp": 1792449867000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Genesis",
+		"artists": [
+			"Pandocrator"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273e9bf95f38e22bebab3329185",
+		"url": "https://open.spotify.com/track/2JSlCtX7IOr2eGb1lDwF16",
+		"platform": "Spotify",
+		"timestamp": 1792449871000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "5fd996154100634f3a4a6446dc3c6fea9b133fc2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792673725000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9417d25edc76af5c6b8aeb11fbf7cdce07325cdf",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792711923000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8e502419cd2bd9b87776f90328e15a5b404f8459",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1792712147000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "685bd5ee28283986521fb7466fc1571ba54f9e9b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1792712183000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"file_name": "41.jpg",
+		"media_type": "photo",
+		"content": "Somehow hit 1,000+ commits this year. Not even sure if that's a good or a bad thing.",
+		"channel_id": -1003471238866,
+		"message_id": 41,
+		"platform": "Telegram",
+		"timestamp": 1792750865000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"sha": "5bfb70230e5d1807822c41bc9bc0d0e9ddd29ebb",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1792794382000,
 		"$type": "GitHubPushActivity"
 	}
 ]
