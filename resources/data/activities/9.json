@@ -416,15 +416,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "5bac741e0786b13d19e07c310629d3490c361ec1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791064676000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"package": "adaptive-extender",
 		"version": "1.1.1",
 		"description": "Adaptive library for JS/TS development environments",
@@ -432,15 +423,6 @@
 		"platform": "npm",
 		"timestamp": 1791082772280,
 		"$type": "NpmPublishActivity"
-	},
-	{
-		"sha": "c7b656c57489186353b1f4959d4b788e51c3dd5b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791084964000,
-		"$type": "GitHubPushActivity"
 	},
 	{
 		"title": "Haunt - WHITE Remix",
@@ -491,17 +473,6 @@
 		"platform": "GitHub",
 		"timestamp": 1791193960000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.0.0",
-		"tag_name": "3.0.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791194218000,
-		"$type": "GitHubReleaseActivity"
 	},
 	{
 		"sha": "a2375049eb635130ff444d3478552e6df1bff66b",
@@ -974,6 +945,33 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1791809455000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4986cb8074dc957bcc04c305cf9ffc6e923496f3",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809459000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "a56b8dadeb3d8ec587f1e8dba50fbc9cb2d80830",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809464000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "258421277d42832376e6383584e36b2cefc26fbe",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809467000,
 		"$type": "GitHubPushActivity"
 	}
 ]
