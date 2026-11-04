@@ -482,15 +482,6 @@
 		"$type": "SpotifyLikeActivity"
 	},
 	{
-		"sha": "df157824192861875057540c5285ff5f35f4e686",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1791129788000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "9391ae63b1fb165ce7571984bbb7efe3de260aa1",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
@@ -974,6 +965,15 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1791809444000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "66addb75b9064750b06a8b59ebdafabd33f6971f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809447000,
 		"$type": "GitHubPushActivity"
 	}
 ]

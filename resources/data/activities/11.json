@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "35f1aff1b14c3d63d26e03f8522bffc4e2b49b35",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795332000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "911622abcffefe9aa23702a2664a367bfb399ff7",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/shortcuts",
