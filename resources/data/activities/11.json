@@ -1,32 +1,5 @@
 [
 	{
-		"sha": "911622abcffefe9aa23702a2664a367bfb399ff7",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795337000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "02614c58b68f86aac3e382855e55d00d3d2326ea",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795342000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "30782d1c6bf289b06c31cbcc532566a109cb6cb1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792795424000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "cecaffdbba1ab97d40f2e8f5427e4d77552a8b90",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -636,5 +609,24 @@
 		"platform": "GitHub",
 		"timestamp": 1793568363000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "Floating in Reverie - Slowed + Reverb",
+		"artists": [
+			"Moayad Aljabal"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2734c13aa0d3b96813b101d7906",
+		"url": "https://open.spotify.com/track/59gGJjHtHIiRZVxuXk789Y",
+		"platform": "Spotify",
+		"timestamp": 1793776572000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"username": "eccs0103",
+		"url": "https://github.com/archivesteak/opensense",
+		"repository": "opensense",
+		"platform": "GitHub",
+		"timestamp": 1793793886000,
+		"$type": "GitHubWatchActivity"
 	}
 ]
