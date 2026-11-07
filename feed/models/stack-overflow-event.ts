@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Any, Field, Model, Optional } from "adaptive-extender/core";
+import { Any, Field, Model, Optional, URI } from "adaptive-extender/core";
 
 //#region Stack overflow owner
 export interface StackOverflowOwnerScheme {
@@ -26,11 +26,11 @@ export class StackOverflowOwner extends Model {
 	@Field(Optional.Of(String), { name: "display_name" })
 	displayName: string | undefined;
 
-	@Field(Optional.Of(String), { name: "link" })
-	link: string | undefined;
+	@Field(Optional.Of(URI), { name: "link" })
+	link: URI | undefined;
 
-	@Field(Optional.Of(String), { name: "profile_image" })
-	profileImage: string | undefined;
+	@Field(Optional.Of(URI), { name: "profile_image" })
+	profileImage: URI | undefined;
 }
 //#endregion
 
@@ -69,8 +69,8 @@ export class StackOverflowQuestion extends Model {
 	@Field(Number, { name: "question_id" })
 	questionId: number;
 
-	@Field(String, { name: "link" })
-	link: string;
+	@Field(URI, { name: "link" })
+	link: URI;
 
 	@Field(String, { name: "title" })
 	title: string;
@@ -125,8 +125,8 @@ export class StackOverflowAnswer extends Model {
 	@Field(Number, { name: "question_id" })
 	questionId: number;
 
-	@Field(String, { name: "link" })
-	link: string;
+	@Field(URI, { name: "link" })
+	link: URI;
 
 	@Field(String, { name: "title" })
 	title: string;

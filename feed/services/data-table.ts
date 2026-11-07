@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Field, Model, type PortableConstructor } from "adaptive-extender/core";
+import { Field, Model, URI, type PortableConstructor } from "adaptive-extender/core";
 import { Bridge } from "./bridge.js";
 
 const { ceil } = Math;
@@ -34,18 +34,18 @@ export interface DataTableOptions {
 }
 
 export class DataTable<C extends PortableConstructor> extends Array<InstanceType<C>> {
-	constructor(bridge: Bridge, path: URL, entity: C);
-	constructor(bridge: Bridge, path: URL, entity: C, options: Partial<DataTableOptions>);
-	constructor(bridge: Bridge, path: URL, entity: C, options: Partial<DataTableOptions> = {}) {
+	constructor(bridge: Bridge, path: URI, entity: C);
+	constructor(bridge: Bridge, path: URI, entity: C, options: Partial<DataTableOptions>);
+	constructor(bridge: Bridge, path: URI, entity: C, options: Partial<DataTableOptions> = {}) {
 		super();
 		this.#bridge = bridge;
-		this.#path = path.href.endsWith("/") ? path : new URL(`${path.href}/`);
+		this.#path = path.href.endsWith("/") ? path : new URI(`${path.href}/`);
 		this.#entity = entity;
 		this.#chunk = options.chunk ?? 100;
 	}
 
 	#bridge: Bridge;
-	#path: URL;
+	#path: URI;
 	#entity: C;
 	#chunk: number;
 
@@ -53,12 +53,12 @@ export class DataTable<C extends PortableConstructor> extends Array<InstanceType
 		return Array;
 	}
 
-	#getMetadataPath(): URL {
-		return new URL("meta.json", this.#path);
+	#getMetadataPath(): URI {
+		return new URI("meta.json", this.#path);
 	}
 
-	#getChunkPath(index: number): URL {
-		return new URL(`${index}.json`, this.#path);
+	#getChunkPath(index: number): URI {
+		return new URI(`${index}.json`, this.#path);
 	}
 
 	async #readMetadata(): Promise<DataTableMetadata | null> {

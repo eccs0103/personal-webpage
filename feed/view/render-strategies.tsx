@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/web";
-import { Version } from "adaptive-extender/web";
+import { URI, Version } from "adaptive-extender/web";
 import { Fragment, isValidElement, type ReactElement, type ReactNode } from "react";
 import { type ActivityRenderStrategy } from "../services/activity-registry.js";
 import { GitHubActivity, GitHubCreateBranchActivity, GitHubCreateRepositoryActivity, GitHubCreateTagActivity, GitHubDeleteBranchActivity, GitHubDeleteTagActivity, GitHubForkActivity, GitHubIssueCloseActivity, GitHubIssueOpenActivity, GitHubPullRequestCloseActivity, GitHubPullRequestMergeActivity, GitHubPullRequestOpenActivity, GitHubPushActivity, GitHubReleaseActivity, GitHubWatchActivity, NpmActivity, NpmPublishActivity, SoundCloudActivity, SoundCloudLikeActivity, SoundCloudUploadActivity, SpotifyActivity, SpotifyLikeActivity, StackOverflowActivity, StackOverflowAnswerActivity, StackOverflowQuestionActivity, SteamAchievementActivity, SteamActivity, SteamScreenshotActivity, TelegramActivity, TelegramMediaPostActivity, TelegramTextPostActivity } from "../models/activity.js";
@@ -14,13 +14,13 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 	#renderPush(pushes: readonly GitHubPushActivity[]): ReactElement {
 		const [{ url, sha }] = pushes;
 		const count = pushes.length;
-		return <>{"Published "}<ExternalLink url={new URL(`${url}/commit/${sha}`)} text={`${count} update${TextExpert.getPluralSuffix(count)}`} /></>;
+		return <>{"Published "}<ExternalLink url={new URI(`${url}/commit/${sha}`)} text={`${count} update${TextExpert.getPluralSuffix(count)}`} /></>;
 	}
 
-	#renderBadge(url: string, name: string, disabled: boolean): ReactElement {
+	#renderBadge(url: URI, name: string, disabled: boolean): ReactElement {
 		const version = Version.tryParse(name);
 		const classes = version === null ? "version-badge" : `version-badge bump-${TextExpert.getBump(version)}`;
-		return <ExternalLink key={name} url={new URL(`${url}/releases/tag/${name}`)} text={name} disabled={disabled} translate="no" className={classes} />;
+		return <ExternalLink key={name} url={new URI(`${url}/releases/tag/${name}`)} text={name} disabled={disabled} translate="no" className={classes} />;
 	}
 
 	#renderWatch(activity: GitHubWatchActivity): ReactElement {
@@ -30,7 +30,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 
 	#renderCreateBranch(activity: GitHubCreateBranchActivity): ReactElement {
 		const { name, url } = activity;
-		return <>{"Started working on a new feature \""}<ExternalLink url={new URL(`${url}/tree/${name}`)} text={name} translate="no" />{"\""}</>;
+		return <>{"Started working on a new feature \""}<ExternalLink url={new URI(`${url}/tree/${name}`)} text={name} translate="no" />{"\""}</>;
 	}
 
 	#renderCreateRepository(activity: GitHubCreateRepositoryActivity): ReactElement {
@@ -40,37 +40,37 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 
 	#renderDeleteBranch(activity: GitHubDeleteBranchActivity): ReactElement {
 		const { name, url } = activity;
-		return <>{"Finished working on the \""}<ExternalLink url={new URL(`${url}/tree/${name}`)} text={name} disabled translate="no" />{"\" feature"}</>;
+		return <>{"Finished working on the \""}<ExternalLink url={new URI(`${url}/tree/${name}`)} text={name} disabled translate="no" />{"\" feature"}</>;
 	}
 
 	#renderFork(activity: GitHubForkActivity): ReactElement {
 		const { urlFork, forkName } = activity;
-		return <>{"Forked into "}<ExternalLink url={new URL(urlFork)} text={forkName} translate="no" /></>;
+		return <>{"Forked into "}<ExternalLink url={urlFork} text={forkName} translate="no" /></>;
 	}
 
 	#renderIssueOpen(activity: GitHubIssueOpenActivity): ReactElement {
 		const { title, urlIssue } = activity;
-		return <>{"Flagged a new issue "}<ExternalLink url={new URL(urlIssue)} text={title} /></>;
+		return <>{"Flagged a new issue "}<ExternalLink url={urlIssue} text={title} /></>;
 	}
 
 	#renderIssueClose(activity: GitHubIssueCloseActivity): ReactElement {
 		const { title, urlIssue } = activity;
-		return <>{"Resolved issue "}<ExternalLink url={new URL(urlIssue)} text={title} /></>;
+		return <>{"Resolved issue "}<ExternalLink url={urlIssue} text={title} /></>;
 	}
 
 	#renderPullRequestOpen(activity: GitHubPullRequestOpenActivity): ReactElement {
 		const { title, urlRequest } = activity;
-		return <>{"Opened pull request "}<ExternalLink url={new URL(urlRequest)} text={title} /></>;
+		return <>{"Opened pull request "}<ExternalLink url={urlRequest} text={title} /></>;
 	}
 
 	#renderPullRequestMerge(activity: GitHubPullRequestMergeActivity): ReactElement {
 		const { title, urlRequest } = activity;
-		return <>{"Merged pull request "}<ExternalLink url={new URL(urlRequest)} text={title} /></>;
+		return <>{"Merged pull request "}<ExternalLink url={urlRequest} text={title} /></>;
 	}
 
 	#renderPullRequestClose(activity: GitHubPullRequestCloseActivity): ReactElement {
 		const { title, urlRequest } = activity;
-		return <>{"Closed pull request "}<ExternalLink url={new URL(urlRequest)} text={title} />{" without merging"}</>;
+		return <>{"Closed pull request "}<ExternalLink url={urlRequest} text={title} />{" without merging"}</>;
 	}
 
 	#renderLine(activity: GitHubActivity): ReactElement | null {
@@ -109,7 +109,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		return (
 			<li key={repository} className="flex column" translate="yes">
 				<div className="title-row flex wrap with-gap small-gap" translate="yes">
-					<ExternalLink url={new URL(url)} text={repository} translate="no" className="repository-name" />
+					<ExternalLink url={url} text={repository} translate="no" className="repository-name" />
 					{Array.from(badges.values())}
 				</div>
 				{lines}
@@ -117,7 +117,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		);
 	}
 
-	#link(url: URL, options: Partial<LinkCreationOptions>): ReactElement {
+	#link(url: URI, options: Partial<LinkCreationOptions>): ReactElement {
 		const { text, disabled, translate } = options;
 		return <ExternalLink url={url} text={text} disabled={disabled} translate={translate === false ? "no" : "yes"} />;
 	}
@@ -175,14 +175,14 @@ export class NpmRenderStrategy implements ActivityRenderStrategy<NpmActivity> {
 		let description: string | null = null;
 		const badges: ReactElement[] = [];
 		for (const entry of sorted) {
-			badges.push(<ExternalLink key={badges.length} url={new URL(entry.url)} text={entry.version.toString()} translate="no" className={`version-badge bump-${TextExpert.getBump(entry.version)}`} />);
+			badges.push(<ExternalLink key={badges.length} url={entry.url} text={entry.version.toString()} translate="no" className={`version-badge bump-${TextExpert.getBump(entry.version)}`} />);
 			if (entry.description !== null) description = entry.description;
 		}
 
 		return (
 			<li key={name} className="flex column with-gap small-gap" translate="yes">
 				<div className="title-row flex wrap with-gap small-gap" translate="yes">
-					<ExternalLink url={new URL(`https://www.npmjs.com/package/${name}`)} text={name} translate="no" className="package-name" />
+					<ExternalLink url={new URI(`https://www.npmjs.com/package/${name}`)} text={name} translate="no" className="package-name" />
 					{badges}
 				</div>
 				{description !== null && <Description text={description} />}
@@ -235,7 +235,7 @@ export class SoundCloudRenderStrategy implements ActivityRenderStrategy<SoundClo
 		const { title, artwork, avatar } = activity;
 		const image = artwork ?? avatar;
 		if (image === null) return <div className="depth rounded soundcloud-cover placeholder flex center" translate="no">♪</div>;
-		return <LazyImage url={new URL(SoundCloudRenderStrategy.#upsize(image))} text={`'${title}' artwork`} translate="no" className="rounded soundcloud-cover" />;
+		return <LazyImage url={new URI(SoundCloudRenderStrategy.#upsize(image.href))} text={`'${title}' artwork`} translate="no" className="rounded soundcloud-cover" />;
 	}
 
 	#renderTrack(activity: SoundCloudActivity, message: string): ReactElement {
@@ -248,7 +248,7 @@ export class SoundCloudRenderStrategy implements ActivityRenderStrategy<SoundClo
 					<div className="flex column" translate="yes">
 						<strong translate="no">{title}</strong>
 						<Description text={publisher} translate="no" />
-						<ExternalLink url={new URL(url)} text="Listen on SoundCloud " className="with-block-padding font-smaller-3"><ExternalIcon /></ExternalLink>
+						<ExternalLink url={url} text="Listen on SoundCloud " className="with-block-padding font-smaller-3"><ExternalIcon /></ExternalLink>
 					</div>
 				</div>
 			</>
@@ -272,11 +272,11 @@ export class SpotifyRenderStrategy implements ActivityRenderStrategy<SpotifyActi
 		const { title, cover } = activity;
 		return (
 			<div className="flex with-gap" translate="yes">
-				{cover !== null && <LazyImage url={new URL(cover)} text={`'${title}' cover`} translate="no" className="rounded spotify-cover" />}
+				{cover !== null && <LazyImage url={cover} text={`'${title}' cover`} translate="no" className="rounded spotify-cover" />}
 				<div className="flex column" translate="yes">
 					<strong translate="no">{title}</strong>
 					<Description text={activity.artists.join(", ")} translate="no" />
-					<ExternalLink url={new URL(activity.url)} text="Listen on Spotify " className="with-block-padding font-smaller-3"><ExternalIcon /></ExternalLink>
+					<ExternalLink url={activity.url} text="Listen on Spotify " className="with-block-padding font-smaller-3"><ExternalIcon /></ExternalLink>
 				</div>
 			</div>
 		);
@@ -321,18 +321,18 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 		if (tags.length < 1) return null;
 		return (
 			<div className="tags-list flex with-gap" translate="no">
-				{tags.map(tag => <ExternalLink key={tag} url={new URL(`https://ru.stackoverflow.com/tags/${tag}`)} text={tag} translate="no" className="tag depth rounded with-padding font-smaller-2" />)}
+				{tags.map(tag => <ExternalLink key={tag} url={new URI(`https://ru.stackoverflow.com/tags/${tag}`)} text={tag} translate="no" className="tag depth rounded with-padding font-smaller-2" />)}
 			</div>
 		);
 	}
 
-	#renderSummary(isSuccessful: boolean, score: number, views: number, context: string, title: string, url: string, tags: readonly string[]): ReactElement {
+	#renderSummary(isSuccessful: boolean, score: number, views: number, context: string, title: string, url: URI, tags: readonly string[]): ReactElement {
 		return (
 			<summary className="flex with-gap" translate="yes">
 				{this.#renderScorePanel(isSuccessful, score, views)}
 				<div className="summary-content" translate="yes">
 					{context}
-					<ExternalLink url={new URL(url)} text={title} className="entry-title" />
+					<ExternalLink url={url} text={title} className="entry-title" />
 					<Description text="Click to expand" className="expand-hint font-smaller-3" />
 					{this.#renderTags(tags)}
 				</div>
@@ -381,9 +381,9 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 		const { game, webpage, title, description, url, icon } = activity;
 		return (
 			<div className="flex with-gap alt-center" translate="yes">
-				{icon !== null && <LazyImage url={new URL(icon)} text={`'${title}' icon`} translate="no" className="rounded steam-icon" />}
+				{icon !== null && <LazyImage url={icon} text={`'${title}' icon`} translate="no" className="rounded steam-icon" />}
 				<div className="flex column" translate="yes">
-					<span translate="yes">{"Earned \""}<ExternalLink url={new URL(url)} text={title} translate="no" />{"\" in "}<ExternalLink url={new URL(webpage)} text={game} translate="no" /></span>
+					<span translate="yes">{"Earned \""}<ExternalLink url={url} text={title} translate="no" />{"\" in "}<ExternalLink url={webpage} text={game} translate="no" /></span>
 					{description !== null && !String.isWhitespace(description) && <Description text={description} />}
 				</div>
 			</div>
@@ -393,8 +393,8 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 	#renderScreenshotSlide(activity: SteamScreenshotActivity): ReactElement {
 		const { title, url, game } = activity;
 		return (
-			<ExternalLink url={new URL(url)} className="screenshot-card">
-				<LazyImage url={new URL(url)} text={title ?? `Screenshot from ${game}`} className="steam-screenshot" />
+			<ExternalLink url={url} className="screenshot-card">
+				<LazyImage url={url} text={title ?? `Screenshot from ${game}`} className="steam-screenshot" />
 				{title !== null && <div className="caption-overlay font-smaller-3" translate="yes"><Textbox text={title} /></div>}
 			</ExternalLink>
 		);
@@ -406,7 +406,7 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 		const slides = screenshots.map(screenshot => this.#renderScreenshotSlide(screenshot));
 		return (
 			<div className="steam-group flex column with-gap" translate="yes">
-				<div className="group-header" translate="yes">{"Uploaded "}<Textbox text={`${TextExpert.getIndefiniteCardinal(count)} screenshot${TextExpert.getPluralSuffix(count)}`} />{" from "}<ExternalLink url={new URL(webpage)} text={game} translate="no" /></div>
+				<div className="group-header" translate="yes">{"Uploaded "}<Textbox text={`${TextExpert.getIndefiniteCardinal(count)} screenshot${TextExpert.getPluralSuffix(count)}`} />{" from "}<ExternalLink url={webpage} text={game} translate="no" /></div>
 				<Carousel slides={slides} />
 			</div>
 		);
@@ -454,15 +454,15 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 //#endregion
 //#region Telegram render strategy
 export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramActivity> {
-	#urlProxy: URL;
+	#urlProxy: Readonly<URI>;
 	#isPageFirst: boolean = true;
 
-	constructor(urlProxy: URL) {
+	constructor(urlProxy: Readonly<URI>) {
 		this.#urlProxy = urlProxy;
 	}
 
-	#buildUrlMedia(idMessage: number): URL {
-		return new URL(String(idMessage), this.#urlProxy);
+	#buildUrlMedia(idMessage: number): URI {
+		return new URI(String(idMessage), this.#urlProxy);
 	}
 
 	#renderText(activity: TelegramTextPostActivity): ReactElement {
@@ -473,7 +473,7 @@ export class TelegramRenderStrategy implements ActivityRenderStrategy<TelegramAc
 		const { idMessage, description } = photo;
 		const url = this.#buildUrlMedia(idMessage);
 		return (
-			<ExternalLink url={new URL(url)} className="telegram-photo-card">
+			<ExternalLink url={url} className="telegram-photo-card">
 				<LazyImage url={url} text={description ?? "Telegram photo"} fetchPriority={isFirst ? "high" : undefined} loading={isFirst ? "eager" : "lazy"} className="telegram-photo" />
 				{description !== null && <div className="caption-overlay font-smaller-3" translate="yes"><Textbox text={description} /></div>}
 			</ExternalLink>

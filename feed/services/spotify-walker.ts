@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker, AuthorizationExpiredError } from "./activity-walker.js";
 import { SpotifySaveEvent, SpotifySavesCollection, SpotifyToken, SpotifyTokenError, type SpotifyTrack } from "../models/spotify-event.js";
@@ -17,13 +18,13 @@ class SpotifySaveSource extends ActivitySource<SpotifySaveEvent, unknown> {
 
 	async *#fetchPaginated(page: number, count: number): AsyncIterable<unknown> {
 		const token = this.#token;
-		const url = new URL("https://api.spotify.com/v1/me/tracks");
-		url.searchParams.set("limit", String(count));
-		url.searchParams.set("offset", String((page - 1) * count));
+		const uri = new URI("https://api.spotify.com/v1/me/tracks");
+		uri.searchParams.set("limit", String(count));
+		uri.searchParams.set("offset", String((page - 1) * count));
 		const headers: Record<string, string> = {
 			["Authorization"]: `Bearer ${token.accessToken}`
 		};
-		const response = await fetch(url, { headers });
+		const response = await fetch(uri.href, { headers });
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		const data = await response.json();
 		const collection = SpotifySavesCollection.import(data, "spotify_saves_collection");
@@ -52,7 +53,7 @@ class SpotifySaveSource extends ActivitySource<SpotifySaveEvent, unknown> {
 		return event.addedAt;
 	}
 
-	static #resolveCover(track: SpotifyTrack): string | null {
+	static #resolveCover(track: SpotifyTrack): URI | null {
 		const image = track.album.images.at(0);
 		if (image === undefined) return null;
 		return image.url;
@@ -94,7 +95,7 @@ export class SpotifyWalker extends ActivityWalker {
 	}
 
 	async #authenticate(): Promise<SpotifyToken> {
-		const url = new URL("https://accounts.spotify.com/api/token");
+		const uri = new URI("https://accounts.spotify.com/api/token");
 		const method = "POST";
 		const auth = Buffer.from(`${this.#idClient}:${this.#clientSecret}`).toString("base64");
 		const headers: Record<string, string> = {
@@ -106,7 +107,7 @@ export class SpotifyWalker extends ActivityWalker {
 			["refresh_token"]: this.#refreshToken
 		};
 		const body = new URLSearchParams(query);
-		const response = await fetch(url, { method, headers, body });
+		const response = await fetch(uri.href, { method, headers, body });
 		const data = await response.json();
 		if (!response.ok) {
 			if (await SpotifyWalker.#isInvalidGrant(data)) throw new AuthorizationExpiredError(this.name, "the refresh token was rejected (invalid_grant); re-authorization is required");

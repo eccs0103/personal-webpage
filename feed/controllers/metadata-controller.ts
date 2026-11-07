@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/web";
-import { Controller, MetadataInjector } from "adaptive-extender/web";
+import { Controller, MetadataInjector, URI } from "adaptive-extender/web";
 import { type Platform } from "../models/configuration.js";
 
 const { baseURI } = document;
@@ -12,12 +12,11 @@ export class MetadataController extends Controller<[readonly Platform[]]> {
 		MetadataInjector.inject({
 			type: "Person",
 			name: "eccs0103",
-			webpage: new URL("https://eccs.dev"),
-			preview: new URL("../icons/circuit-2-png-alpha-1024.png", baseURI),
+			webpage: new URI("https://eccs.dev/"),
+			preview: new URI("../icons/circuit-2-png-alpha-1024.png", baseURI),
 			associations: platforms
 				.map(platform => platform.webpage)
-				.filter(webpage => webpage !== null)
-				.map(webpage => new URL(webpage)),
+				.filter(webpage => webpage !== null),
 			job: "Software engineer",
 			description: "Webpage of the person known by the nickname eccs0103.",
 		});

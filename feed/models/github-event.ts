@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Deferred, Descendant, Field, Model, Nullable, Optional, type Constructor } from "adaptive-extender/core";
+import { Deferred, Descendant, Field, Model, Nullable, Optional, URI, type Constructor } from "adaptive-extender/core";
 
 //#region GitHub event actor
 export interface GitHubEventActorScheme {
@@ -26,11 +26,11 @@ export class GitHubEventActor extends Model {
 	@Field(String, { name: "gravatar_id" })
 	gravatarId: string;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
-	@Field(String, { name: "avatar_url" })
-	urlAvatar: string;
+	@Field(URI, { name: "avatar_url" })
+	urlAvatar: URI;
 }
 //#endregion
 
@@ -48,8 +48,8 @@ export class GitHubEventRepository extends Model {
 	@Field(String, { name: "name" })
 	name: string;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 }
 //#endregion
 
@@ -65,8 +65,8 @@ export interface GitHubEventReleaseScheme {
 }
 
 export class GitHubEventRelease extends Model {
-	@Field(String, { name: "html_url" })
-	htmlUrl: string;
+	@Field(URI, { name: "html_url" })
+	htmlUrl: URI;
 
 	@Field(String, { name: "tag_name" })
 	tagName: string;
@@ -216,8 +216,8 @@ export interface GitHubEventIssueScheme {
 }
 
 export class GitHubEventIssue extends Model {
-	@Field(String, { name: "html_url" })
-	htmlUrl: string;
+	@Field(URI, { name: "html_url" })
+	htmlUrl: URI;
 
 	@Field(Number, { name: "number" })
 	number: number;
@@ -234,8 +234,8 @@ export interface GitHubEventForkeeScheme {
 }
 
 export class GitHubEventForkee extends Model {
-	@Field(String, { name: "html_url" })
-	htmlUrl: string;
+	@Field(URI, { name: "html_url" })
+	htmlUrl: URI;
 
 	@Field(String, { name: "full_name" })
 	fullName: string;
@@ -251,8 +251,8 @@ export interface GitHubEventPullRequestScheme {
 }
 
 export class GitHubEventPullRequest extends Model {
-	@Field(String, { name: "html_url" })
-	htmlUrl: string;
+	@Field(URI, { name: "html_url" })
+	htmlUrl: URI;
 
 	@Field(Number, { name: "number" })
 	number: number;

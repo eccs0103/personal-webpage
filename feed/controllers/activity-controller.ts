@@ -2,7 +2,7 @@
 
 import "adaptive-extender/node";
 import { LocalEnviroment } from "../../environment/services/local-environment.js";
-import { Controller } from "adaptive-extender/node";
+import { Controller, URI } from "adaptive-extender/node";
 import { ActivityDispatcher } from "./activity-dispatcher.js";
 import { ServerBridge } from "../services/server-bridge.js";
 import { DataTable } from "../services/data-table.js";
@@ -39,7 +39,7 @@ class ActivityController extends Controller {
 	#bridge: Bridge = new ServerBridge();
 	#reporter: GitHubReporter = new GitHubReporter(githubRepository, githubIssuesToken);
 
-	async #readConfiguration(url: Readonly<URL>): Promise<Configuration> {
+	async #readConfiguration(url: Readonly<URI>): Promise<Configuration> {
 		const bridge = this.#bridge;
 		const content = await bridge.read(url);
 		if (content === null) throw new ReferenceError();
@@ -68,7 +68,7 @@ class ActivityController extends Controller {
 		this.#updateOutro(configuration);
 	}
 
-	async #writeConfiguration(url: Readonly<URL>, configuration: Configuration): Promise<void> {
+	async #writeConfiguration(url: Readonly<URI>, configuration: Configuration): Promise<void> {
 		const bridge = this.#bridge;
 		const object = Configuration.export(configuration);
 		const content = JSON.stringify(object, null, "\t");
@@ -76,7 +76,7 @@ class ActivityController extends Controller {
 	}
 
 	async #updateActivities(configuration: Configuration): Promise<void> {
-		const activities = new DataTable(this.#bridge, new URL("../../resources/data/activities", meta.url), Activity);
+		const activities = new DataTable(this.#bridge, new URI("../../resources/data/activities", meta.url), Activity);
 		const walkers: ActivityWalker[] = [
 			new GitHubWalker(githubUsername, githubToken),
 			new SpotifyWalker(spotifyClientId, spotifyClientSecret, spotifyToken),
@@ -93,7 +93,7 @@ class ActivityController extends Controller {
 	}
 
 	async run(): Promise<void> {
-		const urlConfiguration = new URL("../../resources/data/feed-configuration.json", meta.url);
+		const urlConfiguration = new URI("../../resources/data/feed-configuration.json", meta.url);
 		const configuration = await this.#readConfiguration(urlConfiguration);
 		this.#updateConfiguration(configuration);
 		await this.#writeConfiguration(urlConfiguration, configuration);

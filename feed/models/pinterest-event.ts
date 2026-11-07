@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Any, Field, Model, Nullable, Optional } from "adaptive-extender/core";
+import { Any, Field, Model, Nullable, Optional, URI } from "adaptive-extender/core";
 
 //#region Pinterest token
 export interface PinterestTokenScheme {
@@ -26,8 +26,8 @@ export interface PinterestImageScheme {
 }
 
 export class PinterestImage extends Model {
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	@Field(Number, { name: "width" })
 	width: number;
@@ -124,8 +124,8 @@ export class PinterestPin extends Model {
 	@Field(Date, { name: "created_at" })
 	createdAt: Date;
 
-	@Field(Nullable.Of(String), { name: "link" })
-	link: string | null;
+	@Field(Nullable.Of(URI), { name: "link" })
+	link: URI | null;
 
 	@Field(Nullable.Of(String), { name: "title" })
 	title: string | null;

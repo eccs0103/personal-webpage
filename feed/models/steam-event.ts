@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Field, Model, Optional } from "adaptive-extender/core";
+import { Field, Model, Optional, URI } from "adaptive-extender/core";
 
 //#region Steam game
 export interface SteamGameScheme {
@@ -93,8 +93,8 @@ export class SteamGameSchemaStatsAchievement extends Model {
 	@Field(Optional.Of(String), { name: "description" })
 	description: string | undefined;
 
-	@Field(String, { name: "icon" })
-	icon: string;
+	@Field(URI, { name: "icon" })
+	icon: URI;
 }
 //#endregion
 
@@ -227,11 +227,11 @@ export class SteamPublishedFile extends Model {
 	@Field(Number, { name: "consumer_appid" })
 	consumerAppId: number;
 
-	@Field(Optional.Of(String), { name: "file_url" })
-	fileUrl: string | undefined;
+	@Field(Optional.Of(URI), { name: "file_url" })
+	fileUrl: URI | undefined;
 
-	@Field(Optional.Of(String), { name: "preview_url" })
-	previewUrl: string | undefined;
+	@Field(Optional.Of(URI), { name: "preview_url" })
+	previewUrl: URI | undefined;
 
 	@Field(String, { name: "short_description" })
 	shortDescription: string;

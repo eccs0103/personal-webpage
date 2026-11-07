@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import Crypto from "crypto";
 import Http from "http";
 import { SoundCloudAuthorization, SoundCloudTokenError } from "../models/soundcloud-event.js";
@@ -9,9 +10,9 @@ import { SoundCloudAuthorization, SoundCloudTokenError } from "../models/soundcl
 export class SoundCloudAuthorizer {
 	#idClient: string;
 	#clientSecret: string;
-	#uriRedirect: URL;
+	#uriRedirect: URI;
 
-	constructor(idClient: string, clientSecret: string, uriRedirect: URL) {
+	constructor(idClient: string, clientSecret: string, uriRedirect: URI) {
 		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#uriRedirect = uriRedirect;
@@ -30,15 +31,15 @@ export class SoundCloudAuthorizer {
 		return buffer.toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, String.empty);
 	}
 
-	#buildAuthorizeUrl(challenge: string, state: string): URL {
-		const url = new URL("https://secure.soundcloud.com/authorize");
-		url.searchParams.set("response_type", "code");
-		url.searchParams.set("client_id", this.#idClient);
-		url.searchParams.set("redirect_uri", String(this.#uriRedirect));
-		url.searchParams.set("code_challenge", challenge);
-		url.searchParams.set("code_challenge_method", "S256");
-		url.searchParams.set("state", state);
-		return url;
+	#buildAuthorizeUrl(challenge: string, state: string): URI {
+		const uri = new URI("https://secure.soundcloud.com/authorize");
+		uri.searchParams.set("response_type", "code");
+		uri.searchParams.set("client_id", this.#idClient);
+		uri.searchParams.set("redirect_uri", String(this.#uriRedirect));
+		uri.searchParams.set("code_challenge", challenge);
+		uri.searchParams.set("code_challenge_method", "S256");
+		uri.searchParams.set("state", state);
+		return uri;
 	}
 
 	#awaitCode(state: string): Promise<string> {
@@ -47,7 +48,7 @@ export class SoundCloudAuthorizer {
 		return new Promise((resolve, reject) => {
 			const server = Http.createServer((request, response) => {
 				if (request.url === undefined) return;
-				const { pathname, searchParams } = new URL(request.url, this.#uriRedirect);
+				const { pathname, searchParams } = new URI(request.url, this.#uriRedirect);
 				if (pathname !== uriRedirect.pathname) {
 					response.writeHead(404).end();
 					return;
@@ -75,7 +76,7 @@ export class SoundCloudAuthorizer {
 	}
 
 	async #exchangeCode(code: string, verifier: string): Promise<SoundCloudAuthorization> {
-		const url = new URL("https://secure.soundcloud.com/oauth/token");
+		const uri = new URI("https://secure.soundcloud.com/oauth/token");
 		const method = "POST";
 		const headers: Record<string, string> = {
 			["Content-Type"]: "application/x-www-form-urlencoded",
@@ -90,7 +91,7 @@ export class SoundCloudAuthorizer {
 			["code"]: code
 		};
 		const body = new URLSearchParams(query);
-		const response = await fetch(url, { method, headers, body });
+		const response = await fetch(uri.href, { method, headers, body });
 		const data = await response.json();
 		if (!response.ok) {
 			const description = await SoundCloudAuthorizer.#describeError(data);

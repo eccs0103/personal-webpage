@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
 import { StackExchangeResponse, StackOverflowQuestion, StackOverflowAnswer } from "../models/stack-overflow-event.js";
@@ -35,15 +36,15 @@ class StackOverflowSource<TEvent> extends ActivitySource<TEvent, unknown> {
 	async *fetch(): AsyncIterable<unknown> {
 		let page = 1;
 		while (true) {
-			const url = new URL(`https://api.stackexchange.com/2.3/users/${this.#id}/${this.endpoint}`);
-			url.searchParams.set("key", this.#apiKey);
-			url.searchParams.set("site", "ru.stackoverflow");
-			url.searchParams.set("order", "desc");
-			url.searchParams.set("sort", "creation");
-			url.searchParams.set("pagesize", "100");
-			url.searchParams.set("page", String(page));
-			url.searchParams.set("filter", "!)P9_qyD6XyHJLYKWY3jS6x.uxt2eB36b0OK2mkKT5P)M88undp-XHpcemjsoNQzGVtVO)*");
-			const response = await fetch(url);
+			const uri = new URI(`https://api.stackexchange.com/2.3/users/${this.#id}/${this.endpoint}`);
+			uri.searchParams.set("key", this.#apiKey);
+			uri.searchParams.set("site", "ru.stackoverflow");
+			uri.searchParams.set("order", "desc");
+			uri.searchParams.set("sort", "creation");
+			uri.searchParams.set("pagesize", "100");
+			uri.searchParams.set("page", String(page));
+			uri.searchParams.set("filter", "!)P9_qyD6XyHJLYKWY3jS6x.uxt2eB36b0OK2mkKT5P)M88undp-XHpcemjsoNQzGVtVO)*");
+			const response = await fetch(uri.href);
 			if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 			const data = StackExchangeResponse.import(await response.json(), "stack_overflow_response");
 			yield* data.items;

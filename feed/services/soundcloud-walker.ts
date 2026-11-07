@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { Nullable } from "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker, AuthorizationExpiredError } from "./activity-walker.js";
 import { SoundCloudTokenStore } from "./soundcloud-token-store.js";
@@ -13,28 +13,28 @@ const meta = import.meta;
 //#region SoundCloud page source
 class SoundCloudPageSource<TEvent> extends ActivitySource<TEvent, unknown> {
 	#token: SoundCloudToken;
-	#url: Readonly<URL>;
+	#url: Readonly<URI>;
 
-	constructor(platform: string, token: SoundCloudToken, url: Readonly<URL>) {
+	constructor(platform: string, token: SoundCloudToken, url: Readonly<URI>) {
 		super(platform);
 		if (new.target === SoundCloudPageSource) throw new TypeError("Unable to create an instance of an abstract class");
 		this.#token = token;
 		this.#url = url;
 	}
 
-	async *#fetchPaginated(url: Readonly<URL>, count: number): AsyncIterable<unknown> {
-		let next: URL | null = new URL(url);
+	async *#fetchPaginated(url: Readonly<URI>, count: number): AsyncIterable<unknown> {
+		let next: URI | null = new URI(url);
 		next.searchParams.set("linked_partitioning", "true");
 		next.searchParams.set("limit", String(count));
 		const headers: Record<string, string> = {
 			["Authorization"]: `${this.#token.tokenType} ${this.#token.accessToken}`
 		};
 		while (next !== null) {
-			const response = await fetch(next, { headers });
+			const response = await fetch(next.href, { headers });
 			if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 			const page = SoundCloudPage.import(await response.json(), "soundcloud_page");
 			yield* page.collection;
-			next = Nullable.map(page.nextHref, href => new URL(href));
+			next = page.nextHref;
 		}
 	}
 
@@ -46,7 +46,7 @@ class SoundCloudPageSource<TEvent> extends ActivitySource<TEvent, unknown> {
 
 //#region SoundCloud track source
 class SoundCloudTrackSource extends SoundCloudPageSource<SoundCloudTrack> {
-	constructor(platform: string, token: SoundCloudToken, url: Readonly<URL>) {
+	constructor(platform: string, token: SoundCloudToken, url: Readonly<URI>) {
 		super(platform, token, url);
 		if (new.target === SoundCloudTrackSource) throw new TypeError("Unable to create an instance of an abstract class");
 	}
@@ -64,7 +64,7 @@ class SoundCloudTrackSource extends SoundCloudPageSource<SoundCloudTrack> {
 //#region SoundCloud upload source
 class SoundCloudUploadSource extends SoundCloudTrackSource {
 	constructor(platform: string, token: SoundCloudToken, id: number) {
-		super(platform, token, new URL(`https://api.soundcloud.com/users/${id}/tracks`));
+		super(platform, token, new URI(`https://api.soundcloud.com/users/${id}/tracks`));
 	}
 
 	*map(event: SoundCloudTrack): Iterable<Activity> {
@@ -77,7 +77,7 @@ class SoundCloudUploadSource extends SoundCloudTrackSource {
 //#region SoundCloud like source
 class SoundCloudLikeSource extends SoundCloudTrackSource {
 	constructor(platform: string, token: SoundCloudToken, id: number) {
-		super(platform, token, new URL(`https://api.soundcloud.com/users/${id}/likes/tracks`));
+		super(platform, token, new URI(`https://api.soundcloud.com/users/${id}/likes/tracks`));
 	}
 
 	// ponytail: stamped by the track's upload date, not the like date — api-v2's track_likes endpoint carries
@@ -103,7 +103,7 @@ export class SoundCloudWalker extends ActivityWalker {
 		super("SoundCloud");
 		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
-		this.#store = new SoundCloudTokenStore(new URL("../../resources/data/soundcloud-token.json", meta.url), key, token);
+		this.#store = new SoundCloudTokenStore(new URI("../../resources/data/soundcloud-token.json", meta.url), key, token);
 		this.#username = username;
 	}
 
@@ -117,7 +117,7 @@ export class SoundCloudWalker extends ActivityWalker {
 	}
 
 	async #authenticate(refreshToken: string): Promise<SoundCloudToken> {
-		const url = new URL("https://secure.soundcloud.com/oauth/token");
+		const uri = new URI("https://secure.soundcloud.com/oauth/token");
 		const method = "POST";
 		const headers: Record<string, string> = {
 			["Content-Type"]: "application/x-www-form-urlencoded",
@@ -130,7 +130,7 @@ export class SoundCloudWalker extends ActivityWalker {
 			["refresh_token"]: refreshToken
 		};
 		const body = new URLSearchParams(query);
-		const response = await fetch(url, { method, headers, body });
+		const response = await fetch(uri.href, { method, headers, body });
 		const data = await response.json();
 		if (!response.ok) {
 			if (await SoundCloudWalker.#isInvalidGrant(data)) throw new AuthorizationExpiredError(this.name, "the refresh token was rejected (invalid_grant); re-authorization is required");
@@ -140,12 +140,12 @@ export class SoundCloudWalker extends ActivityWalker {
 	}
 
 	async #resolveUserId(token: SoundCloudToken): Promise<number> {
-		const url = new URL("https://api.soundcloud.com/resolve");
-		url.searchParams.set("url", `https://soundcloud.com/${this.#username}`);
+		const uri = new URI("https://api.soundcloud.com/resolve");
+		uri.searchParams.set("url", `https://soundcloud.com/${this.#username}`);
 		const headers: Record<string, string> = {
 			["Authorization"]: `${token.tokenType} ${token.accessToken}`
 		};
-		const response = await fetch(url, { headers });
+		const response = await fetch(uri.href, { headers });
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		const user = SoundCloudUser.import(await response.json(), "soundcloud_user");
 		return user.id;

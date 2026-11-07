@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
 import { PinterestBoard, PinterestPin, PinterestResponse, PinterestToken, type PinterestImage, type PinterestImagesCollection } from "../models/pinterest-event.js";
@@ -22,14 +23,14 @@ class PinterestPinSource extends ActivitySource<PinterestPin, unknown> {
 	async *#fetchPaginated(endpoint: string, count: number): AsyncIterable<unknown> {
 		let bookmark: string | null = null;
 		do {
-			const url = new URL(`https://api.pinterest.com/v5${endpoint}`);
-			url.searchParams.set("page_size", String(count));
-			if (bookmark !== null) url.searchParams.set("bookmark", bookmark);
+			const uri = new URI(`https://api.pinterest.com/v5${endpoint}`);
+			uri.searchParams.set("page_size", String(count));
+			if (bookmark !== null) uri.searchParams.set("bookmark", bookmark);
 			const headers: Record<string, string> = {
 				["Authorization"]: `Bearer ${this.#token.accessToken}`,
 				["Content-Type"]: "application/json"
 			};
-			const response = await fetch(url, { headers });
+			const response = await fetch(uri.href, { headers });
 			if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 			const data = PinterestResponse.import(await response.json(), "pinterest_response");
 			if (data.code !== undefined && data.message !== undefined) throw new Error(`${data.code}: ${data.message}`);
@@ -59,7 +60,7 @@ class PinterestPinSource extends ActivitySource<PinterestPin, unknown> {
 		const image = images.original ?? images.preview ?? images.feed ?? images.thumbnail;
 		if (image === undefined) return;
 		const { url: content, width, height } = image;
-		const url = event.link ?? `https://www.pinterest.com/pin/${event.id}/`;
+		const url = event.link ?? new URI(`https://www.pinterest.com/pin/${event.id}/`);
 		switch (mediaType) {
 		case undefined:
 		case "image": yield new PinterestImagePinActivity(platform, timestamp, content, width, height, title, description, this.#boardName, url); break;
@@ -84,7 +85,7 @@ export class PinterestWalker extends ActivityWalker {
 	}
 
 	async #authenticate(): Promise<PinterestToken> {
-		const url = new URL("https://api.pinterest.com/v5/oauth/token");
+		const uri = new URI("https://api.pinterest.com/v5/oauth/token");
 		const method = "POST";
 		const auth = Buffer.from(`${this.#idClient}:${this.#clientSecret}`).toString("base64");
 		const headers: Record<string, string> = {
@@ -95,7 +96,7 @@ export class PinterestWalker extends ActivityWalker {
 			grant_type: "refresh_token",
 			refresh_token: this.#refreshToken
 		});
-		const response = await fetch(url, { method, headers, body });
+		const response = await fetch(uri.href, { method, headers, body });
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		return PinterestToken.import(await response.json(), "pinterest_token");
 	}
@@ -103,14 +104,14 @@ export class PinterestWalker extends ActivityWalker {
 	async *#fetchPaginated(token: PinterestToken, endpoint: string, count: number): AsyncIterable<unknown> {
 		let bookmark: string | null = null;
 		do {
-			const url = new URL(`https://api.pinterest.com/v5${endpoint}`);
-			url.searchParams.set("page_size", String(count));
-			if (bookmark !== null) url.searchParams.set("bookmark", bookmark);
+			const uri = new URI(`https://api.pinterest.com/v5${endpoint}`);
+			uri.searchParams.set("page_size", String(count));
+			if (bookmark !== null) uri.searchParams.set("bookmark", bookmark);
 			const headers: Record<string, string> = {
 				["Authorization"]: `Bearer ${token.accessToken}`,
 				["Content-Type"]: "application/json"
 			};
-			const response = await fetch(url, { headers });
+			const response = await fetch(uri.href, { headers });
 			if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 			const data = PinterestResponse.import(await response.json(), "pinterest_response");
 			if (data.code !== undefined && data.message !== undefined) throw new Error(`${data.code}: ${data.message}`);

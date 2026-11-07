@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/web";
+import { URI } from "adaptive-extender/web";
 import { type Dispatch, memo, type ReactElement, type RefObject, type SetStateAction, type SyntheticEvent, useEffect, useMemo, useRef, useState } from "react";
 import { type Activity } from "../models/activity.js";
 import { type Platform } from "../models/configuration.js";
@@ -108,7 +109,7 @@ const ActivityCard = memo(function ActivityCard({ activity, content, platform, r
 	return (
 		<div ref={reveal.observe.bind(reveal)} className="activity layer rounded with-padding with-gap awaiting-reveal" data-platform={activity.platform} translate="yes">
 			{platform !== null && <>
-				<Icon url={new URL(platform.icon, new URL("../", baseURI))} />
+				<Icon url={new URI(platform.icon, new URI("../", baseURI))} />
 				<h4 className="platform" translate="no">
 					<button type="button" className="platform-menu-trigger" translate="no" title={`${platform.name} options`} data-platform={platform.name} onClick={event => onMenu(platform)}>{platform.name}</button>
 				</h4>

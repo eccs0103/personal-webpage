@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/web";
+import { URI } from "adaptive-extender/web";
 import { type MouseEvent, type ReactElement } from "react";
 import { type Platform } from "../models/configuration.js";
 import { Description, ExternalIcon, ExternalLink, Icon, useModal } from "./view-builders.js";
@@ -39,9 +40,9 @@ export function ConnectionsHub({ platforms, preferences, open, onToggle, onClose
 						<span className="knob depth" translate="no" />
 					</label>
 				</>}
-				<Icon url={new URL(icon, new URL("../", baseURI))} className="connection-icon" />
+				<Icon url={new URI(icon, new URI("../", baseURI))} className="connection-icon" />
 				<strong className="connection-name" translate="no">{name}</strong>
-				{webpage !== null && <ExternalLink url={new URL(webpage)} translate="no" className="connection-link with-inline-padding font-smaller-2"><ExternalIcon /></ExternalLink>}
+				{webpage !== null && <ExternalLink url={webpage} translate="no" className="connection-link with-inline-padding font-smaller-2"><ExternalIcon /></ExternalLink>}
 				{note !== null && <Description text={note} className="connection-note font-smaller-2" />}
 			</div>
 		);

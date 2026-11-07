@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { type URI } from "adaptive-extender/node";
 import Crypto from "crypto";
 import { type Bridge } from "./bridge.js";
 import { SoundCloudEncryptedToken } from "../models/soundcloud-token.js";
@@ -9,11 +10,11 @@ import { ServerBridge } from "./server-bridge.js";
 //#region SoundCloud token store
 export class SoundCloudTokenStore {
 	#bridge: Bridge = new ServerBridge();
-	#path: URL;
+	#path: URI;
 	#key: Buffer;
 	#initial: string;
 
-	constructor(path: URL, key: string, initial: string) {
+	constructor(path: URI, key: string, initial: string) {
 		this.#path = path;
 		this.#key = Buffer.from(key, "hex");
 		this.#initial = initial;

@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import { GitHubIssueSearchResult } from "../models/github-issue.js";
 
 //#region GitHub reporter
@@ -23,11 +24,11 @@ export class GitHubReporter {
 	}
 
 	async #hasOpenIssue(title: string): Promise<boolean> {
-		const url = new URL("https://api.github.com/search/issues");
+		const uri = new URI("https://api.github.com/search/issues");
 		const query = `repo:${this.#repository} in:title is:issue state:open "${title}"`;
-		url.searchParams.set("q", query);
+		uri.searchParams.set("q", query);
 		const headers = this.#headers();
-		const response = await fetch(url, { headers });
+		const response = await fetch(uri.href, { headers });
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		const data = await response.json();
 		const result = GitHubIssueSearchResult.import(data, "github_issue_search_result");
@@ -35,11 +36,11 @@ export class GitHubReporter {
 	}
 
 	async #createIssue(title: string, body: string): Promise<void> {
-		const url = new URL(`https://api.github.com/repos/${this.#repository}/issues`);
+		const uri = new URI(`https://api.github.com/repos/${this.#repository}/issues`);
 		const method = "POST";
 		const headers = this.#headers();
 		const content = JSON.stringify({ title, body });
-		const response = await fetch(url, { method, headers, body: content });
+		const response = await fetch(uri.href, { method, headers, body: content });
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 	}
 

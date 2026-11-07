@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Deferred, Descendant, Field, Model, Nullable, Version } from "adaptive-extender/core";
+import { Deferred, Descendant, Field, Model, Nullable, URI, Version } from "adaptive-extender/core";
 
 //#region Activity
 export interface ActivityDiscriminator extends GitHubActivityDiscriminator, SpotifyActivityDiscriminator, PinterestActivityDiscriminator, SteamActivityDiscriminator, StackOverflowActivityDiscriminator, TelegramActivityDiscriminator, NpmActivityDiscriminator, SoundCloudActivityDiscriminator {
@@ -101,15 +101,15 @@ export abstract class GitHubActivity extends Activity {
 	@Field(String, { name: "username" })
 	username: string;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	@Field(String, { name: "repository" })
 	repository: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined) {
 			super();
 			return;
@@ -138,8 +138,8 @@ export class GitHubPushActivity extends GitHubActivity {
 	sha: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, sha: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, sha?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, sha: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, sha?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || sha === undefined) {
 			super();
 			return;
@@ -173,8 +173,8 @@ export class GitHubReleaseActivity extends GitHubActivity {
 	isPrerelease: boolean;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, title: string, tagName: string, isPrerelease: boolean);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, title?: string, tagName?: string, isPrerelease?: boolean) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, title: string, tagName: string, isPrerelease: boolean);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, title?: string, tagName?: string, isPrerelease?: boolean) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || title === undefined || tagName === undefined || isPrerelease === undefined) {
 			super();
 			return;
@@ -198,8 +198,8 @@ export interface GitHubWatchActivityScheme extends GitHubActivityScheme {
 
 export class GitHubWatchActivity extends GitHubActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined) {
 			super();
 			return;
@@ -226,8 +226,8 @@ export abstract class GitHubCreateActivity extends GitHubActivity {
 	name: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -250,8 +250,8 @@ export interface GitHubCreateTagActivityScheme extends GitHubCreateActivitySchem
 
 export class GitHubCreateTagActivity extends GitHubCreateActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -272,8 +272,8 @@ export interface GitHubCreateBranchActivityScheme extends GitHubCreateActivitySc
 
 export class GitHubCreateBranchActivity extends GitHubCreateActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -294,8 +294,8 @@ export interface GitHubCreateRepositoryActivityScheme extends GitHubCreateActivi
 
 export class GitHubCreateRepositoryActivity extends GitHubCreateActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -321,8 +321,8 @@ export abstract class GitHubDeleteActivity extends GitHubActivity {
 	name: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -345,8 +345,8 @@ export interface GitHubDeleteTagActivityScheme extends GitHubDeleteActivitySchem
 
 export class GitHubDeleteTagActivity extends GitHubDeleteActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -367,8 +367,8 @@ export interface GitHubDeleteBranchActivityScheme extends GitHubDeleteActivitySc
 
 export class GitHubDeleteBranchActivity extends GitHubDeleteActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, name: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, name?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, name: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, name?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || name === undefined) {
 			super();
 			return;
@@ -390,15 +390,15 @@ export interface GitHubForkActivityScheme extends GitHubActivityScheme {
 }
 
 export class GitHubForkActivity extends GitHubActivity {
-	@Field(String, { name: "fork_url" })
-	urlFork: string;
+	@Field(URI, { name: "fork_url" })
+	urlFork: URI;
 
 	@Field(String, { name: "fork_name" })
 	forkName: string;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, urlFork: string, forkName: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, urlFork?: string, forkName?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, urlFork: URI, forkName: string);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, urlFork?: URI, forkName?: string) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || urlFork === undefined || forkName === undefined) {
 			super();
 			return;
@@ -430,12 +430,12 @@ export abstract class GitHubIssueActivity extends GitHubActivity {
 	@Field(String, { name: "title" })
 	title: string;
 
-	@Field(String, { name: "issue_url" })
-	urlIssue: string;
+	@Field(URI, { name: "issue_url" })
+	urlIssue: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlIssue: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlIssue?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlIssue: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlIssue?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlIssue === undefined) {
 			super();
 			return;
@@ -460,8 +460,8 @@ export interface GitHubIssueOpenActivityScheme extends GitHubIssueActivityScheme
 
 export class GitHubIssueOpenActivity extends GitHubIssueActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlIssue: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlIssue?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlIssue: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlIssue?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlIssue === undefined) {
 			super();
 			return;
@@ -482,8 +482,8 @@ export interface GitHubIssueCloseActivityScheme extends GitHubIssueActivitySchem
 
 export class GitHubIssueCloseActivity extends GitHubIssueActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlIssue: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlIssue?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlIssue: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlIssue?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlIssue === undefined) {
 			super();
 			return;
@@ -514,12 +514,12 @@ export abstract class GitHubPullRequestActivity extends GitHubActivity {
 	@Field(String, { name: "title" })
 	title: string;
 
-	@Field(String, { name: "request_url" })
-	urlRequest: string;
+	@Field(URI, { name: "request_url" })
+	urlRequest: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlRequest: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlRequest?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
@@ -544,8 +544,8 @@ export interface GitHubPullRequestOpenActivityScheme extends GitHubPullRequestAc
 
 export class GitHubPullRequestOpenActivity extends GitHubPullRequestActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlRequest: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlRequest?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
@@ -566,8 +566,8 @@ export interface GitHubPullRequestMergeActivityScheme extends GitHubPullRequestA
 
 export class GitHubPullRequestMergeActivity extends GitHubPullRequestActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlRequest: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlRequest?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
@@ -588,8 +588,8 @@ export interface GitHubPullRequestCloseActivityScheme extends GitHubPullRequestA
 
 export class GitHubPullRequestCloseActivity extends GitHubPullRequestActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, username: string, url: string, repository: string, number: number, title: string, urlRequest: string);
-	constructor(platform?: string, timestamp?: Date, username?: string, url?: string, repository?: string, number?: number, title?: string, urlRequest?: string) {
+	constructor(platform: string, timestamp: Date, username: string, url: URI, repository: string, number: number, title: string, urlRequest: URI);
+	constructor(platform?: string, timestamp?: Date, username?: string, url?: URI, repository?: string, number?: number, title?: string, urlRequest?: URI) {
 		if (platform === undefined || timestamp === undefined || username === undefined || url === undefined || repository === undefined || number === undefined || title === undefined || urlRequest === undefined) {
 			super();
 			return;
@@ -643,15 +643,15 @@ export class SpotifyLikeActivity extends SpotifyActivity {
 	@Field(Array.Of(String), { name: "artists" })
 	artists: string[];
 
-	@Field(Nullable.Of(String), { name: "cover" })
-	cover: string | null;
+	@Field(Nullable.Of(URI), { name: "cover" })
+	cover: URI | null;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, artists: string[], cover: string | null, url: string);
-	constructor(platform?: string, timestamp?: Date, title?: string, artists?: string[], cover?: string | null, url?: string) {
+	constructor(platform: string, timestamp: Date, title: string, artists: string[], cover: URI | null, url: URI);
+	constructor(platform?: string, timestamp?: Date, title?: string, artists?: string[], cover?: URI | null, url?: URI) {
 		if (platform === undefined || timestamp === undefined || title === undefined || artists === undefined || cover === undefined || url === undefined) {
 			super();
 			return;
@@ -708,8 +708,8 @@ export interface PinterestPinActivityScheme extends PinterestActivityScheme {
 @Descendant(Deferred(_ => PinterestImagePinActivity))
 @Descendant(Deferred(_ => PinterestVideoPinActivity))
 export abstract class PinterestPinActivity extends PinterestActivity {
-	@Field(String, { name: "content" })
-	content: string;
+	@Field(URI, { name: "content" })
+	content: URI;
 
 	@Field(Number, { name: "width" })
 	width: number;
@@ -726,12 +726,12 @@ export abstract class PinterestPinActivity extends PinterestActivity {
 	@Field(String, { name: "board" })
 	board: string;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, content: string, width: number, height: number, title: string | null, description: string | null, board: string, url: string);
-	constructor(platform?: string, timestamp?: Date, content?: string, width?: number, height?: number, title?: string | null, description?: string | null, board?: string, url?: string) {
+	constructor(platform: string, timestamp: Date, content: URI, width: number, height: number, title: string | null, description: string | null, board: string, url: URI);
+	constructor(platform?: string, timestamp?: Date, content?: URI, width?: number, height?: number, title?: string | null, description?: string | null, board?: string, url?: URI) {
 		if (platform === undefined || timestamp === undefined || content === undefined || width === undefined || height === undefined || title === undefined || description === undefined || board === undefined || url === undefined) {
 			super();
 			return;
@@ -760,8 +760,8 @@ export interface PinterestImagePinActivityScheme extends PinterestPinActivitySch
 
 export class PinterestImagePinActivity extends PinterestPinActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, content: string, width: number, height: number, title: string | null, description: string | null, board: string, url: string);
-	constructor(platform?: string, timestamp?: Date, content?: string, width?: number, height?: number, title?: string | null, description?: string | null, board?: string, url?: string) {
+	constructor(platform: string, timestamp: Date, content: URI, width: number, height: number, title: string | null, description: string | null, board: string, url: URI);
+	constructor(platform?: string, timestamp?: Date, content?: URI, width?: number, height?: number, title?: string | null, description?: string | null, board?: string, url?: URI) {
 		if (platform === undefined || timestamp === undefined || content === undefined || width === undefined || height === undefined || title === undefined || description === undefined || board === undefined || url === undefined) {
 			super();
 			return;
@@ -782,8 +782,8 @@ export interface PinterestVideoPinActivityScheme extends PinterestPinActivitySch
 
 export class PinterestVideoPinActivity extends PinterestPinActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, content: string, width: number, height: number, title: string | null, description: string | null, board: string, url: string);
-	constructor(platform?: string, timestamp?: Date, content?: string, width?: number, height?: number, title?: string | null, description?: string | null, board?: string, url?: string) {
+	constructor(platform: string, timestamp: Date, content: URI, width: number, height: number, title: string | null, description: string | null, board: string, url: URI);
+	constructor(platform?: string, timestamp?: Date, content?: URI, width?: number, height?: number, title?: string | null, description?: string | null, board?: string, url?: URI) {
 		if (platform === undefined || timestamp === undefined || content === undefined || width === undefined || height === undefined || title === undefined || description === undefined || board === undefined || url === undefined) {
 			super();
 			return;
@@ -810,12 +810,12 @@ export abstract class SteamActivity extends Activity {
 	@Field(String, { name: "game" })
 	game: string;
 
-	@Field(String, { name: "webpage" })
-	webpage: string;
+	@Field(URI, { name: "webpage" })
+	webpage: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, game: string, webpage: string);
-	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: string) {
+	constructor(platform: string, timestamp: Date, game: string, webpage: URI);
+	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: URI) {
 		if (platform === undefined || timestamp === undefined || game === undefined || webpage === undefined) {
 			super();
 			return;
@@ -842,8 +842,8 @@ export interface SteamAchievementActivityScheme extends SteamActivityScheme {
 }
 
 export class SteamAchievementActivity extends SteamActivity {
-	@Field(Nullable.Of(String), { name: "icon" })
-	icon: string | null;
+	@Field(Nullable.Of(URI), { name: "icon" })
+	icon: URI | null;
 
 	@Field(String, { name: "title" })
 	title: string;
@@ -851,12 +851,12 @@ export class SteamAchievementActivity extends SteamActivity {
 	@Field(Nullable.Of(String), { name: "description" })
 	description: string | null;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, game: string, webpage: string, icon: string | null, title: string, description: string | null, url: string);
-	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: string, icon?: string | null, title?: string, description?: string | null, url?: string) {
+	constructor(platform: string, timestamp: Date, game: string, webpage: URI, icon: URI | null, title: string, description: string | null, url: URI);
+	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: URI, icon?: URI | null, title?: string, description?: string | null, url?: URI) {
 		if (platform === undefined || timestamp === undefined || game === undefined || webpage === undefined || icon === undefined || title === undefined || description === undefined || url === undefined) {
 			super();
 			return;
@@ -882,15 +882,15 @@ export interface SteamScreenshotActivityScheme extends SteamActivityScheme {
 }
 
 export class SteamScreenshotActivity extends SteamActivity {
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	@Field(Nullable.Of(String), { name: "title" })
 	title: string | null;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, game: string, webpage: string, url: string, title: string | null);
-	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: string, url?: string, title?: string | null) {
+	constructor(platform: string, timestamp: Date, game: string, webpage: URI, url: URI, title: string | null);
+	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: URI, url?: URI, title?: string | null) {
 		if (platform === undefined || timestamp === undefined || game === undefined || webpage === undefined || url === undefined || title === undefined) {
 			super();
 			return;
@@ -927,12 +927,12 @@ export abstract class StackOverflowActivity extends Activity {
 	@Field(Number, { name: "score" })
 	score: number;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, body: string, score: number, url: string);
-	constructor(platform?: string, timestamp?: Date, title?: string, body?: string, score?: number, url?: string) {
+	constructor(platform: string, timestamp: Date, title: string, body: string, score: number, url: URI);
+	constructor(platform?: string, timestamp?: Date, title?: string, body?: string, score?: number, url?: URI) {
 		if (platform === undefined || timestamp === undefined || title === undefined || body === undefined || score === undefined || url === undefined) {
 			super();
 			return;
@@ -970,8 +970,8 @@ export class StackOverflowQuestionActivity extends StackOverflowActivity {
 	isAnswered: boolean;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, body: string, score: number, url: string, tags: string[], views: number, isAnswered: boolean);
-	constructor(platform?: string, timestamp?: Date, title?: string, body?: string, score?: number, url?: string, tags?: string[], views?: number, isAnswered?: boolean) {
+	constructor(platform: string, timestamp: Date, title: string, body: string, score: number, url: URI, tags: string[], views: number, isAnswered: boolean);
+	constructor(platform?: string, timestamp?: Date, title?: string, body?: string, score?: number, url?: URI, tags?: string[], views?: number, isAnswered?: boolean) {
 		if (platform === undefined || timestamp === undefined || title === undefined || body === undefined || score === undefined || url === undefined || tags === undefined || views === undefined || isAnswered === undefined) {
 			super();
 			return;
@@ -999,8 +999,8 @@ export class StackOverflowAnswerActivity extends StackOverflowActivity {
 	isAccepted: boolean;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, body: string, score: number, url: string, isAccepted: boolean);
-	constructor(platform?: string, timestamp?: Date, title?: string, body?: string, score?: number, url?: string, isAccepted?: boolean) {
+	constructor(platform: string, timestamp: Date, title: string, body: string, score: number, url: URI, isAccepted: boolean);
+	constructor(platform?: string, timestamp?: Date, title?: string, body?: string, score?: number, url?: URI, isAccepted?: boolean) {
 		if (platform === undefined || timestamp === undefined || title === undefined || body === undefined || score === undefined || url === undefined || isAccepted === undefined) {
 			super();
 			return;
@@ -1157,12 +1157,12 @@ export class NpmPublishActivity extends NpmActivity {
 	@Field(Nullable.Of(String), { name: "description" })
 	description: string | null;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, name: string, version: Version, description: string | null, url: string);
-	constructor(platform?: string, timestamp?: Date, name?: string, version?: Version, description?: string | null, url?: string) {
+	constructor(platform: string, timestamp: Date, name: string, version: Version, description: string | null, url: URI);
+	constructor(platform?: string, timestamp?: Date, name?: string, version?: Version, description?: string | null, url?: URI) {
 		if (platform === undefined || timestamp === undefined || name === undefined || version === undefined || description === undefined || url === undefined) {
 			super();
 			return;
@@ -1199,18 +1199,18 @@ export abstract class SoundCloudActivity extends Activity {
 	@Field(String, { name: "publisher" })
 	publisher: string;
 
-	@Field(Nullable.Of(String), { name: "artwork" })
-	artwork: string | null;
+	@Field(Nullable.Of(URI), { name: "artwork" })
+	artwork: URI | null;
 
-	@Field(Nullable.Of(String), { name: "avatar" })
-	avatar: string | null;
+	@Field(Nullable.Of(URI), { name: "avatar" })
+	avatar: URI | null;
 
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, publisher: string, artwork: string | null, avatar: string | null, url: string);
-	constructor(platform?: string, timestamp?: Date, title?: string, publisher?: string, artwork?: string | null, avatar?: string | null, url?: string) {
+	constructor(platform: string, timestamp: Date, title: string, publisher: string, artwork: URI | null, avatar: URI | null, url: URI);
+	constructor(platform?: string, timestamp?: Date, title?: string, publisher?: string, artwork?: URI | null, avatar?: URI | null, url?: URI) {
 		if (platform === undefined || timestamp === undefined || title === undefined || publisher === undefined || artwork === undefined || avatar === undefined || url === undefined) {
 			super();
 			return;
@@ -1237,8 +1237,8 @@ export interface SoundCloudUploadActivityScheme extends SoundCloudActivityScheme
 
 export class SoundCloudUploadActivity extends SoundCloudActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, publisher: string, artwork: string | null, avatar: string | null, url: string);
-	constructor(platform?: string, timestamp?: Date, title?: string, publisher?: string, artwork?: string | null, avatar?: string | null, url?: string) {
+	constructor(platform: string, timestamp: Date, title: string, publisher: string, artwork: URI | null, avatar: URI | null, url: URI);
+	constructor(platform?: string, timestamp?: Date, title?: string, publisher?: string, artwork?: URI | null, avatar?: URI | null, url?: URI) {
 		if (platform === undefined || timestamp === undefined || title === undefined || publisher === undefined || artwork === undefined || avatar === undefined || url === undefined) {
 			super();
 			return;
@@ -1259,8 +1259,8 @@ export interface SoundCloudLikeActivityScheme extends SoundCloudActivityScheme {
 
 export class SoundCloudLikeActivity extends SoundCloudActivity {
 	constructor();
-	constructor(platform: string, timestamp: Date, title: string, publisher: string, artwork: string | null, avatar: string | null, url: string);
-	constructor(platform?: string, timestamp?: Date, title?: string, publisher?: string, artwork?: string | null, avatar?: string | null, url?: string) {
+	constructor(platform: string, timestamp: Date, title: string, publisher: string, artwork: URI | null, avatar: URI | null, url: URI);
+	constructor(platform?: string, timestamp?: Date, title?: string, publisher?: string, artwork?: URI | null, avatar?: URI | null, url?: URI) {
 		if (platform === undefined || timestamp === undefined || title === undefined || publisher === undefined || artwork === undefined || avatar === undefined || url === undefined) {
 			super();
 			return;

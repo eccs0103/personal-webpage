@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Field, Model, Nullable } from "adaptive-extender/core";
+import { Field, Model, Nullable, URI } from "adaptive-extender/core";
 
 //#region Npm search links
 export interface NpmSearchLinksScheme {
@@ -9,8 +9,8 @@ export interface NpmSearchLinksScheme {
 }
 
 export class NpmSearchLinks extends Model {
-	@Field(String, { name: "npm" })
-	npm: string;
+	@Field(URI, { name: "npm" })
+	npm: URI;
 }
 //#endregion
 

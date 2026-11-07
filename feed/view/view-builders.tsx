@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/web";
+import { type URI } from "adaptive-extender/web";
 import { type AnchorHTMLAttributes, type CSSProperties, Fragment, type HTMLAttributes, type ImgHTMLAttributes, type ReactElement, type RefObject, type UIEvent, useEffect, useRef, useState } from "react";
 
 const { round } = Math;
@@ -38,7 +39,7 @@ export function Description({ text, className, translate = "yes" }: DescriptionP
 }
 
 export interface ExternalLinkProps extends Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "translate" | "role" | "download" | "children"> {
-	url: Readonly<URL>;
+	url: Readonly<URI>;
 	text?: string;
 	disabled?: boolean;
 }
@@ -57,7 +58,7 @@ interface IconStyle extends CSSProperties {
 }
 
 export interface IconProps extends Pick<HTMLAttributes<HTMLSpanElement>, "className"> {
-	url: Readonly<URL>;
+	url: Readonly<URI>;
 }
 
 export function Icon({ url, className }: IconProps): ReactElement {
@@ -71,7 +72,7 @@ export function ExternalIcon(): ReactElement {
 }
 
 export interface LazyImageProps extends Pick<ImgHTMLAttributes<HTMLImageElement>, "className" | "translate" | "loading" | "fetchPriority"> {
-	url: Readonly<URL>;
+	url: Readonly<URI>;
 	text: string;
 }
 

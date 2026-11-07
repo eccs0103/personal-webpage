@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/web";
-import { Controller, Timespan } from "adaptive-extender/web";
+import { Controller, Timespan, URI } from "adaptive-extender/web";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ClientBridge } from "../services/client-bridge.js";
@@ -27,7 +27,7 @@ const { baseURI, body } = document;
 class WebpageController extends Controller {
 	#bridge: Bridge = new ClientBridge();
 
-	async #readConfiguration(url: Readonly<URL>): Promise<Configuration> {
+	async #readConfiguration(url: Readonly<URI>): Promise<Configuration> {
 		const bridge = this.#bridge;
 		const content = await bridge.read(url);
 		if (content === null) throw new ReferenceError();
@@ -35,7 +35,7 @@ class WebpageController extends Controller {
 		return Configuration.import(object, "configuration");
 	}
 
-	async #readChangelog(url: Readonly<URL>): Promise<ChangelogEntry[]> {
+	async #readChangelog(url: Readonly<URI>): Promise<ChangelogEntry[]> {
 		const bridge = this.#bridge;
 		const content = await bridge.read(url);
 		if (content === null) throw new ReferenceError();
@@ -43,7 +43,7 @@ class WebpageController extends Controller {
 		return Array.Of<ChangelogEntry, ChangelogEntryScheme>(ChangelogEntry).import(object, "changelog");
 	}
 
-	#newRegistry(urlProxy: Readonly<URL>): ActivityRegistry {
+	#newRegistry(urlProxy: Readonly<URI>): ActivityRegistry {
 		const registry = new ActivityRegistry();
 		registry.register(GitHubActivity, new GitHubRenderStrategy());
 		registry.register(SpotifyActivity, new SpotifyRenderStrategy());
@@ -57,7 +57,7 @@ class WebpageController extends Controller {
 	}
 
 	async #mount(configuration: Configuration, settings: SettingsService, changelog: ChangelogService, visits: VisitService, loader: FeedLoader): Promise<void> {
-		const { searchParams } = new URL(location.href);
+		const { searchParams } = new URI(location.href);
 		const isWelcomeDue = visits.isWelcomeDue || searchParams.has("welcome");
 		await visits.markVisited();
 		if (isWelcomeDue) await changelog.skipHistory();
@@ -70,13 +70,13 @@ class WebpageController extends Controller {
 	async run(): Promise<void> {
 		new TranslationGuard().observe(body);
 
-		const configuration = await this.#readConfiguration(new URL("../data/feed-configuration.json", baseURI));
+		const configuration = await this.#readConfiguration(new URI("../data/feed-configuration.json", baseURI));
 		const { platforms } = configuration;
 		const settings = new SettingsService(new Map(platforms.filter(platform => platform.status === "connected").map(platform => [platform.name, true])));
-		const activities = new DataTable(this.#bridge, new URL("../data/activities", baseURI), Activity);
-		const dataChangelog = await this.#readChangelog(new URL("../data/feed-changelog.json", baseURI));
+		const activities = new DataTable(this.#bridge, new URI("../data/activities", baseURI), Activity);
+		const dataChangelog = await this.#readChangelog(new URI("../data/feed-changelog.json", baseURI));
 		const changelog = new ChangelogService(dataChangelog);
-		const registry = this.#newRegistry(new URL(configuration.urlProxy));
+		const registry = this.#newRegistry(configuration.urlProxy);
 		const loader = new FeedLoader(activities, registry);
 
 		const mounting = this.#mount(configuration, settings, changelog, new VisitService(), loader);

@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Any, Field, Model, Nullable, Optional } from "adaptive-extender/core";
+import { Any, Field, Model, Nullable, Optional, URI } from "adaptive-extender/core";
 
 //#region SoundCloud token
 export interface SoundCloudTokenScheme {
@@ -83,11 +83,11 @@ export class SoundCloudUser extends Model {
 	@Field(String, { name: "username" })
 	username: string;
 
-	@Field(String, { name: "permalink_url" })
-	urlPermalink: string;
+	@Field(URI, { name: "permalink_url" })
+	urlPermalink: URI;
 
-	@Field(Nullable.Of(String), { name: "avatar_url" })
-	urlAvatar: string | null;
+	@Field(Nullable.Of(URI), { name: "avatar_url" })
+	urlAvatar: URI | null;
 }
 //#endregion
 
@@ -108,11 +108,11 @@ export class SoundCloudTrack extends Model {
 	@Field(String, { name: "title" })
 	title: string;
 
-	@Field(String, { name: "permalink_url" })
-	urlPermalink: string;
+	@Field(URI, { name: "permalink_url" })
+	urlPermalink: URI;
 
-	@Field(Nullable.Of(String), { name: "artwork_url" })
-	urlArtwork: string | null;
+	@Field(Nullable.Of(URI), { name: "artwork_url" })
+	urlArtwork: URI | null;
 
 	@Field(Date, { name: "created_at" })
 	createdAt: Date;
@@ -132,7 +132,7 @@ export class SoundCloudPage extends Model {
 	@Field(Array.Of(Any), { name: "collection" })
 	collection: unknown[];
 
-	@Field(Nullable.Of(String), { name: "next_href" })
-	nextHref: string | null;
+	@Field(Nullable.Of(URI), { name: "next_href" })
+	nextHref: URI | null;
 }
 //#endregion

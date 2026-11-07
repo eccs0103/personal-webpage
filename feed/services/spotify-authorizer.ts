@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import Http from "http";
 import { SpotifyAuthorization, SpotifyTokenError } from "../models/spotify-event.js";
 
@@ -8,9 +9,9 @@ import { SpotifyAuthorization, SpotifyTokenError } from "../models/spotify-event
 export class SpotifyAuthorizer {
 	#idClient: string;
 	#clientSecret: string;
-	#uriRedirect: URL;
+	#uriRedirect: URI;
 
-	constructor(idClient: string, clientSecret: string, uriRedirect: URL) {
+	constructor(idClient: string, clientSecret: string, uriRedirect: URI) {
 		this.#idClient = idClient;
 		this.#clientSecret = clientSecret;
 		this.#uriRedirect = uriRedirect;
@@ -25,14 +26,14 @@ export class SpotifyAuthorizer {
 		}
 	}
 
-	#buildAuthorizeUrl(): URL {
-		const url = new URL("https://accounts.spotify.com/authorize");
-		url.searchParams.set("response_type", "code");
-		url.searchParams.set("client_id", this.#idClient);
-		url.searchParams.set("redirect_uri", String(this.#uriRedirect));
-		url.searchParams.set("scope", "user-library-read");
-		url.searchParams.set("show_dialog", "true");
-		return url;
+	#buildAuthorizeUrl(): URI {
+		const uri = new URI("https://accounts.spotify.com/authorize");
+		uri.searchParams.set("response_type", "code");
+		uri.searchParams.set("client_id", this.#idClient);
+		uri.searchParams.set("redirect_uri", String(this.#uriRedirect));
+		uri.searchParams.set("scope", "user-library-read");
+		uri.searchParams.set("show_dialog", "true");
+		return uri;
 	}
 
 	#awaitCode(): Promise<string> {
@@ -41,7 +42,7 @@ export class SpotifyAuthorizer {
 		return new Promise((resolve, reject) => {
 			const server = Http.createServer((request, response) => {
 				if (request.url === undefined) return;
-				const { pathname, searchParams } = new URL(request.url, this.#uriRedirect);
+				const { pathname, searchParams } = new URI(request.url, this.#uriRedirect);
 				if (pathname !== uriRedirect.pathname) {
 					response.writeHead(404).end();
 					return;
@@ -65,7 +66,7 @@ export class SpotifyAuthorizer {
 	}
 
 	async #exchangeCode(code: string): Promise<SpotifyAuthorization> {
-		const url = new URL("https://accounts.spotify.com/api/token");
+		const uri = new URI("https://accounts.spotify.com/api/token");
 		const method = "POST";
 		const auth = Buffer.from(`${this.#idClient}:${this.#clientSecret}`).toString("base64");
 		const headers: Record<string, string> = {
@@ -78,7 +79,7 @@ export class SpotifyAuthorizer {
 			["redirect_uri"]: String(this.#uriRedirect)
 		};
 		const body = new URLSearchParams(query);
-		const response = await fetch(url, { method, headers, body });
+		const response = await fetch(uri.href, { method, headers, body });
 		const data = await response.json();
 		if (!response.ok) {
 			const description = await SpotifyAuthorizer.#describeError(data);

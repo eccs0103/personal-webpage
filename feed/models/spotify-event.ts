@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { Any, Field, Nullable, Model } from "adaptive-extender/core";
+import { Any, Field, Nullable, Model, URI } from "adaptive-extender/core";
 
 //#region Spotify token
 export interface SpotifyTokenScheme {
@@ -74,8 +74,8 @@ export interface SpotifyExternalUrlsScheme {
 }
 
 export class SpotifyExternalUrls extends Model {
-	@Field(String, { name: "spotify" })
-	spotify: string;
+	@Field(URI, { name: "spotify" })
+	spotify: URI;
 }
 //#endregion
 
@@ -87,8 +87,8 @@ export interface SpotifyImageScheme {
 }
 
 export class SpotifyImage extends Model {
-	@Field(String, { name: "url" })
-	url: string;
+	@Field(URI, { name: "url" })
+	url: URI;
 
 	@Field(Nullable.Of(Number), { name: "height" })
 	height: number | null;
@@ -143,8 +143,8 @@ export class SpotifyArtist extends Model {
 	@Field(SpotifyExternalUrls, { name: "external_urls" })
 	externalUrls: SpotifyExternalUrls;
 
-	@Field(String, { name: "uri" })
-	uri: string;
+	@Field(URI, { name: "uri" })
+	uri: URI;
 }
 //#endregion
 
@@ -179,11 +179,11 @@ export class SpotifyTrack extends Model {
 	@Field(Number, { name: "duration_ms" })
 	durationMs: number;
 
-	@Field(Nullable.Of(String), { name: "preview_url" })
-	previewUrl: string | null;
+	@Field(Nullable.Of(URI), { name: "preview_url" })
+	previewUrl: URI | null;
 
-	@Field(String, { name: "uri" })
-	uri: string;
+	@Field(URI, { name: "uri" })
+	uri: URI;
 }
 //#endregion
 
@@ -214,8 +214,8 @@ export interface SpotifySavesCollectionScheme {
 }
 
 export class SpotifySavesCollection extends Model {
-	@Field(String, { name: "href" })
-	href: string;
+	@Field(URI, { name: "href" })
+	href: URI;
 
 	@Field(Number, { name: "limit" })
 	limit: number;

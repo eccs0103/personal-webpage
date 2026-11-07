@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
-import { EnvironmentProvider, type Environment } from "adaptive-extender/core";
+import { EnvironmentProvider, URI, type Environment } from "adaptive-extender/core";
 import { MediaProxy } from "../services/media-proxy.js";
 import { CloudflareWorker } from "../../cloudflare-worker.js";
 import { TelegramChannel } from "../services/telegram-channel.js";
@@ -17,14 +17,14 @@ class TelegramMediaProxyWorker extends CloudflareWorker<Environment> {
 	async run(request: Request, environment: Environment, context: ExecutionContext): Promise<Response> {
 		const cache = this.#cache;
 		const { method, url } = request;
-		let key: URL | null = null;
+		let key: URI | null = null;
 		if (method === "GET") key = cache.keyFor(request);
 		if (key !== null) {
 			const cached = await cache.tryMatch(key);
 			if (cached !== null) return cached;
 		}
 
-		const { searchParams } = new URL(url);
+		const { searchParams } = new URI(url);
 		const isDevelopment = searchParams.has("development");
 		const { idChannel, idChannelDevelopment, apiId, apiHash, session } = EnvironmentProvider.resolve(environment, MediaProxyEnvironment);
 		let id = idChannel;

@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
+import { URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
 import { GitHubCreateEventPayload, GitHubDeleteEventPayload, GitHubEvent, GitHubForkEventPayload, GitHubIssuesEventPayload, GitHubPullRequestEventPayload, GitHubPushEventPayload, GitHubReleaseEventPayload, GitHubWatchEventPayload } from "../models/github-event.js";
@@ -20,15 +21,15 @@ class GitHubEventSource extends ActivitySource<GitHubEvent, unknown> {
 	}
 
 	async *#fetchPaginated(page: number, count: number): AsyncIterable<unknown> {
-		const url = new URL(`https://api.github.com/users/${this.#username}/events`);
-		url.searchParams.set("per_page", String(count));
-		url.searchParams.set("page", String(page));
+		const uri = new URI(`https://api.github.com/users/${this.#username}/events`);
+		uri.searchParams.set("per_page", String(count));
+		uri.searchParams.set("page", String(page));
 		const headers: Record<string, string> = {
 			["Authorization"]: `Bearer ${this.#token}`,
 			["Accept"]: "application/vnd.github+json",
 			["User-Agent"]: "Digital garden"
 		};
-		const response = await fetch(url, { headers });
+		const response = await fetch(uri.href, { headers });
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		yield* Array.import(await response.json(), "github_events");
 	}
@@ -65,7 +66,7 @@ class GitHubEventSource extends ActivitySource<GitHubEvent, unknown> {
 		const parts = repo.name.split("/", 2);
 		if (parts.length < 2) throw new SyntaxError(`Incorrect syntax of '${repo.name}' repository`);
 		const [owner, repository] = parts;
-		const url = `https://github.com/${owner}/${repository}`;
+		const url = new URI(`https://github.com/${owner}/${repository}`);
 		if (payload instanceof GitHubPushEventPayload) {
 			yield new GitHubPushActivity(platform, timestamp, username, url, repository, payload.head);
 		}

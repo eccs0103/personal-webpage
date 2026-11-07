@@ -29,7 +29,7 @@ export function PlatformMenu({ platform, open, onHide, onHub, onClose }: Platfor
 					<strong className="platform-menu-title" translate="no">{platform.name}</strong>
 				</div>
 				<div className="platform-menu-actions flex column with-gap with-padding large-padding" translate="yes">
-					{platform.webpage !== null && <ExternalLink url={new URL(platform.webpage)} text={`Open ${platform.name} profile `} role="button" className="platform-menu-profile with-inline-padding with-padding rounded depth highlight"><ExternalIcon /></ExternalLink>}
+					{platform.webpage !== null && <ExternalLink url={platform.webpage} text={`Open ${platform.name} profile `} role="button" className="platform-menu-profile with-inline-padding with-padding rounded depth highlight"><ExternalIcon /></ExternalLink>}
 					{platform.status === "connected" && <button type="button" className="platform-menu-hide with-inline-padding with-padding rounded depth" translate="yes" onClick={event => onHide(platform)}>{`Hide ${platform.name} posts`}</button>}
 				</div>
 				<div className="platform-menu-footer flex alt-center with-gap with-padding large-padding" translate="yes">

@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { Version } from "adaptive-extender/node";
+import { Version, URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
 import { NpmPackument, NpmSearchResult } from "../models/npm-event.js";
@@ -33,18 +33,18 @@ class NpmPublishSource extends ActivitySource<NpmRelease, NpmRelease> {
 	}
 
 	async #fetchPackageNames(): Promise<string[]> {
-		const url = new URL("https://registry.npmjs.org/-/v1/search");
-		url.searchParams.set("text", `maintainer:${this.#username}`);
-		url.searchParams.set("size", "250");
-		const response = await fetch(url);
+		const uri = new URI("https://registry.npmjs.org/-/v1/search");
+		uri.searchParams.set("text", `maintainer:${this.#username}`);
+		uri.searchParams.set("size", "250");
+		const response = await fetch(uri.href);
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		const result = NpmSearchResult.import(await response.json(), "npm_search_result");
 		return result.objects.map(({ package: item }) => item.name);
 	}
 
 	async #fetchPackument(name: string): Promise<NpmPackument> {
-		const url = new URL(`https://registry.npmjs.org/${name}`);
-		const response = await fetch(url);
+		const uri = new URI(`https://registry.npmjs.org/${name}`);
+		const response = await fetch(uri.href);
 		if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
 		return NpmPackument.import(await response.json(), "npm_packument");
 	}
@@ -88,7 +88,7 @@ class NpmPublishSource extends ActivitySource<NpmRelease, NpmRelease> {
 
 	*map(event: NpmRelease): Iterable<Activity> {
 		const { name, version, published: timestamp, description } = event;
-		const url = `https://www.npmjs.com/package/${name}/v/${version}`;
+		const url = new URI(`https://www.npmjs.com/package/${name}/v/${version}`);
 		yield new NpmPublishActivity(this.platform, timestamp, name, Version.parse(version), description, url);
 	}
 }

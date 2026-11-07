@@ -1,6 +1,7 @@
 "use strict";
 
 import "adaptive-extender/core";
+import { URI } from "adaptive-extender/core";
 import { TelegramChannel } from "./telegram-channel.js";
 import { type MediaRange, type TelegramMedia } from "./telegram-media.js";
 import { type ResponseFactory } from "./response-factory.js";
@@ -82,7 +83,7 @@ export class MediaProxy {
 	async handle(request: Request, context: ExecutionContext): Promise<Response> {
 		const factory = this.#factory;
 		const { method, url, headers } = request;
-		const { pathname } = new URL(url);
+		const { pathname } = new URI(url);
 
 		if (method === "OPTIONS") return factory.preflight();
 		if (method !== "GET" && method !== "HEAD") return factory.error(405, "Method Not Allowed");

@@ -1,6 +1,6 @@
 "use strict";
 
-import { Optional, Random } from "adaptive-extender/web";
+import { Optional, Random, type URI } from "adaptive-extender/web";
 import { type ReactElement } from "react";
 import { GitHubCreateRepositoryActivity, GitHubCreateTagActivity, GitHubDeleteBranchActivity, GitHubDeleteTagActivity, GitHubPushActivity, GitHubReleaseActivity, type GitHubActivity } from "../models/activity.js";
 import { TextExpert } from "./text-expert.js";
@@ -25,9 +25,9 @@ class WorkflowReport {
 	#magnitude: number;
 	#label: string;
 	#modifier: string;
-	#urls: Map<string, URL>;
+	#urls: Map<string, URI>;
 
-	constructor(vibe: ReportVibes, primary: string, secondary: string | undefined, magnitude: number, label: string, modifier: string, urls: Map<string, URL>) {
+	constructor(vibe: ReportVibes, primary: string, secondary: string | undefined, magnitude: number, label: string, modifier: string, urls: Map<string, URI>) {
 		this.#vibe = vibe;
 		this.#primary = primary;
 		this.#secondary = secondary;
@@ -61,7 +61,7 @@ class WorkflowReport {
 		return this.#modifier;
 	}
 
-	get urls(): Map<string, URL> {
+	get urls(): Map<string, URI> {
 		return this.#urls;
 	}
 }
@@ -109,7 +109,7 @@ export interface PrinterFunction {
 }
 
 export interface LinkerFunction {
-	(url: URL, options: Partial<LinkCreationOptions>): ReactElement;
+	(url: URI, options: Partial<LinkCreationOptions>): ReactElement;
 }
 
 export interface TemplateRenderer {
@@ -166,7 +166,7 @@ export class GitHubSummaryExpert {
 	}
 
 	static #analyze(activities: readonly GitHubActivity[]): WorkflowReport {
-		const urls: Map<string, URL> = new Map();
+		const urls: Map<string, URI> = new Map();
 		const usage: Map<string, number> = new Map();
 		let pushes: number = 0;
 		let creations: number = 0;
@@ -179,7 +179,7 @@ export class GitHubSummaryExpert {
 		let hasTagDeletions = false;
 
 		for (const activity of activities) {
-			urls.add(activity.repository, new URL(activity.url));
+			urls.add(activity.repository, activity.url);
 			const count = usage.get(activity.repository) ?? 0;
 			usage.set(activity.repository, count + 1);
 
