@@ -530,30 +530,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "645c900fb2a3af8f3b0ce0299adf9240bffc9bbc",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1791454764000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "de28f8b3b398088df69703d31966df92fdf7a9c1",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1791454869000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a540b1de0f93113b1eec37a43fd10c38befff581",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1791454934000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -564,26 +546,6 @@
 		"platform": "GitHub",
 		"timestamp": 1791454972000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "32d04c9f2ddb2bc84896c3837dcfe34be59b60c1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791455267000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.2",
-		"tag_name": "1.1.2",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1791455365000,
-		"$type": "GitHubReleaseActivity"
 	},
 	{
 		"title": "3.0.1",
@@ -972,6 +934,42 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1791809482000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1bdd65deccf38972cd2343a2a4e3c182f7d3c898",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809485000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "29a9e60e70d067edbab248f9f426b0599ca43a1e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809488000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5469b65b60b58b9b32194e3813fd1e912470f8c8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809491000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "ba2c794d945fe2295e521530cbb865e0c26c8a3c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1791809494000,
 		"$type": "GitHubPushActivity"
 	}
 ]
