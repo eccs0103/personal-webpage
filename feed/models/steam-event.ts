@@ -269,3 +269,36 @@ export class SteamUserFilesResponseContainer extends Model {
 	response: SteamUserFilesResponse;
 }
 //#endregion
+
+//#region Steam client common
+export interface SteamClientCommonScheme {
+	clienticon?: string;
+}
+
+export class SteamClientCommon extends Model {
+	@Field(Optional.Of(String), { name: "clienticon" })
+	icon: string | undefined;
+}
+//#endregion
+
+//#region Steam client app
+export interface SteamClientAppScheme {
+	common?: SteamClientCommonScheme;
+}
+
+export class SteamClientApp extends Model {
+	@Field(Optional.Of(SteamClientCommon), { name: "common" })
+	common: SteamClientCommon | undefined;
+}
+//#endregion
+
+//#region Steam client info container
+export interface SteamClientInfoContainerScheme {
+	data: Record<string, SteamClientAppScheme>;
+}
+
+export class SteamClientInfoContainer extends Model {
+	@Field(Map.AsRecord(SteamClientApp), { name: "data" })
+	data: Map<string, SteamClientApp>;
+}
+//#endregion

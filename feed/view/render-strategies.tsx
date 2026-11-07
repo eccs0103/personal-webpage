@@ -7,25 +7,27 @@ import { type ActivityRenderStrategy } from "../services/activity-registry.js";
 import { GitHubActivity, GitHubCreateBranchActivity, GitHubCreateRepositoryActivity, GitHubCreateTagActivity, GitHubDeleteBranchActivity, GitHubDeleteTagActivity, GitHubForkActivity, GitHubIssueCloseActivity, GitHubIssueOpenActivity, GitHubPullRequestCloseActivity, GitHubPullRequestMergeActivity, GitHubPullRequestOpenActivity, GitHubPushActivity, GitHubReleaseActivity, GitHubWatchActivity, NpmActivity, NpmPublishActivity, SoundCloudActivity, SoundCloudLikeActivity, SoundCloudUploadActivity, SpotifyActivity, SpotifyLikeActivity, StackOverflowActivity, StackOverflowAnswerActivity, StackOverflowQuestionActivity, SteamAchievementActivity, SteamActivity, SteamScreenshotActivity, TelegramActivity, TelegramMediaPostActivity, TelegramTextPostActivity } from "../models/activity.js";
 import { TextExpert } from "../services/text-expert.js";
 import { GitHubSummaryExpert, type LinkerFunction, type PrinterFunction } from "../services/github-summary-expert.js";
-import { Carousel, Description, ExternalIcon, ExternalLink, LazyImage, type LinkCreationOptions, Textbox } from "./view-builders.js";
+import { Carousel, Description, ExternalIcon, ExternalLink, LazyImage, type LinkCreationOptions, Showcase, type ShowcaseItem, Textbox } from "./view-builders.js";
 
 //#region GitHub render strategy
 export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivity> {
-	#renderPush(pushes: readonly GitHubPushActivity[]): ReactElement {
+	#renderCommits(pushes: readonly GitHubPushActivity[]): ReactElement | null {
+		if (pushes.length < 1) return null;
 		const [{ url, sha }] = pushes;
-		const count = pushes.length;
-		return <>{"Published "}<ExternalLink url={new URI(`${url}/commit/${sha}`)} text={`${count} update${TextExpert.getPluralSuffix(count)}`} /></>;
+		const count = new Set(pushes.map(push => push.sha)).size;
+		const path = count > 1 ? "commits" : "commit";
+		return (
+			<ExternalLink url={new URI(`${url}/${path}/${sha}`)} title={`${count} commit${TextExpert.getPluralSuffix(count)}`} translate="no" className="commit-badge flex alt-center">
+				<span className="icon in-line commit" translate="no" />
+				{String(count)}
+			</ExternalLink>
+		);
 	}
 
 	#renderBadge(url: URI, name: string, disabled: boolean): ReactElement {
 		const version = Version.tryParse(name);
 		const classes = version === null ? "version-badge" : `version-badge bump-${TextExpert.getBump(version)}`;
 		return <ExternalLink key={name} url={new URI(`${url}/releases/tag/${name}`)} text={name} disabled={disabled} translate="no" className={classes} />;
-	}
-
-	#renderWatch(activity: GitHubWatchActivity): ReactElement {
-		void activity;
-		return <>{"Discovered and bookmarked this open-source project"}</>;
 	}
 
 	#renderCreateBranch(activity: GitHubCreateBranchActivity): ReactElement {
@@ -74,7 +76,6 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 	}
 
 	#renderLine(activity: GitHubActivity): ReactElement | null {
-		if (activity instanceof GitHubWatchActivity) return this.#renderWatch(activity);
 		if (activity instanceof GitHubCreateBranchActivity) return this.#renderCreateBranch(activity);
 		if (activity instanceof GitHubCreateRepositoryActivity) return this.#renderCreateRepository(activity);
 		if (activity instanceof GitHubDeleteBranchActivity) return this.#renderDeleteBranch(activity);
@@ -92,26 +93,29 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		const pushes: GitHubPushActivity[] = [];
 		const badges: Map<string, ReactElement> = new Map();
 		const lines: ReactElement[] = [];
+		let watched = false;
 
 		// The buffer runs newest first; badges read oldest to newest, like npm versions.
 		for (const activity of entries.toReversed()) {
 			if (activity instanceof GitHubPushActivity) pushes.unshift(activity);
+			else if (activity instanceof GitHubWatchActivity) watched = true;
 			else if (activity instanceof GitHubReleaseActivity) badges.set(activity.tagName, this.#renderBadge(url, activity.tagName, false));
 			else if (activity instanceof GitHubCreateTagActivity) badges.set(activity.name, this.#renderBadge(url, activity.name, false));
 			else if (activity instanceof GitHubDeleteTagActivity) badges.set(activity.name, this.#renderBadge(url, activity.name, true));
 		}
-		if (pushes.length > 0) lines.push(<span key={lines.length} translate="yes">{this.#renderPush(pushes)}</span>);
 		for (const activity of entries) {
 			const line = this.#renderLine(activity);
-			if (line !== null) lines.push(<span key={lines.length} translate="yes">{line}</span>);
+			if (line !== null) lines.push(<span key={lines.length} className="repository-line font-smaller-1" translate="yes">{line}</span>);
 		}
 
 		return (
-			<li key={repository} className="flex column" translate="yes">
-				<div className="title-row flex wrap with-gap small-gap" translate="yes">
+			<li key={repository} className="contents" translate="yes">
+				<span className="repository-cell flex alt-center with-gap small-gap" translate="no">
+					{watched && <span className="icon in-line star" title="Bookmarked" translate="no" />}
 					<ExternalLink url={url} text={repository} translate="no" className="repository-name" />
-					{Array.from(badges.values())}
-				</div>
+				</span>
+				<span className="commit-cell" translate="no">{this.#renderCommits(pushes)}</span>
+				<span className="badge-cell flex wrap with-gap small-gap" translate="no">{Array.from(badges.values())}</span>
 				{lines}
 			</li>
 		);
@@ -268,30 +272,34 @@ export class SoundCloudRenderStrategy implements ActivityRenderStrategy<SoundClo
 //#endregion
 //#region Spotify render strategy
 export class SpotifyRenderStrategy implements ActivityRenderStrategy<SpotifyActivity> {
-	#renderLike(activity: SpotifyLikeActivity): ReactElement {
+	#renderCover(activity: SpotifyLikeActivity): ReactElement {
 		const { title, cover } = activity;
+		if (cover === null) return <span className="spotify-cover placeholder rounded flex center" translate="no">♪</span>;
+		return <LazyImage url={cover} text={`'${title}' cover`} translate="no" className="rounded spotify-cover" />;
+	}
+
+	#renderTrack(activity: SpotifyLikeActivity): ReactElement {
+		const { title, artists, url, timestamp } = activity;
+		const authors = artists.join(", ");
 		return (
-			<div className="flex with-gap" translate="yes">
-				{cover !== null && <LazyImage url={cover} text={`'${title}' cover`} translate="no" className="rounded spotify-cover" />}
-				<div className="flex column" translate="yes">
-					<strong translate="no">{title}</strong>
-					<Description text={activity.artists.join(", ")} translate="no" />
-					<ExternalLink url={activity.url} text="Listen on Spotify " className="with-block-padding font-smaller-3"><ExternalIcon /></ExternalLink>
-				</div>
+			<div key={timestamp.valueOf()} title={`${title} — ${authors}`} className="spotify-track flex column" translate="yes">
+				{this.#renderCover(activity)}
+				<ExternalLink url={url} text={title} translate="no" className="track-title" />
+				<Description text={authors} translate="no" className="font-smaller-2" />
 			</div>
 		);
 	}
 
-	#renderSingle(activity: SpotifyActivity): ReactElement | null {
-		if (activity instanceof SpotifyLikeActivity) return this.#renderLike(activity);
-		return null;
-	}
-
 	render(buffer: readonly SpotifyActivity[]): ReactElement {
+		const tracks: ReactElement[] = [];
+		for (const activity of buffer) {
+			if (activity instanceof SpotifyLikeActivity) tracks.push(this.#renderTrack(activity));
+		}
+
 		return (
 			<div className="content flex column with-gap" translate="yes">
 				<Textbox text="Added to music collection" />
-				{buffer.map((activity, index) => <Fragment key={index}>{this.#renderSingle(activity)}</Fragment>)}
+				<div className="spotify-tracks flex wrap with-gap" translate="yes">{tracks}</div>
 			</div>
 		);
 	}
@@ -377,17 +385,41 @@ export class StackOverflowRenderStrategy implements ActivityRenderStrategy<Stack
 //#endregion
 //#region Steam render strategy
 export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity> {
-	#renderAchievement(activity: SteamAchievementActivity): ReactElement {
-		const { game, webpage, title, description, url, icon } = activity;
+	static #append<T extends SteamActivity>(groups: Map<string, T[]>, activity: T): void {
+		const group = groups.get(activity.game);
+		if (group === undefined) groups.set(activity.game, [activity]);
+		else group.push(activity);
+	}
+
+	#renderCover(activity: SteamAchievementActivity): ReactElement {
+		const { game, webpage, cover } = activity;
+		if (cover === null) return <ExternalLink url={webpage} text={game} translate="no" className="showcase-lead steam-cover placeholder rounded flex center" />;
 		return (
-			<div className="flex with-gap alt-center" translate="yes">
-				{icon !== null && <LazyImage url={icon} text={`'${title}' icon`} translate="no" className="rounded steam-icon" />}
-				<div className="flex column" translate="yes">
-					<span translate="yes">{"Earned \""}<ExternalLink url={url} text={title} translate="no" />{"\" in "}<ExternalLink url={webpage} text={game} translate="no" /></span>
-					{description !== null && !String.isWhitespace(description) && <Description text={description} />}
-				</div>
-			</div>
+			<ExternalLink url={webpage} title={game} translate="no" className="showcase-lead">
+				<LazyImage url={cover} text={`${game} icon`} translate="no" className="rounded steam-cover" />
+			</ExternalLink>
 		);
+	}
+
+	#renderIcon(activity: SteamAchievementActivity): ReactElement {
+		const { title, icon } = activity;
+		if (icon === null) return <span className="icon star steam-icon" translate="no" />;
+		return <LazyImage url={icon} text={`'${title}' icon`} translate="no" className="rounded steam-icon" />;
+	}
+
+	#renderCaption(activity: SteamAchievementActivity): ReactElement {
+		const { title, description, url } = activity;
+		return (
+			<>
+				<span translate="yes">{"Earned \""}<ExternalLink url={url} text={title} translate="no" />{"\""}</span>
+				{description !== null && !String.isWhitespace(description) && <Description text={description} />}
+			</>
+		);
+	}
+
+	#renderAchievements(achievements: readonly SteamAchievementActivity[]): ReactElement {
+		const items: ShowcaseItem[] = achievements.map(activity => ({ thumbnail: this.#renderIcon(activity), caption: this.#renderCaption(activity), label: activity.title }));
+		return <Showcase lead={this.#renderCover(achievements[0])} items={items} />;
 	}
 
 	#renderScreenshotSlide(activity: SteamScreenshotActivity): ReactElement {
@@ -412,43 +444,18 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 		);
 	}
 
-	#renderSingle(activity: SteamActivity): ReactElement | null {
-		if (activity instanceof SteamAchievementActivity) return this.#renderAchievement(activity);
-		if (activity instanceof SteamScreenshotActivity) return this.#renderGallery([activity]);
-		return null;
-	}
-
-	#renderCollection(activities: readonly SteamActivity[]): ReactElement {
-		const items: ReactElement[] = [];
-		for (let index = 0; index < activities.length; index++) {
-			const activity = activities[index];
-
-			if (activity instanceof SteamAchievementActivity) {
-				items.push(<Fragment key={index}>{this.#renderAchievement(activity)}</Fragment>);
-				continue;
-			}
-
-			if (activity instanceof SteamScreenshotActivity) {
-				const key = index;
-				const group: SteamScreenshotActivity[] = [activity];
-
-				while (index + 1 < activities.length) {
-					const next = activities[index + 1];
-					if (!(next instanceof SteamScreenshotActivity)) break;
-					if (next.game !== activity.game) break;
-
-					group.unshift(next);
-					index++;
-				}
-				items.push(<Fragment key={key}>{this.#renderGallery(group)}</Fragment>);
-			}
-		}
-		return <div className="content flex column with-gap" translate="yes">{items}</div>;
-	}
-
 	render(buffer: readonly SteamActivity[]): ReactElement {
-		if (buffer.length > 1) return this.#renderCollection(buffer);
-		return <div className="content" translate="yes">{this.#renderSingle(buffer[0])}</div>;
+		const achievements: Map<string, SteamAchievementActivity[]> = new Map();
+		const screenshots: Map<string, SteamScreenshotActivity[]> = new Map();
+		for (const activity of buffer) {
+			if (activity instanceof SteamAchievementActivity) SteamRenderStrategy.#append(achievements, activity);
+			else if (activity instanceof SteamScreenshotActivity) SteamRenderStrategy.#append(screenshots, activity);
+		}
+
+		const items: ReactElement[] = [];
+		for (const [game, group] of achievements) items.push(<Fragment key={`achievements ${game}`}>{this.#renderAchievements(group)}</Fragment>);
+		for (const [game, group] of screenshots) items.push(<Fragment key={`screenshots ${game}`}>{this.#renderGallery(group.toReversed())}</Fragment>);
+		return <div className="content flex column with-gap" translate="yes">{items}</div>;
 	}
 }
 //#endregion

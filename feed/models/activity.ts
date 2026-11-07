@@ -839,6 +839,7 @@ export interface SteamAchievementActivityScheme extends SteamActivityScheme {
 	title: string;
 	description: string | null;
 	url: string;
+	cover: string | null;
 }
 
 export class SteamAchievementActivity extends SteamActivity {
@@ -854,10 +855,13 @@ export class SteamAchievementActivity extends SteamActivity {
 	@Field(URI, { name: "url" })
 	url: URI;
 
+	@Field(Nullable.Of(URI), { name: "cover" })
+	cover: URI | null = null;
+
 	constructor();
-	constructor(platform: string, timestamp: Date, game: string, webpage: URI, icon: URI | null, title: string, description: string | null, url: URI);
-	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: URI, icon?: URI | null, title?: string, description?: string | null, url?: URI) {
-		if (platform === undefined || timestamp === undefined || game === undefined || webpage === undefined || icon === undefined || title === undefined || description === undefined || url === undefined) {
+	constructor(platform: string, timestamp: Date, game: string, webpage: URI, icon: URI | null, title: string, description: string | null, url: URI, cover: URI | null);
+	constructor(platform?: string, timestamp?: Date, game?: string, webpage?: URI, icon?: URI | null, title?: string, description?: string | null, url?: URI, cover?: URI | null) {
+		if (platform === undefined || timestamp === undefined || game === undefined || webpage === undefined || icon === undefined || title === undefined || description === undefined || url === undefined || cover === undefined) {
 			super();
 			return;
 		}
@@ -867,6 +871,7 @@ export class SteamAchievementActivity extends SteamActivity {
 		this.title = title;
 		this.description = description;
 		this.url = url;
+		this.cover = cover;
 	}
 }
 //#endregion

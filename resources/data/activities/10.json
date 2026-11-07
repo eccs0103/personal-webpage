@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "a7609bfa0ba40e93449767c15b9d8799911f3da2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1792795054000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "9c202d8bbd5ce8d2a49c45088daae344ab3b56f8",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -623,6 +614,7 @@
 		"title": "Survivalist Badge",
 		"description": "Escape the island without ever losing consciousness.",
 		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
 		"game": "PEAK",
 		"webpage": "https://store.steampowered.com/app/3527290",
 		"platform": "Steam",
@@ -634,6 +626,7 @@
 		"title": "Bookworm Badge",
 		"description": "Read the Scoutmaster’s final journal entry.",
 		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
 		"game": "PEAK",
 		"webpage": "https://store.steampowered.com/app/3527290",
 		"platform": "Steam",
@@ -645,6 +638,7 @@
 		"title": "Mentorship Badge",
 		"description": "Have a 1-on-1 with the Scoutmaster.",
 		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
 		"game": "PEAK",
 		"webpage": "https://store.steampowered.com/app/3527290",
 		"platform": "Steam",
@@ -656,6 +650,7 @@
 		"title": "Emergency Preparedness Badge",
 		"description": "Heal an unconscious friend with an item to save them from death.",
 		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
 		"game": "PEAK",
 		"webpage": "https://store.steampowered.com/app/3527290",
 		"platform": "Steam",
@@ -874,5 +869,16 @@
 		"platform": "GitHub",
 		"timestamp": 1794084711000,
 		"$type": "GitHubWatchActivity"
+	},
+	{
+		"title": "0.6.4",
+		"tag_name": "0.6.4",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1794092080000,
+		"$type": "GitHubReleaseActivity"
 	}
 ]

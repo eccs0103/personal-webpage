@@ -1,10 +1,11 @@
 "use strict";
 
 import "adaptive-extender/web";
-import { type URI } from "adaptive-extender/web";
+import { Random, type URI } from "adaptive-extender/web";
 import { type AnchorHTMLAttributes, type CSSProperties, Fragment, type HTMLAttributes, type ImgHTMLAttributes, type ReactElement, type RefObject, type UIEvent, useEffect, useRef, useState } from "react";
 
 const { round } = Math;
+const random = Random.global;
 
 //#region View builders
 export interface LinkCreationOptions {
@@ -38,15 +39,15 @@ export function Description({ text, className, translate = "yes" }: DescriptionP
 	return <span className={classes} translate={translate}><Lines text={text} /></span>;
 }
 
-export interface ExternalLinkProps extends Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "translate" | "role" | "download" | "children"> {
+export interface ExternalLinkProps extends Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "translate" | "role" | "download" | "title" | "children"> {
 	url: Readonly<URI>;
 	text?: string;
 	disabled?: boolean;
 }
 
-export function ExternalLink({ url, text, disabled = false, translate = "yes", className, role, download, children }: ExternalLinkProps): ReactElement {
+export function ExternalLink({ url, text, disabled = false, translate = "yes", className, role, download, title, children }: ExternalLinkProps): ReactElement {
 	return (
-		<a href={String(url)} target="_blank" rel="noopener noreferrer" inert={disabled} translate={translate} className={className} role={role} download={download}>
+		<a href={String(url)} target="_blank" rel="noopener noreferrer" inert={disabled} translate={translate} className={className} role={role} download={download} title={title}>
 			{text !== undefined && <Lines text={text} />}
 			{children}
 		</a>
@@ -126,6 +127,31 @@ export function Carousel({ slides }: CarouselProps): ReactElement {
 					{slides.map((slide, index) => <span key={index} className={index === current ? "carousel-dot active" : "carousel-dot"} translate="no" onClick={event => jump(index)} />)}
 				</div>
 			</>}
+		</div>
+	);
+}
+
+export interface ShowcaseItem {
+	thumbnail: ReactElement;
+	caption: ReactElement;
+	label: string;
+}
+
+export interface ShowcaseProps {
+	lead: ReactElement;
+	items: readonly ShowcaseItem[];
+}
+
+export function Showcase({ lead, items }: ShowcaseProps): ReactElement {
+	const [selected, setSelected] = useState<number>(() => random.integer(items.length - 1));
+
+	return (
+		<div className="showcase" translate="yes">
+			{lead}
+			<div className="showcase-tiles flex wrap with-gap small-gap" translate="no">
+				{items.map(({ thumbnail, label }, index) => <button key={index} type="button" title={label} aria-label={label} aria-pressed={index === selected} className="showcase-tile rounded" translate="no" onClick={event => setSelected(index)}>{thumbnail}</button>)}
+			</div>
+			{items.map(({ caption }, index) => <div key={index} hidden={index !== selected} className="showcase-caption" translate="yes">{caption}</div>)}
 		</div>
 	);
 }

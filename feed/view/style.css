@@ -143,6 +143,17 @@ body {
 						margin-bottom: var(--size-gap);
 					}
 
+					&.github-collection ul.collection-content {
+						display: grid;
+						grid-template-columns: max-content max-content 1fr;
+						gap: var(--size-small-gap) var(--size-gap);
+						align-items: center;
+
+						& span.repository-line {
+							grid-column: 1 / -1;
+						}
+					}
+
 					& div.title-row {
 						align-items: center;
 					}
@@ -150,6 +161,21 @@ body {
 					& a.package-name,
 					& a.repository-name {
 						font-weight: bold;
+					}
+
+					& span.icon.in-line {
+						width: 1em;
+					}
+
+					& span.icon.commit {
+						--url: url(../../assets/icons/code-commit.svg);
+					}
+
+					& a.commit-badge {
+						width: fit-content;
+						gap: var(--size-small-gap);
+						font-family: "Cascadia Code", monospace;
+						font-size: 0.8em;
 					}
 
 					& a.version-badge {
@@ -176,7 +202,6 @@ body {
 					}
 				}
 
-				& img.spotify-cover,
 				& img.soundcloud-cover {
 					width: calc(3 * var(--size-standart));
 					aspect-ratio: 1;
@@ -189,9 +214,92 @@ body {
 					color: var(--color-light-negative);
 				}
 
-				& img.steam-icon {
+				& .steam-icon {
 					width: calc(var(--size-standart) * 2);
 					height: calc(var(--size-standart) * 2);
+				}
+
+				& span.icon.star {
+					--url: url(../../assets/icons/star.svg);
+				}
+
+				& div.spotify-tracks {
+					--cover: calc(6 * var(--size-standart));
+
+					& > div.spotify-track {
+						width: var(--cover);
+
+						& > .spotify-cover {
+							width: var(--cover);
+							aspect-ratio: 1;
+						}
+
+						& > span.spotify-cover.placeholder {
+							font-size: calc(var(--cover) / 2);
+							color: var(--color-light-negative);
+						}
+
+						& > a.track-title,
+						& > span.description {
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+						}
+
+						& > a.track-title {
+							font-weight: bold;
+						}
+					}
+				}
+
+				& .steam-cover {
+					width: calc(3 * var(--size-standart));
+					aspect-ratio: 1;
+					object-fit: contain;
+
+					&.placeholder {
+						padding: var(--size-small-gap);
+						overflow-wrap: anywhere;
+						text-align: center;
+						background-color: var(--color-heavy-main);
+					}
+				}
+
+				& div.showcase {
+					display: grid;
+					grid-template:
+						'showcase-lead	showcase-tiles' max-content
+						'showcase-lead	showcase-caption' 1fr
+						/ max-content 1fr
+					;
+					gap: var(--size-small-gap) var(--size-gap);
+
+					& > .showcase-lead {
+						grid-area: showcase-lead;
+					}
+
+					& > div.showcase-tiles {
+						grid-area: showcase-tiles;
+					}
+
+					& > div.showcase-caption {
+						grid-area: showcase-caption;
+
+						& > * {
+							display: block;
+							width: fit-content;
+						}
+					}
+
+					& button.showcase-tile {
+						padding: 0;
+						background-color: transparent;
+						opacity: 0.25;
+
+						&[aria-pressed="true"] {
+							opacity: 1;
+						}
+					}
 				}
 
 				& div.steam-group {

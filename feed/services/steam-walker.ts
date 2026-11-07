@@ -4,7 +4,7 @@ import "adaptive-extender/node";
 import { URI } from "adaptive-extender/node";
 import { ActivitySource } from "./activity-source.js";
 import { ActivityWalker } from "./activity-walker.js";
-import { SteamGame, SteamAchievement, SteamOwnedGamesContainer, SteamPlayerStatsContainer, SteamGameSchemaContainer, SteamUserFilesResponseContainer, SteamPublishedFile, SteamGameSchemaStatsAchievement } from "../models/steam-event.js";
+import { SteamGame, SteamAchievement, SteamOwnedGamesContainer, SteamPlayerStatsContainer, SteamGameSchemaContainer, SteamUserFilesResponseContainer, SteamPublishedFile, SteamGameSchemaStatsAchievement, SteamClientInfoContainer } from "../models/steam-event.js";
 import { Activity, SteamAchievementActivity, SteamScreenshotActivity } from "../models/activity.js";
 
 //#region Steam unlock
@@ -14,13 +14,15 @@ class SteamUnlock {
 	achievement: SteamAchievement;
 	schema: SteamGameSchemaStatsAchievement | undefined;
 	icon: URI | null;
+	cover: URI | null;
 
-	constructor(appId: number, game: string, achievement: SteamAchievement, schema: SteamGameSchemaStatsAchievement | undefined, icon: URI | null) {
+	constructor(appId: number, game: string, achievement: SteamAchievement, schema: SteamGameSchemaStatsAchievement | undefined, icon: URI | null, cover: URI | null) {
 		this.appId = appId;
 		this.game = game;
 		this.achievement = achievement;
 		this.schema = schema;
 		this.icon = icon;
+		this.cover = cover;
 	}
 
 	static #visible(text: string | undefined): string | null {
@@ -118,6 +120,26 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 		yield* achievements;
 	}
 
+	static async #fetchClientIcon(appId: number): Promise<string | null> {
+		try {
+			const response = await fetch(new URI(`https://api.steamcmd.net/v1/info/${appId}`).href);
+			if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
+			const { data } = SteamClientInfoContainer.import(await response.json(), "steam_client_info");
+			return data.get(String(appId))?.common?.icon ?? null;
+		} catch (reason) {
+			console.warn(`⚠️ Client icon of ${appId} is unavailable cause:\n${Error.from(reason)}`);
+			return null;
+		}
+	}
+
+	static async #resolveCover(appId: number, imgIconUrl: string | undefined): Promise<URI | null> {
+		const host = SteamUnlockSource.#currentImagesHost;
+		const icon = await SteamUnlockSource.#fetchClientIcon(appId);
+		if (icon !== null) return new URI(`apps/${appId}/${icon}.ico`, host);
+		if (imgIconUrl === undefined) return null;
+		return new URI(`apps/${appId}/${imgIconUrl}.jpg`, host);
+	}
+
 	static #resolveIcon(appId: number, schema: SteamGameSchemaStatsAchievement | undefined, imgIconUrl: string | undefined): URI | null {
 		if (schema !== undefined) return new URI(schema.icon.href.replace(SteamUnlockSource.#legacyImagesHost, SteamUnlockSource.#currentImagesHost));
 		if (imgIconUrl !== undefined) return new URI(`https://media.steampowered.com/steamcommunity/public/images/apps/${appId}/${imgIconUrl}.jpg`);
@@ -134,11 +156,12 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 			const { imgIconUrl, hasCommunityVisibleStats } = game;
 			if (hasCommunityVisibleStats === undefined || !hasCommunityVisibleStats) continue;
 			const mapping = new Map(await Array.fromAsync(this.#fetchAchievementsMapping(appId)));
+			const cover = await SteamUnlockSource.#resolveCover(appId, imgIconUrl);
 			for await (const achievement of this.#fetchPlayerAchievements(appId)) {
 				if (achievement.achieved !== 1) continue;
 				const schema = mapping.get(achievement.apiName);
 				const icon = SteamUnlockSource.#resolveIcon(appId, schema, imgIconUrl);
-				yield new SteamUnlock(appId, name, achievement, schema, icon);
+				yield new SteamUnlock(appId, name, achievement, schema, icon, cover);
 			}
 		}
 	}
@@ -158,10 +181,10 @@ class SteamUnlockSource extends ActivitySource<SteamUnlock, SteamUnlock> {
 
 	*map(event: SteamUnlock): Iterable<Activity> {
 		const platform = this.platform;
-		const { appId, game, achievement, icon, title, description } = event;
+		const { appId, game, achievement, icon, cover, title, description } = event;
 		const webpage = new URI(`https://store.steampowered.com/app/${appId}`);
 		const url = new URI(`https://steamcommunity.com/stats/${appId}/achievements`);
-		yield new SteamAchievementActivity(platform, achievement.unlockTime, game, webpage, icon, title, description, url);
+		yield new SteamAchievementActivity(platform, achievement.unlockTime, game, webpage, icon, title, description, url, cover);
 	}
 }
 //#endregion
