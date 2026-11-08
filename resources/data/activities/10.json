@@ -1,50 +1,5 @@
 [
 	{
-		"sha": "9c202d8bbd5ce8d2a49c45088daae344ab3b56f8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1792795087000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "64bffc09a7bff2271b9d4d461c9b175f810c90d2",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795273000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "363fd84b7d579867d0ac92a3daa1707a55109ae4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795278000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "35f1aff1b14c3d63d26e03f8522bffc4e2b49b35",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795332000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "911622abcffefe9aa23702a2664a367bfb399ff7",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792795337000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "02614c58b68f86aac3e382855e55d00d3d2326ea",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/shortcuts",
@@ -790,6 +745,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "b14b3bfbcba1949454b65cf74951a2e33ba38448",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1794071989000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"title": "0.6.2",
 		"tag_name": "0.6.2",
 		"is_prerelease": false,
@@ -799,6 +763,24 @@
 		"platform": "GitHub",
 		"timestamp": 1794073333000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "0360fd0f41407ce2bc785e3dc88b9679fefd4a8f",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-cli-status-line",
+		"repository": "claude-cli-status-line",
+		"platform": "GitHub",
+		"timestamp": 1794076010000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "878d038cc30282b8b49bef3be3428585c94efa98",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cli-navigator",
+		"repository": "cli-navigator",
+		"platform": "GitHub",
+		"timestamp": 1794076034000,
+		"$type": "GitHubPushActivity"
 	},
 	{
 		"title": "0.1.1",
@@ -841,6 +823,15 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
+		"sha": "e3be380374cf07325197611525410d011b68b6b1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1794082008000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"title": "3.8.1",
 		"tag_name": "3.8.1",
 		"is_prerelease": false,
@@ -850,6 +841,15 @@
 		"platform": "GitHub",
 		"timestamp": 1794082199000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "eabf83fa6605a52283800c8c0dccac305136f9e2",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1794082408000,
+		"$type": "GitHubPushActivity"
 	},
 	{
 		"title": " 0.6.3",
