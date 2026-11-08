@@ -224,14 +224,19 @@ body {
 				}
 
 				& div.spotify-tracks {
-					--cover: calc(6 * var(--size-standart));
+					--cover-min: calc(4.5 * var(--size-standart));
+					--cover-max: calc(6 * var(--size-standart));
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--cover-min)), 1fr));
+					gap: var(--size-gap);
 
 					& > div.spotify-track {
-						width: var(--cover);
+						max-width: var(--cover-max);
 
 						& > .spotify-cover {
-							width: var(--cover);
+							width: 100%;
 							aspect-ratio: 1;
+							margin-bottom: var(--size-small-gap);
 						}
 
 						& > span.spotify-cover.placeholder {
