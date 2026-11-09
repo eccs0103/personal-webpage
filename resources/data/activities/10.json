@@ -1,32 +1,5 @@
 [
 	{
-		"name": "visualization-with-stems",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047508000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047887000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "63cdffbc02aa81e3d5af867012e430e97491014e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052794000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "a8775e66159d9e5ac6dc7f9ff7c6df330f43d2b4",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -43,17 +16,6 @@
 		"platform": "GitHub",
 		"timestamp": 1793052804000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.8.0",
-		"tag_name": "3.8.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052824000,
-		"$type": "GitHubReleaseActivity"
 	},
 	{
 		"sha": "a84fc963279b8419afe62ea15f0f3fa5fc3a3ed9",
@@ -639,6 +601,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "9ea7daa0fb4229cbabd58efe6a5edd9f665bd63a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794079954000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "2c76311c6865d0bbda0235752908d9170eb5a1d4",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -769,6 +740,15 @@
 		"$type": "GitHubCreateBranchActivity"
 	},
 	{
+		"sha": "41ecdfae5bda2998b545a10341f93fb00420aabc",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1794082142000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"title": "3.8.1",
 		"tag_name": "3.8.1",
 		"is_prerelease": false,
@@ -816,6 +796,15 @@
 		"platform": "GitHub",
 		"timestamp": 1794082448000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "63ed8cf4f360e92086a527710ab173b8d3fb7845",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1794082536000,
+		"$type": "GitHubPushActivity"
 	},
 	{
 		"sha": "6edfa1f22bbb7f8fc186f1718dea75fe53001973",
@@ -879,6 +868,15 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1794094682000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "327b0a5a1dd373acd3eb4d1538c62d88cc969834",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794100012000,
 		"$type": "GitHubPushActivity"
 	}
 ]

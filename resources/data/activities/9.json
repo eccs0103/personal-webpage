@@ -887,39 +887,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "adf68c7153f1b8f9c4cdcb5107e736fb0ab19429",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041585000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "66ac1a8c76cc11f1c125d6e4338f05d720413ae7",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041589000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "9efa7f4ea7654d9bf26690b82db64ee817cd0d87",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1793041594000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ab20cb050b0b913e4c06b7e38b1c202f010ec364",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041598000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1010,6 +983,33 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1793047490000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "visualization-with-stems",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793047508000,
+		"$type": "GitHubDeleteBranchActivity"
+	},
+	{
+		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793047887000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "63cdffbc02aa81e3d5af867012e430e97491014e",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793052794000,
 		"$type": "GitHubPushActivity"
 	}
 ]
