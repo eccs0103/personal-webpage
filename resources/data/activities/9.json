@@ -869,24 +869,6 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
-		"sha": "cecaffdbba1ab97d40f2e8f5427e4d77552a8b90",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795477000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "150205381b780266add22e2dd5a836e7ec9b7614",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1792863619000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"name": "visualization-with-stems",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -1010,6 +992,24 @@
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1793041634000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793047457000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793047490000,
 		"$type": "GitHubPushActivity"
 	}
 ]
