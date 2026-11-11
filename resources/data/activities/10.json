@@ -878,5 +878,15 @@
 		"platform": "GitHub",
 		"timestamp": 1794100012000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"file_name": "43.jpg",
+		"media_type": "photo",
+		"content": "Մռիկ in the ocean",
+		"channel_id": -1003471238866,
+		"message_id": 43,
+		"platform": "Telegram",
+		"timestamp": 1794407298000,
+		"$type": "TelegramMediaPostActivity"
 	}
 ]
