@@ -395,8 +395,9 @@ export class SteamRenderStrategy implements ActivityRenderStrategy<SteamActivity
 		const { game, webpage, cover } = activity;
 		if (cover === null) return <ExternalLink url={webpage} text={game} translate="no" className="showcase-lead steam-cover placeholder rounded flex center" />;
 		return (
-			<ExternalLink url={webpage} title={game} translate="no" className="showcase-lead">
-				<LazyImage url={cover} text={`${game} icon`} translate="no" className="rounded steam-cover" />
+			<ExternalLink url={webpage} title={game} translate="no" className="showcase-lead steam-cover rounded">
+				<LazyImage url={cover} text="" translate="no" className="steam-cover-halo" />
+				<LazyImage url={cover} text={`${game} icon`} translate="no" className="rounded steam-cover-icon" />
 			</ExternalLink>
 		);
 	}
