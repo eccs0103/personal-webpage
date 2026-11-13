@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "a8775e66159d9e5ac6dc7f9ff7c6df330f43d2b4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052799000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "e69d52bae2ab073b10796ba08feb886584b878a3",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -888,5 +879,38 @@
 		"platform": "Telegram",
 		"timestamp": 1794407298000,
 		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"sha": "13400f7b092f75fe939d4421d7a2afbfa1e5e58b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794418358000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e2c914d9a5584fa70875fca8f5a080569f6bcccc.jpg",
+		"title": "Advanced Mycology Badge",
+		"description": "Try all 5 types of Shroomberry in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1794602282000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/adf04113ad409279bd2733d6ecc2504b96dc43a1.jpg",
+		"title": "Aeronautics Badge",
+		"description": "Achieve flight.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1794602533000,
+		"$type": "SteamAchievementActivity"
 	}
 ]
