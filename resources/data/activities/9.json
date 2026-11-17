@@ -869,39 +869,12 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
-		"sha": "a84fc963279b8419afe62ea15f0f3fa5fc3a3ed9",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1793099559000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "c0bc7f8636dea561e26dfb92b248ff32bf635ab3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1793131298000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "76d6b5840d4fbb6202a725059e5451b6bcf251bd",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
 		"repository": "cheatsheet",
 		"platform": "GitHub",
 		"timestamp": 1793137496000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9fdd5d931baa5d9f03b5654a44e221f2e8215391",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1793138153000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -914,39 +887,12 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "13b864703bf86dde5a8dfbb30ac652942d919e5e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793185220000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "9c46c36ef4179bcdd1e423e701afeb9ca32d7959",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
 		"repository": "visualizer",
 		"platform": "GitHub",
 		"timestamp": 1793192974000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f8bda2aa24c58874db3a6df064634ae5e58749ff",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793192978000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f8bda2aa24c58874db3a6df064634ae5e58749ff",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793193049000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1010,6 +956,65 @@
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1793278799000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "Где нас нет",
+		"artists": [
+			"Oxxxymiron"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273b0ae3859408c3968f713bf2c",
+		"url": "https://open.spotify.com/track/3lE8RY6yZoGqqJeZS06u6J",
+		"platform": "Spotify",
+		"timestamp": 1793349775000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"file_name": "42.jpg",
+		"media_type": "photo",
+		"content": null,
+		"channel_id": -1003471238866,
+		"message_id": 42,
+		"platform": "Telegram",
+		"timestamp": 1793361230000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"title": "Nostalgia",
+		"artists": [
+			"Bronik Beats"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b273f94920d82ef5b7f865b7554d",
+		"url": "https://open.spotify.com/track/1FWCjy2rjGxImUGxD2TPcL",
+		"platform": "Spotify",
+		"timestamp": 1793361863000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "5d5570a1f9b155e941b6364eb8c4f6b16b3149b0",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1793415158000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1c0d527f8d5bdb43e89ae0b8fec5df4e72b73efb",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/applications",
+		"repository": "applications",
+		"platform": "GitHub",
+		"timestamp": 1793415184000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1cd383370aedc001cb939a4392f88ae94196b3e4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793415304000,
 		"$type": "GitHubPushActivity"
 	}
 ]
