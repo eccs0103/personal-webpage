@@ -869,48 +869,12 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
-		"sha": "ccdfd2ae1f4b5a5603117f9625b05a9065a81416",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1793278338000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1f2750807132910673417ccbbdbeefbfb2f249da",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793278666000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "f4fc5749095837473174636fad7b6dad522f184d",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1793278730000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "76ef89f2446a17fb2223d285f47f09610281b09c",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/cheatsheet",
 		"repository": "cheatsheet",
 		"platform": "GitHub",
 		"timestamp": 1793278740000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "bf60d5066f2fa8cb942433e174f87319d32c292a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1793278799000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1016,5 +980,47 @@
 		"platform": "GitHub",
 		"timestamp": 1793434961000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "5ae0627b38c3774502673321afcf9be472211f9a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793434998000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "820ffb9530edce4a4c7cb85e03058bc9964f44f8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1793435286000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/080311b4db37226006349b94c06f17520ee13fa7.jpg",
+		"title": "Survivalist Badge",
+		"description": "Escape the island without ever losing consciousness.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793474975000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e748ca99706ac0b09ae5328747b13e6a1d2d42bf.jpg",
+		"title": "Bookworm Badge",
+		"description": "Read the Scoutmaster’s final journal entry.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793475804000,
+		"$type": "SteamAchievementActivity"
 	}
 ]

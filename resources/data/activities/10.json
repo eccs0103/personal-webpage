@@ -1,47 +1,5 @@
 [
 	{
-		"sha": "5ae0627b38c3774502673321afcf9be472211f9a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793434998000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "820ffb9530edce4a4c7cb85e03058bc9964f44f8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1793435286000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/080311b4db37226006349b94c06f17520ee13fa7.jpg",
-		"title": "Survivalist Badge",
-		"description": "Escape the island without ever losing consciousness.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1793474975000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e748ca99706ac0b09ae5328747b13e6a1d2d42bf.jpg",
-		"title": "Bookworm Badge",
-		"description": "Read the Scoutmaster’s final journal entry.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1793475804000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
 		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f2b577c84bea7f45ccc79ca2ccb2adcc2b99e120.jpg",
 		"title": "Mentorship Badge",
 		"description": "Have a 1-on-1 with the Scoutmaster.",
@@ -828,6 +786,24 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "e6fe655310e0d10b7b0e012ec4ac3fb2e223ddeb",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1794862721000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f991f5b2e9ce84e1e55bfd5bcd2ae5f6d480da28",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1794862725000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "bab447e4b233ca42fecf573d02a215c7bdb899ae",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/elements",
@@ -891,6 +867,15 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
+		"sha": "890862c3bda08c65a53269c34a887dd2ad0794cd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794863224000,
+		"$type": "GitHubPushActivity"
+	},
+	{
 		"sha": "d9497f96ff136ae8f6729af8b63da1fb2ab5f987",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/applications",
@@ -915,6 +900,15 @@
 		"repository": "cli-navigator",
 		"platform": "GitHub",
 		"timestamp": 1794958558000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "8f98e913fe6165fbd280f46e4cf3ca2942bde6f1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1794987391000,
 		"$type": "GitHubPushActivity"
 	}
 ]
