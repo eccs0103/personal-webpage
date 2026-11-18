@@ -1,11 +1,11 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { LocalEnviroment } from "../../environment/services/local-environment.js";
+import { LocalEnvironment } from "../../environment/services/local-environment.js";
 import { Controller, URI } from "adaptive-extender/node";
 import { SpotifyAuthorizer } from "../services/spotify-authorizer.js";
 
-const environment = LocalEnviroment.instance;
+const environment = LocalEnvironment.instance;
 const { spotifyClientId, spotifyClientSecret } = environment;
 
 //#region Spotify authorization controller

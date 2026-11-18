@@ -1,7 +1,7 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { LocalEnviroment } from "../../environment/services/local-environment.js";
+import { LocalEnvironment } from "../../environment/services/local-environment.js";
 import { Controller, URI } from "adaptive-extender/node";
 import { ActivityDispatcher } from "./activity-dispatcher.js";
 import { ServerBridge } from "../services/server-bridge.js";
@@ -22,7 +22,7 @@ import { type Bridge } from "../services/bridge.js";
 import { type ActivityWalker } from "../services/activity-walker.js";
 
 const meta = import.meta;
-const environment = LocalEnviroment.instance;
+const environment = LocalEnvironment.instance;
 const { specialDictionary } = environment;
 const { origin } = environment;
 const { githubUsername, githubRepository, githubToken, githubIssuesToken } = environment;
@@ -41,8 +41,7 @@ class ActivityController extends Controller {
 
 	async #readConfiguration(url: Readonly<URI>): Promise<Configuration> {
 		const bridge = this.#bridge;
-		const content = await bridge.read(url);
-		if (content === null) throw new ReferenceError();
+		const content = ReferenceError.suppress(await bridge.read(url));
 		const object = JSON.parse(content);
 		return Configuration.import(object, "configuration");
 	}

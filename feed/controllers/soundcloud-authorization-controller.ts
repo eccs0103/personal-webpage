@@ -1,11 +1,11 @@
 "use strict";
 
 import "adaptive-extender/node";
-import { LocalEnviroment } from "../../environment/services/local-environment.js";
+import { LocalEnvironment } from "../../environment/services/local-environment.js";
 import { Controller, URI } from "adaptive-extender/node";
 import { SoundCloudAuthorizer } from "../services/soundcloud-authorizer.js";
 
-const environment = LocalEnviroment.instance;
+const environment = LocalEnvironment.instance;
 const { soundCloudClientId, soundCloudClientSecret } = environment;
 
 //#region SoundCloud authorization controller

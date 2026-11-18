@@ -18,7 +18,7 @@ export class SoundCloudAuthorizer {
 		this.#uriRedirect = uriRedirect;
 	}
 
-	static async #describeError(data: unknown): Promise<string | null> {
+	static async #describe(data: unknown): Promise<string | null> {
 		try {
 			const { error, errorDescription } = SoundCloudTokenError.import(data, "soundcloud_token_error");
 			return `${error} — ${errorDescription}`;
@@ -94,7 +94,7 @@ export class SoundCloudAuthorizer {
 		const response = await fetch(uri.href, { method, headers, body });
 		const data = await response.json();
 		if (!response.ok) {
-			const description = await SoundCloudAuthorizer.#describeError(data);
+			const description = await SoundCloudAuthorizer.#describe(data);
 			if (description !== null) throw new Error(`SoundCloud token exchange failed: ${description}`);
 			throw new Error(`${response.status}: ${response.statusText}`);
 		}

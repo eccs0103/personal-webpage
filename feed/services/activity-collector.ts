@@ -40,10 +40,10 @@ export class ActivityCollector {
 		return difference.valueOf() <= gap.valueOf();
 	}
 
-	findRoot<T extends Activity>(target: T): TypeOf<T> | null {
+	findRoot(target: Activity): TypeOf<Activity> | null {
 		for (const [root] of this.#roots) {
 			if (!(target instanceof root)) continue;
-			return root as TypeOf<T>;
+			return root;
 		}
 		return null;
 	}

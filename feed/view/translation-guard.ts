@@ -25,7 +25,7 @@ export class TranslationGuard {
 	}
 
 	#repair(record: MutationRecord): void {
-		record.addedNodes.forEach(node => this.#collect(node));
+		for (const node of record.addedNodes) this.#collect(node);
 		const { target } = record;
 		const parent = target instanceof Element ? target : target.parentElement;
 		if (parent === null) return;
@@ -39,7 +39,9 @@ export class TranslationGuard {
 
 	observe(root: Element): void {
 		this.#collect(root);
-		const observer = new MutationObserver(records => records.forEach(record => this.#repair(record)));
+		const observer = new MutationObserver((records) => {
+			for (const record of records) this.#repair(record);
+		});
 		observer.observe(root, { childList: true, subtree: true, characterData: true });
 	}
 }

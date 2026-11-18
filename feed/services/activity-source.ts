@@ -1,6 +1,6 @@
 "use strict";
 
-import "adaptive-extender/core";
+import "adaptive-extender/node";
 import { Activity } from "../models/activity.js";
 
 //#region Activity source

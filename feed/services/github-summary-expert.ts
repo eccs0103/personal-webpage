@@ -1,10 +1,11 @@
 "use strict";
 
+import "adaptive-extender/web";
 import { Optional, Random, type URI } from "adaptive-extender/web";
 import { type ReactElement } from "react";
 import { GitHubCreateRepositoryActivity, GitHubCreateTagActivity, GitHubDeleteBranchActivity, GitHubDeleteTagActivity, GitHubPushActivity, GitHubReleaseActivity, type GitHubActivity } from "../models/activity.js";
 import { TextExpert } from "./text-expert.js";
-import type { LinkCreationOptions } from "../view/view-builders.js";
+import { type LinkCreationOptions } from "../view/view-builders.js";
 
 const random = Random.global;
 
@@ -68,11 +69,11 @@ class WorkflowReport {
 //#endregion
 //#region Summary context
 export class SummaryContext {
-	readonly #primary: ReactElement | undefined;
-	readonly #secondary: ReactElement | undefined;
-	readonly #magnitude: number;
-	readonly #label: string;
-	readonly #modifier: string;
+	#primary: ReactElement | undefined;
+	#secondary: ReactElement | undefined;
+	#magnitude: number;
+	#label: string;
+	#modifier: string;
 
 	constructor(primary: ReactElement | undefined, secondary: ReactElement | undefined, magnitude: number, label: string, modifier: string) {
 		this.#primary = primary;

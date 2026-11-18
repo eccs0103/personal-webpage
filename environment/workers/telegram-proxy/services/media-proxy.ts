@@ -48,7 +48,7 @@ export class MediaProxy {
 		}
 	}
 
-	#handleFull(media: TelegramMedia, method: string, context: ExecutionContext): Response {
+	#serve(media: TelegramMedia, method: string, context: ExecutionContext): Response {
 		const factory = this.#factory;
 		if (method === "HEAD") {
 			this.#scheduleDisconnect(context);
@@ -59,10 +59,10 @@ export class MediaProxy {
 		return factory.ok(media, result.stream);
 	}
 
-	#handleRange(headerRange: string, media: TelegramMedia, method: string, context: ExecutionContext): Response {
+	#serveRange(requested: string, media: TelegramMedia, method: string, context: ExecutionContext): Response {
 		const factory = this.#factory;
 		try {
-			const range = MediaProxy.#parseRange(headerRange, media.fileSize);
+			const range = MediaProxy.#parseRange(requested, media.fileSize);
 			const { begin, end } = range;
 			const limit = end - begin + 1;
 			if (method === "HEAD") {
@@ -92,9 +92,9 @@ export class MediaProxy {
 
 		const idMessage = Number.parseInt(match[1], 10);
 		const media = await this.#fetchMedia(idMessage, context);
-		const headerRange = headers.get("range");
-		if (headerRange !== null) return this.#handleRange(headerRange, media, method, context);
-		return this.#handleFull(media, method, context);
+		const requested = headers.get("range");
+		if (requested !== null) return this.#serveRange(requested, media, method, context);
+		return this.#serve(media, method, context);
 	}
 }
 //#endregion

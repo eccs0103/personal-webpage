@@ -1,5 +1,6 @@
 "use strict";
 
+import "adaptive-extender/core";
 import { Timespan, Version } from "adaptive-extender/core";
 
 const { trunc } = Math;
@@ -24,7 +25,6 @@ export class TextExpert {
 
 	static formatTime(timestamp: Date): string {
 		const span = Timespan.fromValue(Date.now() - timestamp.valueOf());
-		// if (span.days > 6) return timestamp.toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" });
 		if (span.days > 6) {
 			const weeks = trunc(span.days / 7);
 			return `${weeks} week${TextExpert.getPluralSuffix(weeks)} ago`;

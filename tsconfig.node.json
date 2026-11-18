@@ -18,6 +18,7 @@
 		"feed/services/ai-agent.ts",
 		"feed/services/search-provider.ts",
 		"feed/services/death-detection-system.ts",
+		"feed/services/activity-source.ts",
 		"feed/services/activity-walker.ts",
 		"feed/services/github-walker.ts",
 		"feed/services/github-reporter.ts",

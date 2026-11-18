@@ -1,8 +1,10 @@
 "use strict";
 
+import "adaptive-extender/core";
+
 //#region Mime registry
 export class MimeRegistry {
-	static #EXTENSIONS: ReadonlyMap<string, string> = new Map([
+	static #extensions: ReadonlyMap<string, string> = new Map([
 		["audio/mpeg", "mp3"],
 		["audio/ogg", "ogg"],
 		["audio/mp4", "m4a"],
@@ -28,7 +30,7 @@ export class MimeRegistry {
 	]);
 
 	static extensionFor(mimeType: string): string {
-		const known = MimeRegistry.#EXTENSIONS.get(mimeType);
+		const known = MimeRegistry.#extensions.get(mimeType);
 		if (known !== undefined) return known;
 		const extension = mimeType.split("/").at(-1);
 		if (extension === undefined) throw new SyntaxError(`Malformed MIME type '${mimeType}'`);

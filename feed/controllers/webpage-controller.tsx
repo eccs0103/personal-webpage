@@ -29,16 +29,14 @@ class WebpageController extends Controller {
 
 	async #readConfiguration(url: Readonly<URI>): Promise<Configuration> {
 		const bridge = this.#bridge;
-		const content = await bridge.read(url);
-		if (content === null) throw new ReferenceError();
+		const content = ReferenceError.suppress(await bridge.read(url));
 		const object = JSON.parse(content);
 		return Configuration.import(object, "configuration");
 	}
 
 	async #readChangelog(url: Readonly<URI>): Promise<ChangelogEntry[]> {
 		const bridge = this.#bridge;
-		const content = await bridge.read(url);
-		if (content === null) throw new ReferenceError();
+		const content = ReferenceError.suppress(await bridge.read(url));
 		const object = JSON.parse(content);
 		return Array.Of<ChangelogEntry, ChangelogEntryScheme>(ChangelogEntry).import(object, "changelog");
 	}

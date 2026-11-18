@@ -121,9 +121,9 @@ export class TelegramMedia {
 
 	download(offset: number = 0, limit: number = Number.POSITIVE_INFINITY): TelegramMediaDownloadResult {
 		const alignment = this.#alignment();
-		const alignedOffset = trunc(offset / alignment) * alignment;
-		const upstream = this.#client.downloadAsStream(this.#media, { offset: alignedOffset });
-		const session = new DownloadSession(upstream.getReader(), offset - alignedOffset, limit);
+		const aligned = trunc(offset / alignment) * alignment;
+		const upstream = this.#client.downloadAsStream(this.#media, { offset: aligned });
+		const session = new DownloadSession(upstream.getReader(), offset - aligned, limit);
 		return { stream: new ReadableStream<Uint8Array>(session), completion: session.completion };
 	}
 }

@@ -86,7 +86,6 @@ export interface PinterestBoardScheme {
 	id: string;
 	name: string;
 	description: string | null;
-	// owner: PinterestOwnerScheme;
 	privacy: string;
 }
 

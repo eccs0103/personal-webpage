@@ -21,10 +21,11 @@ export class SettingsService {
 			this.#repository = localStorage.openBufferedCell("Personal webpage\\Settings", Settings, new Settings(recovered));
 		}
 
-		const stored = this.#repository.content.preferences;
+		const repository = this.#repository;
+		const stored = repository.content.preferences;
 		const unsaved = [...preferences.keys()].filter(name => stored.add(name, true));
 		if (unsaved.length === 0) return;
-		void this.#repository.save();
+		void repository.save();
 	}
 
 	readPreferences(): Map<string, boolean> {

@@ -90,11 +90,7 @@ export function Carousel({ slides }: CarouselProps): ReactElement {
 	const refTrack: RefObject<HTMLDivElement | null> = useRef(null);
 	const last = slides.length - 1;
 
-	const track = (): HTMLDivElement => {
-		const divTrack = refTrack.current;
-		if (divTrack === null) throw new ReferenceError("Carousel track is not mounted");
-		return divTrack;
-	};
+	const track = (): HTMLDivElement => ReferenceError.suppress(refTrack.current, "Carousel track is not mounted");
 
 	const shift = (direction: number): void => {
 		const divTrack = track();

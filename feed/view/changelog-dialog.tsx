@@ -35,7 +35,7 @@ export function ChangelogDialog({ entries, session, open, onClose }: ChangelogDi
 		<dialog id="changelog" ref={refDialog} className="layer rounded flex column" translate="yes" onClick={dismiss} onClose={event => close()}>
 			{entry !== undefined && <Fragment key={`${session}:${index}`}>
 				<div className="changelog-header with-padding large-padding" translate="yes">
-					<strong className="changelog-title" translate="yes">{`Update · ${entry.date.toLocaleDateString()}`}</strong>
+					<strong className="font-larger-2" translate="yes">{`Update · ${entry.date.toLocaleDateString()}`}</strong>
 				</div>
 				<ul className="changelog-changes" translate="yes">
 					{entry.changes.map((change, number) => <li key={number} translate="yes">{change}</li>)}

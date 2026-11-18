@@ -93,8 +93,7 @@ export class DataTable<C extends PortableConstructor> extends Array<InstanceType
 	async #readChunk(index: number): Promise<InstanceType<C>[]> {
 		const bridge = this.#bridge;
 		const path = this.#getChunkPath(index);
-		const content = await bridge.read(path);
-		if (content === null) throw new ReferenceError(`Missing data chunk at ${path.pathname}`);
+		const content = ReferenceError.suppress(await bridge.read(path), `Missing data chunk at ${path.pathname}`);
 		const object = JSON.parse(content);
 		const entity = this.#entity;
 		const name = typename(entity);

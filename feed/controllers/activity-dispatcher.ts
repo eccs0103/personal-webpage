@@ -1,7 +1,7 @@
 "use strict";
 
-import "adaptive-extender/core";
-import { Controller } from "adaptive-extender/core";
+import "adaptive-extender/node";
+import { Controller } from "adaptive-extender/node";
 import { AuthorizationExpiredError, type ActivityWalker } from "../services/activity-walker.js";
 import { Activity } from "../models/activity.js";
 import { type DataTable } from "../services/data-table.js";
@@ -10,7 +10,7 @@ import { type GitHubReporter } from "../services/github-reporter.js";
 
 //#region Activity dispatcher
 export class ActivityDispatcher extends Controller<[DataTable<typeof Activity>, Date, readonly ActivityWalker[], readonly Platform[], GitHubReporter]> {
-	static async #reportExpiry(reporter: GitHubReporter, error: AuthorizationExpiredError): Promise<void> {
+	static async #report(reporter: GitHubReporter, error: AuthorizationExpiredError): Promise<void> {
 		const title = `${error.platform} authorization expired — re-authorization required`;
 		const body = [
 			`The refresh token for **${error.platform}** was rejected by its API (\`invalid_grant\`) and the activity feed can no longer sync from it.`,
@@ -62,7 +62,7 @@ export class ActivityDispatcher extends Controller<[DataTable<typeof Activity>, 
 				console.log(`Synced activities from ${walker.name}. Net change: ${count}`);
 			} catch (reason) {
 				console.error(`Unable to fetch activities from ${walker.name} cause:\n${Error.from(reason)}`);
-				if (reason instanceof AuthorizationExpiredError) await ActivityDispatcher.#reportExpiry(reporter, reason);
+				if (reason instanceof AuthorizationExpiredError) await ActivityDispatcher.#report(reporter, reason);
 			}
 		}
 		activities.sort(Activity.earlier);

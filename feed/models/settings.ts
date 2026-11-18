@@ -4,16 +4,12 @@ import "adaptive-extender/core";
 import { Field, Model } from "adaptive-extender/core";
 
 //#region Old settings
-/**
- * @deprecated
- */
+/** @deprecated */
 export interface OldSettingsScheme {
 	preferences: string[];
 }
 
-/**
- * @deprecated
- */
+/** @deprecated */
 export class OldSettings extends Model {
 	@Field(Array.Of(String), { name: "preferences" })
 	platforms: string[] = [];

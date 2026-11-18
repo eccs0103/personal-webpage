@@ -5,7 +5,6 @@ import { Field, Model } from "adaptive-extender/core";
 
 //#region Feed batch loaded
 export class FeedBatchLoaded extends Model {
-	/** Number of batches loaded so far including the one just fetched. Increments by one per successful load call. */
 	@Field(Number, { name: "batches_loaded" })
 	batchesLoaded: number;
 

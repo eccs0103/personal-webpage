@@ -31,7 +31,7 @@ export class TelegramChannel {
 		return channel;
 	}
 
-	#documentFileName(media: RawDocument, idMessage: number): string {
+	#fileName(media: RawDocument, idMessage: number): string {
 		if (media.fileName !== null) return media.fileName;
 		const extension = MimeRegistry.extensionFor(media.mimeType);
 		return `${idMessage}.${extension}`;
@@ -40,14 +40,12 @@ export class TelegramChannel {
 	async fetchMedia(idMessage: number): Promise<TelegramMedia> {
 		const client = this.#client;
 		const messages = await client.getMessages(this.#idChannel, [idMessage]);
-		const message = messages[0];
-		if (message === null) throw new ReferenceError("Message not found");
-		const { media } = message;
-		if (media === null) throw new ReferenceError("Message has no media");
+		const message = ReferenceError.suppress(messages[0], "Message not found");
+		const media = ReferenceError.suppress(message.media, "Message has no media");
 		if (!(media instanceof FileLocation)) throw new TypeError("Message media is not downloadable");
 		const size = media.fileSize ?? Number.POSITIVE_INFINITY;
 		if (!(media instanceof RawDocument)) return new TelegramMedia("image/jpeg", size, `${idMessage}.jpg`, client, media);
-		const fileName = this.#documentFileName(media, idMessage);
+		const fileName = this.#fileName(media, idMessage);
 		return new TelegramMedia(media.mimeType, size, fileName, client, media);
 	}
 

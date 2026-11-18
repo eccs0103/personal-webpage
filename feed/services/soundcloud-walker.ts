@@ -80,9 +80,6 @@ class SoundCloudLikeSource extends SoundCloudTrackSource {
 		super(platform, token, new URI(`https://api.soundcloud.com/users/${id}/likes/tracks`));
 	}
 
-	// ponytail: stamped by the track's upload date, not the like date — api-v2's track_likes endpoint carries
-	// the real like timestamp but rejects this app's OAuth token (403 under Bearer, OAuth, and client_id auth).
-	// Revisit if SoundCloud grants api-v2 access; until then this can only skip stale items, not sort by like time.
 	get sorted(): boolean { return false; }
 
 	*map(event: SoundCloudTrack): Iterable<Activity> {

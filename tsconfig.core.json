@@ -5,6 +5,32 @@
 		"types": [ ]
 	},
 	"include": [
-		"environment/models/**/*.ts"
+		"environment/models/**/*.ts",
+		"feed/models/activity.ts",
+		"feed/models/ai-responses.ts",
+		"feed/models/changelog.ts",
+		"feed/models/configuration.ts",
+		"feed/models/cron-pattern.ts",
+		"feed/models/feed-batch-loaded.ts",
+		"feed/models/feed-completed.ts",
+		"feed/models/github-event.ts",
+		"feed/models/github-issue.ts",
+		"feed/models/media-play.ts",
+		"feed/models/npm-event.ts",
+		"feed/models/pinterest-event.ts",
+		"feed/models/platform-toggle.ts",
+		"feed/models/search-response.ts",
+		"feed/models/settings.ts",
+		"feed/models/soundcloud-event.ts",
+		"feed/models/soundcloud-token.ts",
+		"feed/models/spotify-event.ts",
+		"feed/models/stack-overflow-event.ts",
+		"feed/models/steam-event.ts",
+		"feed/models/visit.ts",
+		"feed/models/welcome-action.ts",
+		"feed/services/array-cursor.ts",
+		"feed/services/bridge.ts",
+		"feed/services/data-table.ts",
+		"feed/services/text-expert.ts"
 	]
 }

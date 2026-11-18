@@ -1,16 +1,16 @@
 "use strict";
 
-import "dotenv/config";
 import "adaptive-extender/node";
+import "dotenv/config";
 import { EnvironmentProvider, Field, Model, Optional } from "adaptive-extender/node";
 
 //#region Local environment
-export class LocalEnviroment extends Model {
-	static #instance: LocalEnviroment | null = null;
+export class LocalEnvironment extends Model {
+	static #instance: LocalEnvironment | null = null;
 
-	static get instance(): LocalEnviroment {
-		if (LocalEnviroment.#instance === null) LocalEnviroment.#instance = EnvironmentProvider.resolve(process.env, LocalEnviroment);
-		return LocalEnviroment.#instance;
+	static get instance(): LocalEnvironment {
+		if (LocalEnvironment.#instance === null) LocalEnvironment.#instance = EnvironmentProvider.resolve(process.env, LocalEnvironment);
+		return LocalEnvironment.#instance;
 	}
 
 	@Field(Optional.Of(String), { name: "HOST" })

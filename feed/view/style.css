@@ -175,7 +175,6 @@ body {
 						width: fit-content;
 						gap: var(--size-small-gap);
 						font-family: "Cascadia Code", monospace;
-						font-size: 0.8em;
 					}
 
 					& a.version-badge {
@@ -183,7 +182,6 @@ body {
 						padding: 0.1em 0.5em;
 						border-radius: var(--size-small-gap);
 						font-family: "Cascadia Code", monospace;
-						font-size: 0.8em;
 
 						&.bump-major {
 							color: var(--color-error);
@@ -691,10 +689,6 @@ body {
 
 		& div.changelog-header {
 			border-bottom: var(--size-separator) solid var(--color-heavy-main);
-
-			& strong.changelog-title {
-				font-size: 1.1em;
-			}
 		}
 
 		& ul.changelog-changes {

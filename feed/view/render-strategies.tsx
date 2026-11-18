@@ -17,7 +17,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 		const count = new Set(pushes.map(push => push.sha)).size;
 		const path = count > 1 ? "commits" : "commit";
 		return (
-			<ExternalLink url={new URI(`${url}/${path}/${sha}`)} title={`${count} commit${TextExpert.getPluralSuffix(count)}`} translate="no" className="commit-badge flex alt-center">
+			<ExternalLink url={new URI(`${url}/${path}/${sha}`)} title={`${count} commit${TextExpert.getPluralSuffix(count)}`} translate="no" className="commit-badge flex alt-center font-smaller-3">
 				<span className="icon in-line commit" translate="no" />
 				{String(count)}
 			</ExternalLink>
@@ -26,7 +26,7 @@ export class GitHubRenderStrategy implements ActivityRenderStrategy<GitHubActivi
 
 	#renderBadge(url: URI, name: string, disabled: boolean): ReactElement {
 		const version = Version.tryParse(name);
-		const classes = version === null ? "version-badge" : `version-badge bump-${TextExpert.getBump(version)}`;
+		const classes = version === null ? "version-badge font-smaller-3" : `version-badge font-smaller-3 bump-${TextExpert.getBump(version)}`;
 		return <ExternalLink key={name} url={new URI(`${url}/releases/tag/${name}`)} text={name} disabled={disabled} translate="no" className={classes} />;
 	}
 
@@ -179,7 +179,7 @@ export class NpmRenderStrategy implements ActivityRenderStrategy<NpmActivity> {
 		let description: string | null = null;
 		const badges: ReactElement[] = [];
 		for (const entry of sorted) {
-			badges.push(<ExternalLink key={badges.length} url={entry.url} text={entry.version.toString()} translate="no" className={`version-badge bump-${TextExpert.getBump(entry.version)}`} />);
+			badges.push(<ExternalLink key={badges.length} url={entry.url} text={entry.version.toString()} translate="no" className={`version-badge font-smaller-3 bump-${TextExpert.getBump(entry.version)}`} />);
 			if (entry.description !== null) description = entry.description;
 		}
 
