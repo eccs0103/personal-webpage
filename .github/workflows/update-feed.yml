@@ -17,10 +17,10 @@ jobs:
 
         steps:
           - name: Checkout code
-            uses: actions/checkout@v5
+            uses: actions/checkout@v7
 
           - name: Setup Node.js
-            uses: actions/setup-node@v5
+            uses: actions/setup-node@v7
             with:
                 node-version: 26
                 cache: 'npm'
@@ -29,7 +29,7 @@ jobs:
             run: npm ci
 
           - name: Restore SoundCloud token
-            uses: actions/cache/restore@v5
+            uses: actions/cache/restore@v6
             with:
                 path: resources/data/soundcloud-token.json
                 key: soundcloud-token-${{ github.run_id }}
@@ -82,7 +82,7 @@ jobs:
 
           - name: Save SoundCloud token
             if: always()
-            uses: actions/cache/save@v5
+            uses: actions/cache/save@v6
             with:
                 path: resources/data/soundcloud-token.json
                 key: soundcloud-token-${{ github.run_id }}

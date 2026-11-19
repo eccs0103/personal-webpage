@@ -2,7 +2,7 @@
 	"$schema": "../../../node_modules/wrangler/config-schema.json",
 	"name": "telegram-proxy",
 	"main": "controllers/media-proxy-worker.ts",
-	"compatibility_date": "2026-03-11",
+	"compatibility_date": "2026-11-16",
 	"upload_source_maps": true,
 	"routes": [
 		{ "pattern": "telegram-proxy.eccs.dev", "custom_domain": true }
