@@ -869,15 +869,6 @@
 		"$type": "NpmPublishActivity"
 	},
 	{
-		"sha": "76ef89f2446a17fb2223d285f47f09610281b09c",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1793278740000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"title": "Где нас нет",
 		"artists": [
 			"Oxxxymiron"
@@ -910,93 +901,12 @@
 		"$type": "SpotifyLikeActivity"
 	},
 	{
-		"sha": "5d5570a1f9b155e941b6364eb8c4f6b16b3149b0",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1793415158000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1c0d527f8d5bdb43e89ae0b8fec5df4e72b73efb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1793415184000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1cd383370aedc001cb939a4392f88ae94196b3e4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793415304000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1cd383370aedc001cb939a4392f88ae94196b3e4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793415340000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "256094d445e5a9d92b5e9b58b00b9bddb73b53cb",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
 		"repository": "personal-webpage",
 		"platform": "GitHub",
 		"timestamp": 1793434902000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3a3a1bbbb9d1315a3018094ee91f82c7a733cebd",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1793434931000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8e77ac6b437db8006671dcdcfe9c1f75a30fad09",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1793434933000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "5ae0627b38c3774502673321afcf9be472211f9a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793434961000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "5ae0627b38c3774502673321afcf9be472211f9a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793434998000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "820ffb9530edce4a4c7cb85e03058bc9964f44f8",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1793435286000,
 		"$type": "GitHubPushActivity"
 	},
 	{
@@ -1022,5 +932,105 @@
 		"platform": "Steam",
 		"timestamp": 1793475804000,
 		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/f2b577c84bea7f45ccc79ca2ccb2adcc2b99e120.jpg",
+		"title": "Mentorship Badge",
+		"description": "Have a 1-on-1 with the Scoutmaster.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793480141000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/40606fe9cbafb08a0e15d20315829f6747b335f9.jpg",
+		"title": "Emergency Preparedness Badge",
+		"description": "Heal an unconscious friend with an item to save them from death.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1793482206000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "19e91250e679d66344978f2fd0a30ad28a5c61f6",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1793568363000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "Floating in Reverie - Slowed + Reverb",
+		"artists": [
+			"Moayad Aljabal"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2734c13aa0d3b96813b101d7906",
+		"url": "https://open.spotify.com/track/59gGJjHtHIiRZVxuXk789Y",
+		"platform": "Spotify",
+		"timestamp": 1793776572000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"sha": "1e2fb9b5120dfb5fb864768dc922be45dec7700c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1794014593000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1e2fb9b5120dfb5fb864768dc922be45dec7700c",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1794014648000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "e09b9409925e5f005b70c0ae6f4cc9e958c1a37a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1794017739000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"package": "adaptive-extender",
+		"version": "1.2.0",
+		"description": "Adaptive library for JS/TS development environments",
+		"url": "https://www.npmjs.com/package/adaptive-extender/v/1.2.0",
+		"platform": "npm",
+		"timestamp": 1794017942835,
+		"$type": "NpmPublishActivity"
+	},
+	{
+		"sha": "3803f422768236dfe6f562579b1665ef6b2ab1b4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1794020085000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "1.2.0",
+		"tag_name": "1.2.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/adaptive-extender",
+		"repository": "adaptive-extender",
+		"platform": "GitHub",
+		"timestamp": 1794020130000,
+		"$type": "GitHubReleaseActivity"
 	}
 ]
