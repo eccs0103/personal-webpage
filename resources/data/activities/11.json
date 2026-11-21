@@ -1,52 +1,5 @@
 [
 	{
-		"sha": "e3be380374cf07325197611525410d011b68b6b1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1794081989000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e3be380374cf07325197611525410d011b68b6b1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1794082008000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "remaster",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/elements",
-		"repository": "elements",
-		"platform": "GitHub",
-		"timestamp": 1794082107000,
-		"$type": "GitHubCreateBranchActivity"
-	},
-	{
-		"sha": "41ecdfae5bda2998b545a10341f93fb00420aabc",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/shortcuts",
-		"repository": "shortcuts",
-		"platform": "GitHub",
-		"timestamp": 1794082142000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.8.1",
-		"tag_name": "3.8.1",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1794082199000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
 		"sha": "04248030f0205342affbd2d78bd9ca8b5f0c0ee1",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/vscode-quartz",
@@ -886,6 +839,51 @@
 		"repository": "vscode-quartz",
 		"platform": "GitHub",
 		"timestamp": 1795091515000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1cde928b9656a5c374ff798b69bcfb825ba80e13",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1795111137000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "4d5e5ca31a28f2bf975222f19ee0312e1e6267a4",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1795112852000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "b5b86f18fa1801f09d6f8f96487a1c8871111f2d",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1795113374000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "921e90d96f0f76d86a4fd53a5e3b6676ff26c547",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1795113636000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "277c75297874ff784357a27307e399402261e8b8",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1795113888000,
 		"$type": "GitHubPushActivity"
 	},
 	{

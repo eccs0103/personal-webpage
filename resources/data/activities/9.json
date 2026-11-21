@@ -859,33 +859,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "9417d25edc76af5c6b8aeb11fbf7cdce07325cdf",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1792711923000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "8e502419cd2bd9b87776f90328e15a5b404f8459",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792712147000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "685bd5ee28283986521fb7466fc1571ba54f9e9b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/cheatsheet",
-		"repository": "cheatsheet",
-		"platform": "GitHub",
-		"timestamp": 1792712183000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"file_name": "41.jpg",
 		"media_type": "photo",
 		"content": "Somehow hit 1,000+ commits this year. Not even sure if that's a good or a bad thing.",
@@ -903,17 +876,6 @@
 		"platform": "GitHub",
 		"timestamp": 1792794382000,
 		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "1.1.6",
-		"tag_name": "1.1.6",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/adaptive-extender",
-		"repository": "adaptive-extender",
-		"platform": "GitHub",
-		"timestamp": 1792794560000,
-		"$type": "GitHubReleaseActivity"
 	},
 	{
 		"package": "adaptive-extender",
@@ -961,15 +923,6 @@
 		"$type": "GitHubPushActivity"
 	},
 	{
-		"sha": "363fd84b7d579867d0ac92a3daa1707a55109ae4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/applications",
-		"repository": "applications",
-		"platform": "GitHub",
-		"timestamp": 1792795278000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "35f1aff1b14c3d63d26e03f8522bffc4e2b49b35",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/shortcuts",
@@ -1013,5 +966,50 @@
 		"platform": "GitHub",
 		"timestamp": 1792795477000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "974509b62a46190fa3056bacfa10ae9520c7bc70",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/cheatsheet",
+		"repository": "cheatsheet",
+		"platform": "GitHub",
+		"timestamp": 1792795554000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "f2b24773f733fbd7d7563e200a4465533c298916",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1792795597000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "3138574f5a39fb31fe023103ff90adc0daee38fa",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1792795625000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "150205381b780266add22e2dd5a836e7ec9b7614",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/shortcuts",
+		"repository": "shortcuts",
+		"platform": "GitHub",
+		"timestamp": 1792863619000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "visualization-with-stems",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1793023325000,
+		"$type": "GitHubCreateBranchActivity"
 	}
 ]
