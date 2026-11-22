@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "04248030f0205342affbd2d78bd9ca8b5f0c0ee1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"platform": "GitHub",
-		"timestamp": 1794082400000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "086e23e3fa684c3e7d2ba059442a468696930eac",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/vscode-quartz",
@@ -902,5 +893,14 @@
 		"platform": "GitHub",
 		"timestamp": 1795174607000,
 		"$type": "GitHubWatchActivity"
+	},
+	{
+		"name": "main",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-plugins",
+		"repository": "claude-plugins",
+		"platform": "GitHub",
+		"timestamp": 1795253998000,
+		"$type": "GitHubCreateBranchActivity"
 	}
 ]

@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "f89234e311d65d8b36d2983728dbe44557149ecb",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041580000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "adf68c7153f1b8f9c4cdcb5107e736fb0ab19429",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -931,5 +922,14 @@
 		"platform": "GitHub",
 		"timestamp": 1794082199000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "04248030f0205342affbd2d78bd9ca8b5f0c0ee1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1794082400000,
+		"$type": "GitHubPushActivity"
 	}
 ]
