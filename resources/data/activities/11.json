@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "66c5336a3db281488de07d4bcfc125fd82cba2e1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1794082681000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"username": "eccs0103",
 		"url": "https://github.com/archivesteak/opensense",
 		"repository": "opensense",
