@@ -27,5 +27,17 @@
 		"platform": "GitHub",
 		"timestamp": 1795365668000,
 		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"title": "La La La",
+		"artists": [
+			"Naughty Boy",
+			"Sam Smith"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2739213b0453a98f037f2230f3e",
+		"url": "https://open.spotify.com/track/52gvlDnre9craz9dKGObp8",
+		"platform": "Spotify",
+		"timestamp": 1795529584000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
