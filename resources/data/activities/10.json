@@ -1,14 +1,5 @@
 [
 	{
-		"sha": "3622f4f72b50f908fbe2867de073377ec5c030c1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041617000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "cbc5f14171474843c632b974639bd9eab2f2e383",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/visualizer",
@@ -933,5 +924,13 @@
 		"platform": "GitHub",
 		"timestamp": 1794082681000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"username": "eccs0103",
+		"url": "https://github.com/archivesteak/opensense",
+		"repository": "opensense",
+		"platform": "GitHub",
+		"timestamp": 1794084711000,
+		"$type": "GitHubWatchActivity"
 	}
 ]
