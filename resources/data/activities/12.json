@@ -39,5 +39,16 @@
 		"platform": "Spotify",
 		"timestamp": 1795529584000,
 		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Клянусь",
+		"artists": [
+			"Darrem"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2731aaf6a3b4338036ba2253e8a",
+		"url": "https://open.spotify.com/track/5FTzNOYUVY0fKvcNdU4ue0",
+		"platform": "Spotify",
+		"timestamp": 1795598879000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
