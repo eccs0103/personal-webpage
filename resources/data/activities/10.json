@@ -1,115 +1,5 @@
 [
 	{
-		"sha": "cbc5f14171474843c632b974639bd9eab2f2e383",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041621000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "86960e362171bea1db5b316988efd03247eb4908",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041625000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "ea03edc8a2a0604432bff474d5ee716a017d1367",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041630000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3b05dfc0cdf39c9138176e7091b0e68db2d08440",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793041634000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047457000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047490000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"name": "visualization-with-stems",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047508000,
-		"$type": "GitHubDeleteBranchActivity"
-	},
-	{
-		"sha": "9387afbd3035bd84ed1cd5f48253863c4ae0eb39",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793047887000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "63cdffbc02aa81e3d5af867012e430e97491014e",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052794000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "a8775e66159d9e5ac6dc7f9ff7c6df330f43d2b4",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052799000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "e69d52bae2ab073b10796ba08feb886584b878a3",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052804000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "3.8.0",
-		"tag_name": "3.8.0",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/visualizer",
-		"repository": "visualizer",
-		"platform": "GitHub",
-		"timestamp": 1793052824000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
 		"sha": "a84fc963279b8419afe62ea15f0f3fa5fc3a3ed9",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/personal-webpage",
@@ -932,5 +822,122 @@
 		"platform": "GitHub",
 		"timestamp": 1794084711000,
 		"$type": "GitHubWatchActivity"
+	},
+	{
+		"sha": "e53f11edef48711c9a07e077b752101ca32fc5fd",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1794091332000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "0.6.4",
+		"tag_name": "0.6.4",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/vscode-quartz",
+		"repository": "vscode-quartz",
+		"platform": "GitHub",
+		"timestamp": 1794092080000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"sha": "ff9d826c468e5c4912d373006e9bfd320ac76245",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794094682000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "327b0a5a1dd373acd3eb4d1538c62d88cc969834",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794100012000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"file_name": "43.jpg",
+		"media_type": "photo",
+		"content": "Մռիկ in the ocean",
+		"channel_id": -1003471238866,
+		"message_id": 43,
+		"platform": "Telegram",
+		"timestamp": 1794407298000,
+		"$type": "TelegramMediaPostActivity"
+	},
+	{
+		"sha": "13400f7b092f75fe939d4421d7a2afbfa1e5e58b",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/personal-webpage",
+		"repository": "personal-webpage",
+		"platform": "GitHub",
+		"timestamp": 1794418358000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e2c914d9a5584fa70875fca8f5a080569f6bcccc.jpg",
+		"title": "Advanced Mycology Badge",
+		"description": "Try all 5 types of Shroomberry in a single expedition.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1794602282000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/adf04113ad409279bd2733d6ecc2504b96dc43a1.jpg",
+		"title": "Aeronautics Badge",
+		"description": "Achieve flight.",
+		"url": "https://steamcommunity.com/stats/3527290/achievements",
+		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
+		"game": "PEAK",
+		"webpage": "https://store.steampowered.com/app/3527290",
+		"platform": "Steam",
+		"timestamp": 1794602533000,
+		"$type": "SteamAchievementActivity"
+	},
+	{
+		"sha": "da28a74eab2b18c62f40fc7bccf56fbb7d535f44",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1794714331000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "1a94a22fd6fc1c98ab96d7424b0a4b2b9bb675f1",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1794714350000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "3083be0a6d8f3a53abab91c4d5f9827b213be82a",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1794714386000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"sha": "68d435cbc3c139d7439fce28a1a40f0d044ce429",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/elements",
+		"repository": "elements",
+		"platform": "GitHub",
+		"timestamp": 1794714399000,
+		"$type": "GitHubPushActivity"
 	}
 ]

@@ -1,122 +1,5 @@
 [
 	{
-		"sha": "e53f11edef48711c9a07e077b752101ca32fc5fd",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"platform": "GitHub",
-		"timestamp": 1794091332000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"title": "0.6.4",
-		"tag_name": "0.6.4",
-		"is_prerelease": false,
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/vscode-quartz",
-		"repository": "vscode-quartz",
-		"platform": "GitHub",
-		"timestamp": 1794092080000,
-		"$type": "GitHubReleaseActivity"
-	},
-	{
-		"sha": "ff9d826c468e5c4912d373006e9bfd320ac76245",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1794094682000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "327b0a5a1dd373acd3eb4d1538c62d88cc969834",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1794100012000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"file_name": "43.jpg",
-		"media_type": "photo",
-		"content": "Մռիկ in the ocean",
-		"channel_id": -1003471238866,
-		"message_id": 43,
-		"platform": "Telegram",
-		"timestamp": 1794407298000,
-		"$type": "TelegramMediaPostActivity"
-	},
-	{
-		"sha": "13400f7b092f75fe939d4421d7a2afbfa1e5e58b",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/personal-webpage",
-		"repository": "personal-webpage",
-		"platform": "GitHub",
-		"timestamp": 1794418358000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/e2c914d9a5584fa70875fca8f5a080569f6bcccc.jpg",
-		"title": "Advanced Mycology Badge",
-		"description": "Try all 5 types of Shroomberry in a single expedition.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1794602282000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"icon": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/adf04113ad409279bd2733d6ecc2504b96dc43a1.jpg",
-		"title": "Aeronautics Badge",
-		"description": "Achieve flight.",
-		"url": "https://steamcommunity.com/stats/3527290/achievements",
-		"cover": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3527290/06c1b9495e8b97739b9dc2f9fc8407fe3bf83b53.ico",
-		"game": "PEAK",
-		"webpage": "https://store.steampowered.com/app/3527290",
-		"platform": "Steam",
-		"timestamp": 1794602533000,
-		"$type": "SteamAchievementActivity"
-	},
-	{
-		"sha": "da28a74eab2b18c62f40fc7bccf56fbb7d535f44",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/elements",
-		"repository": "elements",
-		"platform": "GitHub",
-		"timestamp": 1794714331000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "1a94a22fd6fc1c98ab96d7424b0a4b2b9bb675f1",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/elements",
-		"repository": "elements",
-		"platform": "GitHub",
-		"timestamp": 1794714350000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "3083be0a6d8f3a53abab91c4d5f9827b213be82a",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/elements",
-		"repository": "elements",
-		"platform": "GitHub",
-		"timestamp": 1794714386000,
-		"$type": "GitHubPushActivity"
-	},
-	{
-		"sha": "68d435cbc3c139d7439fce28a1a40f0d044ce429",
-		"username": "eccs0103",
-		"url": "https://github.com/eccs0103/elements",
-		"repository": "elements",
-		"platform": "GitHub",
-		"timestamp": 1794714399000,
-		"$type": "GitHubPushActivity"
-	},
-	{
 		"sha": "55668c85a18018db2425ee0ba9252343c55af7ee",
 		"username": "eccs0103",
 		"url": "https://github.com/eccs0103/elements",
@@ -911,5 +794,57 @@
 		"platform": "GitHub",
 		"timestamp": 1795364093000,
 		"$type": "GitHubPushActivity"
+	},
+	{
+		"name": "new-ai-visualizations",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1795364877000,
+		"$type": "GitHubDeleteBranchActivity"
+	},
+	{
+		"sha": "533ec1d6eec28be67e9445909e8337fbe4d62d26",
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/claude-plugins",
+		"repository": "claude-plugins",
+		"platform": "GitHub",
+		"timestamp": 1795365544000,
+		"$type": "GitHubPushActivity"
+	},
+	{
+		"title": "3.9.0",
+		"tag_name": "3.9.0",
+		"is_prerelease": false,
+		"username": "eccs0103",
+		"url": "https://github.com/eccs0103/visualizer",
+		"repository": "visualizer",
+		"platform": "GitHub",
+		"timestamp": 1795365668000,
+		"$type": "GitHubReleaseActivity"
+	},
+	{
+		"title": "La La La",
+		"artists": [
+			"Naughty Boy",
+			"Sam Smith"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2739213b0453a98f037f2230f3e",
+		"url": "https://open.spotify.com/track/52gvlDnre9craz9dKGObp8",
+		"platform": "Spotify",
+		"timestamp": 1795529584000,
+		"$type": "SpotifyLikeActivity"
+	},
+	{
+		"title": "Клянусь",
+		"artists": [
+			"Darrem"
+		],
+		"cover": "https://i.scdn.co/image/ab67616d0000b2731aaf6a3b4338036ba2253e8a",
+		"url": "https://open.spotify.com/track/5FTzNOYUVY0fKvcNdU4ue0",
+		"platform": "Spotify",
+		"timestamp": 1795598879000,
+		"$type": "SpotifyLikeActivity"
 	}
 ]
